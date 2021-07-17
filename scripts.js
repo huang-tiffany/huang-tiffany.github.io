@@ -33,3 +33,15 @@ function leavePage(link) {
 		console.log("hello");
 	}, 600);
 }
+
+function reveal(id) {
+	var magnifiedElements = document.getElementsByClassName('magnified');
+	for (var i = 0; i < magnifiedElements.length; i++) {
+		if (!magnifiedElements[i].classList.contains("hidden")) {
+			magnifiedElements[i].classList.add("hidden");
+		}
+	}
+	var media = document.getElementById(`${id}`);
+	media.classList.remove("hidden");
+	window.location.href = `#${id}`;
+}
