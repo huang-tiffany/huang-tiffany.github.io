@@ -40,9 +40,21 @@ function reveal(id, projectName) {
 			magnifiedElements[i].classList.add("hidden");
 		}
 	}
+
 	var placeholder = document.getElementById('col2-3-placeholder');
 	if (!placeholder.classList.contains("hidden")) {
 		placeholder.classList.add("hidden");
+	}
+
+	var projectDescription = document.getElementsByClassName("project-description");
+	for (var k = 0; k < projectDescription.length; k++) {
+		if (!projectDescription[k].classList.contains("hidden")) {
+			projectDescription[k].classList.add("hidden");
+		}
+	}
+	var sidebarDescription = document.getElementById('sidebar-description');
+	if (!sidebarDescription.classList.contains("hidden")) {
+		sidebarDescription.classList.add("hidden");
 	}
 	var media = document.getElementsByClassName(`${projectName}`);
 	for (var j = 0; j < media.length; j++) {
@@ -51,4 +63,28 @@ function reveal(id, projectName) {
 		}
 	}
 	window.location.href = `#${id}`;
+}
+
+function hide() {
+	var placeholder = document.getElementById('col2-3-placeholder');
+		if (placeholder.classList.contains("hidden")) {
+			placeholder.classList.remove("hidden");
+		}
+		var sidebarDescription = document.getElementById('sidebar-description');
+		if (sidebarDescription.classList.contains("hidden")) {
+			sidebarDescription.classList.remove("hidden");
+		}
+		var magnifiedElements = document.getElementsByClassName('magnified');
+		for (var i = 0; i < magnifiedElements.length; i++) {
+			if (!magnifiedElements[i].classList.contains("hidden")) {
+				magnifiedElements[i].classList.add("hidden");
+			}
+		}
+
+		var projectDescription = document.getElementsByClassName("project-description");
+		for (var k = 0; k < projectDescription.length; k++) {
+			if (!projectDescription[k].classList.contains("hidden")) {
+				projectDescription[k].classList.add("hidden");
+			}
+		}
 }

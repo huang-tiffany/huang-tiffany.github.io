@@ -472,6 +472,7 @@ video.vert, img.vert {
 	padding: 0;
 	margin-bottom: 1em;
 	vertical-align: top;
+	cursor: zoom-out;
 }
 
 .bottom, .work-row .bottom {
