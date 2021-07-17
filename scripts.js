@@ -33,14 +33,18 @@ function leavePage(link) {
 	}, 600);
 }
 
-function reveal(id) {
+function reveal(id, projectName) {
 	var magnifiedElements = document.getElementsByClassName('magnified');
 	for (var i = 0; i < magnifiedElements.length; i++) {
 		if (!magnifiedElements[i].classList.contains("hidden")) {
 			magnifiedElements[i].classList.add("hidden");
 		}
 	}
-	var media = document.getElementById(`${id}`);
-	media.classList.remove("hidden");
+	var media = document.getElementsByClassName(`${projectName}`);
+	for (var j = 0; j < media.length; j++) {
+		if (media[j].classList.contains("hidden")) {
+			media[j].classList.remove("hidden");
+		}
+	}
 	window.location.href = `#${id}`;
 }

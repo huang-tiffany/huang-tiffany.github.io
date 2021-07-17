@@ -430,11 +430,10 @@ video.horiz, img.horiz {
 	margin-left: 0;
 	width: calc(98% / 3);
 	padding: 0;
-	vertical-align: top;
 	cursor: zoom-in;
 }
 
-video.vert, img.horiz {
+video.vert, img.vert {
 	position: relative;
 	float: left;
 	margin-right: 0;
@@ -442,7 +441,6 @@ video.vert, img.horiz {
 	margin-bottom: 1em;
 	width: calc(98% / 3);
 	padding: 0;
-	vertical-align: top;
 	cursor: zoom-in;
 }
 
@@ -474,14 +472,12 @@ video.vert, img.horiz {
 	max-height: calc(100% - 0.0000000000001px);
 	max-width: 100%;
 	padding: 0;
+	margin-bottom: 1em;
 	vertical-align: top;
-	justify-items: center;
 }
 
-.magnified video, .magnified img {
-	justify-self: center;
-	max-height: calc(100% - 0.0000000000001px);
-	max-width: 100%;
+.bottom, .work-row .bottom {
+	margin-bottom: 0;
 }
 
 .work-row {
