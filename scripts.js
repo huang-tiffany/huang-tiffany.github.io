@@ -40,6 +40,10 @@ function reveal(id, projectName) {
 			magnifiedElements[i].classList.add("hidden");
 		}
 	}
+	var placeholder = document.getElementById('col2-3-placeholder');
+	if (!placeholder.classList.contains("hidden")) {
+		placeholder.classList.add("hidden");
+	}
 	var media = document.getElementsByClassName(`${projectName}`);
 	for (var j = 0; j < media.length; j++) {
 		if (media[j].classList.contains("hidden")) {
