@@ -30,7 +30,6 @@ function leavePage(link) {
 		} else {
 			location.reload();
 		}
-		console.log("hello");
 	}, 600);
 }
 

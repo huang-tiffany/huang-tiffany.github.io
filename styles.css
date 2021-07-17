@@ -69,7 +69,6 @@ nav {
 	text-align: left;
 	padding-right: 2em;
 	z-index: 1000;
-	mix-blend-mode: difference;
 }
 
 .sidebar {
@@ -476,6 +475,13 @@ video.vert, img.horiz {
 	max-width: 100%;
 	padding: 0;
 	vertical-align: top;
+	justify-items: center;
+}
+
+.magnified video, .magnified img {
+	justify-self: center;
+	max-height: calc(100% - 0.0000000000001px);
+	max-width: 100%;
 }
 
 .work-row {
