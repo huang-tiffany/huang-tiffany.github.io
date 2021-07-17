@@ -482,6 +482,10 @@ video.vert, img.vert {
 	display: flex;
 	width: 100%;
 }
+
+a.active-link {
+	font-weight: 600;
+}
 /*
 
 #col2-3-placeholder {
