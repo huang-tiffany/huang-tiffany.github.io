@@ -52,6 +52,7 @@ function reveal(id, projectName) {
 			projectDescription[k].classList.add("hidden");
 		}
 	}
+	
 	var sidebarDescription = document.getElementById('sidebar-description');
 	if (!sidebarDescription.classList.contains("hidden")) {
 		sidebarDescription.classList.add("hidden");
@@ -62,29 +63,40 @@ function reveal(id, projectName) {
 			media[j].classList.remove("hidden");
 		}
 	}
+	if (projectName === "ringramen") {
+		var iframeContainer = document.getElementByClassName('container-1366-768');
+		if (iframeContainer.style.paddingBottom === "0%") {
+			iframeContainer.style.paddingBottom = '56.2225476%';
+		}	
+	}
 	window.location.href = `#${id}`;
 }
 
 function hide() {
 	var placeholder = document.getElementById('col2-3-placeholder');
-		if (placeholder.classList.contains("hidden")) {
-			placeholder.classList.remove("hidden");
+	if (placeholder.classList.contains("hidden")) {
+		placeholder.classList.remove("hidden");
+	}
+	var sidebarDescription = document.getElementById('sidebar-description');
+	if (sidebarDescription.classList.contains("hidden")) {
+		sidebarDescription.classList.remove("hidden");
+	}
+	var magnifiedElements = document.getElementsByClassName('magnified');
+	for (var i = 0; i < magnifiedElements.length; i++) {
+		if (!magnifiedElements[i].classList.contains("hidden")) {
+			magnifiedElements[i].classList.add("hidden");
 		}
-		var sidebarDescription = document.getElementById('sidebar-description');
-		if (sidebarDescription.classList.contains("hidden")) {
-			sidebarDescription.classList.remove("hidden");
-		}
-		var magnifiedElements = document.getElementsByClassName('magnified');
-		for (var i = 0; i < magnifiedElements.length; i++) {
-			if (!magnifiedElements[i].classList.contains("hidden")) {
-				magnifiedElements[i].classList.add("hidden");
-			}
-		}
+	}
 
-		var projectDescription = document.getElementsByClassName("project-description");
-		for (var k = 0; k < projectDescription.length; k++) {
-			if (!projectDescription[k].classList.contains("hidden")) {
-				projectDescription[k].classList.add("hidden");
-			}
+	var iframeContainer = document.getElementByClassName('container-1366-768');
+	if (iframeContainer.style.paddingBottom !== "0%") {
+		iframeContainer.style.paddingBottom = '0%';
+	}
+
+	var projectDescription = document.getElementsByClassName("project-description");
+	for (var k = 0; k < projectDescription.length; k++) {
+		if (!projectDescription[k].classList.contains("hidden")) {
+			projectDescription[k].classList.add("hidden");
 		}
+	}
 }
