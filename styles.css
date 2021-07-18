@@ -516,6 +516,23 @@ video:focus, img:focus {
 	width: 100%;
 }
 
+.loading {
+	position: absolute;
+	background-image: url("images/loading.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	animation: loading 5s linear infinite;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 a.active-link {
 	font-weight: 600;
 }
