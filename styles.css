@@ -537,6 +537,16 @@ a.active-link {
 	font-weight: 600;
 }
 
+.drag {
+	cursor: move;
+}
+
+#home-content {
+	background-image: url("images/home.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+
 #col2-3-placeholder {
 	-webkit-user-select: none;
 	-ms-user-select: none;

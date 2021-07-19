@@ -1,12 +1,5 @@
 // JavaScript Document
 
-//window.onload = () => {
-//	var navDiv = document.getElementById('nav-divider');
-//	if (navDiv.classList.indexOf(" exit") !== -1) {
-//		navDiv.classList.remove(" exit");
-//	}
-//}
-
 function leavePage(link) {
 	var navDiv = document.getElementById('nav-divider');
 	navDiv.className += " exit";
@@ -100,3 +93,9 @@ function hide() {
 		}
 	}
 }
+
+$(function() {
+	$( ".drag" ).draggable({
+		containment : 'parent'
+	});
+});
