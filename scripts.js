@@ -26,6 +26,27 @@ function leavePage(link) {
 	}, 600);
 }
 
+function leaveHomePage(link) {
+	body.className += " fadeout";
+	setTimeout(() => {
+		if (link === "introduction") {
+			window.location.href = "introduction.html";
+		} else if (link === "resumes") {
+			window.location.href = "resumes.html";
+		} else if (link === "work") {
+			window.location.href = "work.html";
+		} else if (link === "play") {
+			window.location.href = "play.html";
+		} else if (link === "archive") {
+			window.location.href = "archive.html";
+		} else if (link === "home") {
+			window.location.href = "index.html";
+		} else {
+			location.reload();
+		}
+	}, 600);
+}
+
 function reveal(id, projectName) {
 	var magnifiedElements = document.getElementsByClassName('magnified');
 	for (var i = 0; i < magnifiedElements.length; i++) {

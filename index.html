@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="home.css" rel="stylesheet" type="text/css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -18,119 +19,55 @@
 		<!-- body code goes here -->
 		
 <!--		fixed elements start-->
-	<nav>
-		  <div class="col-3">
-			  <a onClick="leavePage('home')">
-			  	<img src="images/Artboard 1 tight crop.png" alt="logo" id="logo" class="col-3"/>
-			  </a>
-				<div class="sidebar col-3">
-					<p>
-						<em>TIFFANY HUANG</em> IS AN INTERDISCIPLINARY CREATOR THAT DABBLES IN THE VISUAL AND PERFORMING ARTS, DESIGN, CREATIVE CODING, AND WRITING. THROUGH HER WORK, SHE SEEKS TO TELL EVOCATIVE STORIES THAT RELATE TO THE SOCIETY SHE LIVES IN AND IS MOTIVATED PARTICULARLY BY MUNDANE BEAUTY, CULTURAL IDENTITY, AND THE HUMAN PSYCHE.
-					</p>
-				</div>
-				<div id="vl" class="">
-				  &emsp;
-				</div>
-				<div>
-					<div class="scrolling-text col-3">
-						<p>
-							tiffany huang is a student in the brown | risd dual degree program. &ensp; &#9888; &ensp;
-							
-							tiffany huang's favorite composer is rachmaninoff. &ensp; &#9888; &ensp;
-							
-							tiffany huang coded this website completely from scratch. &ensp; &#9888; &ensp;
-
-							tiffany huang loves ballet. &ensp; &#9888; &ensp;
-							
-							tiffany huang's mbti is intj. &ensp; &#9888; &ensp;
-							
-							tiffany huang would do (almost) anything for a cup of boba. &ensp; &#9888; &ensp;
-							
-							tiffany huang is trying to learn how to relax. &ensp; &#9888; &ensp;
-							
-							tiffany huang is on a mission to become culturally literate. &ensp; &#9888; &ensp;
-
-							tiffany huang makes puns on the daily. &ensp; &#9888; &ensp;
-
-							tiffany huang speaks three languages. &ensp; &#9888; &ensp;
-
-							tiffany huang creates art and design. &ensp; &#9888; &ensp;
-
-							tiffany huang is grateful for noodles. &ensp; &#9888; &ensp;
-
-							tiffany huang learned to play a scale on the saxophone once. &ensp; &#9888; &ensp;
-
-							tiffany huang wants to be the next leonardo da vinci. &ensp; &#9888; &ensp;
-
-							tiffany huang plays the piano. &ensp; &#9888; &ensp;
-
-							tiffany huang is a student in the brown | risd dual degree program. &ensp; &#9888; &ensp;
-							
-							tiffany huang's favorite composer is rachmaninoff. &ensp; &#9888; &ensp;
-							
-							tiffany huang coded this website completely from scratch. &ensp; &#9888; &ensp;
-
-							tiffany huang loves ballet. &ensp; &#9888; &ensp;
-							
-							tiffany huang's mbti is intj. &ensp; &#9888; &ensp;
-							
-							tiffany huang would do (almost) anything for a cup of boba. &ensp; &#9888; &ensp;
-							
-							tiffany huang is trying to learn how to relax. &ensp; &#9888; &ensp;
-							
-							tiffany huang is on a mission to become culturally literate. &ensp; &#9888; &ensp;
-
-							tiffany huang makes puns on the daily. &ensp; &#9888; &ensp;
-
-							tiffany huang speaks three languages. &ensp; &#9888; &ensp;
-
-							tiffany huang creates art and design. &ensp; &#9888; &ensp;
-
-							tiffany huang is grateful for noodles. &ensp; &#9888; &ensp;
-
-							tiffany huang learned to play a scale on the saxophone once. &ensp; &#9888; &ensp;
-
-							tiffany huang wants to be the next leonardo da vinci. &ensp; &#9888; &ensp;
-
-							tiffany huang plays the piano. &ensp; &#9888; &ensp;
-						</p>
-					</div>
-					<div class="col-3 menu-options footer" id="footer">
-						<a href="mailto:tiffanyhuang1258@gmail.com">email</a>
-						<a target="_blank" href="https://www.instagram.com/relatiffity/">instagram</a>
-						<a target="_blank" href="https://relatiffity.tumblr.com/">tumblr</a>
-					</div>
-				</div>
+		<nav id="home-nav">
+			<div class="col-1 home-menu">
+				<a onClick="leaveHomePage('work')" class="home-menu-options">work</a>
 			</div>
-
-			<div class="col-3 menu">
-				<p class="menu-options"><em class="menu-header" id="portfolio">PORTFOLIO</em>
-				<a onClick="leavePage('work')">work</a>
-				<a onClick="leavePage('play')">play</a>
-				</p>
+			<div class="col-1 home-menu">
+				<a onClick="leaveHomePage('play')" class="home-menu-options">play</a>
 			</div>
-			<div class="col-3 menu">
-				<p class="menu-options"><em class="menu-header" id="about">ABOUT</em>
-				<a onClick="leavePage('introduction')">introduction</a>
-				<a onClick="leavePage('resumes')">resumes</a>
-				</p>
+			<div class="col-1 home-menu">
+				<a onClick="leaveHomePage('introduction')" class="home-menu-options" id="introduction">introduction</a>
 			</div>
-			<div class="col-3 menu">
-				<p class="menu-options"><em class="menu-header" id="other">OTHER</em>
-				<a target="_blank" href="http://www.huangtiffany.myportfolio.com">past</a>
-				<a onClick="leavePage('archive')">archive</a>
-				</p>
+			<main class="col-3 main">
+				<img src="images/home22-copy-w-instructions.gif" alt="Name" id="name" onClick="leaveHomePage('home')">
+			</main>
+			<div class="col-1 home-menu">
+				<a onClick="leaveHomePage('resumes')" class="home-menu-options">resumes</a>
 			</div>
-			<hr class="col-12" id="nav-divider">
+			<div class="col-1 home-menu">
+				<a target="_blank" href="http://www.huangtiffany.myportfolio.com" class="home-menu-options">past</a>
+			</div>
+			<div class="col-1 home-menu">
+				<a onClick="leaveHomePage('archive')" class="home-menu-options">archive</a>
+			</div>
 		</nav>
 		
 <!--		fixed elements end-->
-
 		<main class="main" id="home-content">
-			<div class="col1">
-				
+			<div class="col1 left" id="left-links">
+				<a href="mailto:tiffanyhuang1258@gmail.com">email</a>
+				<a target="_blank" href="https://www.instagram.com/relatiffity/">instagram</a>
+				<a target="_blank" href="https://relatiffity.tumblr.com/">tumblr</a>
+			</div>
+			<div class="col3 right" id='right-links'>
+				<a href="https://vsco.co/sun-filled/gallery">vsco</a>
+				<a target="_blank" href="https://open.spotify.com/user/girlygrrl123?si=964fe2939c5f4457">spotify</a>
+				<a target="_blank" href="https://tiffany-huang.notion.site/Inspiration-2ec04f35ddd34fb2925ffcb9c3378cbe">notion</a>
+			</div>
+			<div class="col1 left">
+				<p>
+					<em>TIFFANY HUANG</em> is an interdisciplinary creator that dabbles in the visual and performing arts, design, creative coding, and writing.
+				</p>
+			</div>
+			<div class="col3 right">
+				<p>
+					Through her work, she seeks to tell evocative stories and is inspired by mundane beauty, cultural identity, and the human psyche.
+				</p>
 			</div>
 		</main>
+		
+		
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-3.4.1.min.js"></script>

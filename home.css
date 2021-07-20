@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#name {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	top: -12vh;
+	display: flex;
+	width: 100%;
+	align-self: center;
+	cursor: pointer;
+}
+
+.right {
+	top: 100vh;
+	text-align: right;
+	max-width: 50%;
+	overflow: visible;
+	margin-left: auto;
+	color: white;
+	margin-bottom: 1.75em;
+}
+
+.left {
+	top: 100vh;
+	left: 4em;
+	color: white;
+	max-width: 50%;
+	overflow: visible;
+	margin-left: 0;
+	margin-right: auto;
+	margin-bottom: 1.75em;
+}
+
+.left p, .right p {
+	color: white;
+}
+
+.left p {
+	margin-left: 5em;
+}
+
+.right p {
+	margin-right: 4em;
+}
+
+em {
+	color: white;
+}
+
+#home-nav {
+	display: flex;
+	position: fixed;
+	justify-content: space-around;
+	text-align: center;
+	margin-right: 0;
+	color: white;
+	left: 3em;
+	width: calc(100vw - 4em);
+}
+
+.col-1 {
+	margin: 0;
+	padding-top: 2em;
+	left: 0;
+	right: 0;
+}
+
+a, a.home-menu-options {
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-bottom-style: solid;
+	color: white;
+	transition: ease;
+	transition-duration: 0.5s;
+	width: 0%;
+}
+
+a:hover, a.home-menu-options:hover {
+	left: 0%;
+	color: white;
+	border-width: thin;
+	border-bottom-style: solid;
+	transition: ease;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	width: 100%;
+}
+
+#left-links, #right-links {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	left: 0;
+	width: fit-content;
+	height: 100vh;
+	padding: 50% 5em;
+	margin-bottom: 100vh;
+}
+
+#left-links a {
+	text-align: left;
+	align-items: flex-start;
+	justify-content: flex-start;
+	border-bottom-style: none;
+	width: 100%;
+	left: 0;
+}
+
+#right-links a {
+	text-align: right;
+	align-items: flex-end;
+	justify-content: flex-end;
+	border-bottom-style: none;
+	width: 100%;
+	left: 0;
+}
+
+main.col-3 {
+	display: grid;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 1.75em;
+	width: 100vw;
+	height: 5em;
+	overflow: hidden;
+}
+
+body {
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 1.75em;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("images/home2.jpg");
+	background-size: cover;
+	background-position: 50% 55%;
+}
+
+main#home-content {
+	width: calc(100vw - 2em);
+	height: calc(100vh - 8.75em);
+	left: -.75em;
+	margin: 0;
+	padding: 0;
+}
