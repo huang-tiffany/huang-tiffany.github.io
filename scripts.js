@@ -27,6 +27,7 @@ function leavePage(link) {
 }
 
 function leaveHomePage(link) {
+	var body = document.getElementById('homebody');
 	body.className += " fadeout";
 	setTimeout(() => {
 		if (link === "introduction") {

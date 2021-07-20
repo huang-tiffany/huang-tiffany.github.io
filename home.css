@@ -131,18 +131,16 @@ main.col-3 {
 	overflow: hidden;
 }
 
-body {
+#homebody {
 	left: 0;
 	top: 0;
 	margin: 0;
 	padding: 1.75em;
 	width: 100vw;
 	height: 100vh;
-/*
 	background-image: url("images/home2.jpg");
 	background-size: cover;
 	background-position: 50% 55%;
-*/
 }
 
 main#home-content {
