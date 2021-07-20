@@ -96,6 +96,24 @@ function hide() {
 
 $(function() {
 	$( ".drag" ).draggable({
-		containment : 'parent'
+		containment : "parent",
+		stack: ".drag", 
+		scroll: false
 	});
 });
+
+function randomize(id) {
+	var dragElements = document.getElementById(`${id}`);
+	var randomNum = Math.random() * 2;
+	var randomNum2 = Math.random() * 2;
+	if (randomNum < 1) {
+		dragElements.style.top = (Math.random() * 120) + "vh";
+	} else {
+		dragElements.style.bottom = (Math.random() * 120) + "vh";
+	}
+	if (randomNum2 < 1) {
+		dragElements.style.right = (Math.random() * 40) + "vw";
+	} else {
+		dragElements.style.left = (Math.random() * 40) + "vw";
+	}
+}

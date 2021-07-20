@@ -538,13 +538,42 @@ a.active-link {
 }
 
 .drag {
+	max-width: 40%;
+	max-height: 40%;
+	position: absolute;
 	cursor: move;
+	border-color: white;
+	border-style: solid;
+	border-width: thin;
+}
+
+.drag img {
+	margin: 5em;
+}
+
+#excursions {
+	top: 4vh;
+	left: 55%;
+}
+
+#Christmas-sweaters {
+	bottom: 0;
+	left: 60%;
+}
+
+#nyc {
+	bottom: 5em;
+	left: 4%;
+}
+
+#play {
+	height: 200vh;
 }
 
 #home-content {
-	background-image: url("images/home.jpg");
+	background-image: url("images/home2.jpg");
 	background-size: cover;
-	background-position: bottom;
+	background-position: 50% 47.5%;
 }
 
 #col2-3-placeholder {
