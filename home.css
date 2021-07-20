@@ -4,7 +4,7 @@
 #name {
 	grid-column-start: 1;
 	grid-column-end: 4;
-	top: -12vh;
+	top: -40%;
 	display: flex;
 	width: 100%;
 	align-self: center;
@@ -12,9 +12,8 @@
 }
 
 .right {
-	top: 100vh;
 	text-align: right;
-	max-width: 50%;
+	max-width: 20vw;
 	overflow: visible;
 	margin-left: auto;
 	color: white;
@@ -22,10 +21,9 @@
 }
 
 .left {
-	top: 100vh;
 	left: 4em;
 	color: white;
-	max-width: 50%;
+	max-width: 20vw;
 	overflow: visible;
 	margin-left: 0;
 	margin-right: auto;
@@ -34,14 +32,15 @@
 
 .left p, .right p {
 	color: white;
+	background-color: blue;
 }
 
 .left p {
-	margin-left: 5em;
+	margin-left: 6.25vw;
 }
 
 .right p {
-	margin-right: 4em;
+	margin-right: 5.25vw;
 }
 
 em {
@@ -75,7 +74,7 @@ a, a.home-menu-options {
 	border-bottom-style: solid;
 	color: white;
 	transition: ease;
-	transition-duration: 0.5s;
+	transition-duration: 0.25s;
 	width: 0%;
 }
 
@@ -85,40 +84,131 @@ a:hover, a.home-menu-options:hover {
 	border-width: thin;
 	border-bottom-style: solid;
 	transition: ease;
-	transition-duration: 0.5s;
+	transition-duration: 0.25s;
 	cursor: pointer;
 	width: 100%;
 }
 
+#left-links img {
+	cursor: pointer;
+	width: 2em;
+	margin-bottom: 0.5em;
+	background-image: none;
+}
+
+#right-links img {
+	cursor: pointer;
+	width: 2em;
+	margin-bottom: 0.5em;
+	background-image: none;
+}
+
 #left-links, #right-links {
+	top: 20vh;
+	bottom: 0;
+	height: 10em;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: left;
 	left: 0;
 	width: fit-content;
-	height: 100vh;
-	padding: 50% 5em;
-	margin-bottom: 100vh;
+/*	padding: 50% 5em;*/
 }
 
 #left-links a {
+	float: left;
 	text-align: left;
 	align-items: flex-start;
 	justify-content: flex-start;
 	border-bottom-style: none;
 	width: 100%;
 	left: 0;
+	margin-left: 5.5vw;
+/*	opacity: 50%;*/
+	transition: ease;
+	transition-duration: .5s;
 }
 
 #right-links a {
+	float: right;
 	text-align: right;
 	align-items: flex-end;
 	justify-content: flex-end;
 	border-bottom-style: none;
 	width: 100%;
 	left: 0;
+/*	opacity: 50%;*/
+	transition: ease;
+	transition-duration: .25s;
 }
+
+.icon {
+	width: 2em;
+	height: 2em;
+	margin-right: 5vw;
+	margin-bottom: 0.5em;
+	background-size: cover;
+	transition: ease;
+	transition-duration: 0.25s;
+	cursor: pointer;
+}
+
+#email {
+	background-image: url("images/email-outline.png");
+}
+
+#email:hover {
+	background-image: url("images/email-filled.png");
+}
+
+#instagram {
+	background-image: url("images/instagram-outline.png");
+}
+
+#instagram:hover {
+	background-image: url("images/instagram-filled.png");
+}
+
+#tumblr {
+	background-image: url("images/tumblr-outline.png");
+}
+
+#tumblr:hover {
+	background-image: url("images/tumblr-filled.png");
+}
+
+#vsco {
+	background-image: url("images/vsco-outline.png");
+}
+
+#vsco:hover {
+	background-image: url("images/vsco-filled.png");
+}
+
+#spotify {
+	background-image: url("images/spotify-outline.png");
+}
+
+#spotify:hover {
+	background-image: url("images/spotify-filled.png");
+}
+
+#notion {
+	background-image: url("images/notion-outline.png");
+}
+
+#notion:hover {
+	background-image: url("images/notion-filled.png");
+}
+
+/*
+#left-links a:hover, #right-links a:hover {
+	opacity: 100%;
+	transition: ease;
+	transition-duration: .25s;
+}
+*/
 
 main.col-3 {
 	display: grid;
@@ -129,6 +219,10 @@ main.col-3 {
 	width: 100vw;
 	height: 5em;
 	overflow: hidden;
+}
+
+footer {
+	display: grid;
 }
 
 #homebody {

@@ -48,6 +48,18 @@ function leaveHomePage(link) {
 	}, 600);
 }
 
+//function iconHover(id, idFilled) {
+//	var icon = document.getElementById(`${id}`);
+//	var iconFilled = document.getElementById(`${idFilled}`);
+//	if (icon.indexOf("filled") !== -1) {
+//		icon.classList.remove("hidden");
+//		iconFilled.classList.add("hidden");
+//	} else {
+//		icon.classList.add("hidden");
+//		iconFilled.classList.remove("hidden");
+//	}
+//}
+
 function reveal(id, projectName) {
 	var magnifiedElements = document.getElementsByClassName('magnified');
 	for (var i = 0; i < magnifiedElements.length; i++) {
