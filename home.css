@@ -74,7 +74,7 @@ a, a.home-menu-options {
 	border-bottom-style: solid;
 	color: white;
 	transition: ease;
-	transition-duration: 0.25s;
+	transition-duration: 0.5s;
 	width: 0%;
 }
 
@@ -84,7 +84,7 @@ a:hover, a.home-menu-options:hover {
 	border-width: thin;
 	border-bottom-style: solid;
 	transition: ease;
-	transition-duration: 0.25s;
+	transition-duration: 0.5s;
 	cursor: pointer;
 	width: 100%;
 }
