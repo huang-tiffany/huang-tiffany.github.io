@@ -10,8 +10,8 @@ function leavePage(link) {
 	setTimeout(() => {
 		if (link === "introduction") {
 			window.location.href = "introduction.html";
-		} else if (link === "resumes") {
-			window.location.href = "resumes.html";
+		} else if (link === "activities") {
+			window.location.href = "activities.html";
 		} else if (link === "work") {
 			window.location.href = "work.html";
 		} else if (link === "play") {
@@ -32,8 +32,8 @@ function leaveHomePage(link) {
 	setTimeout(() => {
 		if (link === "introduction") {
 			window.location.href = "introduction.html";
-		} else if (link === "resumes") {
-			window.location.href = "resumes.html";
+		} else if (link === "activities") {
+			window.location.href = "activities.html";
 		} else if (link === "work") {
 			window.location.href = "work.html";
 		} else if (link === "play") {

@@ -68,7 +68,6 @@ nav {
 	width: 100%;
 	text-align: left;
 	padding-right: 2em;
-	z-index: 1000;
 }
 
 .sidebar {
@@ -222,8 +221,36 @@ a:hover {
 
 em {
 	text-transform: uppercase;
-	padding: 0px;
-	margin: 0px;
+	width: 100%;
+}
+
+
+.container p {
+	font-size: 0.85em;
+	padding-bottom: 0;
+	margin-bottom: 1em;
+}
+
+#bottom p {
+	margin-bottom: 0;
+}
+
+.container hr {
+	padding: 0;
+	margin: 0;
+}
+
+.container hr.col-11 {
+	margin-left: 1em;
+}
+
+.row {
+	max-width: 100%;
+}
+
+div.container {
+	overflow-x: hidden;
+	padding: 0;
 }
 
 .menu-header {
