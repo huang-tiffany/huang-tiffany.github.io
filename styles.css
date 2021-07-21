@@ -8,7 +8,7 @@
 */
 
 * {
-	font-family: barlow;
+	font-family: barlow, roboto, sans-serif;
 	position: relative;
 	box-sizing: border-box;
 	margin: 0;
@@ -179,12 +179,26 @@ nav {
 	width: calc(100% - 1em);
 	margin-bottom: 0;
 }
-/*
 
-#reverse-logo{
-	mix-blend-mode: difference;
-}*/
+#activities-sidebar.menu-options {
+	justify-content: flex-start;
+	padding-right: 1.75em;
+	text-align: right;
+}
 
+#activities-sidebar.menu-options a {
+	width: 25%;
+}
+
+#activities-sidebar.menu-options a p {
+	margin: 0;
+	padding: 0;
+	padding-top: .05em;
+}
+
+#activities-sidebar.menu-options a:hover {
+	width: calc(50% - 0.5em);
+}
 
 a {
 	color: black;
@@ -260,15 +274,6 @@ div.container {
 	transition-duration: .5s;
 	width: 0%;
 }
-
-/*
-.menu-header:hover {
-	transition: ease;
-	transition-duration: .5s;
-	width: calc(100% - 1em);
-	padding-right: 1em;
-}
-*/
 
 .scrolling-text {
 	position: fixed;
@@ -595,4 +600,27 @@ a.active-link {
 	-ms-user-select: none;
 	user-select: none;
 	color: white;
+}
+
+.col-10, .col-2 {
+	padding: 0;
+}
+
+.col-10 {
+	background-image: url("images/profile.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.col-2 {
+	margin: 0;
+	padding: 0;
+}
+
+.col-10 img {
+	max-width: 100%;
+	max-height: calc(100vh - 5.9em - 2.75em);
+	padding: 0;
+	margin: 0;
+	visibility: none;
 }

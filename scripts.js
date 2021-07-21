@@ -48,18 +48,6 @@ function leaveHomePage(link) {
 	}, 600);
 }
 
-//function iconHover(id, idFilled) {
-//	var icon = document.getElementById(`${id}`);
-//	var iconFilled = document.getElementById(`${idFilled}`);
-//	if (icon.indexOf("filled") !== -1) {
-//		icon.classList.remove("hidden");
-//		iconFilled.classList.add("hidden");
-//	} else {
-//		icon.classList.add("hidden");
-//		iconFilled.classList.remove("hidden");
-//	}
-//}
-
 function reveal(id, projectName) {
 	var magnifiedElements = document.getElementsByClassName('magnified');
 	for (var i = 0; i < magnifiedElements.length; i++) {
@@ -149,5 +137,25 @@ function randomize(id) {
 		dragElements.style.right = (Math.random() * 40) + "vw";
 	} else {
 		dragElements.style.left = (Math.random() * 40) + "vw";
+	}
+}
+
+function activities(id) {
+	
+	var years = document.getElementsByClassName("year");
+	var element = document.getElementById(`${id}`);
+	if (element.style.width === "calc(100% - 1em)") {
+		for (var i = 0; i < years.length; i++) {
+			if (years[i].style.width === "calc(100% - 1em)") {
+				years[i].style.width = "";		
+			}
+		}
+	} else {
+		for (var i = 0; i < years.length; i++) {
+			if (years[i].style.width === "calc(100% - 1em)") {
+				years[i].style.width = "";		
+			}
+		}
+		element.style.width = "calc(100% - 1em)";
 	}
 }
