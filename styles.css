@@ -616,8 +616,14 @@ video:focus, img:focus {
 	overflow-x: scroll;
 }
 
+#bio {
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
 .left-col {
 	left: 1.06em;
+	overflow-wrap: break-word;
 }
 
 .right-col {
