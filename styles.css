@@ -122,15 +122,14 @@ nav {
 	position: fixed;
 	margin-bottom: 1.15em;
 	top: 7.75em;
-	left: 24.5%;
-	border-left-color: black;
+	left: 15.75%;
 	border-width: thin;
 	border-right-style: solid;
+	width: 10%;
 	text-transform: lowercase;
 	font-size: 0.85em;
-	z-index: 1001;
 	animation-name: vl-enter;
-	animation-delay: 0.25s;
+	animation-delay: 0s;
 	animation-duration: 1.5s;
 	height: calc(100vh - 7.75em - 1.15em);
 }
