@@ -606,12 +606,6 @@ a.active-link {
 	padding: 0;
 }
 
-.col-10 {
-	background-image: url("images/profile.jpeg");
-	background-size: cover;
-	background-position: center;
-}
-
 .col-2 {
 	margin: 0;
 	padding: 0;

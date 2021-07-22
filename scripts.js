@@ -1,5 +1,13 @@
 // JavaScript Document
 
+$.get("navigation.html", function(data){
+	$("#nav-placeholder").replaceWith(data);
+});
+
+$.get("sidebar.html", function(data){
+	$("#sidebar-placeholder").replaceWith(data);
+});
+
 function leavePage(link) {
 	var navDiv = document.getElementById('nav-divider');
 	navDiv.className += " exit";
@@ -141,7 +149,6 @@ function randomize(id) {
 }
 
 function activities(id) {
-	
 	var years = document.getElementsByClassName("year");
 	var element = document.getElementById(`${id}`);
 	if (element.style.width === "calc(100% - 1em)") {
@@ -151,9 +158,9 @@ function activities(id) {
 			}
 		}
 	} else {
-		for (var i = 0; i < years.length; i++) {
-			if (years[i].style.width === "calc(100% - 1em)") {
-				years[i].style.width = "";		
+		for (var j = 0; j < years.length; j++) {
+			if (years[j].style.width === "calc(100% - 1em)") {
+				years[j].style.width = "";		
 			}
 		}
 		element.style.width = "calc(100% - 1em)";
