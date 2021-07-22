@@ -608,12 +608,12 @@ video:focus, img:focus {
 	text-align: center;
 /*	background-color: black;*/
 	padding-top: 20%;
-	padding-bottom: 20%;
+	padding-bottom: 0%;
 	height: calc(100vh - 5.9em - 2.75em);
 	transition: ease;
 	transition-duration: 0.5s;
 	border: thin solid;
-	overflow: scroll;
+	overflow-x: scroll;
 }
 
 .left-col {
