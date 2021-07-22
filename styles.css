@@ -606,9 +606,21 @@ a.active-link {
 	padding: 0;
 }
 
+.col-10 {
+	background-image: url('images/profile.jpeg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: calc(100vh - 5.9em - 2.75em);
+}
 .col-2 {
 	margin: 0;
 	padding: 0;
+}
+
+.col-2 p {
+	padding: 0;
+	margin: 0;
 }
 
 .col-10 img {
@@ -616,5 +628,6 @@ a.active-link {
 	max-height: calc(100vh - 5.9em - 2.75em);
 	padding: 0;
 	margin: 0;
-	visibility: none;
+	opacity: 0;
+	animation: none;
 }
