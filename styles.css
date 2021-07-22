@@ -603,3 +603,31 @@ video:focus, img:focus {
 	opacity: 0;
 	animation: none;
 }
+
+.right-col, .center-col, .left-col {
+	text-align: center;
+/*	background-color: black;*/
+	padding-top: 20%;
+	padding-bottom: 20%;
+	height: calc(100vh - 5.9em - 2.75em);
+	transition: ease;
+	transition-duration: 0.5s;
+	border: thin solid;
+	overflow: scroll;
+}
+
+.left-col {
+	left: 1.06em;
+}
+
+.right-col {
+	right: 1.06em;
+}
+
+.right-col em, .center-col em, .left-col em {
+	width: 100%;
+}
+
+.right-col br, .center-col br, .left-col br {
+	user-select: none;
+}
