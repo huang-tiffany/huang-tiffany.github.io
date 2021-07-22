@@ -1,7 +1,11 @@
 // JavaScript Document
 
-$.get("navigation.html", function(data){
-	$("#nav-placeholder").replaceWith(data);
+$.get("navigation1.html", function(data){
+	$("#nav1-placeholder").replaceWith(data);
+});
+
+$.get("navigation2.html", function(data){
+	$("#nav2-placeholder").replaceWith(data);
 });
 
 $.get("sidebar.html", function(data){
@@ -16,16 +20,16 @@ function leavePage(link) {
 	var body = document.getElementById('body');
 	body.className += " fadeout";
 	setTimeout(() => {
-		if (link === "introduction") {
-			window.location.href = "introduction.html";
+		if (link === "about") {
+			window.location.href = "about.html";
 		} else if (link === "activities") {
 			window.location.href = "activities.html";
 		} else if (link === "work") {
 			window.location.href = "work.html";
 		} else if (link === "play") {
 			window.location.href = "play.html";
-		} else if (link === "archive") {
-			window.location.href = "archive.html";
+		} else if (link === "contact") {
+			window.location.href = "contact.html";
 		} else if (link === "home") {
 			window.location.href = "index.html";
 		} else {
@@ -38,16 +42,16 @@ function leaveHomePage(link) {
 	var body = document.getElementById('homebody');
 	body.className += " fadeout";
 	setTimeout(() => {
-		if (link === "introduction") {
-			window.location.href = "introduction.html";
+		if (link === "about") {
+			window.location.href = "about.html";
 		} else if (link === "activities") {
 			window.location.href = "activities.html";
 		} else if (link === "work") {
 			window.location.href = "work.html";
 		} else if (link === "play") {
 			window.location.href = "play.html";
-		} else if (link === "archive") {
-			window.location.href = "archive.html";
+		} else if (link === "contact") {
+			window.location.href = "contact.html";
 		} else if (link === "home") {
 			window.location.href = "index.html";
 		} else {

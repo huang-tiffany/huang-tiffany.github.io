@@ -1,12 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*
-.col-3 {
-	background-color: coral;
-}
-*/
-
 * {
 	font-family: barlow, roboto, sans-serif;
 	position: relative;
@@ -73,7 +67,6 @@ nav {
 .sidebar {
 	position: fixed;
 	font-size: 0.85em;
-	text-transform: lowercase;
 	overflow: scroll;
 	top: 9em;
 	bottom: 10em;
@@ -82,10 +75,6 @@ nav {
 	padding-bottom: 0em;
 	padding-right: 0em;
 	width: calc(25% - 2.7em);
-}
-
-.sidebar .project-description {
-	text-transform: none;
 }
 
 #work-sidebar div, .work-categories {
@@ -220,6 +209,10 @@ a:hover {
 	width: calc(100% - 1em);
 }
 
+a.active-link {
+	font-weight: 600;
+}
+
 #logo {
 	margin-top: 0.45em;
 	max-height: 3.75em;
@@ -265,14 +258,6 @@ em {
 div.container {
 	overflow-x: hidden;
 	padding: 0;
-}
-
-.menu-header {
-	border-bottom-style: solid;
-	border-width: thin;
-	transition: ease;
-	transition-duration: .5s;
-	width: 0%;
 }
 
 .scrolling-text {
@@ -558,10 +543,6 @@ video:focus, img:focus {
 	}
 }
 
-a.active-link {
-	font-weight: 600;
-}
-
 .drag {
 	max-width: 40%;
 	max-height: 30%;
@@ -591,7 +572,7 @@ a.active-link {
 	left: 4%;
 }
 
-#play {
+#play-content {
 	height: 200vh;
 }
 
@@ -602,10 +583,6 @@ a.active-link {
 	color: white;
 }
 
-.col-10, .col-2 {
-	padding: 0;
-}
-
 .col-10 {
 	background-image: url('images/profile.jpeg');
 	background-size: cover;
@@ -613,14 +590,9 @@ a.active-link {
 	width: 100%;
 	height: calc(100vh - 5.9em - 2.75em);
 }
-.col-2 {
+.col-2, .col-2 p {
 	margin: 0;
 	padding: 0;
-}
-
-.col-2 p {
-	padding: 0;
-	margin: 0;
 }
 
 .col-10 img {

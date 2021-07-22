@@ -35,13 +35,31 @@
 				</div>
 				<div id="sidebar-placeholder"></div>
 			</div>
-			<div id="nav-placeholder"></div>
+			<div class="col-3 menu">
+				<p class="menu-options"><em class="menu-header" id="portfolio">PORTFOLIO</em>
+				<a id="work" onClick="leavePage('work')" class="">work</a>
+				<a id="play" onClick="leavePage('play')" class="active-link">play</a>
+				</p>
+			</div>
+			<div class="col-3 menu">
+				<p class="menu-options"><em class="menu-header" id="info">INFO</em>
+				<a id="about" onClick="leavePage('about')" class="">about</a>
+				<a id="activities" onClick="leavePage('activities')" class="">activities</a>
+				</p>
+			</div>
+			<div class="col-3 menu">
+				<p class="menu-options"><em class="menu-header" id="other">OTHER</em>
+				<a target="_blank" href="http://www.huangtiffany.myportfolio.com">past</a>
+				<a id="contact" onClick="leavePage('contact')" class="">contact</a>
+				</p>
+			</div>
+			<hr class="col-12" id="nav-divider">
 		</nav>
 		
 <!--		fixed elements end-->
 
 		<main>
-			<div id="play">
+			<div id="play-content">
 				<img src="images/victoria 1.jpeg" alt="Victoria 1" class="drag" id="victoria1" onLoad="randomize('victoria1')"/>
 				<img src="images/victoria 2.jpeg" alt="Victoria 2" class="drag" id="victoria2" onLoad="randomize('victoria2')"/>
 				<img src="images/victoria 3.jpeg" alt="Victoria 3" class="drag" id="victoria3" onLoad="randomize('victoria3')"/>
