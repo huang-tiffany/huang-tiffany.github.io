@@ -221,3 +221,7 @@ main#home-content {
 	padding: 0;
 	background-image: none;
 }
+
+nav {
+	background-color: transparent;
+}
