@@ -170,3 +170,18 @@ function activities(id) {
 		element.style.width = "calc(100% - 1em)";
 	}
 }
+
+function collapseNav(id) {
+	var nav = document.querySelector("nav");
+	var menu = document.getElementById("burger-menu");
+	var close = document.getElementById("close");
+	if (id === "close") {
+		nav.style.height = "5em";
+		close.classList.add("hidden");
+		menu.classList.remove("hidden");
+	} else {
+		nav.style.height = "100vh";
+		close.classList.remove("hidden");
+		menu.classList.add("hidden");
+	}
+}
