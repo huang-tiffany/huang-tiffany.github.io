@@ -118,6 +118,7 @@ a:hover {
 
 #activities-sidebar.menu-options a {
 	width: 25%;
+	z-index: 100;
 }
 
 #activities-sidebar.menu-options a p {
@@ -160,7 +161,6 @@ a.active-link {
 	margin-top: 0.45em;
 	max-height: 3.75em;
 	width: auto;
-	max-width: calc(25% - 2.7em);
 	margin-bottom: 1em;
 	position: fixed;
 	display: flex;
@@ -570,6 +570,7 @@ video:focus, img:focus {
 		animation-name: vl-enter;
 		animation-delay: 0s;
 		animation-duration: 1.5s;
+		z-index: -1;
 		height: calc(100vh - 7.75em - 1.15em);
 	}
 
@@ -791,5 +792,9 @@ video:focus, img:focus {
 		transition: ease;
 		transition-duration: 0.75s;
 		width: calc(100% - 1em);
+	}
+	
+	#logo {
+		max-width: calc(25% - 2.7em);
 	}
 }
