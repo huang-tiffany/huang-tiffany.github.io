@@ -176,7 +176,7 @@ function collapseNav(id) {
 	var menu = document.getElementById("burger-menu");
 	var close = document.getElementById("close");
 	if (id === "close") {
-		nav.style.height = "5em";
+		nav.style.height = "5.5em";
 		close.classList.add("hidden");
 		menu.classList.remove("hidden");
 	} else {
