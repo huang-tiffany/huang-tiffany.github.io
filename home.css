@@ -3,13 +3,13 @@
 
 #name {
 	grid-column-start: 1;
-	grid-column-end: 4;
-	display: flex;
-	max-width: 100%;
-	margin: 0;
-	padding: 0.5em 0 0 0;
-	align-self: center;
-	cursor: pointer;
+		grid-column-end: 4;
+		display: flex;
+		max-width: 100%;
+		margin: 0;
+		padding: 0.5em 0 0 0;
+		align-self: center;
+		cursor: pointer;
 }
 
 .right {
@@ -19,33 +19,6 @@
 	margin-left: auto;
 	color: white;
 	margin-bottom: 1.75em;
-}
-
-.left {
-	left: 4em;
-	color: white;
-	max-width: 20vw;
-	overflow: visible;
-	margin-left: 0;
-	margin-right: auto;
-	margin-bottom: 1.75em;
-}
-
-#home-nav {
-	display: flex;
-	position: fixed;
-	justify-content: space-around;
-	text-align: center;
-	margin-right: 0;
-	color: white;
-	width: calc(100vw - 4em);
-}
-
-.col-1 {
-	margin: 0;
-	padding-top: 2em;
-	left: 0;
-	right: 0;
 }
 
 a, a.home-menu-options {
@@ -70,6 +43,61 @@ a:hover, a.home-menu-options:hover {
 	transition-duration: 0.5s;
 	cursor: pointer;
 	width: 100%;
+}
+
+.left {
+	left: 4em;
+	color: white;
+	overflow: visible;
+	margin-left: 0;
+	margin-right: auto;
+	margin-bottom: 1.75em;
+}
+
+#home-nav {
+	display: flex;
+	position: fixed;
+	justify-content: space-around;
+	text-align: center;
+	margin-right: 0;
+	color: white;
+	width: 100vw;
+	left: 0;
+}
+
+#home-collapsible-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+	align-content: center;
+	overflow: hidden;
+	height: 5.5em;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	visibility: hidden;
+}
+
+#home-collapsible-nav p {
+	color: white;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	align-content: center;
+	padding: 0;
+	top: 0;
+	left: 0.85em;
+	right: 0;
+	display: flex;
+}
+
+.col-1 {
+	margin: 0;
+	padding-top: 2em;
+	left: 0;
+	right: 0;
 }
 
 #left-links img {
@@ -133,6 +161,14 @@ a:hover, a.home-menu-options:hover {
 	transition: ease;
 	transition-duration: 0.25s;
 	cursor: pointer;
+}
+
+#logo, #logo:hover, #burger-menu, #close, #burger-menu:hover, #close:hover, #home-close:hover, #home-close {
+	border-bottom: none;
+}
+
+#portfolio, #info, #other {
+	color: white;
 }
 
 #email {
@@ -221,4 +257,41 @@ main#home-content {
 
 nav {
 	background-color: transparent;
+}
+
+a img#home-logo {
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	top: 2em;
+	left: 1.75em;
+	max-width: 5em;
+	width: 100%;
+	z-index: 100;
+	cursor: pointer;
+	border-bottom: none;
+}
+
+@media (min-width: "576px") {
+}
+
+@media (min-width: "768px") {
+	#name {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		display: flex;
+		max-width: 100%;
+		margin: 0;
+		padding: 0.5em 0 0 0;
+		align-self: center;
+		cursor: pointer;
+	}
+	
+	#home-collapsible-nav {
+		display: none;
+	}
+	
+	a img#home-logo, #logo {
+		display: none;
+	}
 }

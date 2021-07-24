@@ -171,17 +171,30 @@ function activities(id) {
 	}
 }
 
-function collapseNav(id) {
+function collapseNav(word) {
 	var nav = document.querySelector("nav");
 	var menu = document.getElementById("burger-menu");
 	var close = document.getElementById("close");
-	if (id === "close") {
+	var homeMenu = document.getElementById("home-burger-menu");
+	var homeClose = document.getElementById("home-close");
+	var homeNav = document.getElementById("home-collapsible-nav");
+	if (word === "close") {
 		nav.style.height = "5.5em";
 		close.classList.add("hidden");
 		menu.classList.remove("hidden");
-	} else {
+	} else if (word === "homeClose") {
+		homeNav.style.visibility = "hidden";
+		homeNav.style.height = "0";
+		homeClose.classList.add("hidden");
+		homeMenu.classList.remove("hidden");
+	} else if (word === "open") {
 		nav.style.height = "100vh";
 		close.classList.remove("hidden");
 		menu.classList.add("hidden");
+	} else {
+		homeNav.style.visibility = "visible";
+		homeNav.style.height = "100vh";
+		homeClose.classList.remove("hidden");
+		homeMenu.classList.add("hidden");
 	}
 }

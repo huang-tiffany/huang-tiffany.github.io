@@ -20,26 +20,64 @@
 		
 <!--		fixed elements start-->
 		<nav id="home-nav">
-			<div class="col-1 home-menu">
-				<a onClick="leaveHomePage('work')" class="home-menu-options">work</a>
+		  <a id="logo" onClick="leavePage('home')">
+			<img src="images/Artboard 1 tight crop.png" alt="logo" id="home-logo" class="col-3"/>
+		  </a>
+		  <a id="burger-menu" onClick="collapseNav('homeOpen')">
+			  <img src="images/menu.png" id="home-burger-menu" alt="Menu" class="">
+		  </a>
+		  <a id="home-close" class="hidden" onClick="collapseNav('homeClose')">
+			  <img src="images/close.png" alt="Close" id="close">
+		  </a>
+			
+			<div class="container" id="home-menu">
+				<div class="row flex-nowrap">
+					<div class="col-1 home-menu">
+						<a onClick="leaveHomePage('work')" class="home-menu-options">work</a>
+					</div>
+					<div class="col-1 home-menu">
+						<a onClick="leaveHomePage('play')" class="home-menu-options">play</a>
+					</div>
+					<div class="col-1 home-menu">
+						<a onClick="leaveHomePage('about')" class="home-menu-options" id="introduction">about</a>
+					</div>
+					<main class="col-3 main">
+						<img src="images/home22-copy.gif" alt="Name" id="name" onClick="leaveHomePage('home')">
+					</main>
+					<div class="col-1 home-menu">
+						<a onClick="leaveHomePage('activities')" class="home-menu-options">activities</a>
+					</div>
+					<div class="col-1 home-menu">
+						<a target="_blank" href="http://www.huangtiffany.myportfolio.com" class="home-menu-options">past</a>
+					</div>
+					<div class="col-1 home-menu">
+						<a onClick="leaveHomePage('contact')" class="home-menu-options">contact</a>
+					</div>	
+				</div>
 			</div>
-			<div class="col-1 home-menu">
-				<a onClick="leaveHomePage('play')" class="home-menu-options">play</a>
-			</div>
-			<div class="col-1 home-menu">
-				<a onClick="leaveHomePage('about')" class="home-menu-options" id="introduction">about</a>
-			</div>
-			<main class="col-3 main">
-				<img src="images/home22-copy.gif" alt="Name" id="name" onClick="leaveHomePage('home')">
-			</main>
-			<div class="col-1 home-menu">
-				<a onClick="leaveHomePage('activities')" class="home-menu-options">activities</a>
-			</div>
-			<div class="col-1 home-menu">
-				<a target="_blank" href="http://www.huangtiffany.myportfolio.com" class="home-menu-options">past</a>
-			</div>
-			<div class="col-1 home-menu">
-				<a onClick="leaveHomePage('contact')" class="home-menu-options">contact</a>
+			
+			
+			<div class="container" id="home-collapsible-nav">
+				<div class="row gx-0 flex-md-nowrap">
+					<div class="col-12 menu">
+						<p class="menu-options"><em class="menu-header" id="portfolio">PORTFOLIO</em>
+						<a id="work" onClick="leavePage('work')" class="">work</a>
+						<a id="play" onClick="leavePage('play')" class="">play</a>
+						</p>
+					</div>
+					<div class="col-12 menu">
+						<p class="menu-options"><em class="menu-header" id="info">INFO</em>
+						<a id="about" onClick="leavePage('about')" class="">about</a>
+						<a id="activities" onClick="leavePage('activities')" class="">activities</a>
+						</p>
+					</div>
+					<div class="col-12 menu">
+						<p class="menu-options"><em class="menu-header" id="other">OTHER</em>
+						<a id="past" target="_blank" href="http://www.huangtiffany.myportfolio.com">past</a>
+						<a id="contact" onClick="leavePage('contact')" class="active-link">contact</a>
+						</p>
+					</div>
+				</div>
 			</div>
 		</nav>
 		
