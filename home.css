@@ -272,20 +272,7 @@ a img#home-logo {
 	border-bottom: none;
 }
 
-@media (min-width: "576px") {
-}
-
 @media (min-width: "768px") {
-	#name {
-		grid-column-start: 1;
-		grid-column-end: 4;
-		display: flex;
-		max-width: 100%;
-		margin: 0;
-		padding: 0.5em 0 0 0;
-		align-self: center;
-		cursor: pointer;
-	}
 	
 	#home-collapsible-nav {
 		display: none;
