@@ -12,6 +12,18 @@ $.get("sidebar.html", function(data){
 	$("#sidebar-placeholder").replaceWith(data);
 });
 
+$.get("work sidebar.html", function(data){
+	$("#work-sidebar-placeholder").replaceWith(data);
+});
+
+$.get("work-col-2-3.html", function(data){
+	$("#work-col-2-3-placeholder").replaceWith(data);
+});
+
+$.get("work-col-1.html", function(data){
+	$("#work-col-1-placeholder").replaceWith(data);
+});
+
 function leavePage(link) {
 	var navDiv = document.getElementById('nav-divider');
 	navDiv.className += " exit";

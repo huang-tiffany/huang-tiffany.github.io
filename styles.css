@@ -14,7 +14,6 @@
 	animation-duration: 1s;
 	pointer-events: all;
 	cursor: crosshair;
-	scroll-behavior: smooth;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
@@ -60,11 +59,11 @@ ul {
 nav {
 	top: 0;
 	position: fixed;
-	margin: 1em 0;
+	padding: 0;
 	display: flex;
 	width: 100%;
 	align-content: center;
-	height: 5.5em;
+	height: 6.5em;
 	z-index: 100;
 	transition: ease;
 	transition-duration: 0.5s;
@@ -79,12 +78,11 @@ nav {
 	margin-bottom: 0;
 }
 
-.col-md-4.menu {
-	top: 7em;
+.col-8.menu {
 	padding-left: 2em;
 	margin-left: 1em;
 	right: 0;
-	margin: 0;
+	top: 7.5em;
 	text-align: center;
 }
 
@@ -138,7 +136,7 @@ a:hover {
 	width: calc(50% - 0.5em);
 }
 
-#work, #play, #about, #activities, #past, #contact {
+#work, #play, #about, #activities, #past, #contact, #social1, #social2, #social3, #social4, #social5, #social6 {
 	left: 50%;
 	display: flex;
 	flex-direction: column;
@@ -150,7 +148,7 @@ a:hover {
 	width: 0%;
 }
 
-#work:hover, #play:hover, #about:hover, #activities:hover, #past:hover, #contact:hover {
+#work:hover, #play:hover, #about:hover, #activities:hover, #past:hover, #contact:hover, #social1:hover, #social2:hover, #social3:hover, #social4:hover, #social5:hover, #social6:hover {
 	left: 0%;
 	border-width: thin;
 	border-bottom-style: solid;
@@ -165,7 +163,7 @@ a.active-link {
 }
 
 #logo {
-	margin-top: 1em;
+	margin-top: 2em;
 	max-width: 20vw;
 	width: auto;
 	position: fixed;
@@ -311,7 +309,6 @@ main {
 	column-gap: 4.75em;
 	height: calc(100vh - 5.9em - 2.75em);
 	overflow: scroll;
-	scroll-behavior: smooth;
 }
 
 main .col1 {
@@ -803,7 +800,6 @@ video:focus, img:focus {
 		margin-bottom: 1em;
 		display: flex;
 		width: 100%;
-		height: auto;
 		text-align: left;
 		z-index: 100;
 	}
@@ -817,14 +813,15 @@ video:focus, img:focus {
 		text-align: left;
 	}
 	
-	.col-md-4.menu {
+	.col-8.menu {
 		top: 0;
+		max-height: 5em;
 		padding-left: 1.25em;
 		padding-right: 0.75em;
 		text-align: left;
 	}
 	
-	#work, #play, #about, #activities, #past, #contact {
+	#work, #play, #about, #activities, #past, #contact, #social1, #social2, #social3, #social4, #social5, #social6 {
 		left: 0%;
 		display: flex;
 		flex-direction: column;
@@ -836,7 +833,7 @@ video:focus, img:focus {
 		width: 0%;
 	}
 
-	#work:hover, #play:hover, #about:hover, #activities:hover, #past:hover, #contact:hover {
+	#work:hover, #play:hover, #about:hover, #activities:hover, #past:hover, #contact:hover, #social1:hover, #social2:hover, #social3:hover, #social4:hover, #social5:hover, #social6:hover {
 		left: 0%;
 		display: flex;
 		flex-direction: column;
@@ -860,5 +857,9 @@ video:focus, img:focus {
 	
 	.home-menu {
 		visibility: visible;
+	}
+	
+	#menu-socials {
+		display: none;
 	}
 }
