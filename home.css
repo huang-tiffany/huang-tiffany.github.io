@@ -1,16 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#name {
-	grid-column-start: 1;
-	grid-column-end: 4;
-	max-width: 100%;
-	margin: 0;
-	padding: 0.5em 0 0 0;
-	align-self: center;
-	cursor: pointer;
-}
-
 .right {
 	text-align: right;
 	max-width: 20vw;
@@ -80,6 +70,8 @@ a.home-menu-options {
 	min-width: 767px;
 	top: 0;
 	visibility: hidden;
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
 }
 
 #home-collapsible-nav p {
@@ -91,7 +83,7 @@ a.home-menu-options {
 	padding: 0;
 	max-width: 400px;
 	top: 0;
-	left: calc(0.85em + 25%);
+	left: 25%;
 	right: 0;
 	display: flex;
 }
@@ -223,13 +215,12 @@ a.home-menu-options {
 
 #name-container.col-3 {
 	display: flex;
-	left: 0;
 	top: 0;
 	margin: 0;
 	padding: 0;
 	width: 100vw;
 	height: 5em;
-	overflow: hidden;
+	overflow: visible;
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
@@ -237,7 +228,7 @@ a.home-menu-options {
 }
 
 #name {
-	max-width: 100%;
+	max-width: 25vw;
 	margin: 0;
 	padding: 0;
 	top: -5%;

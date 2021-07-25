@@ -193,7 +193,6 @@ function collapseNav(word) {
 		menu.classList.add("hidden");
 	} else {
 		homeNav.style.visibility = "visible";
-		homeNav.style.backdropFilter = "blur(25px)";
 		homeNav.style.height = "100vh";
 		homeNav.style.width = "100vw";
 		homeClose.classList.remove("hidden");
