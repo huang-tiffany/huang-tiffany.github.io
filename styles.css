@@ -13,6 +13,7 @@
 	animation-name: fadein;
 	animation-duration: 1s;
 	pointer-events: all;
+	scroll-behavior: smooth;
 	cursor: crosshair;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
@@ -304,6 +305,7 @@ main {
 	column-gap: 4.75em;
 	height: calc(100vh - 5.9em - 2.75em);
 	overflow: scroll;
+	scroll-behavior: smooth;
 }
 
 main .col1 {
@@ -314,6 +316,7 @@ main .col1 {
 	margin: 0;
 	height: calc(100vh - 5.9em - 2.75em);
 	justify-content: space-between;
+	scroll-behavior: smooth;
 }
 
 main .col2 {
