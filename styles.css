@@ -23,6 +23,11 @@
 	display: none;
 }
 
+#name {
+	left: 0;
+	margin: 0;
+}
+
 body.fadeout {
 	animation-name: fadeout;
 	animation-duration: 1s;
@@ -193,14 +198,18 @@ a.active-link {
 	z-index: 5;
 }
 
-#burger-menu, #home-burger-menu, #home-logo {
+#burger-menu, #home-burger-menu {
 	right: 1.75em;
 	margin-top: 1.5em;
 	max-height: 3.5em;
 	max-width: 3.5em;
 }
 
-a #close:hover, a #home-close:hover, a #burger-menu:hover, a #home-burger-menus {
+#home-burger-menu {
+	left: 100%;
+}
+
+a #close:hover, a #home-close:hover, a #burger-menu:hover, a #home-burger-menu:hover, #home-logo-alt, #home-logo-alt:hover {
 	border: none;
 }
 
@@ -554,6 +563,10 @@ video:focus, img:focus {
 	user-select: none;
 }
 
+.home-menu {
+	visibility: hidden;
+}
+
 @media (min-width: 540px) {
 	#logo {
 		max-width: 15vw;
@@ -841,7 +854,11 @@ video:focus, img:focus {
 		max-width: calc(25% - 2.7em);
 	}
 	
-	#close, #burger-menu, #home-close, #home-burger-menu {
+	#close, #burger-menu, #home-close, #home-burger-menu, #home-logo-alt {
 		display: none;
+	}
+	
+	.home-menu {
+		visibility: visible;
 	}
 }

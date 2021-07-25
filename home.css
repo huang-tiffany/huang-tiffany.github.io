@@ -3,13 +3,12 @@
 
 #name {
 	grid-column-start: 1;
-		grid-column-end: 4;
-		display: flex;
-		max-width: 100%;
-		margin: 0;
-		padding: 0.5em 0 0 0;
-		align-self: center;
-		cursor: pointer;
+	grid-column-end: 4;
+	max-width: 100%;
+	margin: 0;
+	padding: 0.5em 0 0 0;
+	align-self: center;
+	cursor: pointer;
 }
 
 .right {
@@ -45,6 +44,11 @@ a:hover, a.home-menu-options:hover {
 	width: 100%;
 }
 
+a.home-menu-options {
+	top: 1em;
+	height: 1.5em;
+}
+
 .left {
 	left: 4em;
 	color: white;
@@ -71,10 +75,9 @@ a:hover, a.home-menu-options:hover {
 	justify-content: center;
 	margin: 0;
 	align-content: center;
-	overflow: hidden;
 	height: 5.5em;
 	position: fixed;
-	width: 100%;
+	min-width: 767px;
 	top: 0;
 	visibility: hidden;
 }
@@ -83,19 +86,19 @@ a:hover, a.home-menu-options:hover {
 	color: white;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%;
 	margin: 0;
 	align-content: center;
 	padding: 0;
+	max-width: 400px;
 	top: 0;
-	left: 0.85em;
+	left: calc(0.85em + 25%);
 	right: 0;
 	display: flex;
 }
 
 .col-1 {
 	margin: 0;
-	padding-top: 2em;
+	padding-top: 0.5em;
 	left: 0;
 	right: 0;
 }
@@ -124,7 +127,6 @@ a:hover, a.home-menu-options:hover {
 	text-align: left;
 	left: 0;
 	width: fit-content;
-/*	padding: 50% 5em;*/
 }
 
 #left-links a {
@@ -163,7 +165,7 @@ a:hover, a.home-menu-options:hover {
 	cursor: pointer;
 }
 
-#logo, #logo:hover, #burger-menu, #close, #burger-menu:hover, #close:hover, #home-close:hover, #home-close {
+#logo, #logo:hover, #home-burger-menu, #close, #home-burger-menu:hover {
 	border-bottom: none;
 }
 
@@ -219,7 +221,7 @@ a:hover, a.home-menu-options:hover {
 	background-image: url("images/notion-filled.png");
 }
 
-.main.col-3 {
+#name-container.col-3 {
 	display: flex;
 	left: 0;
 	top: 0;
@@ -227,11 +229,20 @@ a:hover, a.home-menu-options:hover {
 	padding: 0;
 	width: 100vw;
 	height: 5em;
-	overflow: visible;
+	overflow: hidden;
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
 	justify-content: center;
+}
+
+#name {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	top: -5%;
+	align-self: center;
+	cursor: pointer;
 }
 
 #homebody {
@@ -260,25 +271,20 @@ nav {
 }
 
 a img#home-logo {
+	display: flex;
 	position: fixed;
 	padding: 0;
 	margin: 0;
-	top: 2em;
+	top: 0.5em;
 	left: 1.75em;
 	max-width: 5em;
 	width: 100%;
-	z-index: 100;
 	cursor: pointer;
 	border-bottom: none;
 }
 
 @media (min-width: "768px") {
-	
 	#home-collapsible-nav {
-		display: none;
-	}
-	
-	a img#home-logo, #logo {
 		display: none;
 	}
 }
