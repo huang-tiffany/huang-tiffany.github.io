@@ -22,11 +22,6 @@
 	display: none;
 }
 
-#name {
-	left: 0;
-	margin: 0;
-}
-
 body.fadeout {
 	animation-name: fadeout;
 	animation-duration: 1s;

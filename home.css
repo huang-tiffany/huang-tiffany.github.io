@@ -90,7 +90,7 @@ a.home-menu-options {
 
 .col-1 {
 	margin: 0;
-	padding-top: 0.5em;
+	padding-top: 1.75em;
 	left: 0;
 	right: 0;
 }
@@ -215,7 +215,7 @@ a.home-menu-options {
 
 #name-container.col-3 {
 	display: flex;
-	top: 0;
+	top: 15%;
 	margin: 0;
 	padding: 0;
 	width: 100vw;
@@ -231,7 +231,6 @@ a.home-menu-options {
 	width: 25vw;
 	margin: 0;
 	padding: 0;
-	top: -5%;
 	align-self: center;
 	cursor: pointer;
 }
