@@ -544,7 +544,7 @@ video:focus, img:focus {
 	top: -0.12em;
 }
 
-#bio {
+#bio, .activity-description {
 	overflow-wrap: break-word;
 	hyphens: auto;
 }
