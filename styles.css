@@ -391,9 +391,10 @@ video.vert, img.vert {
 
 #original {
 	display: block;
-	width: 100%;
+	width: 100vw;
 	height: 0.0000000000001px;
 	opacity: 0;
+	margin: 0;
 }
 
 .magnified {
