@@ -95,7 +95,7 @@ div.container {
 	min-width: 767px;
 	flex-direction: column;
 	justify-content: center;
-	background-color: pink;
+	height: calc(100vh - 7em);
 }
 
 .col-1 {
@@ -275,7 +275,7 @@ nav {
 	display: flex;
 	padding-right: 5.5em;
 	left: 1.75em;
-	top: 5.25em;
+	top: 5em;
 	width: calc(100% - 9.95em);
 	background-color: white;
 	z-index: 10;
