@@ -86,6 +86,16 @@ a.home-menu-options {
 	left: 25%;
 	right: 0;
 	display: flex;
+	margin-top: 1em;
+	margin-bottom: -1em;
+}
+
+div.container {
+	top: 2.5em;
+	min-width: 767px;
+	flex-direction: column;
+	justify-content: center;
+	background-color: pink;
 }
 
 .col-1 {
@@ -260,6 +270,17 @@ nav {
 	background-color: transparent;
 }
 
+#home-nav-divider {
+	position: fixed;
+	display: flex;
+	padding-right: 5.5em;
+	left: 1.75em;
+	top: 5.25em;
+	width: calc(100% - 9.95em);
+	background-color: white;
+	z-index: 10;
+}
+
 a img#home-logo {
 	display: flex;
 	position: fixed;
@@ -271,6 +292,7 @@ a img#home-logo {
 	width: 100%;
 	cursor: pointer;
 	border-bottom: none;
+	z-index: 10;
 }
 
 @media (min-width: "768px") {

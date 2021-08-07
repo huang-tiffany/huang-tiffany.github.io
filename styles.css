@@ -75,6 +75,7 @@ nav {
 	transition: ease;
 	transition-duration: 0.5s;
 	background-color: white;
+	overflow: hidden;
 }
 
 .menu-options {
@@ -88,7 +89,7 @@ nav {
 .col-8.menu {
 	padding-left: 2em;
 	right: 0;
-	top: 7.5em;
+	top: 1em;
 	text-align: center;
 }
 
@@ -248,6 +249,9 @@ em {
 div.container {
 	overflow-x: hidden;
 	padding: 0;
+	top: 6.5em;
+	height: calc(100vh - 7.5em);
+	background-color: pink;
 }
 
 #nav-divider {
@@ -393,7 +397,7 @@ video.vert, img.vert {
 	width: 100%;
 }
 
-.hidden, #burger-menu.hidden, #close.hidden, #home-burger-menu.hidden, #home-close.hidden {
+.hidden, #burger-menu.hidden, #close.hidden, #home-burger-menu.hidden, #home-close.hidden, #home-nav-divider.hidden {
 	display: none;
 }
 
@@ -819,6 +823,11 @@ video:focus, img:focus {
 		padding-left: 1.25em;
 		padding-right: 0.75em;
 		text-align: left;
+	}
+	
+	div.container {
+		top: 0;
+		height: 5.5em;
 	}
 	
 	#work, #play, #about, #activities, #past, #contact, #social1, #social2, #social3, #social4, #social5, #social6 {

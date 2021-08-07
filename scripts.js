@@ -182,6 +182,7 @@ function collapseNav(word) {
 	var homeMenu = document.getElementById("home-burger-menu");
 	var homeClose = document.getElementById("home-close");
 	var homeNav = document.getElementById("home-collapsible-nav");
+	var homeNavDivider = document.getElementById("home-nav-divider")
 	if (word === "close") {
 		nav.style.height = "5.5em";
 		close.classList.add("hidden");
@@ -191,6 +192,7 @@ function collapseNav(word) {
 		homeNav.style.height = "0";
 		homeClose.classList.add("hidden");
 		homeMenu.classList.remove("hidden");
+		homeNavDivider.classList.add("hidden");
 	} else if (word === "open") {
 		nav.style.height = "100vh";
 		close.classList.remove("hidden");
@@ -201,5 +203,6 @@ function collapseNav(word) {
 		homeNav.style.width = "100vw";
 		homeClose.classList.remove("hidden");
 		homeMenu.classList.add("hidden");
+		homeNavDivider.classList.remove("hidden");
 	}
 }
