@@ -569,7 +569,7 @@ video:focus, img:focus {
 	user-select: none;
 }
 
-.home-menu {
+.home-menu, .right, .left {
 	visibility: hidden;
 }
 
@@ -865,11 +865,12 @@ video:focus, img:focus {
 		display: none;
 	}
 	
-	.home-menu {
+	.home-menu, .right, .left {
 		visibility: visible;
 	}
 	
 	#menu-socials {
 		display: none;
 	}
+	
 }

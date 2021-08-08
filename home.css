@@ -81,13 +81,12 @@ a.home-menu-options {
 	margin: 0;
 	align-content: center;
 	padding: 0;
-	max-width: 400px;
+	max-width: 200px;
 	top: 0;
-	left: 25.5%;
+	left: 39%;
 	right: 0;
 	display: flex;
 	margin-top: 1em;
-	margin-bottom: -1.5em;
 }
 
 div.container {
@@ -170,7 +169,7 @@ div.container {
 	border-bottom: none;
 }
 
-#portfolio, #info, #other {
+#portfolio, #info, #other, #socials {
 	color: white;
 }
 
@@ -298,4 +297,6 @@ a img#home-logo {
 	#home-collapsible-nav {
 		display: none;
 	}
+	
+	
 }
