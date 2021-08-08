@@ -83,7 +83,7 @@ a.home-menu-options {
 	padding: 0;
 	max-width: 400px;
 	top: 0;
-	left: 25%;
+	left: 25.5%;
 	right: 0;
 	display: flex;
 	margin-top: 1em;
@@ -91,11 +91,10 @@ a.home-menu-options {
 }
 
 div.container {
-	top: 2.5em;
+	top: 2.75em;
 	min-width: 767px;
 	flex-direction: column;
 	justify-content: center;
-	height: calc(100vh - 7em);
 }
 
 .col-1 {
@@ -275,7 +274,7 @@ nav {
 	display: flex;
 	padding-right: 5.5em;
 	left: 1.75em;
-	top: 5em;
+	top: 5.5em;
 	width: calc(100% - 9.95em);
 	background-color: white;
 	z-index: 10;
