@@ -242,6 +242,12 @@ div.container {
 	height: calc(100vh - 7.5em);
 }
 
+#cnav {
+	height: 0;
+	transition: ease;
+	transition-duration: 0.5s;
+}
+
 main div.container {
 	top: 0;
 	height: 100%;
@@ -869,6 +875,10 @@ video:focus, img:focus {
 	
 	#menu-socials {
 		display: none;
+	}
+	
+	#cnav {
+		height: 100%;
 	}
 	
 }
