@@ -187,7 +187,6 @@ function activities(id) {
 
 function collapseNav(word) {
 	var nav = document.querySelector("nav");
-	var collapsibleNav = document.getElementById("collapsible-nav");
 	var menu = document.getElementById("burger-menu");
 	var close = document.getElementById("close");
 	var homeMenu = document.getElementById("home-burger-menu");
@@ -195,7 +194,6 @@ function collapseNav(word) {
 	var homeNav = document.getElementById("home-collapsible-nav");
 	var homeNavDivider = document.getElementById("home-nav-divider")
 	if (word === "close") {
-		collapsibleNav.classList.add("hidden");
 		nav.style.height = "5.5em";
 		close.classList.add("hidden");
 		menu.classList.remove("hidden");
@@ -206,7 +204,6 @@ function collapseNav(word) {
 		homeMenu.classList.remove("hidden");
 		homeNavDivider.classList.add("hidden");
 	} else if (word === "open") {
-		collapsibleNav.classList.remove("hidden");
 		nav.style.height = "100vh";
 		close.classList.remove("hidden");
 		menu.classList.add("hidden");
