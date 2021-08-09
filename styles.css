@@ -11,9 +11,7 @@
 /*	background-color: #BFD3C1;*/
 	column-gap: 1em;
 	animation-name: fadein;
-	-webkit-animation-name: fadein;
 	animation-duration: 1s;
-	-webkit-animation-duration: 1s;
 	pointer-events: all;
 	scroll-behavior: smooth;
 	cursor: crosshair;
@@ -33,15 +31,6 @@ body.fadeout {
 }
 
 @keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 100;
-	}
-}
-
-@-webkit-keyframes fadein {
 	0% {
 		opacity: 0;
 	}
@@ -251,6 +240,11 @@ div.container {
 	padding: 0;
 	top: 6.5em;
 	height: calc(100vh - 7.5em);
+}
+
+main div.container {
+	top: 0;
+	height: 100%;
 }
 
 #nav-divider {
