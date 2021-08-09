@@ -390,7 +390,7 @@ video.vert, img.vert {
 	width: 100%;
 }
 
-.hidden, #burger-menu.hidden, #close.hidden, #home-burger-menu.hidden, #home-close.hidden, #home-nav-divider.hidden {
+.hidden, #burger-menu.hidden, #close.hidden, #home-burger-menu.hidden, #home-close.hidden, #home-nav-divider.hidden, .col2-3.hidden {
 	display: none;
 }
 
@@ -752,6 +752,10 @@ video:focus, img:focus {
 		width: 100%;
 		justify-content: space-between;
 		height: calc(100vh - 5.9em - 2.75em);
+	}
+	
+	.col2-3.hidden {
+		display: flex;
 	}
 	
 	#work-sidebar div, .work-categories {

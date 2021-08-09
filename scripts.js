@@ -65,6 +65,11 @@ function leaveHomePage(link) {
 }
 
 function reveal(id, projectName) {
+	var col23 = document.getElementById('mobile2-3');
+	if (col23.classList.contains("hidden")) {
+		col23.classList.remove("hidden");
+	}
+	
 	var magnifiedElements = document.getElementsByClassName('magnified');
 	for (var i = 0; i < magnifiedElements.length; i++) {
 		if (!magnifiedElements[i].classList.contains("hidden")) {
@@ -104,6 +109,11 @@ function reveal(id, projectName) {
 }
 
 function hide() {
+	var col23 = document.getElementById('mobile2-3');
+	if (!col23.classList.contains("hidden")) {
+		col23.classList.add("hidden");
+	}
+	
 	var placeholder = document.getElementById('col2-3-placeholder');
 	if (placeholder.classList.contains("hidden")) {
 		placeholder.classList.remove("hidden");
