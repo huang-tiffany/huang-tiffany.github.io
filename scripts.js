@@ -206,7 +206,7 @@ function collapseNav(word) {
 		homeMenu.classList.remove("hidden");
 		homeNavDivider.classList.add("hidden");
 	} else if (word === "open") {
-		cnav.style.height = "100%";
+		cnav.style.height = "calc(100% - 7.5em)";
 		nav.style.height = "100vh";
 		close.classList.remove("hidden");
 		menu.classList.add("hidden");

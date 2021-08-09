@@ -214,6 +214,10 @@ em {
 	margin-bottom: 1em;
 }
 
+.container #menu-socials p {
+	margin-bottom: 0;
+}
+
 #activities-content .container p {
 	font-size: 0.85em;
 }
