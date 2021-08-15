@@ -195,7 +195,7 @@ function collapseNav(word) {
 	var homeNav = document.getElementById("home-collapsible-nav");
 	var homeNavDivider = document.getElementById("home-nav-divider")
 	if (word === "close") {
-		cnav.style.height = "0";
+		cnav.style.height = "5.5em";
 		nav.style.height = "5.5em";
 		close.classList.add("hidden");
 		menu.classList.remove("hidden");
