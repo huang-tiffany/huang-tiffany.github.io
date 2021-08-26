@@ -132,7 +132,7 @@ a:hover {
 	width: calc(50% - 0.5em);
 }
 
-#work, #play, #about, #activities, #past, #contact, #social1, #social2, #social3, #social4, #social5, #social6 {
+#work, #play, #about, #activities, #past, #archive, #social1, #social2, #social3, #social4, #social5, #social6 {
 	left: 50%;
 	display: flex;
 	flex-direction: column;
@@ -144,7 +144,7 @@ a:hover {
 	width: 0%;
 }
 
-#work:hover, #play:hover, #about:hover, #activities:hover, #past:hover, #contact:hover, #social1:hover, #social2:hover, #social3:hover, #social4:hover, #social5:hover, #social6:hover {
+#work:hover, #play:hover, #about:hover, #activities:hover, #past:hover, #archive:hover, #social1:hover, #social2:hover, #social3:hover, #social4:hover, #social5:hover, #social6:hover {
 	left: 0%;
 	border-width: thin;
 	border-bottom-style: solid;
@@ -837,7 +837,7 @@ video:focus, img:focus {
 		height: 5.5em;
 	}
 	
-	#work, #play, #about, #activities, #past, #contact, #social1, #social2, #social3, #social4, #social5, #social6 {
+	#work, #play, #about, #activities, #past, #archive, #social1, #social2, #social3, #social4, #social5, #social6 {
 		left: 0%;
 		display: flex;
 		flex-direction: column;
@@ -849,7 +849,7 @@ video:focus, img:focus {
 		width: 0%;
 	}
 
-	#work:hover, #play:hover, #about:hover, #activities:hover, #past:hover, #contact:hover, #social1:hover, #social2:hover, #social3:hover, #social4:hover, #social5:hover, #social6:hover {
+	#work:hover, #play:hover, #about:hover, #activities:hover, #past:hover, #archive:hover, #social1:hover, #social2:hover, #social3:hover, #social4:hover, #social5:hover, #social6:hover {
 		left: 0%;
 		display: flex;
 		flex-direction: column;
