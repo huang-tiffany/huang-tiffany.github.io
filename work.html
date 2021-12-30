@@ -100,7 +100,7 @@
 		</nav>
 		
 <!--		fixed elements end-->
-
+<!--For XS images, use 300 as width and height for horiz and vert photos respectively-->
 		<main class="main" id="work-content">
 			<div class="col1">
 				<p class="work-category-header" id="1">
@@ -113,22 +113,24 @@
 					<em>2D Design</em>
 				</p>
 				<div class="work-row">
+					<img src="images/xs/caught-copy.jpg" alt="Caught" class="vert" onClick="reveal('caught1', 'caught')" loading="lazy"/>
 		    	    <img src="images/xs/direction mag copy.jpg" alt="Direction" class="vert" onClick="reveal('direction-mag1', 'direction-mag')" loading="lazy"/>
 					<img src="images/xs/ramenhead 1 copy.jpg" alt="Ramenhead" class="horiz" onClick="reveal('ramenhead1', 'ramenhead')" loading="lazy"/>
-					<img src="images/xs/self-sent 1 copy.jpg" alt="Self-Sent" class="vert" onClick="reveal('self-sent1', 'self-sent')" loading="lazy"/>
 				</div>
 				<div class="work-row">
+					<img src="images/xs/self-sent 1 copy.jpg" alt="Self-Sent" class="vert" onClick="reveal('self-sent1', 'self-sent')" loading="lazy"/>
 					<img src="images/xs/ringramen copy.jpg" alt="Ringramen" class="horiz" onClick="reveal('ringramen', 'ringramen')" loading="lazy"/>
 					<img src="images/xs/bijou 1 copy.jpg" alt="Bijou" class="vert" onClick="reveal('bijou1', 'bijou')" loading="lazy"/>
-					<img src="images/xs/e11h final copy.jpg" alt="Asian American Dream Zine" class="vert" onClick="reveal('e11h-zine1', 'e11h-zine')" loading="lazy"/>
 				</div>
 				<div class="work-row">
+					<img src="images/xs/e11h final copy.jpg" alt="Asian American Dream Zine" class="vert" onClick="reveal('e11h-zine1', 'e11h-zine')" loading="lazy"/>
 				    <img src="images/xs/apah mag copy.jpg" alt="The Development of the Human Figure" class="vert" onClick="reveal('apah-mag1', 'apah-mag')" loading="lazy"/>
 				</div>
 				<p class="work-category-header" id="3">
 					<em>3D Art</em>
 				</p>
 				<div class="work-row">
+					<img src="images/xs/belonging-copy.jpg" alt="Belonging" class="vert" onClick="reveal('beans1', 'beans')" loading="lazy"/>
 			    	<img src="images/xs/baby gun 1 copy.jpeg" alt="Baby Gun" class="vert" onClick="reveal('baby-gun1', 'baby-gun')" loading="lazy"/>
 					<img src="images/xs/yo soy 1 copy.jpeg" alt="Yo Soy" class="vert" onClick="reveal('yo-soy1', 'yo-soy')" loading="lazy"/>
 					<img src="images/xs/cd burger 1 copy.jpg" alt="Instant (cont.)" class="horiz" onClick="reveal('cd-burger1', 'cd-burger')" loading="lazy"/>
@@ -148,20 +150,31 @@
 				<div class="work-row">
 					<img src="images/xs/strap and carry 4 copy.jpg" alt="Strap and Carry" class="horiz" onClick="reveal('strap-and-carry1', 'strap-and-carry')" loading="lazy"/>
 					<img src="images/xs/hasbro 1 copy.jpeg" alt="Hasbro Healing Center" class="horiz" onClick="reveal('hasbro1', 'hasbro')" loading="lazy"/>
-					<img src="images/xs/lws 1 copy.jpeg" alt="Live Work Sell" class="horiz" onClick="reveal('lws1', 'lws')" loading="lazy"/>
+<!--					<img src="images/xs/lws 1 copy.jpeg" alt="Live Work Sell" class="horiz" onClick="reveal('lws1', 'lws')" loading="lazy"/>-->
 				</div>
+<!--
 				<div class="work-row">
 					<img src="images/xs/found object model copy.jpeg" alt="Found Object Model" class="horiz" onClick="reveal('found-object-model', 'found-object-model')" loading="lazy"/>
 				</div>
+-->
 				<p class="work-category-header" id="5">
 					<em>Multimedia</em>
 				</p>
 				<div class="work-row">
-					<video autoplay muted loop class="horiz" onClick="reveal('to-myself', 'to-myself')">
-					  <source src="videos/xs/To Myself copy.mp4" type="video/mp4">
+					<video autoplay muted loop class="horiz" onClick="reveal('trail', 'trail')">
+					  <source src="videos/xs/trail copy.mp4" type="video/mp4">
 					</video>
+					<video autoplay muted loop class="horiz" onClick="reveal('q9', 'q9')">
+					  <source src="videos/xs/q9 copy.mp4" type="video/mp4">
+					</video>
+					<img src="images/xs/newsfortunesbot.jpg" alt="News Fortunes Bot" class="horiz" onClick="reveal('newsfortunesbot1', 'newsfortunesbot')" loading="lazy"/>
+				</div>
+				<div class="work-row">
 					<video autoplay muted loop class="horiz" onClick="reveal('music-visualizer`', 'music-visualizer')">
 					  <source src="videos/xs/music visualizer 2 copy.mp4" type="video/mp4">
+					</video>
+					<video autoplay muted loop class="horiz" onClick="reveal('to-myself', 'to-myself')">
+					  <source src="videos/xs/To Myself copy.mp4" type="video/mp4">
 					</video>
 				</div>
 				<p class="work-category-header" id="6">
@@ -177,13 +190,18 @@
 				  <em>Video</em>
 			  	</p>
 				<div class="work-row">
-					<video autoplay muted loop class="vert" onClick="reveal('belonging', 'belonging')">
+					<video autoplay muted loop class="horiz" onClick="reveal('losingcontact', 'losingcontact')">
+					  <source src="videos/xs/Losing Contact copy.mp4" type="video/mp4">
+					</video>
+					<video autoplay muted loop class="vert" onClick="reveal('be-longing', 'be-longing')">
 					  <source src="videos/xs/Belonging copy.mp4" type="video/mp4">
 					</video>
 				  <video autoplay muted loop class="vert" onClick="reveal('mylifeonpaper', 'mylifeonpaper')">
 					  <source src="videos/xs/My Life on Paper copy.mp4" type="video/mp4">
 					</video>
-				  <video autoplay muted loop class="vert" onClick="reveal('closeteddreams', 'closeteddreams')">
+				</div>
+				<div class="work-row">
+					<video autoplay muted loop class="vert" onClick="reveal('closeteddreams', 'closeteddreams')">
 					  <source src="videos/xs/Closeted Dreams copy.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -204,11 +222,16 @@
 			<div id="mobile2-3" class="col2-3 hidden" onClick="hide()">
 				<p id="col2-3-placeholder">asdlgkjhasdlkgjhasdkglhjaskldgjhalskdjhgaslkdjghalskdghjalksdjghaksldghjalksdjhglkasdhglkasdhjgkalsjdhglkashjdgklashdglkahs</p>
 				
+<!--For documentation, use 700 as width for horizontal images and 550 for height for vertical images-->
 <!--				2D Art-->
 <!--				Arch-->
 			 	<img src="images/arch.jpeg" alt="Arch" class="magnified hidden arch bottom" id="arch" loading="lazy"/>	
 				
 <!--				2D Design-->
+<!--				Caught-->
+				<img src="images/caught1.jpg" alt="Caught 1" class="caught magnified hidden" id="caught1" loading="lazy"/>
+				<img src="images/caught2.jpg" alt="Caught 1" class="caught magnified hidden" id="caught2" loading="lazy"/>
+				<img src="images/caught3.jpg" alt="Caught 1" class="caught magnified hidden bottom" id="caught3" loading="lazy"/>
 <!--				Direction-->
 				<img src="images/direction-1.jpg" alt="Direction Magazine 1" class="direction-mag magnified hidden" id="direction-mag1" loading="lazy"/>
 				<img src="images/direction-2.jpg" alt="Direction Magazine 2" class="direction-mag magnified hidden" id="direction-mag2" loading="lazy"/>
@@ -323,6 +346,9 @@
 <!--				<iframe src="https://indd.adobe.com/embed/b7c42cfe-5cac-4b09-b589-71cb07c00346?startpage=1&amp;allowFullscreen=true" frameborder="0" allowfullscreen="" class="apah-mag magnified hidden bottom" id="apah-mag"></iframe>-->
 				
 <!--				3D Art-->
+<!--				Belonging-->
+				<img src="images/belonging1.jpg" alt="Belonging 1" class="magnified hidden beans" id="beans1" loading="lazy"/>
+				<img src="images/belonging2.jpg" alt="Belonging 2" class="magnified hidden beans bottom" id="beans2" loading="lazy"/>	
 <!--				Baby Gun-->
 				<img src="images/baby gun 1.jpeg" alt="Baby Gun 1" class="magnified hidden baby-gun" id="baby-gun1" loading="lazy"/>
 				<img src="images/baby gun 2.jpeg" alt="Baby Gun 2" class="magnified hidden baby-gun" id="baby-gun2" loading="lazy"/>
@@ -339,7 +365,7 @@
 				<img src="images/instant 2.jpeg" alt="Instant 2" class="magnified hidden instant" id="instant2" loading="lazy"/>
 				<img src="images/instant 3.jpg" alt="Instant 3" class="magnified hidden instant bottom" id="instant3" loading="lazy"/>	
 <!--				Miscommunication-->
-				<img src="images/miscommunication 1.jpg" alt="Miscommunication 1" class="magnified hidden miscommunication" id="miscommunication1" loading="lazy"/>	
+				<img src="images/miscommunication 1.jpg" alt="Miscommunication 1" class="magnified hidden miscommunication" id="miscommunication1" loading="lazy"/>
 				<img src="images/miscommunication 2.jpeg" alt="Miscommunication 2" class="magnified hidden miscommunication bottom" id="miscmomunication2" loading="lazy"/>
 <!--				Disconnect-->
 				<img src="images/disconnect.jpg" alt="Disconnect" class="magnified hidden disconnect bottom" id="disconnect" loading="lazy"/>
@@ -374,6 +400,7 @@
 				<img src="images/hasbro 8.jpeg" alt="Hasbro 8" class="magnified hidden hasbro" id="hasbro8" loading="lazy"/>
 				<img src="images/hasbro 9.jpeg" alt="Hasbro 9" class="magnified hidden hasbro bottom" id="hasbro9" loading="lazy"/>
 <!--				Live Work Sell-->
+<!--
 				<img src="images/lws 1.jpeg" alt="Live Work Sell 1" class="magnified hidden lws" id="lws1" loading="lazy"/>
 				<img src="images/lws 2.jpeg" alt="Live Work Sell 2" class="magnified hidden lws" id="lws2" loading="lazy"/>
 				<img src="images/lws 3.jpeg" alt="Live Work Sell 3" class="magnified hidden lws" id="lws3" loading="lazy"/>
@@ -381,18 +408,40 @@
 				<img src="images/lws 5.jpeg" alt="Live Work Sell 5" class="magnified hidden lws" id="lws5" loading="lazy"/>
 				<img src="images/lws 6.jpeg" alt="Live Work Sell 6" class="magnified hidden lws" id="lws6" loading="lazy"/>
 				<img src="images/lws 7.jpeg" alt="Live Work Sell 7" class="magnified hidden lws bottom" id="lws7" loading="lazy"/>
+-->
 <!--				Found Object Model-->
-				<img src="images/found object model.jpeg" alt="Found Object Model" class="magnified hidden found-object-model bottom" id="found-object-model" loading="lazy"/>	
+<!--				<img src="images/found object model.jpeg" alt="Found Object Model" class="magnified hidden found-object-model bottom" id="found-object-model" loading="lazy"/>	-->
 				
 <!--				Multimedia-->
-<!--				To Myself-->
-				<video controls controlsList="nodownload" class="magnified hidden to-myself bottom" id="to-myself">
-				  <source src="videos/To Myself.mp4" type="video/mp4">
+<!--				Trail-->
+				<img src="images/trail1.jpg" alt="Eye Trail 1" class="trail magnified hidden" id="trail1" loading="lazy"/>
+				<img src="images/trail2.jpg" alt="Eye Trail 2" class="trail magnified hidden" id="trail2" loading="lazy"/>
+				<img src="images/trail3.jpg" alt="Eye Trail 3" class="trail magnified hidden" id="trail3" loading="lazy"/>
+				<img src="images/trail4.jpg" alt="Eye Trail 4" class="trail magnified hidden" id="trail4" loading="lazy"/>
+				<img src="images/trail5.jpg" alt="Eye Trail 5" class="trail magnified hidden" id="trail5" loading="lazy"/>
+				<img src="images/trail6.jpg" alt="Eye Trail 6" class="trail magnified hidden" id="trail6" loading="lazy"/>
+				<img src="images/trail7.jpg" alt="Eye Trail 7" class="trail magnified hidden" id="trail7" loading="lazy"/>
+				<img src="images/trail8.jpg" alt="Eye Trail 8" class="trail magnified hidden" id="trail8" loading="lazy"/>
+				<img src="images/trail9.jpg" alt="Eye Trail 9" class="trail magnified hidden" id="trail9" loading="lazy"/>
+				<img src="images/trail10.jpg" alt="Eye Trail 10" class="trail magnified hidden" id="trail10" loading="lazy"/>
+				<img src="images/trail11.jpg" alt="Eye Trail 11" class="trail magnified hidden" id="trail11" loading="lazy"/>
+				<img src="images/trail12.jpg" alt="Eye Trail 12" class="trail magnified hidden bottom" id="trail12" loading="lazy"/>
+<!--				Question Nine-->
+				<video controls controlsList="nodownload" class="magnified hidden q9 bottom" id="q9">
+				  <source src="videos/q9.mp4" type="video/mp4">
 				</video>
+<!--				News Fortunes Bot-->
+				<img src="images/newsfortunesbot1.png" alt="News Fortunes Bot 1" class="magnified hidden newsfortunesbot" id="newsfortunesbot1" loading="lazy"/>
+				<img src="images/newsfortunesbot2.png" alt="News Fortunes Bot 2" class="magnified hidden newsfortunesbot" id="newsfortunesbot2" loading="lazy"/>
+				<img src="images/newsfortunesbot3.png" alt="News Fortunes Bot 3" class="magnified hidden newsfortunesbot bottom" id="newsfortunesbot3" loading="lazy"/>
 <!--				Music Visualizer-->
 				<img src="images/music visualizer 1" alt="Music Visualizer" class="magnified hidden music-visualizer" id="music-visualizer1" loading="lazy"/>
 				<video controls controlsList="nodownload" class="magnified hidden music-visualizer bottom" id="music-visualizer2">
 				  <source src="videos/music visualizer 2.mp4" type="video/mp4">
+				</video>
+<!--				To Myself-->
+				<video controls controlsList="nodownload" class="magnified hidden to-myself bottom" id="to-myself">
+				  <source src="videos/To Myself.mp4" type="video/mp4">
 				</video>
 				
 <!--				Photography-->
@@ -402,8 +451,12 @@
 				<img src="images/faceless2.jpeg" alt="Faceless 2" class="magnified hidden faceless bottom" id="faceless2" loading="lazy"/>
 				
 <!--				Video-->
+<!--				Losing Contact-->
+				<video controls controlsList="nodownload" class="magnified hidden losingcontact bottom" id="losingcontact">
+				  <source src="videos/Losing Contact.mp4" type="video/mp4">
+				</video>
 <!--				Belonging-->
-				<video controls controlsList="nodownload" class="magnified hidden belonging bottom" id="belonging">
+				<video controls controlsList="nodownload" class="magnified hidden be-longing bottom" id="be-longing">
 				  <source src="videos/Belonging.mp4" type="video/mp4">
 				</video>
 <!--				My Life On Paper-->

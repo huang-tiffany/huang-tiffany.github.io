@@ -389,7 +389,9 @@ video.vert, img.vert {
 	margin-bottom: 1em;
 	width: calc(98% / 3);
 	padding: 0;
+	height: 100%;
 	cursor: zoom-in;
+	align-self: center;
 }
 
 .work-category-header {
