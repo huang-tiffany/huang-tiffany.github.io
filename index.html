@@ -5,9 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>tiffany huang</title>
-	<link rel="shortcut icon" type="image/jpg" href="images/Artboard 1.png"/>
+	<link rel="shortcut icon" type="image/jpg" href="2021/images/Artboard 1.png"/>
     <!-- Bootstrap -->
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="2021/css/bootstrap-4.4.1.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet" type="text/css">
 	<link href="home.css" rel="stylesheet" type="text/css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,117 +19,50 @@
 		<!-- body code goes here -->
 		
 <!--		fixed elements start-->
-		<nav id="home-nav">
-			  <a id="home-logo-alt" onClick="leaveHomePage('home')">
-				<img src="images/logo4.png" alt="logo" id="home-logo" class=""/>
-			  </a>
-			  <a id="home-burger-menu" class="" onClick="collapseNav('homeOpen')">
-				  <img src="images/menu-white.png" id="burger-menu" alt="Menu" class="">
-			  </a>
-			  <a id="home-close" class="hidden" onClick="collapseNav('homeClose')">
-				  <img src="images/close-white.png" alt="Close" id="close">
-			  </a>
-		  
-				<div class="col-1 home-menu">
-						<a onClick="leaveHomePage('work')" class="home-menu-options">work</a>
+		<div id="backgroundvid">
+		  <video id="background-video" autoplay loop muted>
+			<source src="reel hd.mp4" type="video/mp4">
+		</video>
+        </div>
+		<nav>
+			<div class="container-fluid">
+				<div class="row no-gutters flex-nowrap">
+					<div class="col-12">
+						<h1 id="title">TIFFANY HUANG</h1>
 					</div>
-					<div class="col-1 home-menu">
-						<a onClick="leaveHomePage('play')" class="home-menu-options">play</a>
+				</div>
+				<div class="row no-gutters flex-nowrap">
+					<div class="col-6">
+						<p>is an interdisciplinary creator that dabbles in the visual and performing arts, design, creative coding, and writing. through her work, she seeks to tell evocative stories that relate to the society she lives in and is motivated particularly by mundane beauty, cultural identity, and the human psyche.</p>
 					</div>
-					<div class="col-1 home-menu">
-						<a onClick="leaveHomePage('about')" class="home-menu-options" id="introduction">about</a>
+					<div class="col-2">
+						<a target="_blank" href="">work</a>
 					</div>
-					<div class="col-3" id="name-container">
-						<img src="images/home22-copy.gif" alt="Name" id="name" onClick="leaveHomePage('home')">
+					<div class="col-2">
+						<a target="_blank" href="https://th-archive.github.io/">archive</a>
 					</div>
-					<div class="col-1 home-menu">
-						<a onClick="leaveHomePage('activities')" class="home-menu-options">activities</a>
-					</div>
-					<div class="col-1 home-menu">
-						<a target="_blank" href="http://www.huangtiffany.myportfolio.com" class="home-menu-options">past</a>
-					</div>
-					<div class="col-1 home-menu">
-						<a target="_blank" href="https://th-archive.github.io/" class="home-menu-options">archive</a>
-					</div>	
-				<hr class="col-12 hidden" id="home-nav-divider">	
-			<div id="home-collapsible-nav">
-				
-				<div class="container">
-					<div class="row gx-0 flex-md-nowrap">
-						<div class="col-12">
-							<p class="menu-options"><em class="menu-header" id="portfolio">PORTFOLIO</em>
-							<a id="work" onClick="leaveHomePage('work')" class="">work</a>
-							<a id="play" onClick="leaveHomePage('play')" class="">play</a>
-							</p>
-						</div>
-						<div class="col-12">
-							<p class="menu-options"><em class="menu-header" id="info">INFO</em>
-							<a id="about" onClick="leaveHomePage('about')" class="">about</a>
-							<a id="activities" onClick="leaveHomePage('activities')" class="">activities</a>
-							</p>
-						</div>
-						<div class="col-12">
-							<p class="menu-options"><em class="menu-header" id="other">OTHER</em>
-							<a id="past" target="_blank" href="http://www.huangtiffany.myportfolio.com">past</a>
-							<a id="archive" target="_blank" href="https://th-archive.github.io/">archive</a>
-							</p>
-						</div>
-						<div class="col-12">
-							<p class="menu-options"><em class="menu-header" id="socials">SOCIALS</em>
-							<a href="mailto:tiffanyhuang1258@gmail.com" id="social1">email</a>
-							<a target="_blank" href="https://www.instagram.com/relatiffity/" id="social2">instagram</a>
-							<a target="_blank" href="https://relatiffity.tumblr.com/" id="social3">tumblr</a>
-							<a href="https://vsco.co/sun-filled/gallery" id="social4">vsco</a>
-							<a target="_blank" href="https://open.spotify.com/user/girlygrrl123?si=964fe2939c5f4457" id="social5">spotify</a>
-							<a target="_blank" href="https://tiffany-huang.notion.site/Inspiration-2ec04f35ddd34fb2925ffcb9c3378cbe" id="social6">notion</a>
-							</p>
-						</div>
+					<div class="col-2">
+						<a target="_blank" href="mailto:tiffanyhuang1258@gmail.com">contact</a>
 					</div>
 				</div>
 			</div>
 		</nav>
-		
-<!--		fixed elements end-->
-		<main class="main" id="home-content">
-			<div class="col1 left" id="left-links">
-				<ul>
-					<li>
-						<a href="mailto:tiffanyhuang1258@gmail.com">
-							<div id="email" class="icon">&ensp;</div>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.instagram.com/relatiffity/">
-							<div id="instagram" class="icon">&ensp;</div>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://relatiffity.tumblr.com/">
-							<div id="tumblr" class="icon">&ensp;</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col3 right" id="right-links">
-				<ul>
-					<li>
-						<a href="https://vsco.co/sun-filled/gallery">
-							<div id="vsco" class="icon">&ensp;</div>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://open.spotify.com/user/girlygrrl123?si=964fe2939c5f4457">
-							<div id="spotify" class="icon">&ensp;</div>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://tiffany-huang.notion.site/Inspiration-2ec04f35ddd34fb2925ffcb9c3378cbe">
-							<div id="notion" class="icon">&ensp;</div>
-						</a>
-					</li>
-				</ul>
-			</div>
+		<main>
 		</main>
+		<footer>
+			<div class="container-fluid">
+				<div class="row no-gutters flex-nowrap">
+					<div class="col-6" id="version">
+						<a target="_blank" href="https://huang-tiffany.github.io/2021/index.html" class="hidden ver" onmouseover="version('hover')" onmouseout="version('out')">v. 2021</a><br>
+						<a href="" onmouseover="version('hover')" onmouseout="version('out')">v. 2022</a>
+					</div>
+					<div class="col-6">
+						<br>
+						<a id="ig" target="_blank" href="https://www.instagram.com/relatiffity/">instagram</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 		
 		
 
