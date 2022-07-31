@@ -1,4 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
 
+* {
+	color: white;
+	font-family: barlow, roboto, sans-serif;
+	animation-name: fadein;
+	animation-duration: 1s;
+	pointer-events: all;
+	scroll-behavior: smooth;
+	cursor: crosshair;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body.fadeout {
+	animation-name: fadeout;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-delay: 0s;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
+}
+
+@keyframes fadeout {
+	0% {
+		opacity: 100;
+	}
+	100% {
+		opacity: 0;
+	}
+}
 
 #background-video {
 	width: 100vw;
@@ -26,14 +64,19 @@
 }
 
 #title h1 {
+	color: white;
 	font-size: 3em;
+}
+
+a:hover {
+	cursor: pointer;
 }
 
 p, a, a:hover {
 	color: white;
 	position: relative;
 	margin: 0;
-	font-size: 0.8em;
+	font-size: 1em;
 	max-width: 100%;
 }
 
@@ -48,6 +91,7 @@ a, a:hover {
 }
 
 nav a:hover::before, #ig:hover::before {
+	font-family: system-ui;
 	content: " ↖ ";
 }
 

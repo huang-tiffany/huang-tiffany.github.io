@@ -8,14 +8,13 @@
 	<link rel="shortcut icon" type="image/jpg" href="2021/images/Artboard 1.png"/>
     <!-- Bootstrap -->
 	<link href="2021/css/bootstrap-4.4.1.css" rel="stylesheet">
-	<link href="styles.css" rel="stylesheet" type="text/css">
 	<link href="home.css" rel="stylesheet" type="text/css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<script src="scripts.js"></script>
   </head>
-	<body class="" id="homebody">
+	<body class="" id="body">
 		<!-- body code goes here -->
 		
 <!--		fixed elements start-->
@@ -40,7 +39,7 @@
 						<p>is an interdisciplinary creator that dabbles in the visual and performing arts, design, creative coding, and writing. through her work, she seeks to tell evocative stories that relate to the society she lives in and is motivated particularly by mundane beauty, cultural identity, and the human psyche.</p>
 					</div>
 					<div class="col-2">
-						<a target="_blank" href="">work</a>
+						<a onClick="leavePage('work')">work</a>
 					</div>
 					<div class="col-2">
 						<a target="_blank" href="https://th-archive.github.io/">archive</a>
@@ -57,8 +56,8 @@
 			<div class="container-fluid">
 				<div class="row no-gutters flex-nowrap">
 					<div class="col-6" id="version">
-						<a target="_blank" href="https://huang-tiffany.github.io/2021/index.html" class="hidden ver" onmouseover="version('hover')" onmouseout="version('out')">v. 2021</a><br>
-						<a href="" onmouseover="version('hover')" onmouseout="version('out')">v. 2022</a>
+						<a target="_blank" href="https://huang-tiffany.github.io/2021/index.html" class="hidden ver" onmouseover="hoverMenu('hover', 'ver')" onmouseout="hoverMenu('out', 'ver')">v. 2021</a><br>
+						<a href="" onmouseover="hoverMenu('hover', 'ver')" onmouseout="hoverMenu('out', 'ver')">v. 2022</a>
 					</div>
 					<div class="col-6">
 						<br>

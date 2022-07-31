@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tiffany huang</title>
+	<link rel="shortcut icon" type="image/jpg" href="2021/images/Artboard 1.png"/>
+    <!-- Bootstrap -->
+	<link href="2021/css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="2021/js/jquery-3.4.1.min.js"></script>
+	<script src="2021/jquery-ui.min.js"></script>
+	<script src="scripts.js"></script>
+  </head>
+	<body class="" id="body">
+		<!-- body code goes here -->
+		
+<!--		fixed elements start-->
+		<nav>
+			<div class="container-fluid">
+				<div class="row no-gutters flex-nowrap no-gutters">
+					<div class="logo">
+							<a onClick="leavePage('home')">
+			  					<img src="./2021/images/logo4 tight crop.png" alt="logo" id="logo" class="col-3"/>
+			  				</a>
+					</div>
+					<div class="col">
+<!--
+						<div class="sidebar-placeholder">
+							<div id="sidebar-placeholder"></div>
+						</div>
+-->
+					</div>
+					<div class="links">
+						<div class="container-fluid">
+							<div class="row flex-nowrap">
+								<div class="col-12">
+									<a onClick="leavePage('work')">work</a>
+								</div>
+							</div>
+							<div class="row flex-nowrap">
+								<div class="col-12">
+									<a target="_blank" href="https://th-archive.github.io/">archive</a>
+								</div>
+							</div>
+							<div class="row flex-nowrap">
+								<div class="col-12">
+									<a target="_blank" href="mailto:tiffanyhuang1258@gmail.com">contact</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="sidebar-placeholder2">
+			<div id="sidebar-placeholder2"></div>
+		</div>
+		<main>
+			<div class="container-fluid main">
+				<div class="row flex-nowrap main">
+					<div class="col-1half col-sm-3">
+						<div class="year-menu filterHidden" id="year-menu">
+							<div>
+								<a class="hidden yearmenu" onmouseover="hoverMenu('hover', 'yearmenu')" onmouseout="hoverMenu('out', 'yearmenu')" onClick="filter('year', '2019')"><hr>2019</a><br>
+								<a class="hidden yearmenu" onmouseover="hoverMenu('hover', 'yearmenu')" onmouseout="hoverMenu('out', 'yearmenu')" onClick="filter('year', '2020')"><hr>2020</a><br>
+								<a class="hidden yearmenu" onmouseover="hoverMenu('hover', 'yearmenu')" onmouseout="hoverMenu('out', 'yearmenu')" onClick="filter('year', '2021')"><hr>2021</a><br>
+								<a class="hidden yearmenu" onmouseover="hoverMenu('hover', 'yearmenu')" onmouseout="hoverMenu('out', 'yearmenu')" onClick="filter('year', '2022')"><hr>2022</a><br>
+								<a onmouseover="hoverMenu('hover', 'yearmenu')" onmouseout="hoverMenu('out', 'yearmenu')">year</a>
+							</div>
+						</div>
+						<div class="tag-menu filterHidden" id="tag-menu">
+							<div>
+								<div class="tagmenu" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">
+									<a class="hidden tagmenu" onClick="filter('tag', 'animation')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">ANIMATION</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'arduino')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">ARDUINO</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'branding')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">BRANDING</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'charcoal')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">CHARCOAL</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'creativecoding')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">CREATIVE CODING</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'digital')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">DIGITAL</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'editorial')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">EDITORIAL</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'film')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">FILM</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'furniture')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">FURNITURE</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'garment')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">GARMENT</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'installation')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">INSTALLATION</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'interactive')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">INTERACTIVE</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'jewelry')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">JEWELRY</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'packaging')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">PACKAGING</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'poster')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">POSTER</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'print')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">PRINT</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'process')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">PROCESS</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'product')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">PRODUCT</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'sculpture')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">SCULPTURE</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'uiux')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">UI/UX</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'wireframing')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">WIREFRAMING</a>
+									<a class="hidden tagmenu" onClick="filter('tag', 'woodworking')" onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">WOODWORKING</a>
+								</div>
+								<a onmouseover="hoverMenu('hover', 'tagmenu')" onmouseout="hoverMenu('out', 'tagmenu')">tags</a>
+							</div>
+						</div>
+						<div class="medium" id="med">
+							<div>
+								<a href="#2dart" class="hidden med" onmouseover="hoverMenu('hover', 'med')" onmouseout="hoverMenu('out', 'med')"><sup>01 </sup>2d art</a><br>
+								<a href="#2ddesign" class="hidden med" onmouseover="hoverMenu('hover', 'med')" onmouseout="hoverMenu('out', 'med')"><sup>02 </sup>2d design</a><br>
+								<a href="#3dart" class="hidden med" onmouseover="hoverMenu('hover', 'med')" onmouseout="hoverMenu('out', 'med')"><sup>03 </sup>3d art</a><br>
+								<a href="#3ddesign" class="hidden med" onmouseover="hoverMenu('hover', 'med')" onmouseout="hoverMenu('out', 'med')"><sup>04 </sup>3d design</a><br>
+								<a href="#multimedia" class="hidden med" onmouseover="hoverMenu('hover', 'med')" onmouseout="hoverMenu('out', 'med')"><sup>05 </sup>multimedia</a><br>
+								<a href="#video" class="hidden med" onmouseover="hoverMenu('hover', 'med')" onmouseout="hoverMenu('out', 'med')"><sup>06 </sup>video</a><br>
+								<a href="#wearable" class="hidden med" onmouseover="hoverMenu('hover', 'med')" onmouseout="hoverMenu('out', 'med')"><sup>07 </sup>wearable</a><br>
+								<a onmouseover="hoverMenu('hover', 'med')" onmouseout="hoverMenu('out', 'med')">medium</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-9">
+						<div class="container-fluid">
+							<div class="category">
+								<div class="row">
+									<div id="tag-top" class="anchor col-12"></div>
+									<div class="row flex-nowrap category-name col-12 filterHidden" id="tagyear-header-container">
+										<div class="col-12">
+											<h1>00</h1>
+											<p id="tagyear-header"></p>
+										</div>
+									</div>
+									<div id="2dart" class="anchor col-12"></div>
+									<div class="row flex-nowrap category-name col-12">
+										<div class="col-12">
+											<h1>01</h1>
+											<p>2D ART</p>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 charcoal 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Self-Portrait Series</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'charcoal')">CHARCOAL</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 charcoal 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Arch.</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">				<a onClick="filter('tag', 'charcoal')">CHARCOAL</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 poster print process 2021"> 
+										<p class="year"><a onClick="filter('year', '2021')">2021</a></p>
+										<p class="piece">Caught</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'poster')">POSTER</a>
+											<a onClick="filter('tag', 'print')">PRINT</a>
+											<a onClick="filter('tag', 'process')">PROCESS</a>
+										</div>
+									</div>
+									<div id="2ddesign" class="anchor col-12"></div>
+									<div class="row flex-nowrap category-name col-12">
+										<div class="col-12">
+											<h1>02</h1>
+											<p>2D DESIGN</p>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 editorial print 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Rogue Magazine</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'editorial')">EDITORIAL</a>
+											<a onClick="filter('tag', 'print')">PRINT</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 poster print 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Telephone</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'poster')">POSTER</a>
+											<a onClick="filter('tag', 'print')">PRINT</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 editorial print 2021"> 
+										<p class="year"><a onClick="filter('year', '2021')">2021</a></p>
+										<p class="piece">Direction Magazine</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'editorial')">EDITORIAL</a>
+											<a onClick="filter('tag', 'print')">PRINT</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 editorial print 2021"> 
+										<p class="year"><a onClick="filter('year', '2021')">2021</a></p>
+										<p class="piece">Talisman 61</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'editorial')">EDITORIAL</a>
+											<a onClick="filter('tag', 'print')">PRINT</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 packaging 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">Ramenhead</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'packaging')">PACKAGING</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 branding 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">Self-Sent</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'branding')">BRANDING</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 digital uiux wireframing 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">Ringramen</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'digital')">DIGITAL</a>
+											<a onClick="filter('tag', 'uiux')">UI/UX</a>
+											<a onClick="filter('tag', 'wireframing')">WIREFRAMING</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 digital uiux wireframing 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">bijou</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'digital')">DIGITAL</a>
+											<a onClick="filter('tag', 'uiux')">UI/UX</a>
+											<a onClick="filter('tag', 'wireframing')">WIREFRAMING</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 editorial print 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">Asian American Zine</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'editorial')">EDITORIAL</a>
+											<a onClick="filter('tag', 'print')">PRINT</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 editorial print 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">The Development of the Human Figure</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'editorial')">EDITORIAL</a>
+											<a onClick="filter('tag', 'print')">PRINT</a>
+										</div>
+									</div>
+									<div id="3dart" class="anchor col-12"></div>
+									<div class="row flex-nowrap category-name col-12">
+										<div class="col-12">
+											<h1>03</h1>
+											<p>3D ART</p>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 sculpture 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">"I AM HERE."</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'sculpture')">SCULPTURE</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 sculpture 2021"> 
+										<p class="year"><a onClick="filter('year', '2021')">2021</a></p>
+										<p class="piece">B(a)b(y) Gun</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'sculpture')">SCULPTURE</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 process sculpture 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">Miscommunication</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'process')">PROCESS</a>
+											<a onClick="filter('tag', 'sculpture')">SCULPTURE</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 sculpture 2019 2020"> 
+										<p class="year"><a class="start" onClick="filter('year', '2019')">2019</a>-<a class="end" onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">Stardust</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'sculpture')">SCULPTURE</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 sculpture 2019"> 
+										<p class="year"><a onClick="filter('year', '2019')">2019</a></p>
+										<p class="piece">The Most Beautiful Moment in Life</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'sculpture')">SCULPTURE</a>
+										</div>
+									</div>
+									<div id="3ddesign" class="anchor col-12"></div>
+									<div class="row flex-nowrap category-name col-12">
+										<div class="col-12">
+											<h1>04</h1>
+											<p>3D DESIGN</p>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 arduino furniture woodworking 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Synergy Seats</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'arduino')">ARDUINO</a>
+											<a onClick="filter('tag', 'furniture')">FURNITURE</a>
+											<a onClick="filter('tag', 'woodworking')">WOODWORKING</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 product arduino 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">ATD Imaging Helm</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'product')">PRODUCT</a>
+											<a onClick="filter('tag', 'arduino')">ARDUINO</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 furniture 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Good Morning, Good Night</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'furniture')">FURNITURE</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 product 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Cardboard Clutch</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'product')">PRODUCT</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 product 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Cardboard Luxury Saddlebag</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'product')">PRODUCT</a>
+										</div>
+									</div>
+									<div id="multimedia" class="anchor col-12"></div>
+									<div class="row flex-nowrap category-name col-12">
+										<div class="col-12">
+											<h1>05</h1>
+											<p>MULTIMEDIA</p>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 installation interactive 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Seven Minutes in Heaven</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'installation')">INSTALLATION</a>
+											<a onClick="filter('tag', 'interactive')">INTERACTIVE</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 creativecoding interactive 2021"> 
+										<p class="year"><a onClick="filter('year', '2021')">2021</a></p>
+										<p class="piece">Eye Trails</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'creativecoding')">CREATIVE CODING</a>
+											<a onClick="filter('tag', 'interactive')">INTERACTIVE</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 creativecoding 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">Music Visualizer</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'creativecoding')">CREATIVE CODING</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 installation interactive 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">The Magic Shop</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'installation')">INSTALLATION</a>
+											<a onClick="filter('tag', 'interactive')">INTERACTIVE</a>
+										</div>
+									</div>
+									<div id="video" class="anchor col-12"></div>
+									<div class="row flex-nowrap category-name col-12">
+										<div class="col-12">
+											<h1>06</h1>
+											<p>VIDEO</p>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 animation charcoal 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Efflorescence</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'animation')">ANIMATION</a>
+											<a onClick="filter('tag', 'charcoal')">CHARCOAL</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 film 2021"> 
+										<p class="year"><a onClick="filter('year', '2021')">2021</a></p>
+										<p class="piece">Losing Contact</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'film')">FILM</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 film 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">[Be]longing</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'film')">FILM</a>
+										</div>
+									</div>
+									<div id="wearable" class="anchor col-12"></div>
+									<div class="row flex-nowrap category-name col-12">
+										<div class="col-12">
+											<h1>07</h1>
+											<p>WEARABLE</p>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 garment sculpture 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Golden Child</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'garment')">GARMENT</a>
+											<a onClick="filter('tag', 'sculpture')">SCULPTURE</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 jewelry 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Straits</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a>JEWELRY</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 jewelry product 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">Hear No Evil</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a>JEWELRY</a>
+											<a onClick="filter('tag', 'product')">PRODUCT</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 garment sculpture 2020"> 
+										<p class="year"><a onClick="filter('year', '2020')">2020</a></p>
+										<p class="piece">Passion</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'jewelry')">JEWELRY</a>
+											<a onClick="filter('tag', 'sculpture')">SCULPTURE</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 garment 2022"> 
+										<p class="year"><a onClick="filter('year', '2022')">2022</a></p>
+										<p class="piece">"Don't Forget To Take Your..."</p>
+										<img loading="lazy" src="" alt="">
+										<div class="tag">
+											<a onClick="filter('tag', 'garment')">GARMENT</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1half">
+						<a class="back filterHidden" id="back" onClick="back()">back</a>
+						<div class="views" id="view">
+							<div>
+								<a href="https://huang-tiffany.github.io/2021/index.html" class="hidden view" onmouseover="hoverMenu('hover', 'view')" onmouseout="hoverMenu('out', 'view')">featured</a><br>
+								<a href="https://huang-tiffany.github.io/2021/index.html" class="hidden view" onmouseover="hoverMenu('hover', 'view')" onmouseout="hoverMenu('out', 'view')">index</a><br>
+								<a href="" onmouseover="hoverMenu('hover', 'view')" onmouseout="hoverMenu('out', 'view')">view</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
