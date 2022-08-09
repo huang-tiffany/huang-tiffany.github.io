@@ -9,13 +9,14 @@
 	padding: 0;
 	color: white;
 	column-gap: 1em;
-	animation-name: fadein;
-	animation-duration: 1s;
 	pointer-events: all;
 	scroll-behavior: smooth;
 	cursor: crosshair;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+	
+	animation-name: fadein;
+	animation-duration: 1s;
 }
 
 body {
@@ -26,7 +27,6 @@ body.fadeout {
 	animation-name: fadeout;
 	animation-duration: 1s;
 	animation-timing-function: ease;
-	animation-delay: 0s;
 }
 
 @keyframes fadein {
@@ -34,7 +34,7 @@ body.fadeout {
 		opacity: 0;
 	}
 	100% {
-		opacity: 100;
+		opacity: 100%;
 	}
 }
 
@@ -175,7 +175,7 @@ main .container-fluid.main .row.main {
 	display: none;
 }
 
-.views, .back {
+.views {
 	position: fixed;
 }
 
@@ -199,6 +199,7 @@ a.view, a.med, a.tagmenu, a.yearmenu {
 	visibility: visible;
 	transition: ease;
 	transition-duration: 0.25s;
+	animation-delay: -1s;
 }
 
 a.yearmenu {
@@ -206,7 +207,7 @@ a.yearmenu {
 	align-items: center;
 }
 
-.medium a, .year-menu a, .tagmenu, .tag-menu a, .views a, .back {
+.medium a, .year-menu a, .tagmenu, .tag-menu a, .views a {
 	float: left;
 }
 
@@ -304,7 +305,7 @@ a.yearmenu:hover>hr{
 	margin-right: -0.5em;
 }
 
-.year {
+.year, .featured-year {
 	font-size: 0.75em;
 	padding: 0;
 	margin-right: -1.5em;
@@ -395,7 +396,7 @@ a.yearmenu {
 	transition-duration: 0.5s;
 }
 
-a.view.hidden, a.med.hidden, .tagmenu.hidden, .yearmenu.hidden {
+a.view.hidden, a.med.hidden, .tagmenu.hidden, .yearmenu.hidden, .featured-mediums .hidden, .featured-pieces.hidden {
 	opacity: 0;
 	visibility: hidden;
 	transition: ease;
@@ -429,15 +430,13 @@ a.view.hidden, a.med.hidden, .tagmenu.hidden, .yearmenu.hidden {
 		max-width: calc(((100vw - 3em) / 12) * 9 - 1em);
 	}
 	
-	.views, .back {
+	.views {
 		bottom: 1em;
 		right: calc(((100vw - 3em) / 12) * 9 + 2em);
 		text-align: end;
-		justify-content: flex-end;
-		
 	}
 	
-	.views a, .back {
+	.views a {
 		float: right;
 	}
 	
@@ -461,11 +460,33 @@ a.view.hidden, a.med.hidden, .tagmenu.hidden, .yearmenu.hidden {
 		min-width: calc(((100vw - 4em) / 12) * 9);
 	}
 	
-	.col-1half {
-		max-width: calc(((100vw - 4em) / 12) * 1.5);
+	.col-8 {
+		max-width: calc(((100vw - 4em) / 12) * 8);
+		min-width: calc(((100vw - 4em) / 12) * 8);
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
 	}
 	
-	.views, .back {
+	.col-1 {
+		max-width: calc((100vw - 4em) / 12);
+		margin: 0;
+		padding: 0;
+	}
+	
+	main .col-3 {
+		max-width: calc(((100vw - 4em) / 12) * 3);
+		min-width: calc(((100vw - 4em) / 12) * 3);
+		padding: 0;
+	}
+	
+	.col-1half {
+		max-width: calc(((100vw - 4em) / 12) * 1.5);
+		min-width: calc(((100vw - 4em) / 12) * 1.5);
+		padding: 0;
+	}
+	
+	.views {
 		bottom: 1em;
 		right: 1em;
 		text-align: end;
@@ -474,5 +495,148 @@ a.view.hidden, a.med.hidden, .tagmenu.hidden, .yearmenu.hidden {
 	
 	.tag-menu, .year-menu {
 		width: calc(((100vw - 4em) / 12) * 1.5);
+	}
+	
+	h1 {
+		font-size: 3em;
+		display: inline-flex;
+		transition-duration: 0.5s;
+	}
+	
+	.stretch {
+		transition-duration: 0.5s;
+		width: max-content;
+		margin: 0 -1em;
+		padding: 0;
+	}
+	
+	h1.featured:hover {
+		margin-right: -1.5em;
+	}
+	
+	h1:hover>.stretch.e {
+		transform-origin: left;
+		transform: scale(2, 1);
+		margin-right: -10%;
+		margin-left: -25%;
+		transition-duration: 0.5s;
+	}
+	
+	h1:hover>.stretch.o {
+		transform-origin: left;
+		transform: scale(2, 1);
+		margin-right: -9%;
+		margin-left: -20%;
+		transition-duration: 0.5s;
+	}
+	
+	.featured-mediums {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	
+	.featured-mediums a {
+		cursor: default;
+		white-space: nowrap;
+		display: flex;
+	}
+	
+	.featured-mediums a :not(.feat) {
+		cursor: pointer;
+	}
+	
+	.featured-mediums a p {
+		margin: 0;
+		transition-duration: 0.25s;
+	}
+	
+	.slide-container {
+		width: calc(100% - 2em);
+		height: calc(100% - 2em);
+		opacity: 1;
+		top: 1em;
+		left: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.slide img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.slide {
+		transition-duration: 2s;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.slide:not(.spotlight) {
+		visibility: hidden;
+	}
+	
+	.feat-num {
+		opacity: 0.5;
+		animation-delay: -1s;
+	}
+	
+	.feat-num:hover, .spotlight {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	.spotlight.feat-num {
+		font-weight: 600;
+	}
+	
+	.featured-mediums a p.spotlight {
+		transition-duration: 2s;
+	}
+	
+	.col-8 div.corner-stroke {
+		background-color: transparent;
+		pointer-events: none;
+		width: 2em;
+		height: 2em;
+		position: absolute;
+		z-index: 5;
+	}
+	
+	.corner-stroke.top {
+		top: 0;
+		border-top: thin solid white;
+	}
+	
+	.corner-stroke.bottom {
+		bottom: 0;
+		border-bottom: thin solid white;
+	}
+	
+	.corner-stroke.left {
+		left: 0;
+		border-left: thin solid white;
+	}
+	
+	.corner-stroke.right {
+		right: 0;
+		border-right: thin solid white;
+	}
+	
+	.featured-pieces {
+		position: absolute;
+		transition-duration: 2s;
+	}
+	
+	.featured-year {
+		margin: 0;
 	}
 }

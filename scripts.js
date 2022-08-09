@@ -6,13 +6,51 @@ $.get("sidebar.html", function(data){
 	$("#sidebar-placeholder2").replaceWith(data);
 });
 
+function screenSize(x) {
+	if (x.matches) {
+		$.get("work featured view.html", function(data){
+			$("#work-view").replaceWith(data);
+		});
+	} else {
+		$.get("work index view.html", function(data){
+			$("#work-view").replaceWith(data);
+		});
+	}
+}
+
+var x = window.matchMedia("(min-width: 768px)");
+screenSize(x);
+x.addListener(screenSize);
+
+function indexView() {
+	$.get("work index view.html", function(data){
+		$("#work-view").replaceWith(data);
+	});
+}
+
+function featuredView() {
+	$.get("work featured view.html", function(data){
+		$("#work-view").replaceWith(data);
+	});
+}
+
 function hoverMenu(inout, menu) {
 	var menus = document.getElementsByClassName(menu);
 	for (var i = 0; i < menus.length; i++) {
 		if (inout === "hover") {
 			menus[i].classList.remove("hidden");
+			if (menu.includes("featured")) {
+				menus[i].classList.add("hover");
+			}
 		} else {
-			menus[i].classList.add("hidden");
+			if (menus[i].classList.contains("spotlight")) {
+				menus[i].classList.remove("hidden");
+			} else {
+				menus[i].classList.add("hidden");
+				if (menu.includes("featured")) {
+					menus[i].classList.remove("hover");
+				}
+			}
 		}
 	}
 }
@@ -45,7 +83,7 @@ function filter(which, tag) {
 	var back = document.getElementById("back");
 	back.classList.remove("filterHidden");
 	var view = document.getElementById("view");
-	view.classList.add("filterHidden");
+//	view.classList.add("filterHidden");
 	var medium = document.getElementById("med");
 	medium.classList.add("filterHidden");
 	var tags = document.getElementsByClassName(tag);
@@ -114,4 +152,58 @@ function back() {
 	var url = location.href;
     location.href = "#tag-top";
     history.replaceState(null,null,url);
+}
+
+var slideIndex = 0;
+var change = false;
+var slides = document.getElementsByClassName("slide");
+var featNum = document.getElementsByClassName("feat-num");
+var feat = document.getElementsByClassName("feat");
+var piece = document.getElementsByClassName("featured-pieces");
+var myTimeout;
+
+function slideshow() {
+	slideIndex++;
+	if (slideIndex > slides.length) {
+		slideIndex = 1;
+	}
+	showSlides(slideIndex);
+//	if (change) {
+//		change = false;
+//		setTimeout(slideshow, 3500);
+//	} else {
+//		setTimeout(slideshow, 3500);
+//	}
+	myTimeout = setTimeout(slideshow, 3500);
+}
+
+function showSlides(num) {
+	for (var i = 0; i < slides.length; i++) {
+		slides[i].style.opacity = "0";
+		slides[i].style.visibility = "hidden";
+		featNum[i].classList.remove("spotlight");
+		featNum[i].style.pointerEvents = "all";
+		feat[i].classList.remove("spotlight");
+		piece[i].classList.add("hidden");
+		if (!feat[i].classList.contains("hover")) {
+			feat[i].classList.add("hidden");
+		}
+	}
+	slides[num - 1].style.opacity = "1";
+	featNum[num - 1].classList.add("spotlight");
+	feat[num - 1].classList.add("spotlight");
+	featNum[num - 1].style.pointerEvents = "none";
+	feat[num - 1].classList.remove("hidden");
+	piece[num - 1].classList.remove("hidden");
+	slides[num - 1].style.visibility = "visible";
+	if (feat[num - 1].classList.contains("hover")) {
+		feat[num - 1].classList.remove("hover");
+	}
+}
+
+function changeIndex(n) {
+	showSlides(n);
+	n--;
+	slideIndex = n;
+//	change = true;
 }
