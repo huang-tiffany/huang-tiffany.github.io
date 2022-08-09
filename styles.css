@@ -280,7 +280,7 @@ a.yearmenu:hover>hr{
 	width: 100%;
 }
 
-.col-9 .row .col-md-4 {
+.col-md-4 {
 	display: flex;
 	align-items: flex-start;
 	height: 250px;
@@ -349,9 +349,11 @@ a.yearmenu:hover>hr{
 
 .col-md-4 img {
 	width: 100%;
-	height: calc(100% - 0.8em);
+	height: calc(100% - 2em);
 	right: 0;
 	margin-right: 0;
+	object-fit: cover;
+	overflow: hidden;
 }
 
 .tag {
@@ -409,6 +411,10 @@ a.view.hidden, a.med.hidden, .tagmenu.hidden, .yearmenu.hidden, .featured-medium
 
 .filterHidden {
 	display: none !important;
+}
+
+.extra {
+	display: none;
 }
 
 @media (min-width: 576px) {
