@@ -1,0 +1,38 @@
+<div id="work-view" class="piece-view">
+	<div class="row flex-nowrap main">
+		<div class="col-2">
+			<a class="arrow" onClick="showPieceSlides(false)">&larr;</a>
+			<p id="slide-num"><a id="slide-index">01</a> / <a id="slide-total">16</a></p>
+		</div>
+		<div class="col-8 row">
+			<div class="col-12 slide-container">
+				<div class="piece1 slide spotlight"><img alt="Slide 1" src="2022/images/self-portrait.jpg"></div>
+				<div class="piece1 slide"><img loading="lazy"  alt="Slide 2" src="2022/images/rogue.png">
+				</div>
+				<div class="piece1 slide"><img alt="Slide 3" src="2022/images/ribcage.JPG"></div>
+			</div>
+		</div>
+		<div class="col-2">
+			<a class="arrow" onClick="showPieceSlides(true)">&rarr;</a>
+			<a class="back" id="back" onClick="indexView()">back</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	clearTimeout(myTimeout);
+	slideIndexPiece = 1;
+	showPieceSlides(true);
+	showPieceSlides(false);
+//	
+//	document.addEventListener('keydown', function(e) {
+//		switch (e.keyCode) {
+//			case 37:
+//				showPieceSlides(false);
+//				break;
+//			case 39:
+//				showPieceSlides(true);
+//				break;
+//		}
+//	})
+</script>

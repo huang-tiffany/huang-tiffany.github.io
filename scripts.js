@@ -1,45 +1,96 @@
-$.get("sidebar.html", function(data){
+$.get("sidebar.html", function(data) {
 	$("#sidebar-placeholder").replaceWith(data);
 });
 
-$.get("sidebar.html", function(data){
+$.get("sidebar.html", function(data) {
 	$("#sidebar-placeholder2").replaceWith(data);
 });
 
-$.get("work featured view.html", function(data){
+$.get("work featured view.html", function(data) {
 	$("#work-view").replaceWith(data);
 });
-var workPage = true;
+
+var workPage = "index";
 var x = window.matchMedia("(min-width: 768px)");
 screenSize(x);
 x.addListener(screenSize);
 
 function screenSize(x) {
 	if (x.matches) {
-		if (workPage) {
+		if (workPage === "featured") {
 			$.get("work featured view.html", function(data){
 				$("#work-view").replaceWith(data);
 			});
 		}
 	} else {
-		$.get("work index view.html", function(data){
-			$("#work-view").replaceWith(data);
-		});
+		if (workPage === "piece") {
+			$.get("work piece view.html", function(data){
+				$("#work-view").replaceWith(data);
+			});
+		} else {
+			$.get("work index view.html", function(data){
+				$("#work-view").replaceWith(data);
+			});
+		}
 	}
 }
 
 function indexView() {
-	workPage = false;
+	workPage = "index";
 	$.get("work index view.html", function(data){
 		$("#work-view").replaceWith(data);
 	});
+	var footer = document.querySelector("footer");
+	var back2 = document.getElementById("back2");
+	if (!footer.classList.contains("filterHidden")) {
+		footer.classList.add("filterHidden");
+	}
+	if (!back2.classList.contains("filterHidden")) {
+		back2.classList.add("filterHidden");
+	}
 }
 
 function featuredView() {
-	workPage = true;
+	workPage = "featured";
 	$.get("work featured view.html", function(data){
 		$("#work-view").replaceWith(data);
 	});
+	var footer = document.querySelector("footer");
+	var back2 = document.getElementById("back2");
+	if (!footer.classList.contains("filterHidden")) {
+		footer.classList.add("filterHidden");
+	}
+	if (!back2.classList.contains("filterHidden")) {
+		back2.classList.add("filterHidden");
+	}
+}
+
+function pieceView(piece) {
+	workPage = "piece"
+	var footer = document.querySelector("footer");
+	footer.classList.remove("filterHidden");
+	var back2 = document.getElementById("back2");
+	back2.classList.remove("filterHidden");
+	$.get("work piece view.html", function(data){
+		$("#work-view").replaceWith(data);
+	});
+	var year = document.getElementsByClassName("piece-year");
+	var title = document.getElementsByClassName("piece-title");
+	var size = document.getElementsByClassName("piece-size");
+	var medium = document.getElementsByClassName("piece-medium");
+	var statement = document.getElementsByClassName("statement");
+	year[0].innerHTML = piece.year;
+	title[0].innerHTML = piece.title;
+	size[0].innerHTML = piece.size;
+	medium[0].innerHTML = piece.medium;
+	statement[0].innerHTML = piece.statement;
+	var slides = document.getElementsByClassName("slide");
+	var slideTotal = document.getElementById("slide-total");
+	slideTotal.innerHTML = slides.length;
+	
+	//replace all names in piece view w actual piece name
+//	make arrays for every piece w title, year, size, medium, artist statement
+//	for title, set attribute class to pieceArray[i] and do this for all components of the piece
 }
 
 function hoverMenu(inout, menu) {
@@ -78,6 +129,7 @@ function leavePage(link) {
 }
 
 function filter(which, tag) {
+	workPage = false;
 	var allImgs = document.getElementsByClassName("col-md-4");
 	var headers = document.getElementsByClassName("category-name");
 	var anchors = document.getElementsByClassName("anchor");
@@ -91,7 +143,7 @@ function filter(which, tag) {
 	var back = document.getElementById("back");
 	back.classList.remove("filterHidden");
 	var view = document.getElementById("view");
-//	view.classList.add("filterHidden");
+	view.classList.add("filterHidden");
 	var medium = document.getElementById("med");
 	medium.classList.add("filterHidden");
 	var tags = document.getElementsByClassName(tag);
@@ -126,6 +178,7 @@ function filter(which, tag) {
 }
 
 function expand(plusminus, medium, id) {
+	workPage = false;
 	var pieces = document.getElementsByClassName(medium);
 	var link = document.getElementById(id);
 	if (plusminus === "plus") {
@@ -186,8 +239,8 @@ function back() {
 	back.classList.add("filterHidden");
 	var view = document.getElementById("view");
 	view.classList.remove("filterHidden");
-	var medium = document.getElementById("med");
-	medium.classList.remove("filterHidden");
+	var med = document.getElementById("med");
+	med.classList.remove("filterHidden");
 	var tagsMenu = document.getElementById("tag-menu");
 	var yearsMenu = document.getElementById("year-menu");
 	if (!yearsMenu.classList.contains("filterHidden")) {
@@ -248,9 +301,48 @@ function showSlides(num) {
 	}
 }
 
+var slideIndexPiece = 1;
+function showPieceSlides(plus) {
+	var slideTotal = document.getElementById("slide-total");
+	slideTotal.innerHTML = slides.length;
+	if (slideIndexPiece < 10) {
+		slideTotal.innerHTML = "0" + slides.length;
+	}
+	if (plus) {
+		slideIndexPiece++;	
+	} else {
+		slideIndexPiece--;
+	}
+	if (slideIndexPiece > slides.length) {
+		slideIndexPiece = 1;
+	}
+	if (slideIndexPiece < 1) {
+		slideIndexPiece = slides.length;
+	}
+	for (var i = 0; i < slides.length; i++) {
+		slides[i].style.opacity = "0";
+		slides[i].style.visibility = "hidden";
+		slides[i].classList.remove("spotlight");
+	}
+	slides[slideIndexPiece - 1].classList.add("spotlight");
+	slides[slideIndexPiece - 1].style.opacity = "1";
+	slides[slideIndexPiece - 1].style.visibility = "visible";
+	var pieceslideIndexPiece = document.getElementById("slide-index");
+	pieceslideIndexPiece.innerHTML = slideIndexPiece;
+	if (slideIndexPiece < 10) {
+		pieceslideIndexPiece.innerHTML = "0" + slideIndexPiece;
+	}
+}
+
 function changeIndex(n) {
 	showSlides(n);
 	n--;
-	slideIndex = n;
+	slideIndexPiece = n;
 //	change = true;
+}
+
+function advanceSlide() {
+	slideIndexPiece++;
+	showSlides(slideIndexPiece);
+	slideIndexPiece--;
 }
