@@ -65,8 +65,8 @@ function featuredView() {
 	}
 }
 
-function pieceView(piece) {
-	workPage = "piece"
+function pieceView(piece, pieceString) {
+	workPage = "piece";
 	var footer = document.querySelector("footer");
 	footer.classList.remove("filterHidden");
 	var back2 = document.getElementById("back2");
@@ -84,13 +84,19 @@ function pieceView(piece) {
 	size[0].innerHTML = piece.size;
 	medium[0].innerHTML = piece.medium;
 	statement[0].innerHTML = piece.statement;
-	var slides = document.getElementsByClassName("slide");
-	var slideTotal = document.getElementById("slide-total");
-	slideTotal.innerHTML = slides.length;
-	
-	//replace all names in piece view w actual piece name
-//	make arrays for every piece w title, year, size, medium, artist statement
-//	for title, set attribute class to pieceArray[i] and do this for all components of the piece
+	$.get("slides.html", function(data2) {
+		var data2 = $('<div>', {
+			html: data2
+		});
+		var elem = $(data2).find(`#${pieceString}`);
+		$("#piece-slides").replaceWith(elem);
+		var slides = document.getElementsByClassName("slide");
+		var slideTotal = document.getElementById("slide-total");
+		slideTotal.innerHTML = slides.length;
+		if (slideIndexPiece < 10) {
+			slideTotal.innerHTML = "0" + slides.length;
+		}
+	});	
 }
 
 function hoverMenu(inout, menu) {
