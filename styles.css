@@ -475,6 +475,22 @@ footer {
 	visibility: visible;
 }
 
+footer em, footer a, footer a:hover {
+	color: black;
+}
+
+footer p a, footer p a:hover {
+	text-decoration: underline;
+}
+
+footer p a:hover::after {
+	font-family: system-ui;
+	content: " ↗ ";
+	text-decoration-color: white;
+	display: inline-block;
+	margin-left: 0.25em;
+}
+
 footer p {
 	color: black;
 	margin: 0;
@@ -625,39 +641,40 @@ footer p.piece-size {
 	height: 100%;
 	top: 0;
 	left: 0;
+	padding: 0;
 }
 
 .piece-view .col-2, .piece-view .col-8 {
 	display: flex;
 }
 
-.slide img {
-		max-width: 100%;
-		max-height: 100%;
-	}
-	
-	.slide {
-		transition-duration: 2s;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	
-	.piece-view .slide {
-		transition-delay: 0;
-		transition-duration: 1s;
-	}
-	
-	.slide:not(.spotlight) {
-		visibility: hidden;
-	}
+.slide img, .slide video {
+	max-width: 100%;
+	max-height: 100%;
+}
 
-	.piece-view #back, #slide-num {
-		visibility: visible;
-	}
+.slide {
+	transition-duration: 2s;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.piece-view .slide {
+	transition-delay: 0;
+	transition-duration: 1s;
+}
+
+.slide:not(.spotlight) {
+	visibility: hidden;
+}
+
+.piece-view #back, #slide-num {
+	visibility: visible;
+}
 
 @media (min-width: 576px) {
 	.col-9 .row .col-md-4 {

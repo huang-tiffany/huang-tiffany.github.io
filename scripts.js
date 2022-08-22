@@ -93,7 +93,7 @@ function pieceView(piece, pieceString) {
 		var slides = document.getElementsByClassName("slide");
 		var slideTotal = document.getElementById("slide-total");
 		slideTotal.innerHTML = slides.length;
-		if (slideIndexPiece < 10) {
+		if (slides.length < 10) {
 			slideTotal.innerHTML = "0" + slides.length;
 		}
 	});	
@@ -311,7 +311,7 @@ var slideIndexPiece = 1;
 function showPieceSlides(plus) {
 	var slideTotal = document.getElementById("slide-total");
 	slideTotal.innerHTML = slides.length;
-	if (slideIndexPiece < 10) {
+	if (slides.length < 10) {
 		slideTotal.innerHTML = "0" + slides.length;
 	}
 	if (plus) {
