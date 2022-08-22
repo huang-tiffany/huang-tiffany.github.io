@@ -84,11 +84,15 @@ function pieceView(piece, pieceString) {
 	size[0].innerHTML = piece.size;
 	medium[0].innerHTML = piece.medium;
 	statement[0].innerHTML = piece.statement;
-	$.get("slides.html", function(data2) {
-		var data2 = $('<div>', {
-			html: data2
+	pieceImages(pieceString);
+}
+
+function pieceImages(pieceString) {
+	$.get("slides.html", function(data) {
+		data = $('<div>', {
+			html: data
 		});
-		var elem = $(data2).find(`#${pieceString}`);
+		var elem = $(data).find(`#${pieceString}`);
 		$("#piece-slides").replaceWith(elem);
 		var slides = document.getElementsByClassName("slide");
 		var slideTotal = document.getElementById("slide-total");
