@@ -92,8 +92,8 @@ function pieceImages(pieceString) {
 		data = $('<div>', {
 			html: data
 		});
-		var elem = $(data).find(`#${pieceString}`);
-		$("#piece-slides").replaceWith(elem);
+		var elem = data.find(`#${pieceString}`);
+		$(".piece-slides").replaceWith(elem);
 		var slides = document.getElementsByClassName("slide");
 		var slideTotal = document.getElementById("slide-total");
 		slideTotal.innerHTML = slides.length;
