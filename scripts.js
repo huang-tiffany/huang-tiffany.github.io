@@ -95,10 +95,14 @@ function pieceImages(pieceString) {
 		var elem = data.find(`#${pieceString}`);
 		$(".piece-slides").replaceWith(elem);
 		var slides = document.getElementsByClassName("slide");
-		var slideTotal = document.getElementById("slide-total");
-		slideTotal.innerHTML = slides.length;
-		if (slides.length < 10) {
-			slideTotal.innerHTML = "0" + slides.length;
+		if (slides.length < 1) {
+			pieceImages(pieceString);
+		} else {
+			var slideTotal = document.getElementById("slide-total");
+			slideTotal.innerHTML = slides.length;
+			if (slides.length < 10) {
+				slideTotal.innerHTML = "0" + slides.length;
+			}
 		}
 	});	
 }
@@ -347,12 +351,12 @@ function showPieceSlides(plus) {
 function changeIndex(n) {
 	showSlides(n);
 	n--;
-	slideIndexPiece = n;
+	slideIndex = n;
 //	change = true;
 }
 
 function advanceSlide() {
-	slideIndexPiece++;
-	showSlides(slideIndexPiece);
-	slideIndexPiece--;
+	slideIndex++;
+	showSlides(slideIndex);
+	slideIndex--;
 }
