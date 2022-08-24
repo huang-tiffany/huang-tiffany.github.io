@@ -579,11 +579,11 @@ footer p.piece-size {
 }
 
 .piece-view #back {
-	position: fixed;
-	bottom: 2.5em;
-	right: 1em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0;
 	user-select: none;
-	visibility: hidden;
 }
 
 #back2 {
@@ -615,11 +615,10 @@ footer p.piece-size {
 }
 
 #slide-num {
-	position: fixed;
-	bottom: 2.5em;
-	left: 1em;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	margin: 0;
-	visibility: hidden;
 }
 
 #slide-num a {
@@ -672,10 +671,6 @@ footer p.piece-size {
 	visibility: hidden;
 }
 
-.piece-view #back, #slide-num {
-	visibility: visible;
-}
-
 @media (min-width: 576px) {
 	.col-9 .row .col-md-4 {
 		max-width: calc((100% - 1em) / 2);
@@ -721,6 +716,20 @@ footer p.piece-size {
 	
 	#back2 {
 		visibility: visible;
+	}
+	
+	.piece-view #back {
+		position: fixed;
+		bottom: 2.5em;
+		right: 1em;
+		user-select: none;
+	}
+	
+	#slide-num {
+		position: fixed;
+		bottom: 2.5em;
+		left: 1em;
+		margin: 0;
 	}
 }
 

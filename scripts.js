@@ -6,11 +6,11 @@ $.get("sidebar.html", function(data) {
 	$("#sidebar-placeholder2").replaceWith(data);
 });
 
-$.get("work featured view.html", function(data) {
+$.get("work index view.html", function(data) {
 	$("#work-view").replaceWith(data);
 });
 
-var workPage = "index";
+var workPage = "featured";
 var x = window.matchMedia("(min-width: 768px)");
 screenSize(x);
 x.addListener(screenSize);
@@ -23,11 +23,7 @@ function screenSize(x) {
 			});
 		}
 	} else {
-		if (workPage === "piece") {
-			$.get("work piece view.html", function(data){
-				$("#work-view").replaceWith(data);
-			});
-		} else {
+		if (workPage === "index" || workPage === "featured") {
 			$.get("work index view.html", function(data){
 				$("#work-view").replaceWith(data);
 			});
