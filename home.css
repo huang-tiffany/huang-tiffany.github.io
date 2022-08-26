@@ -38,7 +38,7 @@ body.fadeout {
 	}
 }
 
-#background-video {
+#background-video, #background-video-lg {
 	width: 100vw;
 	height: 100vh;
     object-fit: cover;
@@ -48,6 +48,10 @@ body.fadeout {
 	top: 0;
 	bottom: 0;
 	z-index: -1;
+}
+
+#background-video-lg {
+	display: none;
 }
 
 #title {
@@ -160,13 +164,21 @@ footer {
 	margin-top: -1em;
 }
 
-@media (min-width: 512px) {
+@media (min-width: 576px) {
 	#title h1 {
 		font-size: 4em;
 	}
 	
 	#title hr {
 		margin-top: 2.5em;
+	}
+	
+	#background-video {
+		display: none;
+	}
+	
+	#background-video-lg {
+		display: block;
 	}
 }
 
