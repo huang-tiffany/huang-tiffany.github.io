@@ -75,11 +75,13 @@ function pieceView(piece, pieceString) {
 	var size = document.getElementsByClassName("piece-size");
 	var medium = document.getElementsByClassName("piece-medium");
 	var statement = document.getElementsByClassName("statement");
+	var url = document.getElementsByClassName("piece-url");
 	year[0].innerHTML = piece.year;
 	title[0].innerHTML = piece.title;
 	size[0].innerHTML = piece.size;
 	medium[0].innerHTML = piece.medium;
 	statement[0].innerHTML = piece.statement;
+	url[0].innerHTML = piece.url;
 	pieceImages(pieceString);
 }
 

@@ -483,12 +483,18 @@ footer p a, footer p a:hover {
 	text-decoration: underline;
 }
 
-footer p a:hover::after {
+footer p a::after {
 	font-family: system-ui;
-	content: " ↗ ";
+	content: " ↘ ";
 	text-decoration-color: white;
 	display: inline-block;
 	margin-left: 0.25em;
+	transition-duration: 0.25s;
+}
+
+footer p a:hover::after {
+	transform: rotate(-90deg);
+	transition-duration: 0.25s;
 }
 
 footer p {
@@ -564,7 +570,7 @@ footer p.piece-title {
 	font-style: oblique;
 }
 
-footer p.piece-size {
+footer p.piece-size, footer p.piece-url {
 	font-size: 0.8em;
 	margin-bottom: 0.5em;
 }
