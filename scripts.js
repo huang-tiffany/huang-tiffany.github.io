@@ -10,6 +10,13 @@ $.get("work index view.html", function(data) {
 	$("#work-view").replaceWith(data);
 });
 
+var vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+	var vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 var workPage = "featured";
 var x = window.matchMedia("(min-width: 768px)");
 screenSize(x);
