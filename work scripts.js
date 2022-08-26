@@ -31,12 +31,12 @@ var arch = {
 //2D DESIGN
 
 var sccParks = {
-	year: "2020",
-	title: "Self-Sent",
+	year: "2022",
+	title: "Santa Clara County Parks Interpretation Branding",
 	size: '101 pages, 11" &times; 8.5"',
-	medium: "Adobe InDesign, Adobe Dimension, Adobe Illustrator",
+	medium: "Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Canva",
 	url: '<a href="https://indd.adobe.com/view/96b4a5b2-34c2-493b-afae-c11cf2f99e85" target="_blank">STYLE GUIDE</a>',
-	statement: "Inspired by one of my previous works that consisted of an interactive exhibition where participants send letters to their past and future selves, I created a brand development guide for a fictional company Self-Sent, which would have a similar purpose of functioning as a messaging platform where customers can send in letters to the past and future using a variety of branded packages. In this guide, I included logo and typography-branding design choices, product design, and initial business planning."
+	statement: "During my internship at Santa Clara County Parks, I was tasked with creating branding guidelines and templates for the Interpretation team's program flyers. Starting with seven different sets of templates for categories including one-time and multisession events, I completely redesigned the visual identity of the flyers to be more visually cohesive and ADA-compliant. Along with the designs themselves, I also carried out training in Canva to teach the Interpretation team not only how to use my system, but also how to navigate Canva itself for future design needs. The end result culminated in a 100+ page style guide detailing the templates, elements used in the templates, spacing, typography, Canva best practices, and FAQ's, among other details, as a way of documenting the entirety of the redesign and to provide details for future possible redesigns."
 }
 
 var rogueMagazine = {
