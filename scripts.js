@@ -17,7 +17,7 @@ window.addEventListener('resize', () => {
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-var workPage = "featured";
+var workPage = "index"; //can change to "featured" for featured landing page
 var x = window.matchMedia("(min-width: 768px)");
 screenSize(x);
 x.addListener(screenSize);
