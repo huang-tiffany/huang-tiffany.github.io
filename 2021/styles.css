@@ -23,6 +23,15 @@
 	display: none;
 }
 
+section {
+	display: none;
+	background-color: blue;
+}
+
+section:target {
+	display: flex;
+}
+
 body.fadeout {
 	animation-name: fadeout;
 	animation-duration: 1s;
