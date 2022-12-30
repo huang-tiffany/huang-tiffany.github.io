@@ -132,7 +132,7 @@ var connection = {
 
 var circleTriangleSquare = {
 	year: "2022",
-	title: "Synergy Seats",
+	title: "Circle, Triangle, Square",
 	size: '4" &times; 6" &times; 6"',
 	medium: "Tinplate, Welding Wire",
 	url: '',
