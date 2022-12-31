@@ -1,6 +1,6 @@
 //format: string, year, title, size, medium, statement
 
-var pieces = {sccParks, rogueMagazine, telephone, directionMagazine, talisman61, ramenhead, ringramen, bijou, asianAmericanDreamZine, theDevelopmentOfTheHumanFigure, drillRedesign, mesh, spiral, connection, circleTriangleSquare, synergySeats, atdImagingHelm, goodMorningGoodNight, cardboardLuxurySaddlebag, cardboardClutch, goldenChild, biomimeticShoePlatforms, straits, hearNoEvil, passion, pillJacket, sevenMinutesInHeaven, eyeTrails, musicVisualizer, toMyself, theSkyInBoxes, missing, iAmHere, babyGun, instant2, instant1, miscommunication, stardust, theMostBeautifulMomentInLife, selfPortraitSeries, caught, arch, efflorescence, losingContact, belonging, myLifeOnPaper, closetedDreams}
+var pieces = [sccParks, rogueMagazine, telephone, directionMagazine, talisman61, ramenhead, ringramen, bijou, asianAmericanDreamZine, theDevelopmentOfTheHumanFigure, drillRedesign, mesh, spiral, connection, circleTriangleSquare, synergySeats, atdImagingHelm, goodMorningGoodNight, cardboardLuxurySaddlebag, cardboardClutch, goldenChild, biomimeticShoePlatforms, straits, hearNoEvil, passion, pillJacket, sevenMinutesInHeaven, eyeTrails, musicVisualizer, toMyself, theSkyInBoxes, missing, iAmHere, babyGun, instant2, instant1, miscommunication, stardust, theMostBeautifulMomentInLife, selfPortraitSeries, caught, arch, efflorescence, losingContact, belonging, myLifeOnPaper, closetedDreams]
 
 function getPieces() {
 	return pieces;

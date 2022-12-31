@@ -23,10 +23,7 @@ screenSize(x);
 x.addListener(screenSize);
 
 function checkHash(pieces) {
-	console.log(pieces.length);
-	console.log(window.location.hash.substring(1));
 	if (window.location.hash.substring) {
-		console.log(pieces.length);
 		for (var i = 0; i < pieces.length; i++) {
 			if (window.location.hash.substring(1) === pieces[i].string) {
 				pieceView(pieces[i], piece[i].string);
@@ -93,6 +90,10 @@ window.addEventListener('popstate', function(event) {
 		pieceView(prevPiece, prevPieceString);
 	}
 }, false);
+
+window.onbeforeunload = function(e) {
+	history.replaceState(null, "", "work.html");
+}
 
 var prevPiece;
 var prevPieceString;
