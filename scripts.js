@@ -90,6 +90,7 @@ function pieceView(piece, pieceString) {
 	statement[0].innerHTML = piece.statement;
 	url[0].innerHTML = piece.url;
 	pieceImages(pieceString);
+	history.pushState(null, "", "work.html#" + pieceString);
 }
 
 function pieceImages(pieceString) {
