@@ -1,8 +1,15 @@
-//format: year, title, size, medium, statement
+//format: string, year, title, size, medium, statement
+
+var pieces = {sccParks, rogueMagazine, telephone, directionMagazine, talisman61, ramenhead, ringramen, bijou, asianAmericanDreamZine, theDevelopmentOfTheHumanFigure, drillRedesign, mesh, spiral, connection, circleTriangleSquare, synergySeats, atdImagingHelm, goodMorningGoodNight, cardboardLuxurySaddlebag, cardboardClutch, goldenChild, biomimeticShoePlatforms, straits, hearNoEvil, passion, pillJacket, sevenMinutesInHeaven, eyeTrails, musicVisualizer, toMyself, theSkyInBoxes, missing, iAmHere, babyGun, instant2, instant1, miscommunication, stardust, theMostBeautifulMomentInLife, selfPortraitSeries, caught, arch, efflorescence, losingContact, belonging, myLifeOnPaper, closetedDreams}
+
+function getPieces() {
+	return pieces;
+}
 
 //2D DESIGN
 
 var sccParks = {
+	string: "sccParks",
 	year: "2022",
 	title: "Santa Clara County Parks Interpretation Branding",
 	size: '101 pages, 11" &times; 8.5"',
@@ -12,6 +19,7 @@ var sccParks = {
 }
 
 var rogueMagazine = {
+	string: "rogueMagazine",
 	year: "2022",
 	title: "Rogue Magazine",
 	size: '74 pages, 8.5" &times; 11"',
@@ -21,6 +29,7 @@ var rogueMagazine = {
 }
 
 var telephone = {
+	string: "telephone",
 	year: "2022",
 	title: "Telephone",
 	size: '11" &times; 17"',
@@ -30,6 +39,7 @@ var telephone = {
 }
 
 var directionMagazine = {
+	string: "directionMagazine",
 	year: "2021",
 	title: "Direction Magazine",
 	size: '50 pages, 11" &times; 8.5"',
@@ -39,6 +49,7 @@ var directionMagazine = {
 }
 
 var talisman61 = {
+	string: "talisman61",
 	year: "2021",
 	title: "Talisman 61",
 	size: '281 pages, 9" &times; 12"',
@@ -48,6 +59,7 @@ var talisman61 = {
 }
 
 var ramenhead = {
+	string: "ramenhead",
 	year: "2020",
 	title: "Ramenhead",
 	size: '12" &times; 12"',
@@ -57,6 +69,7 @@ var ramenhead = {
 }
 
 var ringramen = {
+	string: "ringramen",
 	year: "2020",
 	title: "Ringramen",
 	size: '',
@@ -66,6 +79,7 @@ var ringramen = {
 }
 
 var bijou = {
+	string: "bijou",
 	year: "2020",
 	title: "bijou",
 	size: '',
@@ -74,7 +88,8 @@ var bijou = {
 	statement: 'From another Calarts course that I took over the past summer, which focused on app design, I learned to prototype interfaces with regards to handheld devices. While many apps do allow for virtual journaling, they often sacrifice the authenticity and craft of bullet journaling for sleek interfaces; thus, I wanted to digitize bullet journaling while keeping the same aesthetics, colors, and patterns typically associated with the activity.'
 }
 
-var asianAmericanDreamZine= {
+var asianAmericanDreamZine = {
+	string: "asianAmericanDreamZine", 
 	year: "2020",
 	title: "The Asian American Dream Zine",
 	size: '48 pages, 8.5" &times; 5.5"',
@@ -83,7 +98,8 @@ var asianAmericanDreamZine= {
 	statement: "As Asian Americans, our experiences are often underrepresented in the classic literature we read in our English classes. By creating this zine with my friend, and acting as the artistic director and sole designer, I wanted to diversify the American Dream that we read about in our junior year curriculum of The Great Gatsby, synthesizing my friend’s and my writing and our photography with quotes from books about storytelling (<em>The Things They Carried</em>) and the American Dream (<em>The Great Gatsby</em>)."
 }
 
-var theDevelopmentOfTheHumanFigure= {
+var theDevelopmentOfTheHumanFigure = {
+	string: "theDevelopmentOfTheHumanFigure",
 	year: "2020",
 	title: "The Development of the Human Figure",
 	size: '18 pages, 11" &times; 8.5"',
@@ -95,6 +111,7 @@ var theDevelopmentOfTheHumanFigure= {
 //3D DESIGN
 
 var drillRedesign = {
+	string: "drillRedesign",
 	year: "2022",
 	title: "Drill Redesign",
 	size: '',
@@ -104,6 +121,7 @@ var drillRedesign = {
 }
 
 var mesh = {
+	string: "mesh",
 	year: "2022",
 	title: "Mesh",
 	size: 'Variable',
@@ -113,6 +131,7 @@ var mesh = {
 }
 
 var spiral = {
+	string: "spiral",
 	year: "2022",
 	title: "Spiral",
 	size: '',
@@ -122,6 +141,7 @@ var spiral = {
 }
 
 var connection = {
+	string: "connection",
 	year: "2022",
 	title: "Connection",
 	size: '3" &times; 4.5" &times; 1.5"',
@@ -131,6 +151,7 @@ var connection = {
 }
 
 var circleTriangleSquare = {
+	string: "circleTriangleSquare",
 	year: "2022",
 	title: "Circle, Triangle, Square",
 	size: '4" &times; 6" &times; 6"',
@@ -140,6 +161,7 @@ var circleTriangleSquare = {
 }
 
 var synergySeats = {
+	string: "synergySeats",
 	year: "2022",
 	title: "Synergy Seats",
 	size: '30.25" &times; 48" &times; 22.5"',
@@ -149,6 +171,7 @@ var synergySeats = {
 }
 
 var atdImagingHelm = {
+	string: "atdImagingHelm",
 	year: "2022",
 	title: "ATD Imaging Helm",
 	size: '8" &times; 8" &times; 8"',
@@ -158,6 +181,7 @@ var atdImagingHelm = {
 }
 
 var goodMorningGoodNight = {
+	string: "goodMorningGoodNight",
 	year: "2022",
 	title: "Good Morning, Good Night",
 	size: '18" &times; 8" &times; 8"',
@@ -167,6 +191,7 @@ var goodMorningGoodNight = {
 }
 
 var cardboardLuxurySaddlebag = {
+	string: "cardboardLuxurySaddlebag",
 	year: "2022",
 	title: "Cardboard Luxury Handbag",
 	size: '8.5" &times; 8.5" &times; 2"',
@@ -176,6 +201,7 @@ var cardboardLuxurySaddlebag = {
 }
 
 var cardboardClutch = {
+	string: "cardboardClutch",
 	year: "2022",
 	title: "Cardboard Woven Clutch",
 	size: '5" &times; 8" &times; 3"',
@@ -187,6 +213,7 @@ var cardboardClutch = {
 //WEARABLE
 
 var goldenChild = {
+	string: "goldenChild",
 	year: "2022",
 	title: "Golden Child",
 	size: '20" &times; 24" &times; 8"',
@@ -196,6 +223,7 @@ var goldenChild = {
 }
 
 var biomimeticShoePlatforms = {
+	string: "biomimeticShoePlatforms",
 	year: "2022",
 	title: "Biomimetic Shoe Platforms",
 	size: '8" &times; 8" &times; 3" per Platform',
@@ -205,6 +233,7 @@ var biomimeticShoePlatforms = {
 }
 
 var straits = {
+	string: "straits",
 	year: "2022",
 	title: "Straits",
 	size: '12" &times; 10" &times; 10"',
@@ -214,6 +243,7 @@ var straits = {
 }
 
 var hearNoEvil = {
+	string: "hearNoEvil",
 	year: "2022",
 	title: "Hear No Evil",
 	size: '10" &times; 10" &times; 3"',
@@ -223,6 +253,7 @@ var hearNoEvil = {
 }
 
 var passion = {
+	string: "passion",
 	year: "2020",
 	title: "Passion",
 	size: '4" &times; 10" &times; 7"',
@@ -232,6 +263,7 @@ var passion = {
 }
 
 var pillJacket = {
+	string: "pillJacket",
 	year: "2020",
 	title: "&#34;Don't Forget To Take Your...&#34; (Pharmaceutical Couture)",
 	size: '25" &times; 20" &times; 17"',
@@ -243,6 +275,7 @@ var pillJacket = {
 //MULTIMEDIA
 
 var sevenMinutesInHeaven = {
+	string: "sevenMinutesInHeaven",
 	year: "2022",
 	title: "Seven Minutes in Heaven",
 	size: '72" &times; 84" &times; 36"',
@@ -252,6 +285,7 @@ var sevenMinutesInHeaven = {
 }
 
 var eyeTrails = {
+	string: "eyeTrails",
 	year: "2021",
 	title: "Eye Trails",
 	size: '',
@@ -261,6 +295,7 @@ var eyeTrails = {
 }
 
 var musicVisualizer = {
+	string: "musicVisualizer",
 	year: "2020",
 	title: "Music Visualizer",
 	size: '04:27',
@@ -270,6 +305,7 @@ var musicVisualizer = {
 }
 
 var toMyself = {
+	string: "toMyself",
 	year: "2020",
 	title: "To Myself (The Magic Shop)",
 	size: '60" &times; 80" &times; 70"',
@@ -281,6 +317,7 @@ var toMyself = {
 //3D ART
 
 var theSkyInBoxes = {
+	string: "theSkyInBoxes",
 	year: "2022",
 	title: "The Sky in Boxes",
 	size: '2" &times; 9" &times; 3"',
@@ -290,6 +327,7 @@ var theSkyInBoxes = {
 }
 
 var missing = {
+	string: "missing",
 	year: "2022",
 	title: "(M)issing",
 	size: '4" &times; 10" &times; 2"',
@@ -299,6 +337,7 @@ var missing = {
 }
 
 var iAmHere = {
+	string: "iAmHere",
 	year: "2022",
 	title: '"I AM HERE."',
 	size: '18" &times; 12" &times; 12"',
@@ -308,6 +347,7 @@ var iAmHere = {
 }
 
 var babyGun = {
+	string: "babyGun",
 	year: "2021",
 	title: "B(a)b(y) Gun",
 	size: '8" &times; 12" &times; 3"',
@@ -316,7 +356,8 @@ var babyGun = {
 	statement: "With the current state of society, people are becoming more and more hesitant to have kids, worrying about the consequences of bringing a child into a world that has less and less to offer them. Through the almost-absurd juxtaposition of babies, which represent life, and guns, which symbolize death, I wanted to explore how the traditionally honorable act of bringing new life into the world simultaneously doubles as a decreasingly promising future for later generations."
 }
 
-var instant2= {
+var instant2 = {
+	string: "instant2",
 	year: "2020",
 	title: "Instant (2/2)",
 	size: '4" &times; 12" &times; 10"',
@@ -326,6 +367,7 @@ var instant2= {
 }
 
 var instant1 = {
+	string: "instant1",
 	year: "2020",
 	title: "Instant (1/2)",
 	size: '80" &times; 34" &times; 22"',
@@ -335,6 +377,7 @@ var instant1 = {
 }
 
 var miscommunication = {
+	string: "miscommunication",
 	year: "2020",
 	title: "Miscommunication",
 	size: '11" &times; 6" &times; 4"',
@@ -344,6 +387,7 @@ var miscommunication = {
 }
 
 var stardust = {
+	string: "stardust",
 	year: "2019-2020",
 	title: "Stardust",
 	size: '65" &times; 30" &times; 38"',
@@ -352,7 +396,8 @@ var stardust = {
 	statement: "There’s a legend that says folding 10,000 stars grants you a wish, but when fate separates you from your passion, often a wish isn’t enough."
 }
 
-var theMostBeautifulMomentInLife= {
+var theMostBeautifulMomentInLife = {
+	string: "theMostBeautifulMomentInLife",
 	year: "2020",
 	title: "The Most Beautiful Moment in Life",
 	size: '42" &times; 36" &times; 36"',
@@ -364,6 +409,7 @@ var theMostBeautifulMomentInLife= {
 //2D ART
 
 var selfPortraitSeries = {
+	string: "selfPortraitSeries",
 	year: "2021",
 	title: "Self-Portrait Series",
 	size: '36" &times; 72", 36" &times; 24"',
@@ -373,6 +419,7 @@ var selfPortraitSeries = {
 }
 
 var caught = {
+	string: "caught",
 	year: "2021",
 	title: "Caught",
 	size: '17" &times; 11"',
@@ -382,6 +429,7 @@ var caught = {
 }
 
 var arch = {
+	string: "arch",
 	year: "2020",
 	title: "Arch.",
 	size: '24" &times; 18"',
@@ -393,6 +441,7 @@ var arch = {
 //VIDEO
 
 var efflorescence = {
+	string: "efflorescence",
 	year: "2022",
 	title: "Efflorescence",
 	size: '01:38, 18" &times; 24"',
@@ -402,6 +451,7 @@ var efflorescence = {
 }
 
 var losingContact = {
+	string: "losingContact",
 	year: "2021",
 	title: "Losing Contact",
 	size: '00:18',
@@ -411,6 +461,7 @@ var losingContact = {
 }
 
 var belonging = {
+	string: "belonging",
 	year: "2020",
 	title: "[Be]longing",
 	size: '00:19',
@@ -420,6 +471,7 @@ var belonging = {
 }
 
 var myLifeOnPaper = {
+	string: "myLifeOnPaper",
 	year: "2020",
 	title: "My Life On Paper",
 	size: '00:19',
@@ -429,6 +481,7 @@ var myLifeOnPaper = {
 }
 
 var closetedDreams = {
+	string: "closetedDreams",
 	year: "2020",
 	title: "Closeted Dreams",
 	size: '00:10, 60" &times; 40" &times; 22"',

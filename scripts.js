@@ -22,6 +22,17 @@ var x = window.matchMedia("(min-width: 768px)");
 screenSize(x);
 x.addListener(screenSize);
 
+function checkHash(pieces) {
+	console.log(window.location.hash.substring(1));
+	if (!window.location.hash.substring(1) === "") {
+		for (var i = 0; i < pieces.length; i++) {
+			if (window.location.hash.substring(1) === pieces[i].string) {
+				pieceView(pieces[i], piece[i].string);
+			}
+		}
+	}
+}
+
 function screenSize(x) {
 	if (x.matches) {
 		if (workPage === "featured") {
@@ -68,7 +79,24 @@ function featuredView() {
 	}
 }
 
+function goBack() {
+	history.back();
+}
+
+window.addEventListener('popstate', function(event) {
+	if (workPage == "piece") {
+		indexView();
+		history.replaceState(null, "", "work.html");
+	} else {
+		pieceView(prevPiece, prevPieceString);
+	}
+}, false);
+
+var prevPiece;
+var prevPieceString;
 function pieceView(piece, pieceString) {
+	prevPiece = piece;
+	prevPieceString = pieceString;
 	workPage = "piece";
 	var footer = document.querySelector("footer");
 	footer.classList.remove("filterHidden");
