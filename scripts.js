@@ -25,8 +25,9 @@ x.addListener(screenSize);
 function checkHash(pieces) {
 	if (window.location.hash.substring) {
 		for (var i = 0; i < pieces.length; i++) {
+			console.log(pieces[i].string);
 			if (window.location.hash.substring(1) === pieces[i].string) {
-				pieceView(pieces[i], piece[i].string);
+				pieceView(pieces[i], pieces[i].string);
 			}
 		}
 	}
