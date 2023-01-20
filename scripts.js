@@ -23,11 +23,16 @@ screenSize(x);
 x.addListener(screenSize);
 
 function checkHash(pieces) {
-	if (window.location.hash.substring) {
-		for (var i = 0; i < pieces.length; i++) {
-			console.log(pieces[i].string);
-			if (window.location.hash.substring(1) === pieces[i].string) {
-				pieceView(pieces[i], pieces[i].string);
+	if (window.location.hash) {
+		if (window.location.hash.includes("year-")) {
+			filter('year', window.location.hash.substring(5));
+		} else if (window.location.hash.substring.includes("tag-")) {
+			filter('tag', window.location.hash.substring(4));
+		} else {
+			for (var i = 0; i < pieces.length; i++) {
+				if (window.location.hash.substring(1) === pieces[i].string) {
+					pieceView(pieces[i], pieces[i].string);
+				}
 			}
 		}
 	}
@@ -84,9 +89,11 @@ function goBack() {
 }
 
 window.addEventListener('popstate', function(event) {
-	if (workPage == "piece") {
+	if (workPage == "piece" || workPage == false) {
 		indexView();
 		history.replaceState(null, "", "work.html");
+	} else if (workPage == "index") {
+		filter(prevWhich, prevTag);
 	} else {
 		pieceView(prevPiece, prevPieceString);
 	}
@@ -180,8 +187,12 @@ function leavePage(link) {
 	}, 600);
 }
 
+var prevWhich;
+var prevTag;
 function filter(which, tag) {
 	workPage = false;
+	prevWhich = which;
+	prevTag = tag;
 	var allImgs = document.getElementsByClassName("col-md-4");
 	var headers = document.getElementsByClassName("category-name");
 	var anchors = document.getElementsByClassName("anchor");
@@ -222,11 +233,12 @@ function filter(which, tag) {
 		}
 		yearsMenu.classList.remove("filterHidden");
 	}
-	var tagTop = document.getElementById("tag-top");
-	tagTop.classList.remove("filterHidden");
-	var url = location.href;
-    location.href = "#tag-top";
-    history.replaceState(null,null,url);
+	history.pushState(null, "", "work.html#" + which + "-" + tag);
+//	var tagTop = document.getElementById("tag-top");
+//	tagTop.classList.remove("filterHidden");
+//	var url = location.href;
+//    location.href = "#tag-top";
+//    history.replaceState(null, null, url);
 }
 
 function expand(plusminus, medium, id) {
@@ -301,9 +313,9 @@ function back() {
 	if (!tagsMenu.classList.contains("filterHidden")) {
 		tagsMenu.classList.add("filterHidden");
 	}
-	var url = location.href;
-    location.href = "#tag-top";
-    history.replaceState(null,null,url);
+//	var url = location.href;
+//    location.href = "#tag-top";
+//    history.replaceState(null,null,url);
 }
 
 var slideIndex = 0;
