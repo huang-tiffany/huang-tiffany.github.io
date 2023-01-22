@@ -38,6 +38,15 @@ body.fadeout {
 	}
 }
 
+#background-overlay {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+	opacity: 0.75;
+	
+}
+
 #background-video, #background-video-lg {
 	width: 100vw;
 	height: 100vh;

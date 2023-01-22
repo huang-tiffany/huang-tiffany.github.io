@@ -27,7 +27,7 @@ function checkHash(pieces) {
 		filter('year', window.location.hash.substring(5));
 	} else if (window.location.hash.includes("tag-")) {
 		filter('tag', window.location.hash.substring(4));
-	} else {
+	} else {uang
 		for (var i = 0; i < pieces.length; i++) {
 			if (window.location.hash.substring(1) === pieces[i].string) {
 				pieceView(pieces[i], pieces[i].string);
@@ -90,9 +90,9 @@ window.addEventListener('popstate', function(event) {
 	if (workPage == "piece" || workPage == false) {
 		indexView();
 		history.replaceState(null, "", "work.html");
-	} else if (workPage == "index") {
+	} else if (prevWhich != null) {
 		filter(prevWhich, prevTag);
-	} else {
+	} else if (prevPiece != null) {
 		pieceView(prevPiece, prevPieceString);
 	}
 }, false);
@@ -106,6 +106,8 @@ var prevPieceString;
 function pieceView(piece, pieceString) {
 	prevPiece = piece;
 	prevPieceString = pieceString;
+	prevWhich = null;
+	prevTag = null;
 	workPage = "piece";
 	var footer = document.querySelector("footer");
 	footer.classList.remove("filterHidden");
@@ -191,6 +193,8 @@ function filter(which, tag) {
 	workPage = false;
 	prevWhich = which;
 	prevTag = tag;
+	prevPiece = null;
+	prevPieceString = null;
 	var allImgs = document.getElementsByClassName("col-md-4");
 	var headers = document.getElementsByClassName("category-name");
 	var anchors = document.getElementsByClassName("anchor");
