@@ -27,7 +27,7 @@ function checkHash(pieces) {
 		filter('year', window.location.hash.substring(5));
 	} else if (window.location.hash.includes("tag-")) {
 		filter('tag', window.location.hash.substring(4));
-	} else {uang
+	} else {
 		for (var i = 0; i < pieces.length; i++) {
 			if (window.location.hash.substring(1) === pieces[i].string) {
 				pieceView(pieces[i], pieces[i].string);

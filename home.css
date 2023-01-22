@@ -42,7 +42,7 @@ body.fadeout {
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 50%);
 	opacity: 0.75;
 	
 }
