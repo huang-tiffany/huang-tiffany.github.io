@@ -494,7 +494,7 @@ var closetedDreams = {
 	statement: "Though dissimilar at first, both ballet and art are a means for self-expression. Even as I move onto new mediums, the lessons ballet has taught me in the balance of discipline and artistry will continue to influence my visual art and design processes."
 }
 
-var pieces = [sccParks, rogueMagazine, telephone, directionMagazine, talisman61, ramenhead, ringramen, bijou, asianAmericanDreamZine, theDevelopmentOfTheHumanFigure, drillRedesign, mesh, spiral, connection, circleTriangleSquare, synergySeats, atdImagingHelm, goodMorningGoodNight, cardboardLuxurySaddlebag, cardboardClutch, goldenChild, biomimeticShoePlatforms, straits, hearNoEvil, passion, pillJacket, sevenMinutesInHeaven, eyeTrails, musicVisualizer, toMyself, theSkyInBoxes, missing, iAmHere, babyGun, instant2, instant1, miscommunication, stardust, theMostBeautifulMomentInLife, selfPortraitSeries, caught, arch, efflorescence, losingContact, belonging, myLifeOnPaper, closetedDreams]
+var pieces = [carteBlanche, sccParks, rogueMagazine, telephone, directionMagazine, talisman61, ramenhead, ringramen, bijou, asianAmericanDreamZine, theDevelopmentOfTheHumanFigure, drillRedesign, mesh, spiral, connection, circleTriangleSquare, synergySeats, atdImagingHelm, goodMorningGoodNight, cardboardLuxurySaddlebag, cardboardClutch, goldenChild, biomimeticShoePlatforms, straits, hearNoEvil, passion, pillJacket, sevenMinutesInHeaven, eyeTrails, musicVisualizer, toMyself, theSkyInBoxes, missing, iAmHere, babyGun, instant2, instant1, miscommunication, stardust, theMostBeautifulMomentInLife, selfPortraitSeries, caught, arch, efflorescence, losingContact, belonging, myLifeOnPaper, closetedDreams]
 
 function getPieces() {
 	return pieces;
