@@ -2,6 +2,16 @@
 
 //2D DESIGN
 
+var carteBlanche = {
+	string: "carteBlanche",
+	year: "2022",
+	title: "Carte Blanche",
+	size: '',
+	medium: "Figma, Visual Studio Code, HTML, CSS, Javascript, React.js",
+	url: '',
+	statement: "As a UI/UX Designer and Front-End Developer at Full Stack at Brown, I led the design branch of our seven-member team in designing a website for Carte Blanche, a decolonial magazine, as well as assisted in coding the front-end interface of the website."
+}
+
 var sccParks = {
 	string: "sccParks",
 	year: "2022",

@@ -44,7 +44,7 @@ body.fadeout {
 	position: fixed;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 50%);
 	opacity: 0.75;
-	
+	animation-delay: -1s;
 }
 
 #background-video, #background-video-lg {
