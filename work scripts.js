@@ -114,6 +114,56 @@ var theDevelopmentOfTheHumanFigure = {
 
 //3D DESIGN
 
+var tinyMetalBowl = {
+	string: "tinyMetalBowl",
+	year: "2023",
+	title: "Tiny Metal Bowl",
+	size: '1" &times; 2.25" &times 2.25"',
+	medium: "7075 Aluminum Stock, South Bend Lathe, Bridgeport Mill, Solidworks",
+	url: '',
+	statement: "Although machined bowls tend to be associated with wood lathes and face plate turning, I wanted to explore the possibilities of working small on a metal lathe, transforming scrap metal into a small bowl or ashtray. Utilizing the radius cutter on aluminum and pushing the machine to its smallest tolerances, I wanted to experiment with how small I could work on a machine typically associated with power and industry to create a delicate object considering aesthetics and craft."
+}
+
+var permutationJars = {
+	string: "permutationJars",
+	year: "2023",
+	title: "Permutation Jars",
+	size: '2.75" &times; 1.25" &times; 1.25" each',
+	medium: "Aluminum Stock, Aluminum Tube, Brass Stock, Steel Stock, South Bend Lathe, Bridgeport Mill, Solidworks",
+	url: '',
+	statement: "Featuring lids and bottoms that can be screwed on and unscrewed, machined with an internal tap and external single point threading, the Permutation Jars offer a variety of nine different variations on a single design. With different kinds of shapes and silhouettes, augmented further by three different kinds of metals and colors, the jars evoke a sense of play and exploration to find different ways of mixing and matching each of the jars' parts to create a myriad of different iterations."
+}
+
+var audraSwap = {
+	string: "audraSwap",
+	year: "2023",
+	title: "Candlestick Swap Project",
+	size: '3.5" &times; 2" &times; 2"',
+	medium: "6061 Aluminum Stock, South Bend Lathe, Adobe Illustrator, Design by Audra Grays",
+	url: '',
+	statement: "The swap project challenges pairs of designers and machinists to work collaboratively. Using a design from Audra Grays for a candle holder, I machined a mirrored wedding cake shape as one of two candlesticks in a set. Includes photography by Hasti Hosseini."
+}
+
+var yeseniaSwap = {
+	string: "yeseniaSwap",
+	year: "2023",
+	title: "Vessel Swap Project",
+	size: '3" &times; 2" &times; 2"',
+	medium: "6061 Aluminum Stock, South Bend Lathe, Bridgeport Mill, Solidworks, Machining by Yesenia Gomez",
+	url: '',
+	statement: "The swap project challenges pairs of designers and machinists to work collaboratively. I designed a vessel that has the illusion of being small, yet is able to contain a large volume, with Yesenia Gomez carrying out the actual machining of the object."
+}
+
+var millMaple = {
+	string: "millMaple",
+	year: "2023",
+	title: "Milled Maple Incense Holder",
+	size: '2" &times; 4" &times; 3"',
+	medium: "Maple, Bridgeport Mill",
+	url: '',
+	statement: "The maple block project challenges designers and machinists to work experimentally using the Bridgeport Mill. Although working spontaneously without a concrete design in mind, I wanted to machine something that looked beautiful yet still had some semblence of utility, opting for a diagonally symmetrical design that considers all faces of the material while playing with as many uses of the machine and end mill tooling bits as possible."
+}
+
 var drillRedesign = {
 	string: "drillRedesign",
 	year: "2022",
@@ -494,7 +544,7 @@ var closetedDreams = {
 	statement: "Though dissimilar at first, both ballet and art are a means for self-expression. Even as I move onto new mediums, the lessons ballet has taught me in the balance of discipline and artistry will continue to influence my visual art and design processes."
 }
 
-var pieces = [carteBlanche, sccParks, rogueMagazine, telephone, directionMagazine, talisman61, ramenhead, ringramen, bijou, asianAmericanDreamZine, theDevelopmentOfTheHumanFigure, drillRedesign, mesh, spiral, connection, circleTriangleSquare, synergySeats, atdImagingHelm, goodMorningGoodNight, cardboardLuxurySaddlebag, cardboardClutch, goldenChild, biomimeticShoePlatforms, straits, hearNoEvil, passion, pillJacket, sevenMinutesInHeaven, eyeTrails, musicVisualizer, toMyself, theSkyInBoxes, missing, iAmHere, babyGun, instant2, instant1, miscommunication, stardust, theMostBeautifulMomentInLife, selfPortraitSeries, caught, arch, efflorescence, losingContact, belonging, myLifeOnPaper, closetedDreams]
+var pieces = [carteBlanche, sccParks, rogueMagazine, telephone, directionMagazine, talisman61, ramenhead, ringramen, bijou, asianAmericanDreamZine, theDevelopmentOfTheHumanFigure, tinyMetalBowl, permutationJars, audraSwap, yeseniaSwap, millMaple, drillRedesign, mesh, spiral, connection, circleTriangleSquare, synergySeats, atdImagingHelm, goodMorningGoodNight, cardboardLuxurySaddlebag, cardboardClutch, goldenChild, biomimeticShoePlatforms, straits, hearNoEvil, passion, pillJacket, sevenMinutesInHeaven, eyeTrails, musicVisualizer, toMyself, theSkyInBoxes, missing, iAmHere, babyGun, instant2, instant1, miscommunication, stardust, theMostBeautifulMomentInLife, selfPortraitSeries, caught, arch, efflorescence, losingContact, belonging, myLifeOnPaper, closetedDreams]
 
 function getPieces() {
 	return pieces;
