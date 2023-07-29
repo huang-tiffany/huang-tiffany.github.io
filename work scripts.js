@@ -139,7 +139,7 @@ var audraSwap = {
 	year: "2023",
 	title: "Candlestick Swap Project",
 	size: '3.5" &times; 2" &times; 2"',
-	medium: "6061 Aluminum Stock, South Bend Lathe, Adobe Illustrator, Design by Audra Grays",
+	medium: "6061 Aluminum Stock, South Bend Lathe, Bridgeport Mill, Adobe Illustrator, Design by Audra Grays",
 	url: '',
 	statement: "The swap project challenges pairs of designers and machinists to work collaboratively. Using a design from Audra Grays for a candle holder, I machined a mirrored wedding cake shape as one of two candlesticks in a set. Includes photography by Hasti Hosseini."
 }
