@@ -87,13 +87,15 @@ function goBack() {
 }
 
 window.addEventListener('popstate', function(event) {
-	if (workPage == "piece" || workPage == false) {
-		indexView();
-		history.replaceState(null, "", "work.html");
-	} else if (prevWhich != null) {
-		filter(prevWhich, prevTag);
-	} else if (prevPiece != null) {
-		pieceView(prevPiece, prevPieceString);
+	if (workPage != "index") {
+		if (workPage == "piece" || workPage == false) {
+			indexView();
+			history.replaceState(null, "", "work.html");
+		} else if (prevWhich != null) {
+			//filter(prevWhich, prevTag);
+		} else if (prevPiece != null) {
+			//pieceView(prevPiece, prevPieceString);
+		}
 	}
 }, false);
 
