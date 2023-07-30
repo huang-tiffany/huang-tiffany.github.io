@@ -112,7 +112,7 @@ function anchor(tag) {
 	prevTag = null;
 	workPage = false;
 	location.href = "#" + tag;
-	history.pushState(null, "", "work.html#" + tag);
+	history.replaceState(null, "", "work.html#" + tag);
 }
 
 var prevPiece;
