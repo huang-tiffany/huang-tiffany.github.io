@@ -87,18 +87,16 @@ function goBack() {
 }
 
 window.addEventListener('popstate', function(event) {
-	//if (workPage != "index") {
-		if (workPage == "piece" || workPage == false) {
-			indexView();
-			history.replaceState(null, "", "work.html");
-		} else if (anchorLink != null) {
-			anchor(anchorLink);
-		} else if (prevWhich != null) {
-			filter(prevWhich, prevTag);
-		} else if (prevPiece != null) {
-			pieceView(prevPiece, prevPieceString);
-		}
-	//}
+	if (workPage == "piece" || workPage == false) {
+		indexView();
+		history.replaceState(null, "", "work.html");
+	} else if (anchorLink != null) {
+		anchor(anchorLink);
+	} else if (prevWhich != null) {
+		filter(prevWhich, prevTag);
+	} else if (prevPiece != null) {
+		pieceView(prevPiece, prevPieceString);
+	}
 }, false);
 
 window.onbeforeunload = function(e) {
@@ -114,15 +112,15 @@ function anchor(tag) {
 	prevTag = null;
 	workPage = "index";
 	location.href = "#" + tag;
-	//history.pushState(null, "", "work.html#" + tag);
+	history.pushState(null, "", "work.html#" + tag);
 }
 
 var prevPiece;
 var prevPieceString;
 function pieceView(piece, pieceString) {
+	anchorLink = null;
 	prevPiece = piece;
 	prevPieceString = pieceString;
-	anchorLink = null;
 	prevWhich = null;
 	prevTag = null;
 	workPage = "piece";
@@ -208,8 +206,8 @@ var prevWhich;
 var prevTag;
 function filter(which, tag) {
 	workPage = false;
-	prevWhich = which;
 	anchorLink = null;
+	prevWhich = which;
 	prevTag = tag;
 	prevPiece = null;
 	prevPieceString = null;
