@@ -27,6 +27,8 @@ function checkHash(pieces) {
 		filter('year', window.location.hash.substring(5));
 	} else if (window.location.hash.includes("tag-")) {
 		filter('tag', window.location.hash.substring(4));
+	} else if (window.location.hash.includes("medium-")) {
+		location.href = "#" + window.location.hash.substring(1);
 	} else {
 		for (var i = 0; i < pieces.length; i++) {
 			if (window.location.hash.substring(1) === pieces[i].string) {
