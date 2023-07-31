@@ -24,9 +24,9 @@ x.addListener(screenSize);
 
 function checkHash(pieces) {
 	if (window.location.hash.includes("year-")) {
-		filter('year', window.location.hash.substring(5));
+		filter('year', window.location.hash.substring(6));
 	} else if (window.location.hash.includes("tag-")) {
-		filter('tag', window.location.hash.substring(4));
+		filter('tag', window.location.hash.substring(5));
 	} else if (window.location.hash.includes("medium-")) {
 		location.href = "#" + window.location.hash.substring(1);
 	} else {
