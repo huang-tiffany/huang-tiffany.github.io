@@ -110,9 +110,6 @@ function anchor(tag) {
 	prevPieceString = null;
 	prevWhich = null;
 	prevTag = null;
-	workPage = false;
-	location.href = "#" + tag;
-	history.replaceState(null, "", "work.html#" + tag);
 }
 
 var prevPiece;
