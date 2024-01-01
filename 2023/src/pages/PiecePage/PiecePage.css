@@ -75,14 +75,16 @@
 }
 
 .piecePage.fadeout hr {
-  animation: piecePage-divider-backwards 1.5s ease;
+  animation: piecePage-divider-unload 0.75s ease;
 }
 
-@keyframes piecePage-divider-backwards {
+@keyframes piecePage-divider-unload {
   0% {
     width: calc(100vw - 2em);
+    left: 1em;
   }
   100% {
+    left: calc(100% - 1em);
     width: 0%;
   }
 }

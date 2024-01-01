@@ -22,7 +22,6 @@
   border-right: 1px solid white;
   position: absolute;
   right: 0;
-
   animation: nav-border 1.5s ease;
   animation-fill-mode: forwards;
 }
@@ -36,17 +35,19 @@
   }
 }
 
-@keyframes nav-border-backwards {
+@keyframes nav-border-unload {
   0% {
     height: 100%;
+    top: 0;
   }
   100% {
-    height: 0%;
+    height: 0;
+    top: 100%;
   }
 }
 
 .workPage.fadeout nav::after {
-  animation: nav-border-backwards 1.5s ease;
+  animation: nav-border-unload 0.75s ease;
 }
 
 .workPage nav .links {
@@ -107,17 +108,19 @@
   }
 }
 
-@keyframes category-border-backwards {
+@keyframes category-border-unload {
   0% {
+    left: 0;
     width: 100%;
   }
   100% {
-    width: 0%;
+    left: 100%;
+    width: 0;
   }
 }
 
 .workPage.fadeout .category h1::before {
-  animation: category-border-backwards 1.5s ease;
+  animation: category-border-unload 0.75s ease;
 }
 
 .workPage .category-pieces {

@@ -92,7 +92,7 @@ export default function HomePage() {
             <div className="col-6" id="version">
               <a
                 target="_blank"
-                href="https://huang-tiffany.github.io/2021/index.html"
+                href="https://huang-tiffany.github.io/2021"
                 className="hidden ver"
                 onMouseOver={() => hoverMenu("hover", "ver")}
                 onMouseOut={() => hoverMenu("out", "ver")}
@@ -102,7 +102,7 @@ export default function HomePage() {
               <br />
               <a
                 target="_blank"
-                href="https://huang-tiffany.github.io/2022/index.html"
+                href="https://huang-tiffany.github.io/2022"
                 className="hidden ver"
                 onMouseOver={() => hoverMenu("hover", "ver")}
                 onMouseOut={() => hoverMenu("out", "ver")}
