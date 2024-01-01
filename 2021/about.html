@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tiffany huang &#8226; about</title>
+	<link rel="shortcut icon" type="image/jpg" href="images/Artboard 1.png"/>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="scripts.js"></script>
+  </head>
+  <body id="body">
+  	<!-- body code goes here -->
+		<!--		fixed elements start-->
+	<nav>
+		  <div class="col-3">
+			  <a onClick="leavePage('home')">
+			  	<img src="images/Artboard 1 tight crop.png" alt="logo" id="logo" class="col-3"/>
+			  </a>
+			  <a onClick="collapseNav('open')">
+				  <img src="images/menu.png" alt="Menu" class="" id="burger-menu">
+			  </a>
+			  <a onClick="collapseNav('close')">
+				  <img src="images/close.png" alt="Close" class="hidden" id="close">
+			  </a>
+			  <div class="sidebar col-3">
+			  	<img src="https://vps5.minzkraut.com/spotify/embed.png?key=girlygrrl123&header=left&font=DotGothic16&headerFont=Orbitron&bg=FFFFFF&color=000000&border=hidden&recentLength=5" alt="My Spotify activity" width="98%">
+				</div>
+				<div id="vl" class="">
+				  &emsp;
+				</div>
+				<div id="sidebar-placeholder"></div>
+			</div>
+			<div class="container" id="cnav">
+				<div class="row gx-0 flex-md-nowrap">
+					<div class="col-8 col-md-4 menu">
+						<p class="menu-options"><em class="menu-header" id="portfolio">PORTFOLIO</em>
+						<a id="work" onClick="leavePage('work')" class="">work</a>
+						<a id="play" onClick="leavePage('play')" class="">play</a>
+						</p>
+					</div>
+					<div class="col-8 col-md-4 menu">
+						<p class="menu-options"><em class="menu-header" id="info">INFO</em>
+						<a id="about" onClick="leavePage('about')" class="active-link">about</a>
+						<a id="activities" onClick="leavePage('activities')" class="">activities</a>
+						</p>
+					</div>
+					<div class="col-8 col-md-4 menu" id="nav3-placeholder">
+						<p class="menu-options"><em class="menu-header" id="other">OTHER</em>
+						<a id="past" target="_blank" href="http://www.huangtiffany.myportfolio.com">past</a>
+						<a id="archive" target="_blank" href="https://th-archive.github.io/">archive</a>
+						</p>
+					</div>
+					<div class="col-8 menu" id="menu-socials">
+						<p class="menu-options"><em class="menu-header" id="socials">SOCIALS</em>
+						<a href="mailto:tiffanyhuang1258@gmail.com" id="social1">email</a>
+						<a target="_blank" href="https://www.instagram.com/relatiffity/" id="social2">instagram</a>
+						<a target="_blank" href="https://relatiffity.tumblr.com/" id="social3">tumblr</a>
+						<a href="https://vsco.co/sun-filled/gallery" id="social4">vsco</a>
+						<a target="_blank" href="https://open.spotify.com/user/girlygrrl123?si=964fe2939c5f4457" id="social5">spotify</a>
+						<a target="_blank" href="https://tiffany-huang.notion.site/Inspiration-2ec04f35ddd34fb2925ffcb9c3378cbe" id="social6">notion</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<hr class="col-12" id="nav-divider">
+		</nav>
+		
+<!--		fixed elements end-->
+
+		<main class="main" id="introduction-content">
+			<div class="container">
+				<div class="row gx-0 flex-nowrap">
+					<div class="col-10">
+						<img src="images/profile.jpeg" alt="Me">
+					</div>
+					<div class="col-2">
+						<p id="bio">
+							<em>TIFFANY HUANG</em> is an interdisciplinary creator that dabbles in the visual and performing arts, design, creative coding, and writing. Through her work, she seeks to tell evocative stories that relate to the society she lives in and is motivated particularly by mundane beauty, cultural identity, and the human psyche.
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	  
+	  
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

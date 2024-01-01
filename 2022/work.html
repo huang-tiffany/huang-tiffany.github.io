@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>tiffany huang</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../2021/images/Artboard 1.png"
+    />
+    <!-- Bootstrap -->
+    <link href="../2021/css/bootstrap-4.4.1.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../2021/js/jquery-3.6.0.min.js"></script>
+    <script src="../2021/jquery-ui.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="work scripts.js"></script>
+  </head>
+  <body class="" id="body" onLoad="checkHash(getPieces())">
+    <!-- body code goes here -->
+
+    <!--		fixed elements start-->
+    <nav>
+      <div class="container-fluid">
+        <div class="row no-gutters flex-nowrap no-gutters">
+          <div class="logo">
+            <a onClick="leavePage('home')">
+              <img
+                src="../2021/images/logo4 tight crop.png"
+                alt="logo"
+                id="logo"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <!--
+						<div class="sidebar-placeholder">
+							<div id="sidebar-placeholder"></div>
+						</div>
+-->
+          </div>
+          <div class="links">
+            <div class="container-fluid">
+              <div class="row flex-nowrap">
+                <div class="col-12">
+                  <a onClick="leavePage('work')">work</a>
+                </div>
+              </div>
+              <div class="row flex-nowrap">
+                <div class="col-12">
+                  <a target="_blank" href="https://th-archive.github.io/"
+                    >archive</a
+                  >
+                </div>
+              </div>
+              <div class="row flex-nowrap">
+                <div class="col-12">
+                  <a target="_blank" href="mailto:tiffanyhuang1258@gmail.com"
+                    >contact</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar-placeholder2">
+      <div id="sidebar-placeholder2"></div>
+    </div>
+    <main>
+      <div class="container-fluid main">
+        <div id="work-view"></div>
+      </div>
+    </main>
+    <footer class="filterHidden">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 info" id="info">
+            <p class="left info">&darr;</p>
+            <a class="center info" href="#info">INFO</a>
+            <p class="right info">&darr;</p>
+          </div>
+          <div class="col-12">
+            <hr />
+          </div>
+          <div class="col-12 col-md-3">
+            <p class="piece-year"></p>
+            <p class="piece-title"></p>
+            <p class="piece-size"></p>
+            <p class="piece-medium"></p>
+            <p class="piece-url"></p>
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="statement"></p>
+          </div>
+          <div class="col-3">
+            <a class="back filterHidden" id="back2" onClick="goBack()">back</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../2021/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../2021/js/popper.min.js"></script>
+    <script src="../2021/js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

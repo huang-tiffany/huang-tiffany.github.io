@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>tiffany huang</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../2021/images/Artboard 1.png"
+    />
+    <!-- Bootstrap -->
+    <link href="../2021/css/bootstrap-4.4.1.css" rel="stylesheet" />
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts.js"></script>
+  </head>
+  <body class="" id="body">
+    <!-- body code goes here -->
+
+    <!--		fixed elements start-->
+    <div id="backgroundvid">
+      <video id="background-video" autoplay loop muted playsinline>
+        <source src="videos/md/reel hd.mp4" type="video/mp4" />
+      </video>
+      <video id="background-video-lg" autoplay loop muted playsinline>
+        <source src="videos/reel hd.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div id="background-overlay"></div>
+    <nav>
+      <div class="container-fluid">
+        <div class="row no-gutters flex-nowrap">
+          <div class="col-12">
+            <div id="title">
+              <h1>TIFFANY</h1>
+              <hr />
+              <h1>HUANG</h1>
+            </div>
+          </div>
+        </div>
+        <div class="nav-content row no-gutters flex-nowrap">
+          <div class="col-6">
+            <p>
+              is an interdisciplinary creator that dabbles in the visual and
+              performing arts, design, creative coding, and writing. through her
+              work, she seeks to tell evocative stories that relate to the
+              society she lives in and is motivated particularly by mundane
+              beauty, cultural identity, and the human psyche.
+            </p>
+          </div>
+          <div class="col-2">
+            <a onClick="leavePage('work')">work</a>
+          </div>
+          <div class="col-2">
+            <a target="_blank" href="https://th-archive.github.io/">archive</a>
+          </div>
+          <div class="col-2">
+            <a target="_blank" href="mailto:tiffanyhuang1258@gmail.com"
+              >contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main></main>
+    <footer>
+      <div class="container-fluid">
+        <div class="row no-gutters flex-nowrap">
+          <div class="col-6" id="version">
+            <a
+              target="_blank"
+              href="https://huang-tiffany.github.io/2021/index.html"
+              class="hidden ver"
+              onmouseover="hoverMenu('hover', 'ver')"
+              onmouseout="hoverMenu('out', 'ver')"
+              >v. 2021</a
+            ><br />
+            <a
+              onmouseover="hoverMenu('hover', 'ver')"
+              onmouseout="hoverMenu('out', 'ver')"
+              >v. 2022</a
+            >
+          </div>
+          <div class="col-6">
+            <br />
+            <a
+              id="ig"
+              target="_blank"
+              href="https://www.instagram.com/relatiffity/"
+              >instagram</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+.homePage {
+  width: calc(100vw - 2em);
+  height: calc(100dvh - 2em);
+  margin: 1em;
+  box-sizing: border-box;
+}
+
+.homePage.fadein {
+  animation-duration: 2s;
+}
+
+#background-overlay {
+  width: 100vw;
+  height: 100dvh;
+  position: fixed;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  opacity: 0.75;
+  animation-delay: -1s;
+  top: 0;
+  left: 0;
+}
+
+#background-video,
+#background-video-lg {
+  width: 100vw;
+  height: 100dvh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#background-video-lg {
+  display: none;
+}
+
+#version a,
+nav a,
+#ig {
+  color: white;
+}
+
+a.ver {
+  opacity: 0.5;
+  visibility: visible;
+  transition: ease;
+  transition-duration: 0.25s;
+}
+
+a.ver:hover {
+  opacity: 1;
+  transition: ease;
+  transition-duration: 0.25s;
+}
+
+a.ver.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: ease;
+  transition-duration: 0.25s;
+}
+
+nav a:hover::before,
+#ig:hover::before {
+  font-family: system-ui;
+  content: " ↖ ";
+}
+
+#title {
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#title hr {
+  margin-top: 1.75em;
+  width: 100vw;
+  height: 1px;
+  opacity: 1;
+}
+
+#title h1 {
+  color: white;
+  font-size: 3uaem;
+}
+
+nav {
+  width: 100vw;
+  left: 0;
+  position: fixed;
+}
+
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 1em;
+  left: 0;
+}
+
+#featured {
+  text-align: right;
+}
+
+.col-2 p,
+.col-2 a {
+  text-align: right;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: -1em;
+  padding-left: 0;
+}
+
+#instagram {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#version {
+  margin-right: -1em;
+}
+
+.col-6 {
+  width: 50vw;
+}
+
+@media (min-width: 576px) {
+  #title h1 {
+    font-size: 4em;
+  }
+
+  #title hr {
+    margin-top: 2.5em;
+  }
+
+  #background-video {
+    display: none;
+  }
+
+  #background-video-lg {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #title h1 {
+    font-size: 5em;
+  }
+
+  #title hr {
+    margin-top: 3em;
+  }
+}
