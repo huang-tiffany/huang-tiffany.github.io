@@ -85,7 +85,7 @@ export default function WorkPage() {
                 >
                   {vidPieces.includes(piece) ? (
                     <video
-                      onClick={() => navigate("/work/" + key + "/" + piece)}
+                      onClick={() => relocate("/work/" + key + "/" + piece)}
                       webkit-playsinline="true"
                       playsInline
                       autoPlay
@@ -100,7 +100,7 @@ export default function WorkPage() {
                   ) : (
                     <img
                       loading="lazy"
-                      onClick={() => navigate("/work/" + key + "/" + piece)}
+                      onClick={() => relocate("/work/" + key + "/" + piece)}
                       src={
                         gifPieces.includes(piece)
                           ? "/coverimages/" + piece.toLowerCase() + ".gif"
@@ -113,7 +113,7 @@ export default function WorkPage() {
                   <div className="piece-data">
                     <div
                       className="piece-title"
-                      onClick={() => navigate("/work/" + key + "/" + piece)}
+                      onClick={() => relocate("/work/" + key + "/" + piece)}
                     >
                       {piecesArr[0][key][piece].title}
                     </div>
@@ -185,14 +185,25 @@ export default function WorkPage() {
     }
   });
 
+  const relocate = (newLoc: string) => {
+    const body: HTMLElement | null = document.querySelector(".workPage");
+    if (body) {
+      body.classList.remove("fadein");
+      body.classList.add("fadeout");
+    }
+    setTimeout(() => {
+      navigate(newLoc);
+    }, 1000);
+  };
+
   return (
-    <div className="workPage">
+    <div className="workPage fadein">
       <nav>
-        <a id="logo" onClick={() => navigate("/")}>
+        <a id="logo" onClick={() => relocate("/")}>
           <img src={logo} alt="Logo" />
         </a>
         <div className="links">
-          <a onClick={() => navigate("/work")}>work</a>
+          <a onClick={() => relocate("/work")}>work</a>
           <a target="_blank" href="https://th-archive.github.io/">
             archive
           </a>

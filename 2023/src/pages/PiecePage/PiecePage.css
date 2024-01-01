@@ -56,16 +56,33 @@
 }
 
 .piecePage hr {
-  width: calc(100vw - 2em);
   border-top: white 1px solid;
   position: absolute;
   opacity: 1;
   bottom: calc(100dvh - 7.5em);
   left: 1em;
+  animation: piecePage-divider 1.5s ease;
+  animation-fill-mode: forwards;
 }
 
 @keyframes piecePage-divider {
   0% {
+    width: 0%;
+  }
+  100% {
+    width: calc(100vw - 2em);
+  }
+}
+
+.piecePage.fadeout hr {
+  animation: piecePage-divider-backwards 1.5s ease;
+}
+
+@keyframes piecePage-divider-backwards {
+  0% {
+    width: calc(100vw - 2em);
+  }
+  100% {
     width: 0%;
   }
 }

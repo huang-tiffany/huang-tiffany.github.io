@@ -8,12 +8,7 @@ export default function PiecePageRoute() {
 
   return Object.keys(piecesArr[0]).map((key: string) => {
     return Object.getOwnPropertyNames(piecesArr[0][key]).map((piece) => {
-      return (
-        <Route
-          path={"/work/" + piece}
-          element={<PiecePage key={key} piece={piece} />}
-        />
-      );
+      return <Route path={"/work/" + piece} element={<PiecePage />} />;
     });
   });
 }

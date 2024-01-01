@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.homePage.fadein {
+  animation-duration: 2s;
+}
+
 #background-overlay {
   width: 100vw;
   height: 100dvh;

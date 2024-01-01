@@ -13,10 +13,6 @@
   cursor: crosshair;
   -ms-overflow-style: none;
   scrollbar-width: none;
-
-  animation-name: fadein;
-  animation-duration: 1s;
-  animation-fill-mode: backwards;
 }
 
 html,
@@ -24,17 +20,23 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+  background-color: black;
 }
 
 body {
   max-height: 100dvh;
-  background-color: black;
 }
 
-body.fadeout {
+.fadeout {
   animation-name: fadeout;
   animation-duration: 1s;
   animation-timing-function: ease;
+  animation-fill-mode: backwards;
+}
+
+.fadein {
+  animation-name: fadein;
+  animation-duration: 1s;
   animation-fill-mode: backwards;
 }
 

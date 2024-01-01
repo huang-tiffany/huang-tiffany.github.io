@@ -24,7 +24,6 @@
   right: 0;
 
   animation: nav-border 1.5s ease;
-  animation-delay: 0.75s;
   animation-fill-mode: forwards;
 }
 
@@ -35,6 +34,19 @@
   100% {
     height: 100%;
   }
+}
+
+@keyframes nav-border-backwards {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+.workPage.fadeout nav::after {
+  animation: nav-border-backwards 1.5s ease;
 }
 
 .workPage nav .links {
@@ -83,7 +95,6 @@
   left: 0;
   content: "";
   animation: category-border 1.5s ease;
-  animation-delay: 0.75s;
   animation-fill-mode: forwards;
 }
 
@@ -94,6 +105,19 @@
   100% {
     width: 100%;
   }
+}
+
+@keyframes category-border-backwards {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.workPage.fadeout .category h1::before {
+  animation: category-border-backwards 1.5s ease;
 }
 
 .workPage .category-pieces {

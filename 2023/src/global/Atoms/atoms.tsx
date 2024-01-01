@@ -321,7 +321,7 @@ export const pieces = atom<{
           "Comprised of two stools that fit together to form a bench, the Synergy Seats bridge physical and emotional distances within a shared space to create connections between two seated individuals. As one person sits down, the other seat lights up so that when two people are seated, the entire bench is illuminated to visualize a connection and foster interaction and cohabitation of a space.",
         media: [
           "synergyseats1.mp4",
-          "synergyseats2.mp4",
+          "synergyseats2*.mp4",
           "synergyseats3.jpg",
           "synergyseats4.jpg",
           "synergyseats5.jpg",
@@ -460,7 +460,7 @@ export const pieces = atom<{
           "While taking AP Computer Science this semester, our final open-ended project led me to write code that could create unique visual “fingerprints” for inputted music. By assigning specific colors — taken from composer Scriabin’s color keyboard — to set wavelengths and coordinating a growing set of rings to wrap around a shape created by the MP3's FFT (Fast Fourier Transform) frequency waves, I wanted to reinterpret music as a visual experience. <br><br> This poster contains fingerprints created by the Visualizer from music across various genres, the first being my own original composition. Based off of the selected pieces — such as Clair de Lune’s neat concentric circles or the unique coloration and chaotic shape of “Spring Day” due to the heavy use of synthesizers — <em>Music Visualizer</em> acts as a reflection not only of the music’s frequencies, but also of its texture and overarching characteristics in regards to shape and energy.",
         media: [
           "musicvisualizer1.jpg",
-          "musicvisualizer2.mp4",
+          "musicvisualizer2*.mp4",
           "musicvisualizer3.jpg",
           "musicvisualizer4.jpg",
           "musicvisualizer5.jpg",
@@ -488,7 +488,7 @@ export const pieces = atom<{
         statement:
           "Through this interactive exhibition, inspired by the psychodramatic &#34;Magic Shop&#34; technique where participants exchange negativity for encouragement, I wanted to create a safe space for visitors to connect with both their inner selves and with other participants. In this installation, which I created by sewing handwritten letters into a bedsheet with found fabric and cassette tape &#34;thread,&#34; participants write letters to their past and future selves to send love and support, as well as to heal any past pains they may have inflicted on themselves. By exchanging their letters for another stranger’s, I hope to reveal to participants the universality in their struggles with self-love.",
         media: [
-          "tomyself1.mp4",
+          "tomyself1*.mp4",
           "tomyself2.jpg",
           "tomyself3.jpg",
           "tomyself4.jpg",
@@ -516,7 +516,7 @@ export const pieces = atom<{
         statement:
           "As a collaboration with Astrid Schoenly, <em>Efflorescence</em> narrates the drifting apart of two childhood friends, reflecting upon a near-universal college experience of meeting, befriending, and losing contact with companions as time progresses.",
         media: [
-          "efflorescence1.mp4",
+          "efflorescence1*.mp4",
           "efflorescence2.jpg",
           "efflorescence3.jpg",
           "efflorescence4.jpg",

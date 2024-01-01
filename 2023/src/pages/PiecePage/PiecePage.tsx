@@ -8,11 +8,6 @@ import { useEffect } from "react";
 import VerticalMarquee from "../../components/VerticalMarquee/VerticalMarquee";
 import { MarqueePieceText } from "../../components/VerticalMarquee/MarqueePieceText";
 
-export interface PiecePageProps {
-  key: string;
-  piece: string;
-}
-
 export default function PiecePage() {
   const { categoryInfo, pieceInfo } = useParams();
   const piecesArr = useRecoilState(pieces);
@@ -71,16 +66,29 @@ export default function PiecePage() {
   const loadPhotos = () => {
     return media.map((med) => {
       if (med.substring(med.indexOf(".")) === ".mp4") {
-        return (
-          <video
-            playsInline
-            webkit-playsinline="true"
-            controls
-            controlsList="nodownload"
-          >
-            <source src={"/videos/" + med} type="video/mp4" />
-          </video>
-        );
+        // any video filenames including "*" should not be autoplay but should
+        // include sound and controls
+        if (med.includes("*")) {
+          return (
+            <video
+              playsInline
+              webkit-playsinline="true"
+              controls
+              controlsList="nodownload"
+            >
+              <source
+                src={"/videos/" + med.replace("*", "")}
+                type="video/mp4"
+              />
+            </video>
+          );
+        } else {
+          return (
+            <video playsInline webkit-playsinline="true" autoPlay muted loop>
+              <source src={"/videos/" + med} type="video/mp4" />
+            </video>
+          );
+        }
       } else {
         return (
           <picture>
@@ -123,15 +131,26 @@ export default function PiecePage() {
     }
   });
 
+  const relocate = (newLoc: string) => {
+    const body: HTMLElement | null = document.querySelector(".piecePage");
+    if (body) {
+      body.classList.remove("fadein");
+      body.classList.add("fadeout");
+    }
+    setTimeout(() => {
+      navigate(newLoc);
+    }, 1000);
+  };
+
   // return <div>{piecesArr[0][key][piece].title}</div>;
   return (
-    <div className="piecePage">
+    <div className="piecePage fadein">
       <nav>
-        <a id="logo" onClick={() => navigate("/")}>
+        <a id="logo" onClick={() => relocate("/")}>
           <img src={logo} alt="Logo" />
         </a>
         <div className="links">
-          <a onClick={() => navigate("/work")}>work</a>
+          <a onClick={() => relocate("/work")}>work</a>
           <a target="_blank" href="https://th-archive.github.io/">
             archive
           </a>
@@ -154,7 +173,7 @@ export default function PiecePage() {
           </div>
           <div className="piece-description"></div>
           <div className="piece-back">
-            <a onClick={() => navigate("/work")}>back</a>
+            <a onClick={() => relocate("/work")}>back</a>
           </div>
         </div>
       </main>

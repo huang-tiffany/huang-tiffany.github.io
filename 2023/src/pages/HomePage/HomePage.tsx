@@ -6,6 +6,17 @@ import bgVid from "../../../../2022/videos/reel hd.mp4";
 export default function HomePage() {
   const navigate = useNavigate();
 
+  const relocate = (newLoc: string) => {
+    const body: HTMLElement | null = document.querySelector(".homePage");
+    if (body) {
+      body.classList.remove("fadein");
+      body.classList.add("fadeout");
+    }
+    setTimeout(() => {
+      navigate(newLoc);
+    }, 1000);
+  };
+
   function hoverMenu(inout: string, menu: string) {
     const menus = document.getElementsByClassName(menu);
     for (let i = 0; i < menus.length; i++) {
@@ -28,7 +39,7 @@ export default function HomePage() {
   }
 
   return (
-    <main className="homePage">
+    <main className="homePage fadein">
       <div id="backgroundvid">
         <video id="background-video" autoPlay loop muted playsInline>
           <source src={bgVid} type="video/mp4" />
@@ -59,7 +70,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="col-2">
-              <a onClick={() => navigate("/work")}>work</a>
+              <a onClick={() => relocate("/work")}>work</a>
             </div>
             <div className="col-2">
               <a target="_blank" href="https://th-archive.github.io/">
