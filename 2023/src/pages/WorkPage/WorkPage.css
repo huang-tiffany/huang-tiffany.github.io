@@ -13,9 +13,28 @@
   align-items: flex-end;
   height: calc(100dvh - 3em);
   position: relative;
-  border-right: 1px solid white;
   padding-right: 2em;
   z-index: 7;
+}
+
+.workPage nav::after {
+  content: "";
+  border-right: 1px solid white;
+  position: absolute;
+  right: 0;
+
+  animation: nav-border 1.5s ease;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nav-border {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
 }
 
 .workPage nav .links {
@@ -47,7 +66,6 @@
 }
 
 .workPage .category h1 {
-  border-top: 1px solid white;
   padding-left: calc(2em / 3);
   padding-top: 0.4em;
   padding-bottom: 0.4em;
@@ -56,6 +74,26 @@
   top: 0;
   z-index: 5;
   background-color: black;
+}
+
+.workPage .category h1::before {
+  border-top: 1px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  animation: category-border 1.5s ease;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes category-border {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .workPage .category-pieces {
@@ -179,7 +217,6 @@
   width: calc((100vw - 5em) / 6 * 5 + 3em - 1px);
   height: calc(2em + 1px);
   z-index: 6;
-  border-bottom: 1px solid white;
   display: flex;
 }
 
@@ -252,6 +289,9 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
+  }
+
+  .workPage nav::after {
     border-right: none;
   }
 

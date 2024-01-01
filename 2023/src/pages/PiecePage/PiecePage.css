@@ -64,6 +64,12 @@
   left: 1em;
 }
 
+@keyframes piecePage-divider {
+  0% {
+    width: 0%;
+  }
+}
+
 .piecePage .piece-data {
   height: 100%;
   width: calc(100% / 4 - 1em);
