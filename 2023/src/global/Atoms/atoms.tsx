@@ -21,6 +21,38 @@ export const pieces = atom<{
   default: {
     // 2D DESIGN
     "2D DESIGN": {
+      ramphacks: {
+        string: "ramphacks",
+        year: "2023",
+        title: "Ramp Hacks Mini-Identity",
+        size: "",
+        medium: "Figma, Adobe Illustrator",
+        url: "",
+        statement:
+          "For Ramp’s 2023 annual company hackathon, I was tasked with creating a small brand capsule that encompassed the event’s identity, promotional assets, and swag that would be given out to participants. Employing the illustrations of a fellow designer, Emily Pratt, I wanted to bring a sense of joy and wonder with the designs, focusing on the elements that made hackathons what they are. The brand comes through in three logos, each for a particular purpose: the largest and most expressive takes center stage on clothing and larger promotional assets; the smallest glyph works in tighter settings on water bottles; and the horizontal logo carries through the brand in more straightforward applications. <br><br> The characters included in the most expressive version of the logo each represent different sides to a hackathon: the running girl does something daring, the man sending out a paper airplane ships something novel, and the wizard spells out the magic of creating something new. These assets were used to create t-shirts and thermos for the event’s participants, as well as advertise the event on TV screens and walls all over the New York office. Using Sunshine, an offshoot of Ramp’s iconic Solar yellow, the monochromatic color scheme of the identity represents the products of the hackathon as offshoots of Ramp’s very own ingenuity, soon to be new products in its software.",
+        media: [
+          "ramphacks1.jpg",
+          "ramphacks2.jpg",
+          "ramphacks3.jpg",
+          "ramphacks4.jpg",
+          "ramphacks5.jpg",
+          "ramphacks6.jpg",
+          "ramphacks7.jpg",
+          "ramphacks8.jpg",
+          "ramphacks9.jpg",
+          "ramphacks10.jpg",
+          "ramphacks11.jpg",
+          "ramphacks12.jpg",
+          "ramphacks13.jpg",
+          "ramphacks14.jpg",
+          "ramphacks15.jpg",
+          "ramphacks16.jpg",
+        ],
+        previewDescription:
+          "One-off brand capsule for Ramp's annual hackathon, including promotional assets and swag.",
+        previewImage: "ramphacks10.jpg",
+        tags: ["branding", "swag"],
+      },
       sccParks: {
         string: "sccParks",
         year: "2022",
@@ -160,6 +192,66 @@ export const pieces = atom<{
 
     // 3D DESIGN
     "3D DESIGN": {
+      daychair: {
+        string: "daychair",
+        year: "2023",
+        title: "天椅 (Day Chair)",
+        size: '27.23" &times; 20" &times; 20.92"',
+        medium:
+          "Poplar, Ash, Solidworks, Table Saw, Jointer, Planar, Horizontal Boring Machine, Orbital Disk Sander, Biscuit Joiner, Pin Router",
+        url: "",
+        statement:
+          '天椅, translated directly as "Sky Chair" or "Day Chair," is a woodworking project I undertook as my first venture into real, everyday furniture. Aptly named due to its side profile, which resembles the Chinese character 天, the semi-cantilevered chair employs frame construction to lay out its sharp, angular components while inlaying steambent ash pieces, filleted with a pin router, to provide both support and an organic counterpoint. With 60 degree angles softened by curved radii as a motif throughout the chair, steambending provides a structural support to allow for more extreme angles of joinery. <br><br> The side profile 天, which turns into the character 人 once the chair is occupied, promotes the idea of the chair being both for everyday use ("天天" meaning "daily"), and of the chair being made for people ("人" meaning "person"). What\'s more, the phrase "天人合一" also resonates with the idea of the chair fitting well with people, just as humans ("人") should live in nature ("天")  together ("合一") in peace. Just as chairs are a unique subsection of furniture that must take careful account of the human body, the 天椅 focuses on the main purpose of chairs as beautiful objects made by people, for people.',
+        media: [
+          "daychair1.jpg",
+          "daychair2.jpg",
+          "daychair3.jpg",
+          "daychair4.jpg",
+          "daychair5.jpg",
+          "daychair6.jpg",
+          "daychair7.jpg",
+          "daychair8.jpg",
+          "daychair9.jpg",
+          "daychair10.jpg",
+          "daychair11.jpg",
+          "daychair12.gif",
+        ],
+        previewDescription:
+          "Chair for daily use, employing frame construction and steambending techniques.",
+        previewImage: "daychair3.jpg",
+        tags: ["woodworking", "furniture"],
+      },
+
+      makitacultivator: {
+        string: "makitacultivator",
+        year: "2023",
+        title: "Makita Cultivator",
+        size: '4.82" &times; 4" &times; 11.89"',
+        medium:
+          "Grey Foam, Steel Stock, South Bend Lathe, Plastidip, Acrylic Rod, Rock Hard Putty, Styrene, Spray Paint, JB Weld, Primer, Solidworks, Keyshot, Chipboard, Foamcore, Adobe InDesign, Adobe Illustrator",
+        url: '<a href="https://indd.adobe.com/view/9ac268f9-3ee4-478c-9a0d-fdd3cc162fa3" target="_blank">FULL PRESENTATION</a>',
+        statement:
+          "Given the assignment of designing a gardening tool for a brand, I was given the tool of a hand cultivator, to be designed for Makita, a power tool company. After researching the company’s branding, product lines, and values, I moved into sketching and prototyping to identify the most suitable end design based on Makita’s reputation as a legacy brand known for its ergonomics and simple, but honest design. Focusing primarily on Makita’s target audience, largely composed of professionals using Makita’s tools on a regular basis for their work, I also wanted to make sure to design something that would be industrial and robust enough to endure regular use on the job. <br><br> Over the course of three iterations, I narrowed down the most comfortable handles for the cultivator based on the pulling motions users would employ repeatedly during the tool’s use. The end product, which features a dual-wield grip including a claw grip for tension and a fist grip for force, allows users to easily maneuver through dirt.",
+        media: [
+          "makitacultivator1.jpg",
+          "makitacultivator2.jpg",
+          "makitacultivator3.jpg",
+          "makitacultivator4.jpg",
+          "makitacultivator5.jpg",
+          "makitacultivator6.jpg",
+          "makitacultivator7.jpg",
+          "makitacultivator8.jpg",
+          "makitacultivator9.jpg",
+          "makitacultivator10.jpg",
+          "makitacultivator11.jpg",
+          "makitacultivator12.jpg",
+        ],
+        previewDescription:
+          "Hand cultivator gardening tool designed to fit Makita's brand and product line.",
+        previewImage: "makitacultivator6.jpg",
+        tags: ["product", "prototyping", "machining", "cad"],
+      },
+
       permutationJars: {
         string: "permutationJars",
         year: "2023",

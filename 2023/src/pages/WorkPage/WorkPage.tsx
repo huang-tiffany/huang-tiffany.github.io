@@ -204,7 +204,7 @@ export default function WorkPage() {
         </a>
         <div className="links">
           <a onClick={() => relocate("/work")}>work</a>
-          <a target="_blank" href="https://th-archive.github.io/">
+          <a target="_blank" href="https://th-archive.gi\b.io/">
             archive
           </a>
           <a target="_blank" href="mailto:tiffanyhuang1258@gmail.com">

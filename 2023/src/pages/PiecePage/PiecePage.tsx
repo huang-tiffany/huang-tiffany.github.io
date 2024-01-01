@@ -108,25 +108,12 @@ export default function PiecePage() {
     if (media.length === 1) {
       if (mediaWrapper) {
         mediaWrapper.style.justifyContent = "center";
-        console.log("hi");
+        mediaWrapper.style.alignItems = "center";
       }
-
-      // TODO: once you add tags, you can check if the tag "controls" or
-      // something is in the tag, and if it is, then set controls to true and
-      // everything else to false. just make sure to hide the tag when you
-      // display all tags.
-      // const vid: HTMLVideoElement | null =
-      //   document.querySelector(".piecePage video");
-      // if (vid) {
-      //   vid.setAttribute("autoplay", "true");
-      //   vid.setAttribute("muted", "true");
-      //   vid.setAttribute("loop", "true");
-      //   vid.removeAttribute("controls");
-      // }
     } else {
-      console.log("not");
       if (mediaWrapper) {
         mediaWrapper.style.justifyContent = "flex-start";
+        mediaWrapper.style.alignItems = "flex-start";
       }
     }
   });
