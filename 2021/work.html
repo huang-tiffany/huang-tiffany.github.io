@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tiffany huang &#8226; work</title>
+	<link rel="shortcut icon" type="image/jpg" href="images/Artboard 1.png"/>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="scripts.js"></script>
+  </head>
+  <body id="body">
+  	<!-- body code goes here -->
+		<!--		fixed elements start-->
+	<nav>
+		  <div class="col-3">
+			  <a onClick="leavePage('home')">
+			  	<img src="images/Artboard 1 tight crop.png" alt="logo" id="logo" class="col-3"/>
+			  </a>
+			  <a onClick="collapseNav('open')">
+				  <img src="images/menu.png" alt="Menu" class="" id="burger-menu">
+			  </a>
+			  <a onClick="collapseNav('close')">
+				  <img src="images/close.png" alt="Close" class="hidden" id="close">
+			  </a>
+			  	<div class="sidebar work-categories col-3">
+						<a href="#1">
+							<em class="work-category" id="2d-art">2D Art <sup>1</sup></em>
+						</a>
+						<a href="#2">
+							<em class="work-category" id="2d-design">2D Design <sup>2</sup></em>
+						</a>
+						<a href="#3">
+							<em class="work-category" id="3d-art">3D Art <sup>3</sup></em>
+						</a>
+						<a href="#4">
+							<em class="work-category" id="3d-design">3D Design <sup>4</sup></em>
+						</a>
+						<a href="#5">
+							<em class="work-category" id="multimedia">Multimedia <sup>5</sup></em>
+						</a>
+						<a href="#6">
+							<em class="work-category" id="photography">Photography <sup>6</sup></em>
+						</a>
+						<a href="#7">
+							<em class="work-category" id="video">Video <sup>7</sup></em>
+						</a>
+						<a href="#8">
+							<em class="work-category" id="we1366arables">Wearables <sup>8</sup></em>
+						</a>
+					</div>
+					<hr class="col-3 sidebar" id="work-categories-hr">
+				<div id="work-sidebar-placeholder"></div>
+				<div id="vl" class="">
+				  &emsp;
+				</div>
+				<div id="sidebar-placeholder"></div>
+			</div>
+	  
+		  <div class="container" id="cnav">
+				<div class="row gx-0 flex-md-nowrap">
+					<div class="col-8 col-md-4 menu">
+						<p class="menu-options"><em class="menu-header" id="portfolio">PORTFOLIO</em>
+						<a id="work" onClick="leavePage('work')" class="active-link">work</a>
+						<a id="play" onClick="leavePage('play')" class="">play</a>
+						</p>
+					</div>
+					<div class="col-8 col-md-4 menu">
+						<p class="menu-options"><em class="menu-header" id="info">INFO</em>
+						<a id="about" onClick="leavePage('about')" class="">about</a>
+						<a id="activities" onClick="leavePage('activities')" class="">activities</a>
+						</p>
+					</div>
+					<div class="col-8 col-md-4 menu" id="nav3-placeholder">
+						<p class="menu-options"><em class="menu-header" id="other">OTHER</em>
+						<a id="past" target="_blank" href="http://www.huangtiffany.myportfolio.com">past</a>
+						<a id="archive" target="_blank" href="https://th-archive.github.io/">archive</a>
+						</p>
+					</div>
+					<div class="col-8 menu" id="menu-socials">
+						<p class="menu-options"><em class="menu-header" id="socials">SOCIALS</em>
+						<a href="mailto:tiffanyhuang1258@gmail.com" id="social1">email</a>
+						<a target="_blank" href="https://www.instagram.com/relatiffity/" id="social2">instagram</a>
+						<a target="_blank" href="https://relatiffity.tumblr.com/" id="social3">tumblr</a>
+						<a href="https://vsco.co/sun-filled/gallery" id="social4">vsco</a>
+						<a target="_blank" href="https://open.spotify.com/user/girlygrrl123?si=964fe2939c5f4457" id="social5">spotify</a>
+						<a target="_blank" href="https://tiffany-huang.notion.site/Inspiration-2ec04f35ddd34fb2925ffcb9c3378cbe" id="social6">notion</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<hr class="col-12" id="nav-divider">
+		</nav>
+		
+<!--		fixed elements end-->
+<!--For XS images, use 300 as width and height for horiz and vert photos respectively-->
+		<main class="main" id="work-content">
+			<div class="col1">
+				<p class="work-category-header" id="1">
+					<em>2D Art</em>
+				</p>
+				<div class="work-row">
+			    	<img src="images/xs/selfportrait.jpg" alt="Self-Portrait Series" class="horiz" onClick="reveal('selfportrait1', 'selfportrait')"/>
+					<img src="images/xs/arch copy.jpeg" alt="Arch" class="vert" onClick="reveal('arch', 'arch')"/>
+				</div>
+			  	<p class="work-category-header" id="2">
+					<em>2D Design</em>
+				</p>
+				<div class="work-row">
+					<img src="images/xs/rogue.jpg" alt="Rogue" class="vert" onClick="reveal('rogue', 'rogue')" loading="lazy"/>
+					<img src="images/xs/telephone.jpg" alt="Telephone" class="vert" onClick="reveal('telephone', 'telephone')" loading="lazy"/>
+					<img src="images/xs/caught-copy.jpg" alt="Caught" class="vert" onClick="reveal('caught1', 'caught')" loading="lazy"/>
+				</div>
+				<div class="work-row">
+		    	    <img src="images/xs/direction mag copy.jpg" alt="Direction" class="vert" onClick="reveal('direction-mag1', 'direction-mag')" loading="lazy"/>
+					<img src="images/xs/talisman-61.jpg" alt="Talisman 61" class="horiz" onClick="reveal('t611', 't61')" loading="lazy"/>
+					<img src="images/xs/ramenhead 1 copy.jpg" alt="Ramenhead" class="horiz" onClick="reveal('ramenhead1', 'ramenhead')" loading="lazy"/>
+				</div>
+				<div class="work-row">
+					<img src="images/xs/self-sent 1 copy.jpg" alt="Self-Sent" class="vert" onClick="reveal('self-sent1', 'self-sent')" loading="lazy"/>
+					<img src="images/xs/ringramen copy.jpg" alt="Ringramen" class="horiz" onClick="reveal('ringramen', 'ringramen')" loading="lazy"/>
+					<img src="images/xs/bijou 1 copy.jpg" alt="Bijou" class="vert" onClick="reveal('bijou1', 'bijou')" loading="lazy"/>
+				</div>
+				<div class="work-row">
+					<img src="images/xs/e11h final copy.jpg" alt="Asian American Dream Zine" class="vert" onClick="reveal('e11h-zine1', 'e11h-zine')" loading="lazy"/>
+				    <img src="images/xs/apah mag copy.jpg" alt="The Development of the Human Figure" class="vert" onClick="reveal('apah-mag1', 'apah-mag')" loading="lazy"/>
+				</div>
+				<p class="work-category-header" id="3">
+					<em>3D Art</em>
+				</p>
+				<div class="work-row">
+					<img src="images/xs/the-sky-in-boxes.jpg" alt="The Sky in Boxes" class="horiz" onClick="reveal('skyboxes1', 'skyboxes')" loading="lazy"/>
+					<img src="images/xs/missing.jpg" alt="ATD" class="vert" onClick="reveal('missing1', 'missing')" loading="lazy"/>
+					<img src="images/xs/ribcage.jpg" alt="I AM HERE." class="vert" onClick="reveal('ribcage1', 'ribcage')" loading="lazy"/>
+				</div>
+				<div class="work-row">
+					<img src="images/xs/belonging-copy.jpg" alt="Belonging" class="vert" onClick="reveal('beans1', 'beans')" loading="lazy"/>
+			    	<img src="images/xs/baby gun 1 copy.jpeg" alt="Baby Gun" class="vert" onClick="reveal('baby-gun1', 'baby-gun')" loading="lazy"/>
+					<img src="images/xs/yo soy 1 copy.jpeg" alt="Yo Soy" class="vert" onClick="reveal('yo-soy1', 'yo-soy')" loading="lazy"/>
+				</div>
+				<div class="work-row">
+					<img src="images/xs/cd burger 1 copy.jpg" alt="Instant (cont.)" class="horiz" onClick="reveal('cd-burger1', 'cd-burger')" loading="lazy"/>
+			    	<img src="images/xs/instant 1 copy.jpg" alt="Instant" class="vert" onClick="reveal('instant1', 'instant')" loading="lazy"/>
+					<img src="images/xs/miscommunication 1 copy.jpg" alt="Miscommunication" class="horiz" onClick="reveal('miscomunication1', 'miscommunication')" loading="lazy"/>
+				</div>
+				<div class="work-row">
+					<img src="images/xs/disconnect copy.jpg" alt="Disconnect" class="horiz" onClick="reveal('disconnect', 'disconnect')" loading="lazy"/>
+			    	<img src="images/xs/stardust copy.jpeg" alt="Stardust" class="vert" onClick="reveal('stardust', 'stardust')" loading="lazy"/>
+					<img src="images/xs/the most beautiful moment in life copy.jpeg" alt="The most Beautiful Moment in Life" class="horiz" onClick="reveal('parasol1', 'parasol')" loading="lazy"/>
+				</div>
+				<p class="work-category-header" id="4">
+					<em>3D Design</em>
+				</p>
+				<div class="work-row">
+					<img src="images/xs/synergy seats.gif" alt="Synergy Seats" class="horiz" onClick="reveal('synergy1', 'synergy')" loading="lazy"/>
+					<img src="images/xs/atd.gif" alt="ATD" class="vert" onClick="reveal('atd1', 'atd')" loading="lazy"/>
+					<img src="images/xs/shoe-platforms.jpg" alt="Shoe Platforms" class="vert" onClick="reveal('platforms1', 'platforms')" loading="lazy"/>
+				</div>
+				<div class="work-row">
+					<img src="images/xs/gmgn.jpg" alt="Good Morning, Good Night" class="vert" onClick="reveal('gmgn1', 'gmgn')" loading="lazy"/>
+					<img src="images/xs/lv.jpg" alt="Cardboard Luxury Handbag" class="vert" onClick="reveal('lv1', 'lv')" loading="lazy"/>
+					<img src="images/xs/clutch.jpg" alt="Cardboard Woven Clutch" class="vert" onClick="reveal('clutch1', 'clutch')" loading="lazy"/>
+				</div>
+				<p class="work-category-header" id="5">
+					<em>Multimedia</em>
+				</p>
+				<div class="work-row">
+					<img src="images/xs/7min1.jpg" alt="Seven Minutes in Heaven" class="horiz" onClick="reveal('7min1', '7min')" loading="lazy"/>
+					<video autoplay muted loop class="horiz" onClick="reveal('trail', 'trail')">
+					  <source src="videos/xs/trail copy.mp4" type="video/mp4">
+					</video>
+					<video autoplay muted loop class="horiz" onClick="reveal('q9', 'q9')">
+					  <source src="videos/xs/q9 copy.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="work-row">
+					<img src="images/xs/newsfortunesbot.jpg" alt="News Fortunes Bot" class="horiz" onClick="reveal('newsfortunesbot1', 'newsfortunesbot')" loading="lazy"/>
+					<video autoplay muted loop class="horiz" onClick="reveal('music-visualizer`', 'music-visualizer')">
+					  <source src="videos/xs/music visualizer 2 copy.mp4" type="video/mp4">
+					</video>
+					<video autoplay muted loop class="horiz" onClick="reveal('to-myself', 'to-myself')">
+					  <source src="videos/xs/To Myself copy.mp4" type="video/mp4">
+					</video>
+				</div>
+				<p class="work-category-header" id="6">
+					<em>Photography</em>
+				</p>
+				<div class="work-row">
+		    	    <img src="images/xs/gaze copy.jpeg" alt="Gaze" class="vert" onClick="reveal('gaze', 'gaze')" loading="lazy"/>
+				    <img src="images/xs/self-construct copy.jpeg" alt="Self-Construct" class="horiz" onClick="reveal('self-construct', 'self-construct')" loading="lazy"/>
+					<img src="images/xs/faceless1 copy.jpeg" alt="Faceless" class="horiz" onClick="reveal('faceless1', 'faceless')" loading="lazy"/>
+				</div>
+			  
+			 	<p class="work-category-header" id="7">
+				  <em>Video</em>
+			  	</p>
+				<div class="work-row">
+					<video autoplay muted loop class="horiz" onClick="reveal('efflorescence', 'efflorescence')">
+					  <source src="videos/xs/efflorescence.mp4" type="video/mp4">
+					</video>
+					<video autoplay muted loop class="horiz" onClick="reveal('losingcontact', 'losingcontact')">
+					  <source src="videos/xs/Losing Contact copy.mp4" type="video/mp4">
+					</video>
+					<video autoplay muted loop class="vert" onClick="reveal('be-longing', 'be-longing')">
+					  <source src="videos/xs/Belonging copy.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="work-row">
+				  <video autoplay muted loop class="vert" onClick="reveal('mylifeonpaper', 'mylifeonpaper')">
+					  <source src="videos/xs/My Life on Paper copy.mp4" type="video/mp4">
+					</video>
+					<video autoplay muted loop class="vert" onClick="reveal('closeteddreams', 'closeteddreams')">
+					  <source src="videos/xs/Closeted Dreams copy.mp4" type="video/mp4">
+					</video>
+				</div>
+				
+				<p class="work-category-header" id="8">
+					<em>Wearables</em>
+				</p>
+				<div class="work-row">
+					<img src="images/xs/jacket.jpg" alt="Golden Child" class="vert" onClick="reveal('jacket1', 'jacket')" loading="lazy"/>
+					<img src="images/xs/straits.jpg" alt="Straits" class="vert" onClick="reveal('straits1', 'straits')" loading="lazy"/>
+					<img src="images/xs/hearnoevil.jpg" alt="Hear No Evil" class="vert" onClick="reveal('hearnoevil1', 'hearnoevil')" loading="lazy"/>
+				</div>
+				<div class="work-row">
+					<img src="images/xs/ecosystem-backpack 1 copy.gif" alt="Self-Sufficient Ecosystem" class="vert" onClick="reveal('ecosystem-backpack1', 'ecosystem-backpack')" loading="lazy"/>
+					<img src="images/xs/bandolier copy.jpg" alt="Bandolier" class="horiz" onClick="reveal('bandolier', 'bandolier')" loading="lazy"/>
+					<img src="images/xs/passion copy.jpg" alt="Passion" class="horiz" onClick="reveal('passion1', 'passion')" loading="lazy"/>
+				</div>
+				<div class="work-row">
+					<img src="images/xs/pill-jacket 1 copy.gif" alt="'Don't Forget To Take Your...' (Pharmaceutical Couture)" class="horiz bottom" onClick="reveal('pill-jacket1', 'pill-jacket')"/>
+				</div>
+			</div>
+			
+			<div id="mobile2-3" class="col2-3 hidden" onClick="hide()">
+				<p id="col2-3-placeholder">asdlgkjhasdlkgjhasdkglhjaskldgjhalskdjhgaslkdjghalskdghjalksdjghaksldghjalksdjhglkasdhglkasdhjgkalsjdhglkashjdgklashdglkahs</p>
+				
+<!--For documentation, use 700 as width for horizontal images and 550 for height for vertical images-->
+<!--				2D Art-->
+<!--				Arch-->
+			 	<img src="images/arch.jpeg" alt="Arch" class="magnified hidden arch bottom" id="arch" loading="lazy"/>	
+<!--				Self-Portrait-->
+			 	<img src="images/selfportrait-1.jpg" alt="Self-Portrait 1" class="magnified hidden selfportrait" id="selfportrait1" loading="lazy"/>
+				<img src="images/selfportrait-2.jpg" alt="Self-Portrait 2" class="magnified hidden selfportrait bottom" id="selfportrait2" loading="lazy"/>
+				
+<!--				2D Design-->
+<!--				Rogue-->
+				<img src="images/rogue.jpg" alt="Rogue" class="rogue magnified hidden" id="rogue" loading="lazy"/>
+				<img src="images/rogue1.jpg" alt="Rogue " class="rogue magnified hidden" id="rogue1" loading="lazy"/>
+				<img src="images/rogue2.jpg" alt="Rogue 2" class="rogue magnified hidden" id="rogue2" loading="lazy"/>
+				<img src="images/rogue3.jpg" alt="Rogue 3" class="rogue magnified hidden" id="rogue3" loading="lazy"/>
+				<img src="images/rogue4.jpg" alt="Rogue 4" class="rogue magnified hidden" id="rogue4" loading="lazy"/>
+				<img src="images/rogue5.jpg" alt="Rogue 5" class="rogue magnified hidden" id="rogue5" loading="lazy"/>
+				<img src="images/rogue6.jpg" alt="Rogue 6" class="rogue magnified hidden" id="rogue6" loading="lazy"/>
+				<img src="images/rogue7.jpg" alt="Rogue 7" class="rogue magnified hidden" id="rogue7" loading="lazy"/>
+				<img src="images/rogue8.jpg" alt="Rogue 8" class="rogue magnified hidden" id="rogue8" loading="lazy"/>
+				<img src="images/rogue9.jpg" alt="Rogue 9" class="rogue magnified hidden" id="rogue9" loading="lazy"/>
+				<img src="images/rogue10.jpg" alt="Rogue 10" class="rogue magnified hidden" id="rogue10" loading="lazy"/>
+				<img src="images/rogue11.jpg" alt="Rogue 11" class="rogue magnified hidden" id="rogue11" loading="lazy"/>
+				<img src="images/rogue12.jpg" alt="Rogue 12" class="rogue magnified hidden" id="rogue12" loading="lazy"/>
+				<img src="images/rogue13.jpg" alt="Rogue 13" class="rogue magnified hidden" id="rogue13" loading="lazy"/>
+				<img src="images/rogue14.jpg" alt="Rogue 14" class="rogue magnified hidden" id="rogue14" loading="lazy"/>
+				<img src="images/rogue15.jpg" alt="Rogue 15" class="rogue magnified hidden" id="rogue15" loading="lazy"/>
+				<img src="images/rogue16.jpg" alt="Rogue 16" class="rogue magnified hidden" id="rogue16" loading="lazy"/>
+				<img src="images/rogue17.jpg" alt="Rogue 17" class="rogue magnified hidden" id="rogue17" loading="lazy"/>
+				<img src="images/rogue18.jpg" alt="Rogue 18" class="rogue magnified hidden" id="rogue18" loading="lazy"/>
+				<img src="images/rogue19.jpg" alt="Rogue 19" class="rogue magnified hidden" id="rogue19" loading="lazy"/>
+				<img src="images/rogue20.jpg" alt="Rogue 20" class="rogue magnified hidden" id="rogue20" loading="lazy"/>
+				<img src="images/rogue21.jpg" alt="Rogue 21" class="rogue magnified hidden" id="rogue21" loading="lazy"/>
+				<img src="images/rogue22.jpg" alt="Rogue 22" class="rogue magnified hidden" id="rogue22" loading="lazy"/>
+				<img src="images/rogue23.jpg" alt="Rogue 23" class="rogue magnified hidden" id="rogue23" loading="lazy"/>
+				<img src="images/rogue24.jpg" alt="Rogue 24" class="rogue magnified hidden" id="rogue24" loading="lazy"/>
+				<img src="images/rogue25.jpg" alt="Rogue 25" class="rogue magnified hidden" id="rogue25" loading="lazy"/>
+				<img src="images/rogue26.jpg" alt="Rogue 26" class="rogue magnified hidden" id="rogue26" loading="lazy"/>
+				<img src="images/rogue27.jpg" alt="Rogue 27" class="rogue magnified hidden" id="rogue27" loading="lazy"/>
+				<img src="images/rogue28.jpg" alt="Rogue 28" class="rogue magnified hidden" id="rogue28" loading="lazy"/>
+				<img src="images/rogue29.jpg" alt="Rogue 29" class="rogue magnified hidden" id="rogue29" loading="lazy"/>
+				<img src="images/rogue30.jpg" alt="Rogue 30" class="rogue magnified hidden" id="rogue30" loading="lazy"/>
+				<img src="images/rogue31.jpg" alt="Rogue 31" class="rogue magnified hidden" id="rogue31" loading="lazy"/>
+				<img src="images/rogue32.jpg" alt="Rogue 32" class="rogue magnified hidden" id="rogue32" loading="lazy"/>
+				<img src="images/rogue33.jpg" alt="Rogue 33" class="rogue magnified hidden" id="rogue33" loading="lazy"/>
+				<img src="images/rogue34.jpg" alt="Rogue 34" class="rogue magnified hidden" id="rogue34" loading="lazy"/>
+				<img src="images/rogue35.jpg" alt="Rogue 35" class="rogue magnified hidden" id="rogue35" loading="lazy"/>
+				<img src="images/rogue36.jpg" alt="Rogue 36" class="rogue magnified hidden" id="rogue36" loading="lazy"/>
+				<img src="images/rogue37.jpg" alt="Rogue 37" class="rogue magnified hidden" id="rogue37" loading="lazy"/>
+				<img src="images/rogue38.jpg" alt="Rogue 38" class="rogue magnified hidden" id="rogue38" loading="lazy"/>
+				<img src="images/rogue39.jpg" alt="Rogue 39" class="rogue magnified hidden bottom" id="rogue39" loading=""/>
+<!--				Telephone-->
+				<img src="images/telephone.jpg" alt="Telephone" class="telephone magnified hidden bottom" id="telephone" loading="lazy"/>
+<!--				Caught-->
+				<img src="images/caught1.jpg" alt="Caught 1" class="caught magnified hidden" id="caught1" loading="lazy"/>
+				<img src="images/caught2.jpg" alt="Caught 2" class="caught magnified hidden" id="caught2" loading="lazy"/>
+				<img src="images/caught3.jpg" alt="Caught 3" class="caught magnified hidden bottom" id="caught3" loading="lazy"/>
+<!--				Direction-->
+				<img src="images/direction-1.jpg" alt="Direction Magazine 1" class="direction-mag magnified hidden" id="direction-mag1" loading="lazy"/>
+				<img src="images/direction-2.jpg" alt="Direction Magazine 2" class="direction-mag magnified hidden" id="direction-mag2" loading="lazy"/>
+				<img src="images/direction-3.jpg" alt="Direction Magazine 3" class="direction-mag magnified hidden" id="direction-mag3" loading="lazy"/>
+				<img src="images/direction-4.jpg" alt="Direction Magazine 4" class="direction-mag magnified hidden" id="direction-mag4" loading="lazy"/>
+				<img src="images/direction-5.jpg" alt="Direction Magazine 5" class="direction-mag magnified hidden" id="direction-mag5" loading="lazy"/>
+				<img src="images/direction-6.jpg" alt="Direction Magazine 6" class="direction-mag magnified hidden" id="direction-mag6" loading="lazy"/>
+				<img src="images/direction-7.jpg" alt="Direction Magazine 7" class="direction-mag magnified hidden" id="direction-mag7" loading="lazy"/>
+				<img src="images/direction-8.jpg" alt="Direction Magazine 8" class="direction-mag magnified hidden" id="direction-mag8" loading="lazy"/>
+				<img src="images/direction-9.jpg" alt="Direction Magazine 9" class="direction-mag magnified hidden" id="direction-mag9" loading="lazy"/>
+				<img src="images/direction-10.jpg" alt="Direction Magazine 10" class="direction-mag magnified hidden" id="direction-mag10" loading="lazy"/>
+				<img src="images/direction-11.jpg" alt="Direction Magazine 11" class="direction-mag magnified hidden" id="direction-mag11" loading="lazy"/>
+				<img src="images/direction-12.jpg" alt="Direction Magazine 12" class="direction-mag magnified hidden" id="direction-mag12" loading="lazy"/>
+				<img src="images/direction-13.jpg" alt="Direction Magazine 13" class="direction-mag magnified hidden" id="direction-mag13" loading="lazy"/>
+				<img src="images/direction-14.jpg" alt="Direction Magazine 14" class="direction-mag magnified hidden" id="direction-mag14" loading="lazy"/>
+				<img src="images/direction-15.jpg" alt="Direction Magazine 15" class="direction-mag magnified hidden" id="direction-mag15" loading="lazy"/>
+				<img src="images/direction-16.jpg" alt="Direction Magazine 16" class="direction-mag magnified hidden" id="direction-mag16" loading="lazy"/>
+				<img src="images/direction-17.jpg" alt="Direction Magazine 17" class="direction-mag magnified hidden" id="direction-mag17" loading="lazy"/>
+				<img src="images/direction-18.jpg" alt="Direction Magazine 18" class="direction-mag magnified hidden" id="direction-mag18" loading="lazy"/>
+				<img src="images/direction-19.jpg" alt="Direction Magazine 19" class="direction-mag magnified hidden" id="direction-mag19" loading="lazy"/>
+				<img src="images/direction-20.jpg" alt="Direction Magazine 20" class="direction-mag magnified hidden" id="direction-mag20" loading="lazy"/>
+				<img src="images/direction-21.jpg" alt="Direction Magazine 21" class="direction-mag magnified hidden" id="direction-mag21" loading="lazy"/>
+				<img src="images/direction-22.jpg" alt="Direction Magazine 22" class="direction-mag magnified hidden" id="direction-mag22" loading="lazy"/>
+				<img src="images/direction-23.jpg" alt="Direction Magazine 23" class="direction-mag magnified hidden" id="direction-mag23" loading="lazy"/>
+				<img src="images/direction-24.jpg" alt="Direction Magazine 24" class="direction-mag magnified hidden" id="direction-mag24" loading="lazy"/>
+				<img src="images/direction-25.jpg" alt="Direction Magazine 25" class="direction-mag magnified hidden" id="direction-mag25" loading="lazy"/>
+				<img src="images/direction-26.jpg" alt="Direction Magazine 26" class="direction-mag magnified hidden" id="direction-mag26" loading="lazy"/>
+				<img src="images/direction-27.jpg" alt="Direction Magazine 27" class="direction-mag magnified hidden bottom" id="direction-mag27" loading="lazy"/>
+<!--				Talisman 61-->
+				<img src="images/talisman-61-1.jpg" alt="Talisman 61 1" class="t61 magnified hidden" id="t611" loading="lazy"/>
+				<img src="images/talisman-61-2.jpg" alt="Talisman 61 2" class="t61 magnified hidden" id="t612" loading="lazy"/>
+				<img src="images/talisman-61-3.jpg" alt="Talisman 61 3" class="t61 magnified hidden" id="t613" loading="lazy"/>
+				<img src="images/talisman-61-4.jpg" alt="Talisman 61 4" class="t61 magnified hidden" id="t614" loading="lazy"/>
+				<img src="images/talisman-61-5.jpg" alt="Talisman 61 5" class="t61 magnified hidden" id="t615" loading="lazy"/>
+				<img src="images/talisman-61-6.jpg" alt="Talisman 61 6" class="t61 magnified hidden" id="t616" loading="lazy"/>
+				<img src="images/talisman-61-7.jpg" alt="Talisman 61 7" class="t61 magnified hidden" id="t617" loading="lazy"/>
+				<img src="images/talisman-61-8.jpg" alt="Talisman 61 8" class="t61 magnified hidden" id="t618" loading="lazy"/>
+				<img src="images/talisman-61-9.jpg" alt="Talisman 61 9" class="t61 magnified hidden" id="t619" loading="lazy"/>
+				<img src="images/talisman-61-10.jpg" alt="Talisman 61 10" class="t61 magnified hidden" id="t6110" loading="lazy"/>
+				<img src="images/talisman-61-11.jpg" alt="Talisman 61 11" class="t61 magnified hidden" id="t6111" loading="lazy"/>
+				<img src="images/talisman-61-12.jpg" alt="Talisman 61 12" class="t61 magnified hidden" id="t6112" loading="lazy"/>
+				<img src="images/talisman-61-13.jpg" alt="Talisman 61 13" class="t61 magnified hidden" id="t6113" loading="lazy"/>
+				<img src="images/talisman-61-14.jpg" alt="Talisman 61 14" class="t61 magnified hidden" id="t6114" loading="lazy"/>
+				<img src="images/talisman-61-15.jpg" alt="Talisman 61 15" class="t61 magnified hidden" id="t6115" loading="lazy"/>
+				<img src="images/talisman-61-16.jpg" alt="Talisman 61 16" class="t61 magnified hidden" id="t6116" loading="lazy"/>
+<!--				<iframe src="https://indd.adobe.com/embed/f7bb7d3e-6a9a-4f4f-bbc7-f7f7d64b50c1?startpage=1&amp;allowFullscreen=true" frameborder="0" allowfullscreen="" class="direction-mag magnified hidden bottom" id="direction-mag"></iframe>-->
+<!--				Ramenhead-->
+				<img src="images/ramenhead 1.jpg" alt="Ramenhead exterior" class="magnified hidden ramenhead" id="ramenhead1" loading="lazy"/>
+				<img src="images/ramenhead 2.jpg" alt="Ramenhead interior" class="magnified hidden ramenhead bottom" id="ramenhead2" loading="lazy"/>
+<!--				Self-Sent-->
+				<img src="images/self-sent-1.jpg" alt="Self-Sent 1" class="self-sent magnified hidden" id="self-sent1" loading="lazy"/>
+				<img src="images/self-sent-2.jpg" alt="Self-Sent 2" class="self-sent magnified hidden" id="self-sent2" loading="lazy"/>
+				<img src="images/self-sent-3.jpg" alt="Self-Sent 3" class="self-sent magnified hidden" id="self-sent3" loading="lazy"/>
+				<img src="images/self-sent-4.jpg" alt="Self-Sent 4" class="self-sent magnified hidden" id="self-sent4" loading="lazy"/>
+				<img src="images/self-sent-5.jpg" alt="Self-Sent 5" class="self-sent magnified hidden" id="self-sent5" loading="lazy"/>
+				<img src="images/self-sent-6.jpg" alt="Self-Sent 6" class="self-sent magnified hidden" id="self-sent6" loading="lazy"/>
+				<img src="images/self-sent-7.jpg" alt="Self-Sent 7" class="self-sent magnified hidden" id="self-sent7" loading="lazy"/>
+				<img src="images/self-sent-8.jpg" alt="Self-Sent 8" class="self-sent magnified hidden" id="self-sent8" loading="lazy"/>
+				<img src="images/self-sent-9.jpg" alt="Self-Sent 9" class="self-sent magnified hidden" id="self-sent9" loading="lazy"/>
+				<img src="images/self-sent-10.jpg" alt="Self-Sent 10" class="self-sent magnified hidden" id="self-sent10" loading="lazy"/>
+				<img src="images/self-sent-11.jpg" alt="Self-Sent 11" class="self-sent magnified hidden" id="self-sent11" loading="lazy"/>
+				<img src="images/self-sent-12.jpg" alt="Self-Sent 12" class="self-sent magnified hidden" id="self-sent12" loading="lazy"/>
+				<img src="images/self-sent-13.jpg" alt="Self-Sent 13" class="self-sent magnified hidden" id="self-sent13" loading="lazy"/>
+				<img src="images/self-sent-14.jpg" alt="Self-Sent 14" class="self-sent magnified hidden" id="self-sent14" loading="lazy"/>
+				<img src="images/self-sent-15.jpg" alt="Self-Sent 15" class="self-sent magnified hidden" id="self-sent15" loading="lazy"/>
+				<img src="images/self-sent-16.jpg" alt="Self-Sent 16" class="self-sent magnified hidden" id="self-sent16" loading="lazy"/>
+				<img src="images/self-sent-17.jpg" alt="Self-Sent 17" class="self-sent magnified hidden bottom" id="self-sent17" loading="lazy"/>
+<!--
+				<div class="self-sent magnified hidden loading" height="100%" width="100%">
+				</div>
+				<iframe src="https://indd.adobe.com/embed/53791a1a-b34f-4cb1-9358-8a9a2b2de89e?startpage=1&amp;allowFullscreen=true" frameborder="0" allowfullscreen="" class="magnified hidden self-sent bottom" id="self-sent"></iframe>
+-->
+<!--				Ringramen-->
+				<img src="images/ringramen.jpg" alt="Ringramen" class="ringramen magnified hidden bottom" id="ringramen" loading="lazy"/>
+<!--
+				<div class="ringramen magnified hidden loading container-1366-768">
+				</div>
+				<div class="ringramen magnified hidden container-1366-768">
+					<iframe src="https://xd.adobe.com/embed/4e5a8b95-29d4-4d8c-ad5f-3c47c16732b5-1b09/" frameborder="0" allowfullscreen class="ringramen magnified bottom hidden" id="ringramen"></iframe>
+				</div>
+-->
+<!--				Bijou-->
+<!--
+				<div class="bijou magnified hidden loading"></div>
+				<iframe src="https://xd.adobe.com/embed/669a4130-1afc-44a2-aea3-cf759b4923f1-33c9/" frameborder="0" allowfullscreen class="bijou magnified hidden" id="bijou1"></iframe>
+-->
+				<img src="images/bijou 2" alt="Bijou Mockup" class="magnified hidden bijou bottom" id="bijou2" loading="lazy"/>
+<!--				E11H Zine-->
+				<img src="images/e11h-final-1.jpg" alt="The Asian American Dream Zine 1" class="e11h-zine magnified hidden" id="e11h-zine1" loading="lazy"/>
+				<img src="images/e11h-final-2.jpg" alt="The Asian American Dream Zine 2" class="e11h-zine magnified hidden" id="e11h-zine2" loading="lazy"/>
+				<img src="images/e11h-final-3.jpg" alt="The Asian American Dream Zine 3" class="e11h-zine magnified hidden" id="e11h-zine3" loading="lazy"/>
+				<img src="images/e11h-final-4.jpg" alt="The Asian American Dream Zine 4" class="e11h-zine magnified hidden" id="e11h-zine4" loading="lazy"/>
+				<img src="images/e11h-final-5.jpg" alt="The Asian American Dream Zine 5" class="e11h-zine magnified hidden" id="e11h-zine5" loading="lazy"/>
+				<img src="images/e11h-final-6.jpg" alt="The Asian American Dream Zine 6" class="e11h-zine magnified hidden" id="e11h-zine6" loading="lazy"/>
+				<img src="images/e11h-final-7.jpg" alt="The Asian American Dream Zine 7" class="e11h-zine magnified hidden" id="e11h-zine7" loading="lazy"/>
+				<img src="images/e11h-final-8.jpg" alt="The Asian American Dream Zine 8" class="e11h-zine magnified hidden" id="e11h-zine8" loading="lazy"/>
+				<img src="images/e11h-final-9.jpg" alt="The Asian American Dream Zine 9" class="e11h-zine magnified hidden" id="e11h-zine9" loading="lazy"/>
+				<img src="images/e11h-final-10.jpg" alt="The Asian American Dream Zine 10" class="e11h-zine magnified hidden" id="e11h-zine10" loading="lazy"/>
+				<img src="images/e11h-final-11.jpg" alt="The Asian American Dream Zine 11" class="e11h-zine magnified hidden" id="e11h-zine11" loading="lazy"/>
+				<img src="images/e11h-final-12.jpg" alt="The Asian American Dream Zine 12" class="e11h-zine magnified hidden" id="e11h-zine12" loading="lazy"/>
+				<img src="images/e11h-final-13.jpg" alt="The Asian American Dream Zine 13" class="e11h-zine magnified hidden" id="e11h-zine13" loading="lazy"/>
+				<img src="images/e11h-final-14.jpg" alt="The Asian American Dream Zine 14" class="e11h-zine magnified hidden" id="e11h-zine14" loading="lazy"/>
+				<img src="images/e11h-final-15.jpg" alt="The Asian American Dream Zine 15" class="e11h-zine magnified hidden" id="e11h-zine15" loading="lazy"/>
+				<img src="images/e11h-final-16.jpg" alt="The Asian American Dream Zine 16" class="e11h-zine magnified hidden" id="e11h-zine16" loading="lazy"/>
+				<img src="images/e11h-final-17.jpg" alt="The Asian American Dream Zine 17" class="e11h-zine magnified hidden" id="e11h-zine17" loading="lazy"/>
+				<img src="images/e11h-final-18.jpg" alt="The Asian American Dream Zine 18" class="e11h-zine magnified hidden" id="e11h-zine18" loading="lazy"/>
+				<img src="images/e11h-final-19.jpg" alt="The Asian American Dream Zine 19" class="e11h-zine magnified hidden" id="e11h-zine19" loading="lazy"/>
+				<img src="images/e11h-final-20.jpg" alt="The Asian American Dream Zine 20" class="e11h-zine magnified hidden" id="e11h-zine20" loading="lazy"/>
+				<img src="images/e11h-final-21.jpg" alt="The Asian American Dream Zine 21" class="e11h-zine magnified hidden" id="e11h-zine21" loading="lazy"/>
+				<img src="images/e11h-final-22.jpg" alt="The Asian American Dream Zine 22" class="e11h-zine magnified hidden" id="e11h-zine22" loading="lazy"/>
+				<img src="images/e11h-final-23.jpg" alt="The Asian American Dream Zine 23" class="e11h-zine magnified hidden" id="e11h-zine23" loading="lazy"/>
+				<img src="images/e11h-final-24.jpg" alt="The Asian American Dream Zine 24" class="e11h-zine magnified hidden" id="e11h-zine24" loading="lazy"/>
+				<img src="images/e11h-final-25.jpg" alt="The Asian American Dream Zine 25" class="e11h-zine magnified hidden" id="e11h-zine25" loading="lazy"/>
+				<img src="images/e11h-final-26.jpg" alt="The Asian American Dream Zine 26" class="e11h-zine magnified hidden bottom" id="e11h-zine26" loading="lazy"/>
+<!--				<iframe src="https://indd.adobe.com/embed/f49ad21c-62a9-4d0e-99fb-4057378888ef?startpage=1&amp;allowFullscreen=true" frameborder="0" allowfullscreen="" class="e11h-zine magnified hidden bottom" id="e11h-zine"></iframe>-->
+
+<!--				APAH Zine-->
+				<img src="images/apah-final-1.jpg" alt="The Development of the Human Figure 1" class="apah-mag magnified hidden" id="apah-mag1" loading="lazy"/>
+				<img src="images/apah-final-2.jpg" alt="The Development of the Human Figure 2" class="apah-mag magnified hidden" id="apah-mag2" loading="lazy"/>
+				<img src="images/apah-final-3.jpg" alt="The Development of the Human Figure 3" class="apah-mag magnified hidden" id="apah-mag3" loading="lazy"/>
+				<img src="images/apah-final-4.jpg" alt="The Development of the Human Figure 4" class="apah-mag magnified hidden" id="apah-mag4" loading="lazy"/>
+				<img src="images/apah-final-5.jpg" alt="The Development of the Human Figure 5" class="apah-mag magnified hidden" id="apah-mag5" loading="lazy"/>
+				<img src="images/apah-final-6.jpg" alt="The Development of the Human Figure 6" class="apah-mag magnified hidden" id="apah-mag6" loading="lazy"/>
+				<img src="images/apah-final-7.jpg" alt="The Development of the Human Figure 7" class="apah-mag magnified hidden" id="apah-mag7" loading="lazy"/>
+				<img src="images/apah-final-8.jpg" alt="The Development of the Human Figure 8" class="apah-mag magnified hidden" id="apah-mag8" loading="lazy"/>
+				<img src="images/apah-final-9.jpg" alt="The Development of the Human Figure 9" class="apah-mag magnified hidden" id="apah-mag9" loading="lazy"/>
+				<img src="images/apah-final-10.jpg" alt="The Development of the Human Figure 10" class="apah-mag magnified hidden" id="apah-mag10" loading="lazy"/>
+				<img src="images/apah-final-11.jpg" alt="The Development of the Human Figure 11" class="apah-mag magnified hidden bottom" id="apah-mag11" loading="lazy"/>
+<!--				<iframe src="https://indd.adobe.com/embed/b7c42cfe-5cac-4b09-b589-71cb07c00346?startpage=1&amp;allowFullscreen=true" frameborder="0" allowfullscreen="" class="apah-mag magnified hidden bottom" id="apah-mag"></iframe>-->
+				
+<!--				3D Art-->
+<!--				The Sky in Boxes-->
+				<img src="images/the-sky-in-boxes-1.jpg" alt="The Sky in Boxes 1" class="magnified hidden skyboxes" id="skyboxes1" loading="lazy"/>
+				<img src="images/the-sky-in-boxes-2.jpg" alt="The Sky in Boxes 2" class="magnified hidden skyboxes" id="skyboxes2" loading="lazy"/>
+				<img src="images/the-sky-in-boxes-3.jpg" alt="The Sky in Boxes 3" class="magnified hidden skyboxes" id="skyboxes3" loading="lazy"/>
+				<img src="images/the-sky-in-boxes-4.jpg" alt="The Sky in Boxes 4" class="magnified hidden skyboxes" id="skyboxes4" loading="lazy"/>
+				<img src="images/the-sky-in-boxes-5.jpg" alt="The Sky in Boxes 5" class="magnified hidden skyboxes bottom" id="skyboxes5" loading="lazy"/>
+<!--				(M)issing-->
+				<img src="images/missing-1.jpg" alt="Missing 1" class="magnified hidden missing" id="missing1" loading="lazy"/>
+				<img src="images/missing-2.jpg" alt="Missing 2" class="magnified hidden missing" id="missing2" loading="lazy"/>
+				<img src="images/missing-3.jpg" alt="Missing 3" class="magnified hidden missing" id="missing3" loading="lazy"/>
+				<img src="images/missing-4.jpg" alt="Missing 4" class="magnified hidden missing" id="missing4" loading="lazy"/>
+				<img src="images/missing-5.jpg" alt="Missing 5" class="magnified hidden missing" id="missing5" loading="lazy"/>
+				<img src="images/missing-6.jpg" alt="Missing 6" class="magnified hidden missing" id="missing6" loading="lazy"/>
+				<img src="images/missing-7.jpg" alt="Missing 7" class="magnified hidden missing bottom" id="missing7" loading="lazy"/>
+<!--				I AM HERE.-->
+				<img src="images/ribcage 1.jpg" alt="I AM HERE. 1" class="magnified hidden ribcage" id="ribcage1" loading="lazy"/>
+				<img src="images/ribcage 2.jpg" alt="I AM HERE. 2" class="magnified hidden ribcage" id="ribcage2" loading="lazy"/>
+				<img src="images/ribcage 3.jpg" alt="I AM HERE. 3" class="magnified hidden ribcage" id="ribcage3" loading="lazy"/>
+				<img src="images/ribcage 4.jpg" alt="I AM HERE. 4" class="magnified hidden ribcage bottom" id="ribcage4" loading="lazy"/>
+<!--				Belonging-->
+				<img src="images/belonging1.jpg" alt="Belonging 1" class="magnified hidden beans" id="beans1" loading="lazy"/>
+				<img src="images/belonging2.jpg" alt="Belonging 2" class="magnified hidden beans bottom" id="beans2" loading="lazy"/>	
+<!--				Baby Gun-->
+				<img src="images/baby gun 1.jpeg" alt="Baby Gun 1" class="magnified hidden baby-gun" id="baby-gun1" loading="lazy"/>
+				<img src="images/baby gun 2.jpeg" alt="Baby Gun 2" class="magnified hidden baby-gun" id="baby-gun2" loading="lazy"/>
+				<img src="images/baby gun 3.jpeg" alt="Baby Gun 3" class="magnified hidden baby-gun bottom" id="baby-gun3" loading="lazy"/>	
+<!--				Yo Soy-->
+				<img src="images/yo soy 1.jpeg" alt="Yo Soy 1" class="magnified hidden yo-soy" id="yo-soy1" loading="lazy"/>	
+				<img src="images/yo soy 2.jpeg" alt="Yo Soy 2" class="magnified hidden yo-soy bottom" id="yo-soy2" loading="lazy"/>	
+<!--				CD Burger-->
+				<img src="images/cd burger 1.jpg" alt="Instant (cont.) 3" class="magnified hidden cd-burger" id="cd-burger1" loading="lazy"/>	
+				<img src="images/cd burger 2.jpg" alt="Instant (cont.) 3" class="magnified hidden cd-burger" id="cd-burger2" loading="lazy"/>	
+				<img src="images/cd burger 3.jpg" alt="Instant (cont.) 3" class="magnified hidden cd-burger bottom" id="cd-burger3" loading="lazy"/>
+<!--				Instant-->
+				<img src="images/instant 1.jpg" alt="Instant 1" class="magnified hidden instant" id="instant1" loading="lazy"/>
+				<img src="images/instant 2.jpeg" alt="Instant 2" class="magnified hidden instant" id="instant2" loading="lazy"/>
+				<img src="images/instant 3.jpg" alt="Instant 3" class="magnified hidden instant bottom" id="instant3" loading="lazy"/>	
+<!--				Miscommunication-->
+				<img src="images/miscommunication 1.jpg" alt="Miscommunication 1" class="magnified hidden miscommunication" id="miscommunication1" loading="lazy"/>
+				<img src="images/miscommunication 2.jpeg" alt="Miscommunication 2" class="magnified hidden miscommunication bottom" id="miscmomunication2" loading="lazy"/>
+<!--				Disconnect-->
+				<img src="images/disconnect.jpg" alt="Disconnect" class="magnified hidden disconnect bottom" id="disconnect" loading="lazy"/>
+<!--				Stardust-->
+				<img src="images/stardust.jpeg" alt="Stardust" class="magnified hidden stardust bottom" id="stardust" loading="lazy"/>	
+<!--				Most Beautiful Moment-->
+				<img src="images/the most beautiful moment in life.jpg" alt="The Most Beautiful Moment in Life" class="magnified hidden parasol" id="parasol1" loading="lazy"/>
+				<img src="images/the most beautiful moment in life 2.jpg" alt="The Most Beautiful Moment in Life 2" class="magnified hidden parasol" id="parasol2" loading="lazy"/>
+				<img src="images/the most beautiful moment in life 3.jpg" alt="The Most Beautiful Moment in Life 3" class="magnified hidden parasol bottom" id="parasol3" loading="lazy"/>
+				
+<!--				3D Design-->
+<!--				Synergy Seats-->
+				<img src="images/synergy seats.gif" alt="Synergy Seats 1" class="magnified hidden synergy" id="synergy1" loading="lazy"/>
+				<video controls controlsList="nodownload" class="magnified hidden synergy" id="synergy2">
+				  <source src="videos/synergy seats.mp4" type="video/mp4">
+				</video>
+				<img src="images/synergy-seats-1.jpg" alt="Synergy Seats 3" class="magnified hidden synergy" id="synergy3" loading="lazy"/>
+				<img src="images/synergy-seats-2.jpg" alt="Synergy Seats 4" class="magnified hidden synergy" id="synergy4" loading="lazy"/>
+				<img src="images/synergy-seats-3.jpg" alt="Synergy Seats 5" class="magnified hidden synergy" id="synergy5" loading="lazy"/>
+				<img src="images/synergy-seats-4.jpg" alt="Synergy Seats 6" class="magnified hidden synergy" id="synergy6" loading="lazy"/>
+				<img src="images/synergy-seats-5.jpg" alt="Synergy Seats 7" class="magnified hidden synergy" id="synergy7" loading="lazy"/>
+				<img src="images/synergy-seats-6.jpg" alt="Synergy Seats 8" class="magnified hidden synergy bottom" id="synergy8" loading="lazy"/>
+<!--				ATD-->
+				<img src="images/atd 1.gif" alt="ATD 1" class="magnified hidden atd" id="atd1" loading="lazy"/>
+				<img src="images/atd-2.jpg" alt="ATD 2" class="magnified hidden atd" id="atd2" loading="lazy"/>
+				<img src="images/atd-3.jpg" alt="ATD 3" class="magnified hidden atd" id="atd3" loading="lazy"/>
+				<img src="images/atd-4.jpg" alt="ATD 4" class="magnified hidden atd bottom" id="atd4" loading="lazy"/>
+<!--				Shoe Platforms-->
+				<img src="images/shoe-platforms-1.jpg" alt="Shoe Platforms 1" class="magnified hidden platforms" id="platforms1" loading="lazy"/>
+				<img src="images/shoe-platforms-2.jpg" alt="Shoe Platforms 2" class="magnified hidden platforms" id="platforms2" loading="lazy"/>
+				<img src="images/shoe-platforms-3.jpg" alt="Shoe Platforms 3" class="magnified hidden platforms bottom" id="platforms3" loading="lazy"/>
+<!--				Good Morning, Good Night-->
+				<img src="images/gmgn1.jpg" alt="Good Morning, Good Night 1" class="magnified hidden gmgn" id="gmgn1" loading="lazy"/>
+				<img src="images/gmgn2.jpg" alt="Good Morning, Good Night 2" class="magnified hidden gmgn" id="gmgn2" loading="lazy"/>
+				<img src="images/gmgn3.jpg" alt="Good Morning, Good Night 3" class="magnified hidden gmgn" id="gmgn3" loading="lazy"/>
+				<img src="images/gmgn4.jpg" alt="Good Morning, Good Night 4" class="magnified hidden gmgn" id="gmgn4" loading="lazy"/>
+				<img src="images/gmgn5.jpg" alt="Good Morning, Good Night 5" class="magnified hidden gmgn" id="gmgn5" loading="lazy"/>
+				<img src="images/gmgn6.jpg" alt="Good Morning, Good Night 6" class="magnified hidden gmgn" id="gmgn6" loading="lazy"/>
+				<img src="images/gmgn7.jpg" alt="Good Morning, Good Night 7" class="magnified hidden gmgn" id="gmgn7" loading="lazy"/>
+				<img src="images/gmgn8.jpg" alt="Good Morning, Good Night 8" class="magnified hidden gmgn bottom" id="gmgn8" loading="lazy"/>
+<!--				Cardboard Luxury Handbag-->
+				<img src="images/lv1.jpg" alt="Cardboard Luxury Handbag 1" class="magnified hidden lv" id="lv1" loading="lazy"/>
+				<img src="images/lv2.jpg" alt="Cardboard Luxury Handbag 2" class="magnified hidden lv" id="lv2" loading="lazy"/>
+				<img src="images/lv3.jpg" alt="Cardboard Luxury Handbag 3" class="magnified hidden lv" id="lv3" loading="lazy"/>
+				<img src="images/lv4.jpg" alt="Cardboard Luxury Handbag 4" class="magnified hidden lv bottom" id="lv4" loading="lazy"/>
+<!--				Cardboard Woven Clutch-->
+				<img src="images/clutch1.jpg" alt="Cardboard Woven Clutch 1" class="magnified hidden clutch" id="clutch1" loading="lazy"/>
+				<img src="images/clutch2.jpg" alt="Cardboard Woven Clutch 2" class="magnified hidden clutch" id="clutch2" loading="lazy"/>
+				<img src="images/clutch3.jpg" alt="Cardboard Woven Clutch 3" class="magnified hidden clutch" id="clutch3" loading="lazy"/>
+				<img src="images/clutch4.jpg" alt="Cardboard Woven Clutch 4" class="magnified hidden clutch bottom" id="clutch4" loading="lazy"/>
+<!--				Strap and Carry-->
+				<img src="images/strap and carry 1.jpeg" alt="Strap and Carry 1" class="magnified hidden strap-and-carry" id="strap-and-carry1" loading="lazy"/>
+				<img src="images/strap and carry 2" alt="Strap and Carry 2" class="magnified hidden strap-and-carry" id="strap-and-carry2" loading="lazy"/>
+				<img src="images/strap and carry 3.jpg" alt="Strap and Carry 3" class="magnified hidden strap-and-carry" id="strap-and-carry3" loading="lazy"/>
+				<img src="images/strap and carry 4" alt="Strap and Carry 4" class="magnified hidden strap-and-carry" id="strap-and-carry4" loading="lazy"/>
+				<img src="images/strap and carry 5" alt="Strap and Carry 5" class="magnified hidden strap-and-carry" id="strap-and-carry5" loading="lazy"/>
+				<img src="images/strap and carry 6" alt="Strap and Carry 6" class="magnified hidden strap-and-carry" id="strap-and-carry6" loading="lazy"/>
+				<img src="images/strap and carry 7" alt="Strap and Carry 7" class="magnified hidden strap-and-carry" id="strap-and-carry7" loading="lazy"/>
+				<img src="images/strap and carry 8" alt="Strap and Carry 8" class="magnified hidden strap-and-carry" id="strap-and-carry8" loading="lazy"/>
+				<img src="images/strap and carry 9" alt="Strap and Carry 9" class="magnified hidden strap-and-carry" id="strap-and-carry9" loading="lazy"/>
+				<img src="images/strap and carry 10" alt="Strap and Carry 10" class="magnified hidden strap-and-carry" id="strap-and-carry10" loading="lazy"/>
+				<img src="images/strap and carry 11" alt="Strap and Carry 11" class="magnified hidden strap-and-carry" id="strap-and-carry11" loading="lazy"/>
+				<img src="images/strap and carry 12" alt="Strap and Carry 12" class="magnified hidden strap-and-carry" id="strap-and-carry12" loading="lazy"/>
+				<img src="images/strap and carry 13" alt="Strap and Carry 13" class="magnified hidden strap-and-carry bottom" id="strap-and-carry13" loading="lazy"/>
+<!--				Hasbro-->
+				<img src="images/hasbro 1.jpeg" alt="Hasbro 1" class="magnified hidden hasbro" id="hasbro1" loading="lazy"/>	
+				<img src="images/hasbro 2.jpeg" alt="Hasbro 2" class="magnified hidden hasbro" id="hasbro2" loading="lazy"/>
+				<img src="images/hasbro 3.jpeg" alt="Hasbro 3" class="magnified hidden hasbro" id="hasbro3" loading="lazy"/>
+				<img src="images/hasbro 4.jpeg" alt="Hasbro 4" class="magnified hidden hasbro" id="hasbro4" loading="lazy"/>
+				<img src="images/hasbro 5.jpeg" alt="Hasbro 5" class="magnified hidden hasbro" id="hasbro5" loading="lazy"/>
+				<img src="images/hasbro 6.jpeg" alt="Hasbro 6" class="magnified hidden hasbro" id="hasbro6" loading="lazy"/>
+				<img src="images/hasbro 7.jpeg" alt="Hasbro 7" class="magnified hidden hasbro" id="hasbro7" loading="lazy"/>
+				<img src="images/hasbro 8.jpeg" alt="Hasbro 8" class="magnified hidden hasbro" id="hasbro8" loading="lazy"/>
+				<img src="images/hasbro 9.jpeg" alt="Hasbro 9" class="magnified hidden hasbro bottom" id="hasbro9" loading="lazy"/>
+<!--				Live Work Sell-->
+<!--
+				<img src="images/lws 1.jpeg" alt="Live Work Sell 1" class="magnified hidden lws" id="lws1" loading="lazy"/>
+				<img src="images/lws 2.jpeg" alt="Live Work Sell 2" class="magnified hidden lws" id="lws2" loading="lazy"/>
+				<img src="images/lws 3.jpeg" alt="Live Work Sell 3" class="magnified hidden lws" id="lws3" loading="lazy"/>
+				<img src="images/lws 4.jpeg" alt="Live Work Sell 4" class="magnified hidden lws" id="lws4" loading="lazy"/>
+				<img src="images/lws 5.jpeg" alt="Live Work Sell 5" class="magnified hidden lws" id="lws5" loading="lazy"/>
+				<img src="images/lws 6.jpeg" alt="Live Work Sell 6" class="magnified hidden lws" id="lws6" loading="lazy"/>
+				<img src="images/lws 7.jpeg" alt="Live Work Sell 7" class="magnified hidden lws bottom" id="lws7" loading="lazy"/>
+-->
+<!--				Found Object Model-->
+<!--				<img src="images/found object model.jpeg" alt="Found Object Model" class="magnified hidden found-object-model bottom" id="found-object-model" loading="lazy"/>	-->
+				
+<!--				Multimedia-->
+<!--				Seven Minutes in Heaven-->
+				<video controls controlsList="nodownload" class="magnified hidden 7min" id="7min1">
+				  <source src="videos/7min1.mp4" type="video/mp4">
+				</video>
+				<img src="images/7min2.jpg" alt="Seven Minutes in Heaven 2" class="7min magnified hidden" id="7min2" loading="lazy"/>
+				<img src="images/7min3.jpg" alt="Seven Minutes in Heaven 3" class="7min magnified hidden" id="7min3" loading="lazy"/>
+				<img src="images/7min4.jpg" alt="Seven Minutes in Heaven 4" class="7min magnified hidden" id="7min4" loading="lazy"/>
+				<img src="images/7min5.jpg" alt="Seven Minutes in Heaven 5" class="7min magnified hidden" id="7min5" loading="lazy"/>
+				<video controls controlsList="nodownload" class="magnified hidden 7min bottom" id="7min6">
+				  <source src="videos/7min5.mp4" type="video/mp4">
+				</video>
+<!--				Trail-->
+				<img src="images/trail1.jpg" alt="Eye Trail 1" class="trail magnified hidden" id="trail1" loading="lazy"/>
+				<img src="images/trail2.jpg" alt="Eye Trail 2" class="trail magnified hidden" id="trail2" loading="lazy"/>
+				<img src="images/trail3.jpg" alt="Eye Trail 3" class="trail magnified hidden" id="trail3" loading="lazy"/>
+				<img src="images/trail4.jpg" alt="Eye Trail 4" class="trail magnified hidden" id="trail4" loading="lazy"/>
+				<img src="images/trail5.jpg" alt="Eye Trail 5" class="trail magnified hidden" id="trail5" loading="lazy"/>
+				<img src="images/trail6.jpg" alt="Eye Trail 6" class="trail magnified hidden" id="trail6" loading="lazy"/>
+				<img src="images/trail7.jpg" alt="Eye Trail 7" class="trail magnified hidden" id="trail7" loading="lazy"/>
+				<img src="images/trail8.jpg" alt="Eye Trail 8" class="trail magnified hidden" id="trail8" loading="lazy"/>
+				<img src="images/trail9.jpg" alt="Eye Trail 9" class="trail magnified hidden" id="trail9" loading="lazy"/>
+				<img src="images/trail10.jpg" alt="Eye Trail 10" class="trail magnified hidden" id="trail10" loading="lazy"/>
+				<img src="images/trail11.jpg" alt="Eye Trail 11" class="trail magnified hidden" id="trail11" loading="lazy"/>
+				<img src="images/trail12.jpg" alt="Eye Trail 12" class="trail magnified hidden bottom" id="trail12" loading="lazy"/>
+<!--				Question Nine-->
+				<video controls controlsList="nodownload" class="magnified hidden q9 bottom" id="q9">
+				  <source src="videos/q9.mp4" type="video/mp4">
+				</video>
+<!--				News Fortunes Bot-->
+				<img src="images/newsfortunesbot1.png" alt="News Fortunes Bot 1" class="magnified hidden newsfortunesbot" id="newsfortunesbot1" loading="lazy"/>
+				<img src="images/newsfortunesbot2.png" alt="News Fortunes Bot 2" class="magnified hidden newsfortunesbot" id="newsfortunesbot2" loading="lazy"/>
+				<img src="images/newsfortunesbot3.png" alt="News Fortunes Bot 3" class="magnified hidden newsfortunesbot bottom" id="newsfortunesbot3" loading="lazy"/>
+<!--				Music Visualizer-->
+				<img src="images/music visualizer 1" alt="Music Visualizer" class="magnified hidden music-visualizer" id="music-visualizer1" loading="lazy"/>
+				<video controls controlsList="nodownload" class="magnified hidden music-visualizer bottom" id="music-visualizer2">
+				  <source src="videos/music visualizer 2.mp4" type="video/mp4">
+				</video>
+<!--				To Myself-->
+				<video controls controlsList="nodownload" class="magnified hidden to-myself bottom" id="to-myself">
+				  <source src="videos/To Myself.mp4" type="video/mp4">
+				</video>
+				
+<!--				Photography-->
+				<img src="images/gaze.jpeg" alt="Gaze" class="magnified hidden gaze bottom" id="gaze" loading="lazy"/>
+				<img src="images/self-construct.jpeg" alt="Self-Construct" class="magnified hidden self-construct bottom" id="self-construct" loading="lazy"/>
+				<img src="images/faceless1.jpeg" alt="Faceless 1" class="magnified hidden faceless" id="faceless" loading="lazy"/>
+				<img src="images/faceless2.jpeg" alt="Faceless 2" class="magnified hidden faceless bottom" id="faceless2" loading="lazy"/>
+				
+<!--				Video-->
+<!--				Efflorescence-->
+				<video controls controlsList="nodownload" class="magnified hidden efflorescence bottom" id="efflorescence">
+				  <source src="videos/efflorescence.mp4" type="video/mp4">
+				</video>
+<!--				Losing Contact-->
+				<video controls controlsList="nodownload" class="magnified hidden losingcontact bottom" id="losingcontact">
+				  <source src="videos/Losing Contact.mp4" type="video/mp4">
+				</video>
+<!--				Belonging-->
+				<video controls controlsList="nodownload" class="magnified hidden be-longing bottom" id="be-longing">
+				  <source src="videos/Belonging.mp4" type="video/mp4">
+				</video>
+<!--				My Life On Paper-->
+				<video controls controlsList="nodownload" class="magnified hidden mylifeonpaper bottom" id="mylifeonpaper">
+				  <source src="videos/My Life on Paper.mp4" type="video/mp4">
+				</video>
+<!--				Closeted Dreams-->
+				<video controls controlsList="nodownload" class="magnified hidden closeteddreams bottom" id="closeteddreams">
+				  <source src="videos/Closeted Dreams.mp4" type="video/mp4">
+				</video>
+				
+<!--				Wearables-->
+<!--				Golden Child-->
+				<img src="images/jacket-1.jpg" alt="Jacket 1" class="magnified hidden jacket" id="jacket1" loading="lazy"/>
+				<img src="images/jacket-2.jpg" alt="Jacket 2" class="magnified hidden jacket" id="jacket2" loading="lazy"/>
+				<img src="images/jacket-3.jpg" alt="Jacket 3" class="magnified hidden jacket" id="jacket3" loading="lazy"/>
+				<img src="images/jacket-4.jpg" alt="Jacket 4" class="magnified hidden jacket" id="jacket4" loading="lazy"/>
+				<img src="images/jacket-5.jpg" alt="Jacket 5" class="magnified hidden jacket" id="jacket5" loading="lazy"/>
+				<img src="images/jacket-6.jpg" alt="Jacket 6" class="magnified hidden jacket" id="jacket6" loading="lazy"/>
+				<img src="images/jacket-7.jpg" alt="Jacket 7" class="magnified hidden jacket" id="jacket7" loading="lazy"/>
+				<img src="images/jacket-8.jpg" alt="Jacket 8" class="magnified hidden jacket" id="jacket8" loading="lazy"/>
+				<img src="images/jacket-9.jpg" alt="Jacket 9" class="magnified hidden jacket" id="jacket9" loading="lazy"/>
+				<img src="images/jacket-10.jpg" alt="Jacket 10" class="magnified hidden jacket" id="jacket10" loading="lazy"/>
+				<img src="images/jacket-11.jpg" alt="Jacket 11" class="magnified hidden jacket" id="jacket11" loading="lazy"/>
+				<img src="images/jacket-12.jpg" alt="Jacket 12" class="magnified hidden jacket" id="jacket12" loading="lazy"/>
+				<img src="images/jacket-13.jpg" alt="Jacket 13" class="magnified hidden jacket bottom" id="jacket13" loading="lazy"/>
+<!--				Straits-->
+				<img src="images/straits1.jpg" alt="Straits 1" class="magnified hidden straits" id="straits1" loading="lazy"/>
+				<img src="images/straits2.jpg" alt="Straits 2" class="magnified hidden straits" id="straits2" loading="lazy"/>
+				<img src="images/straits3.jpg" alt="Straits 3" class="magnified hidden straits" id="straits3" loading="lazy"/>
+				<img src="images/straits4.jpg" alt="Straits 4" class="magnified hidden straits" id="straits4" loading="lazy"/>
+				<img src="images/straits5.jpg" alt="Straits 5" class="magnified hidden straits" id="straits5" loading="lazy"/>
+				<img src="images/straits6.jpg" alt="Straits 6" class="magnified hidden straits" id="straits6" loading="lazy"/>
+				<img src="images/straits7.jpg" alt="Straits 7" class="magnified hidden straits" id="straits7" loading="lazy"/>
+				<img src="images/straits8.jpg" alt="Straits 8" class="magnified hidden straits" id="straits8" loading="lazy"/>
+				<img src="images/straits9.jpg" alt="Straits 9" class="magnified hidden straits" id="straits9" loading="lazy"/>
+				<img src="images/straits10.jpg" alt="Straits 10" class="magnified hidden straits bottom" id="straits10" loading="lazy"/>
+<!--				Hear No Evil-->
+				<img src="images/hearnoevil-1.jpg" alt="Hear No Evil 1" class="magnified hidden hearnoevil" id="hearnoevil1" loading="lazy"/>
+				<img src="images/hearnoevil-2.jpg" alt="Hear No Evil 2" class="magnified hidden hearnoevil" id="hearnoevil2" loading="lazy"/>
+				<img src="images/hearnoevil-3.jpg" alt="Hear No Evil 3" class="magnified hidden hearnoevil" id="hearnoevil3" loading="lazy"/>
+				<img src="images/hearnoevil-4.jpg" alt="Hear No Evil 4" class="magnified hidden hearnoevil" id="hearnoevil4" loading="lazy"/>
+				<img src="images/hearnoevil-5.jpg" alt="Hear No Evil 5" class="magnified hidden hearnoevil" id="hearnoevil5" loading="lazy"/>
+				<img src="images/hearnoevil-6.jpg" alt="Hear No Evil 6" class="magnified hidden hearnoevil" id="hearnoevil6" loading="lazy"/>
+				<img src="images/hearnoevil-7.jpg" alt="Hear No Evil 7" class="magnified hidden hearnoevil" id="hearnoevil7" loading="lazy"/>
+				<img src="images/hearnoevil-8.jpg" alt="Hear No Evil 8" class="magnified hidden hearnoevil bottom" id="hearnoevil8" loading="lazy"/>
+<!--				Ecosystem Backpack-->
+				<img src="images/ecosystem-backpack 1.gif" alt="Self-Sufficient Ecosystem 1" class="magnified hidden ecosystem-backpack" id="ecosystem-backpack1" loading="lazy"/>
+				<img src="images/ecosystem-backpack 2.jpeg" alt="Self-Sufficient Ecosystem 2" class="magnified hidden ecosystem-backpack" id="ecosystem-backpack2" loading="lazy"/>
+				<img src="images/ecosystem-backpack 3.jpeg" alt="Self-Sufficient Ecosystem 3" class="magnified hidden ecosystem-backpack" id="ecosystem-backpack3" loading="lazy"/>
+				<img src="images/ecosystem-backpack 4.jpeg" alt="Self-Sufficient Ecosystem 4" class="magnified hidden ecosystem-backpack" id="ecosystem-backpack4" loading="lazy"/>
+				<img src="images/ecosystem-backpack 5.jpeg" alt="Self-Sufficient Ecosystem 5" class="magnified hidden ecosystem-backpack bottom" id="ecosystem-backpack5" loading="lazy"/>
+<!--				Bandolier-->
+				<img src="images/bandolier.jpg" alt="Bandolier" class="magnified hidden bandolier bottom" id="bandolier" loading="lazy"/>
+<!--				Passion-->
+				<img src="images/passion.jpg" alt="Passion" class="magnified hidden passion" id="passion1" loading="lazy"/>
+				<img src="images/passion2.jpg" alt="Passion" class="magnified hidden passion bottom" id="passion2" loading="lazy"/>
+<!--				Pill Jacket-->
+				<img src="images/pill-jacket 1.gif" alt="Pill Jacket 1" class="magnified hidden pill-jacket" id="pill-jacket1" loading="lazy"/>
+				<img src="images/pill-jacket 2.jpg" alt="Pill Jacket 2" class="magnified hidden pill-jacket bottom" id="pill-jacket2" loading="lazy"/>
+				
+<!--				PLACEHOLDER DO NOT DELETE-->
+				<img src="images/pill-jacket 2.jpg" alt="" id="original" class="magnified"/>
+			</div>
+		</main>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

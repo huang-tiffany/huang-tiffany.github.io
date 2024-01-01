@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	color: white;
+	font-family: barlow, roboto, sans-serif;
+	animation-name: fadein;
+	animation-duration: 1s;
+	pointer-events: all;
+	scroll-behavior: smooth;
+	cursor: crosshair;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body.fadeout {
+	animation-name: fadeout;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-delay: 0s;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
+}
+
+@keyframes fadeout {
+	0% {
+		opacity: 100;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#background-overlay {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 50%);
+	opacity: 0.75;
+	animation-delay: -1s;
+}
+
+#background-video, #background-video-lg {
+	width: 100vw;
+	height: 100vh;
+    object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+#background-video-lg {
+	display: none;
+}
+
+#title {
+	color: white;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+#title hr {
+	background-color: white;
+	margin-top: 1.75em;
+	width: 100vw;
+}
+
+#title h1 {
+	color: white;
+	font-size: 3em;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+p, a, a:hover {
+	color: white;
+	position: relative;
+	margin: 0;
+	font-size: 1em;
+	max-width: 100%;
+}
+
+a, a:hover {
+	top: 0;
+	float: right;
+	text-decoration: none;
+}
+
+#version a {
+	float: left;
+}
+
+nav a:hover::before, #ig:hover::before {
+	font-family: system-ui;
+	content: " ↖ ";
+}
+
+.row {
+	justify-content: center;
+}
+
+a.ver {
+	opacity: 0.5;
+	visibility: visible;
+	transition: ease;
+	transition-duration: 0.25s;
+}
+
+a.ver:hover {
+	opacity: 1;
+	transition: ease;
+	transition-duration: 0.25s;
+}
+
+a.ver.hidden {
+	opacity: 0;
+	visibility: hidden;
+	transition: ease;
+	transition-duration: 0.25s;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
+}
+
+@keyframes fadeout {
+	0% {
+		opacity: 100;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+nav {
+	width: 100vw;
+	position: fixed;
+}
+
+footer {
+	width: 100vw;
+	position: fixed;
+	bottom: 1em;
+}
+
+#featured {
+	text-align: right;
+}
+
+.col-2 p, .col-2 a {
+	text-align: right;
+}
+
+.nav-content {
+	margin-top: -1em;
+}
+
+@media (min-width: 576px) {
+	#title h1 {
+		font-size: 4em;
+	}
+	
+	#title hr {
+		margin-top: 2.5em;
+	}
+	
+	#background-video {
+		display: none;
+	}
+	
+	#background-video-lg {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	#title h1 {
+		font-size: 5em;
+	}
+	
+	#title hr {
+		margin-top: 3em;
+	}
+}

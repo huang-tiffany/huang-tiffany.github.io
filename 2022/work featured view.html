@@ -1,0 +1,206 @@
+<div id="work-view" class="featured-view">
+  <div class="row flex-nowrap main">
+    <div class="col-3">
+      <h1 class="featured">F<span class="stretch e">E</span>AT</h1>
+      <h1 class="featured">UR<span class="stretch e">E</span>D</h1>
+      <br />
+      <h1 class="featured">W<span class="stretch o">O</span>RK</h1>
+      <div class="feat-piece">
+        <a
+          onClick="pieceView(selfPortraitSeries, 'selfPortraitSeries')"
+          class="hidden featured-pieces"
+          >Self-Portrait Series <br />
+          <p class="featured-year">2022</p></a
+        >
+        <a
+          onClick="pieceView(rogueMagazine, 'rogueMagazine')"
+          class="hidden featured-pieces"
+          >Rogue Magazine <br />
+          <p class="featured-year">2022</p></a
+        >
+        <a
+          onClick="pieceView(iAmHere, 'iAmHere')"
+          class="hidden featured-pieces"
+          >"I AM HERE." <br />
+          <p class="featured-year">2022</p></a
+        >
+        <a
+          onClick="pieceView(synergySeats, 'synergySeats')"
+          class="hidden featured-pieces"
+          >Synergy Seats <br />
+          <p class="featured-year">2022</p></a
+        >
+        <a
+          onClick="pieceView(toMyself, 'toMyself')"
+          class="hidden featured-pieces"
+          >Seven Minutes in Heaven <br />
+          <p class="featured-year">2022</p></a
+        >
+        <a
+          onClick="pieceView(losingContact, 'losingContact')"
+          class="hidden featured-pieces"
+          >Efflorescence <br />
+          <p class="featured-year">2022</p></a
+        >
+        <a
+          onClick="pieceView(goldenChild, 'goldenChild')"
+          class="hidden featured-pieces"
+          >Golden Child <br />
+          <p class="featured-year">2022</p></a
+        >
+      </div>
+      <div class="featured-mediums">
+        <a
+          ><p class="feat featured1 hidden">2D ART</p>
+          <p
+            onMouseOver="hoverMenu('hover', 'featured1')"
+            onMouseOut="hoverMenu('out', 'featured1')"
+            class="feat-num spotlight"
+            onClick="changeIndex(1)"
+          >
+            01
+          </p></a
+        >
+        <a
+          ><p class="feat featured2 hidden">2D DESIGN</p>
+          <p
+            onMouseOver="hoverMenu('hover', 'featured2')"
+            onMouseOut="hoverMenu('out', 'featured2')"
+            class="feat-num"
+            onClick="changeIndex(2)"
+          >
+            02
+          </p></a
+        >
+        <a
+          ><p class="feat featured3 hidden">3D ART</p>
+          <p
+            onMouseOver="hoverMenu('hover', 'featured3')"
+            onMouseOut="hoverMenu('out', 'featured3')"
+            class="feat-num"
+            onClick="changeIndex(3)"
+          >
+            03
+          </p></a
+        >
+        <a
+          ><p class="feat featured4 hidden">3D DESIGN</p>
+          <p
+            onMouseOver="hoverMenu('hover', 'featured4')"
+            onMouseOut="hoverMenu('out', 'featured4')"
+            class="feat-num"
+            onClick="changeIndex(4)"
+          >
+            04
+          </p></a
+        >
+        <a
+          ><p class="feat featured5 hidden">MULTIMEDIA</p>
+          <p
+            onMouseOver="hoverMenu('hover', 'featured5')"
+            onMouseOut="hoverMenu('out', 'featured5')"
+            class="feat-num"
+            onClick="changeIndex(5)"
+          >
+            05
+          </p></a
+        >
+        <a
+          ><p class="feat featured6 hidden">VIDEO</p>
+          <p
+            onMouseOver="hoverMenu('hover', 'featured6')"
+            onMouseOut="hoverMenu('out', 'featured6')"
+            class="feat-num"
+            onClick="changeIndex(6)"
+          >
+            06
+          </p></a
+        >
+        <a
+          ><p class="feat featured7 hidden">WEARABLE</p>
+          <p
+            onMouseOver="hoverMenu('hover', 'featured7')"
+            onMouseOut="hoverMenu('out', 'featured7')"
+            class="feat-num"
+            onClick="changeIndex(7)"
+          >
+            07
+          </p></a
+        >
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="corner-stroke top right"></div>
+      <div class="corner-stroke top left"></div>
+      <div class="corner-stroke bottom right"></div>
+      <div class="corner-stroke bottom left"></div>
+      <div class="slide-container">
+        <div class="slide spotlight">
+          <img alt="Slide 1" src="../2022/images/featured/self-portrait.jpg" />
+        </div>
+        <div class="slide">
+          <img
+            loading="lazy"
+            alt="Slide 2"
+            src="../2022/images/featured/rogue.jpg"
+          />
+        </div>
+        <div class="slide">
+          <img alt="Slide 3" src="../2022/images/featured/ribcage.JPG" />
+        </div>
+        <div class="slide">
+          <img
+            loading="lazy"
+            alt="Slide 4"
+            src="../2022/images/featured/synergy-seats.jpg"
+          />
+        </div>
+        <div class="slide">
+          <img alt="Slide 5" src="../2022/images/featured/7min.jpg" />
+        </div>
+        <div class="slide">
+          <img
+            loading="lazy"
+            alt="Slide 6"
+            src="../2022/images/featured/efflorescence.jpg"
+          />
+        </div>
+        <div class="slide">
+          <img alt="Slide 7" src="../2022/images/featured/golden-child.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="col-1">
+      <a class="back filterHidden" id="back" onClick="back()">back</a>
+      <div class="views" id="view">
+        <div>
+          <a
+            class="hidden view"
+            onmouseover="hoverMenu('hover', 'view')"
+            onmouseout="hoverMenu('out', 'view')"
+            onClick="featuredView()"
+            >featured</a
+          ><br />
+          <a
+            onClick="indexView()"
+            class="hidden view"
+            onmouseover="hoverMenu('hover', 'view')"
+            onmouseout="hoverMenu('out', 'view')"
+            >index</a
+          ><br />
+          <a
+            onmouseover="hoverMenu('hover', 'view')"
+            onmouseout="hoverMenu('out', 'view')"
+            >view</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  slideIndex = 0;
+  clearTimeout(myTimeout);
+  slideshow();
+</script>
