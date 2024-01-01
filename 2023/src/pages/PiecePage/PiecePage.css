@@ -34,11 +34,8 @@
 
 .piecePage .media {
   display: flex;
-  width: calc(100% - 2em);
-  left: 1em;
-  overflow: scroll;
-  position: sticky;
-  top: 0;
+  width: 100%;
+  overflow: visible;
 }
 
 .piecePage .piece-info {
@@ -179,8 +176,19 @@
 }
 
 .piecePage main video,
-.piecePage main img {
+.piecePage main img,
+.piecePage main picture {
   font-size: 1em;
+  height: calc(100dvh - 10em);
+}
+
+.piecePage main .media-wrapper {
+  position: sticky;
+  top: 0;
+  overflow: scroll;
+  left: 1em;
+  padding: 0;
+  width: calc(100vw - 2em);
   height: calc(100dvh - 10em);
   margin-bottom: 1em;
 }
@@ -200,5 +208,21 @@
   .piecePage .piece-back {
     width: calc(100% - 2em);
     margin-left: 1em;
+  }
+
+  .piecePage .media {
+    flex-direction: column;
+  }
+
+  .piecePage .media-wrapper .media :last-child {
+    margin-bottom: 0;
+  }
+
+  .piecePage main video,
+  .piecePage main img,
+  .piecePage main picture {
+    max-width: calc(100vw - 2em);
+    height: auto;
+    margin-bottom: 1em;
   }
 }

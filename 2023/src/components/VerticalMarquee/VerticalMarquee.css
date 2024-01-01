@@ -46,7 +46,7 @@
   display: flex;
 }
 
-.arrow {
+.vertical-marquee .arrow {
   font-family: system-ui;
 }
 
@@ -57,6 +57,7 @@
   left: 0;
   width: 100vw;
   margin: 0;
+  animation: none;
 }
 
 @keyframes vertical-marquee {

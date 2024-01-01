@@ -161,8 +161,11 @@ export default function PiecePage() {
       </nav>
       <hr />
       <main>
-        <div className="media">{loadPhotos()}</div>
+        <div className="media-wrapper">
+          <div className="media">{loadPhotos()}</div>
+        </div>
         <VerticalMarquee marqueeText={MarqueePieceText}></VerticalMarquee>
+
         <div className="piece-info">
           <div className="piece-data">
             <div className="piece-year"></div>
