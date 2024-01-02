@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.css";
 import HomePage from "./pages/HomePage/HomePage";
@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
   return (
     <RecoilRoot>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<HomePage />}></Route>
           <Route path="/work">
@@ -22,7 +22,7 @@ function App() {
 
           {/* <Route path="*" element={<NoPage />} /> */}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </RecoilRoot>
   );
 }
