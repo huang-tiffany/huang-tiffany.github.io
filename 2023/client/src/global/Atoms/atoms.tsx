@@ -198,7 +198,7 @@ export const pieces = atom<{
         title: "天椅 (Day Chair)",
         size: '27.23" &times; 20" &times; 20.92"',
         medium:
-          "Poplar, Ash, Solidworks, Table Saw, Jointer, Planar, Horizontal Boring Machine, Orbital Disk Sander, Biscuit Joiner, Pin Router",
+          "Poplar, Ash, Solidworks, Table Saw, Jointer, Planar, Horizontal Boring Machine, Orbital Disk Sander, Biscuit Joiner, Pin Router, OBS, Nail Gun, Screws, Drill Press, Bandsaw",
         url: "",
         statement:
           '天椅, translated directly as "Sky Chair" or "Day Chair," is a woodworking project I undertook as my first venture into real, everyday furniture. Aptly named due to its side profile, which resembles the Chinese character 天, the semi-cantilevered chair employs frame construction to lay out its sharp, angular components while inlaying steambent ash pieces, filleted with a pin router, to provide both support and an organic counterpoint. With 60 degree angles softened by curved radii as a motif throughout the chair, steambending provides a structural support to allow for more extreme angles of joinery. <br><br> The side profile 天, which turns into the character 人 once the chair is occupied, promotes the idea of the chair being both for everyday use ("天天" meaning "daily"), and of the chair being made for people ("人" meaning "person"). What\'s more, the phrase "天人合一" also resonates with the idea of the chair fitting well with people, just as humans ("人") should live in nature ("天")  together ("合一") in peace. Just as chairs are a unique subsection of furniture that must take careful account of the human body, the 天椅 focuses on the main purpose of chairs as beautiful objects made by people, for people.',
