@@ -5,3 +5,10 @@ _notes/
 /bower_components/
 /node_modules/
 2022/videos/original/efflorescence (astrid & tiffany).mp4
+/server/node_modules/
+/client/node_modules/
+2023/.vite/deps_temp_fbe96da2/package.json
+2023/client/.eslintrc.cjs
+2023/.eslintrc.cjs
+2023/src/vite-env.d.ts
+2023/tsconfig.json
