@@ -1,7 +1,6 @@
 import "../HomePage/HomePage.css";
 import "../../App.css";
 import { useNavigate } from "react-router-dom";
-import bgVid from "../../../../2022/videos/reel hd.mp4";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -22,17 +21,11 @@ export default function HomePage() {
     for (let i = 0; i < menus.length; i++) {
       if (inout === "hover") {
         menus[i].classList.remove("hidden");
-        if (menu.includes("featured")) {
-          menus[i].classList.add("hover");
-        }
       } else {
         if (menus[i].classList.contains("spotlight")) {
           menus[i].classList.remove("hidden");
         } else {
           menus[i].classList.add("hidden");
-          if (menu.includes("featured")) {
-            menus[i].classList.remove("hover");
-          }
         }
       }
     }
@@ -42,54 +35,48 @@ export default function HomePage() {
     <main className="homePage fadein">
       <div id="backgroundvid">
         <video id="background-video" autoPlay loop muted playsInline>
-          <source src={bgVid} type="video/mp4" />
-        </video>
-        <video id="background-video-lg" autoPlay loop muted playsInline>
-          <source src={bgVid} type="video/mp4" />
+          <source src="/videos/highlight reel 2023.mp4" type="video/mp4" />
         </video>
       </div>
       <div id="background-overlay"></div>
       <nav>
-        <div className="container-fluid">
-          <div className="row no-gutters flex-nowrap">
-            <div className="col-12">
-              <div id="title">
-                <h1>TIFFANY</h1>
-                <hr />
-                <h1>HUANG</h1>
-              </div>
-            </div>
+        <div className="nav-links">
+          <div id="work-link">
+            <a onClick={() => relocate("/work")}>work</a>
           </div>
-          <div className="nav-content row no-gutters flex-nowrap">
-            <div className="col-6">
-              <p>
-                is an interdisciplinary creator that works at the intersection
-                of design and code. at the heart of her practice, she enjoys
-                drawing cross-functional connections between the past, present,
-                and future by exploring the humanities, arts, and sciences.
-              </p>
-            </div>
-            <div className="col-2">
-              <a onClick={() => relocate("/work")}>work</a>
-            </div>
-            <div className="col-2">
-              <a target="_blank" href="https://th-archive.github.io/">
-                archive
-              </a>
-            </div>
-            <div className="col-2">
-              <a target="_blank" href="mailto:tiffanyhuang1258@gmail.com">
-                contact
-              </a>
-            </div>
+          <div className="nav-sublinks">
+            <a target="_blank" href="https://th-archive.github.io/">
+              archive
+            </a>
+            <a target="_blank" href="mailto:tiffanyhuang1258@gmail.com">
+              contact
+            </a>
           </div>
         </div>
-      </nav>
-      <main></main>
-      <footer>
-        <div className="container-fluid">
-          <div className="row no-gutters flex-nowrap">
-            <div className="col-6" id="version">
+        <div id="title">
+          <h1>TIFFANY</h1>
+          <h1>HUANG</h1>
+        </div>
+
+        <div className="bio-links">
+          <div className="bio">
+            <p>
+              is an interdisciplinary designer/developer that works at the
+              intersection of (2D/3D) design and code. when she is not doing
+              work for classes, she is doing work for fun.
+            </p>
+          </div>
+          <div className="link-container">
+            <div className="link-container" id="instagram">
+              <a
+                id="ig"
+                target="_blank"
+                href="https://www.instagram.com/relatiffity/"
+              >
+                instagram
+              </a>
+            </div>
+            <div id="version">
               <a
                 target="_blank"
                 href="https://huang-tiffany.github.io/2021"
@@ -99,7 +86,6 @@ export default function HomePage() {
               >
                 v. 2021
               </a>
-              <br />
               <a
                 target="_blank"
                 href="https://huang-tiffany.github.io/2022"
@@ -109,7 +95,6 @@ export default function HomePage() {
               >
                 v. 2022
               </a>
-              <br />
               <a
                 onMouseOver={() => hoverMenu("hover", "ver")}
                 onMouseOut={() => hoverMenu("out", "ver")}
@@ -117,19 +102,9 @@ export default function HomePage() {
                 v. 2023
               </a>
             </div>
-            <div className="col-6" id="instagram">
-              <br />
-              <a
-                id="ig"
-                target="_blank"
-                href="https://www.instagram.com/relatiffity/"
-              >
-                instagram
-              </a>
-            </div>
           </div>
         </div>
-      </footer>
+      </nav>
     </main>
   );
 }
