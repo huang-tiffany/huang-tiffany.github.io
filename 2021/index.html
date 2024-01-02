@@ -1,143 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>tiffany huang</title>
-	<link rel="shortcut icon" type="image/jpg" href="images/Artboard 1.png"/>
+    <link rel="shortcut icon" type="image/png" href="images/Artboard 1.png" />
     <!-- Bootstrap -->
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	<link href="styles.css" rel="stylesheet" type="text/css">
-	<link href="home.css" rel="stylesheet" type="text/css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<script src="scripts.js"></script>
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts.js"></script>
   </head>
-	<body class="" id="homebody">
-		<!-- body code goes here -->
-		
-<!--		fixed elements start-->
-		<nav id="home-nav">
-			  <a id="home-logo-alt" onClick="leaveHomePage('home')">
-				<img src="images/logo4.png" alt="logo" id="home-logo" class=""/>
-			  </a>
-			  <a id="home-burger-menu" class="" onClick="collapseNav('homeOpen')">
-				  <img src="images/menu-white.png" id="burger-menu" alt="Menu" class="">
-			  </a>
-			  <a id="home-close" class="hidden" onClick="collapseNav('homeClose')">
-				  <img src="images/close-white.png" alt="Close" id="close">
-			  </a>
-		  
-				<div class="col-1 home-menu">
-						<a onClick="leaveHomePage('work')" class="home-menu-options">work</a>
-					</div>
-					<div class="col-1 home-menu">
-						<a onClick="leaveHomePage('play')" class="home-menu-options">play</a>
-					</div>
-					<div class="col-1 home-menu">
-						<a onClick="leaveHomePage('about')" class="home-menu-options" id="introduction">about</a>
-					</div>
-					<div class="col-3" id="name-container">
-						<img src="images/home22-copy.gif" alt="Name" id="name" onClick="leaveHomePage('home')">
-					</div>
-					<div class="col-1 home-menu">
-						<a onClick="leaveHomePage('activities')" class="home-menu-options">activities</a>
-					</div>
-					<div class="col-1 home-menu">
-						<a target="_blank" href="http://www.huangtiffany.myportfolio.com" class="home-menu-options">past</a>
-					</div>
-					<div class="col-1 home-menu">
-						<a target="_blank" href="https://th-archive.github.io/" class="home-menu-options">archive</a>
-					</div>	
-				<hr class="col-12 hidden" id="home-nav-divider">	
-			<div id="home-collapsible-nav">
-				
-				<div class="container">
-					<div class="row gx-0 flex-md-nowrap">
-						<div class="col-12">
-							<p class="menu-options"><em class="menu-header" id="portfolio">PORTFOLIO</em>
-							<a id="work" onClick="leaveHomePage('work')" class="">work</a>
-							<a id="play" onClick="leaveHomePage('play')" class="">play</a>
-							</p>
-						</div>
-						<div class="col-12">
-							<p class="menu-options"><em class="menu-header" id="info">INFO</em>
-							<a id="about" onClick="leaveHomePage('about')" class="">about</a>
-							<a id="activities" onClick="leaveHomePage('activities')" class="">activities</a>
-							</p>
-						</div>
-						<div class="col-12">
-							<p class="menu-options"><em class="menu-header" id="other">OTHER</em>
-							<a id="past" target="_blank" href="http://www.huangtiffany.myportfolio.com">past</a>
-							<a id="archive" target="_blank" href="https://th-archive.github.io/">archive</a>
-							</p>
-						</div>
-						<div class="col-12">
-							<p class="menu-options"><em class="menu-header" id="socials">SOCIALS</em>
-							<a href="mailto:tiffanyhuang1258@gmail.com" id="social1">email</a>
-							<a target="_blank" href="https://www.instagram.com/relatiffity/" id="social2">instagram</a>
-							<a target="_blank" href="https://relatiffity.tumblr.com/" id="social3">tumblr</a>
-							<a href="https://vsco.co/sun-filled/gallery" id="social4">vsco</a>
-							<a target="_blank" href="https://open.spotify.com/user/girlygrrl123?si=964fe2939c5f4457" id="social5">spotify</a>
-							<a target="_blank" href="https://tiffany-huang.notion.site/Inspiration-2ec04f35ddd34fb2925ffcb9c3378cbe" id="social6">notion</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-		
-<!--		fixed elements end-->
-		<main class="main" id="home-content">
-			<div class="col1 left" id="left-links">
-				<ul>
-					<li>
-						<a href="mailto:tiffanyhuang1258@gmail.com">
-							<div id="email" class="icon">&ensp;</div>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.instagram.com/relatiffity/">
-							<div id="instagram" class="icon">&ensp;</div>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://relatiffity.tumblr.com/">
-							<div id="tumblr" class="icon">&ensp;</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col3 right" id="right-links">
-				<ul>
-					<li>
-						<a href="https://vsco.co/sun-filled/gallery">
-							<div id="vsco" class="icon">&ensp;</div>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://open.spotify.com/user/girlygrrl123?si=964fe2939c5f4457">
-							<div id="spotify" class="icon">&ensp;</div>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://tiffany-huang.notion.site/Inspiration-2ec04f35ddd34fb2925ffcb9c3378cbe">
-							<div id="notion" class="icon">&ensp;</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</main>
-		
-		
+  <body class="" id="homebody">
+    <!-- body code goes here -->
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.4.1.min.js"></script>
+    <!--		fixed elements start-->
+    <nav id="home-nav">
+      <a id="home-logo-alt" onClick="leaveHomePage('home')">
+        <img src="images/logo4.png" alt="logo" id="home-logo" class="" />
+      </a>
+      <a id="home-burger-menu" class="" onClick="collapseNav('homeOpen')">
+        <img src="images/menu-white.png" id="burger-menu" alt="Menu" class="" />
+      </a>
+      <a id="home-close" class="hidden" onClick="collapseNav('homeClose')">
+        <img src="images/close-white.png" alt="Close" id="close" />
+      </a>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.4.1.js"></script>
+      <div class="col-1 home-menu">
+        <a onClick="leaveHomePage('work')" class="home-menu-options">work</a>
+      </div>
+      <div class="col-1 home-menu">
+        <a onClick="leaveHomePage('play')" class="home-menu-options">play</a>
+      </div>
+      <div class="col-1 home-menu">
+        <a
+          onClick="leaveHomePage('about')"
+          class="home-menu-options"
+          id="introduction"
+          >about</a
+        >
+      </div>
+      <div class="col-3" id="name-container">
+        <img
+          src="images/home22-copy.gif"
+          alt="Name"
+          id="name"
+          onClick="leaveHomePage('home')"
+        />
+      </div>
+      <div class="col-1 home-menu">
+        <a onClick="leaveHomePage('activities')" class="home-menu-options"
+          >activities</a
+        >
+      </div>
+      <div class="col-1 home-menu">
+        <a
+          target="_blank"
+          href="http://www.huangtiffany.myportfolio.com"
+          class="home-menu-options"
+          >past</a
+        >
+      </div>
+      <div class="col-1 home-menu">
+        <a
+          target="_blank"
+          href="https://th-archive.github.io/"
+          class="home-menu-options"
+          >archive</a
+        >
+      </div>
+      <hr class="col-12 hidden" id="home-nav-divider" />
+      <div id="home-collapsible-nav">
+        <div class="container">
+          <div class="row gx-0 flex-md-nowrap">
+            <div class="col-12">
+              <p class="menu-options">
+                <em class="menu-header" id="portfolio">PORTFOLIO</em>
+                <a id="work" onClick="leaveHomePage('work')" class="">work</a>
+                <a id="play" onClick="leaveHomePage('play')" class="">play</a>
+              </p>
+            </div>
+            <div class="col-12">
+              <p class="menu-options">
+                <em class="menu-header" id="info">INFO</em>
+                <a id="about" onClick="leaveHomePage('about')" class=""
+                  >about</a
+                >
+                <a
+                  id="activities"
+                  onClick="leaveHomePage('activities')"
+                  class=""
+                  >activities</a
+                >
+              </p>
+            </div>
+            <div class="col-12">
+              <p class="menu-options">
+                <em class="menu-header" id="other">OTHER</em>
+                <a
+                  id="past"
+                  target="_blank"
+                  href="http://www.huangtiffany.myportfolio.com"
+                  >past</a
+                >
+                <a
+                  id="archive"
+                  target="_blank"
+                  href="https://th-archive.github.io/"
+                  >archive</a
+                >
+              </p>
+            </div>
+            <div class="col-12">
+              <p class="menu-options">
+                <em class="menu-header" id="socials">SOCIALS</em>
+                <a href="mailto:tiffanyhuang1258@gmail.com" id="social1"
+                  >email</a
+                >
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/relatiffity/"
+                  id="social2"
+                  >instagram</a
+                >
+                <a
+                  target="_blank"
+                  href="https://relatiffity.tumblr.com/"
+                  id="social3"
+                  >tumblr</a
+                >
+                <a href="https://vsco.co/sun-filled/gallery" id="social4"
+                  >vsco</a
+                >
+                <a
+                  target="_blank"
+                  href="https://open.spotify.com/user/girlygrrl123?si=964fe2939c5f4457"
+                  id="social5"
+                  >spotify</a
+                >
+                <a
+                  target="_blank"
+                  href="https://tiffany-huang.notion.site/Inspiration-2ec04f35ddd34fb2925ffcb9c3378cbe"
+                  id="social6"
+                  >notion</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--		fixed elements end-->
+    <main class="main" id="home-content">
+      <div class="col1 left" id="left-links">
+        <ul>
+          <li>
+            <a href="mailto:tiffanyhuang1258@gmail.com">
+              <div id="email" class="icon">&ensp;</div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/relatiffity/">
+              <div id="instagram" class="icon">&ensp;</div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://relatiffity.tumblr.com/">
+              <div id="tumblr" class="icon">&ensp;</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col3 right" id="right-links">
+        <ul>
+          <li>
+            <a href="https://vsco.co/sun-filled/gallery">
+              <div id="vsco" class="icon">&ensp;</div>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://open.spotify.com/user/girlygrrl123?si=964fe2939c5f4457"
+            >
+              <div id="spotify" class="icon">&ensp;</div>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://tiffany-huang.notion.site/Inspiration-2ec04f35ddd34fb2925ffcb9c3378cbe"
+            >
+              <div id="notion" class="icon">&ensp;</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
   </body>
 </html>
