@@ -215,6 +215,7 @@ export const pieces = atom<{
           "daychair10.jpg",
           "daychair11.jpg",
           "daychair12.gif",
+          "daychair13*.mp4",
         ],
         previewDescription:
           "Chair for daily use, employing frame construction and steambending techniques.",
