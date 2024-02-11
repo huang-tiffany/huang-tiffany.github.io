@@ -81,7 +81,7 @@ export const pieces = atom<{
         ],
         previewDescription:
           "Poster booklet documenting six years of friendship as recorded on Facebook Messenger.",
-        previewImage: "thearchiveasfriendship11.jpg",
+        previewImage: "thearchiveasfriendship13.jpg",
         tags: ["poster", "AR", "book", "print", "data design"],
       },
       lapse: {
