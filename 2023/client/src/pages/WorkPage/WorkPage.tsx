@@ -26,6 +26,7 @@ export default function WorkPage() {
     "losingContact",
     "belonging",
     "amplify",
+    "emt",
   ];
   const [mode, setMode] = useState<string>("all");
 

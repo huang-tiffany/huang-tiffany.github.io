@@ -58,7 +58,7 @@ export const pieces = atom<{
           "Figma, Plotter, Adobe InDesign, Adobe Photoshop, VSCode, Javascript, Facebook Messenger, Facebook, Meta Spark Studio, Instagram",
         url: '<a href="https://www.figma.com/proto/fayJVALo0X9W273TpgPNUs/The-Archive-as-Friendship?page-id=0%3A1&node-id=1-36&scaling=scale-down&mode=design&t=lNJpY9WX7wwlSSCu-1" target="_blank">PRESENTATION</a>',
         statement:
-          "By sequencing images taken from ten YouTube videos focusing on timelapses of shadows cast by singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, I question the identify of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to.",
+          "With most friendships taking both digital and physical forms, online chat logs can often be a way to trace the development of relationships. Containing both arguments and gratitude, both small talk and deep conversations, the online archive as we know it not only acts as a means of communication and connection, but as a pseudo record of an entire relationship. <br><br> With this thought in mind, I created a project that catalogued and analyzed data from six complete calendar years of friendship with a friend of mine from middle and high school. Although we attended school together before going to college, we communicated primarily through Gmail chats and, upon entering high school, Facebook Messenger (something that still holds true today). By downloading six years' worth of content and parsing it with a simple Javascript program to count the quantity of messages, along with reading every chat log manually to sort through the depth and topics of each conversation, I organized my data into three formats ranging from the most objective to the most subjective view of the data. The largest poster format acts as an overview, mapping interactions in a calendar view and sorting them by the depth of the conversation (light, medium, and deep talks). The medium-sized booklet format goes into more detail with the content, organizing it in a temporally nonlinear format through the alphabetical indexing of conversation topics, with red lines running throughout the pages to trace recurring threads of more interesting conversation topics. And lastly, the smallest AR format (accessed via mobile phone) encourages exploration of the text in a more intimate format, with the overlaying of actual transmitted images (ranging from cute GIFs and stupid memes to mundane homework snapshots and photos taken during in-person hangouts). <br><br> Using this mix of personal and objective data alongside a mix of analog and digital formats, I wanted to explore the nuance and subversion of conversation in the digital age: where phones can encourage vulnerability and connection, and where chat logs can act as a living, digital archive for friendship.",
         media: [
           "thearchiveasfriendship1.jpg",
           "thearchiveasfriendship2.jpg",
@@ -88,10 +88,10 @@ export const pieces = atom<{
         string: "lapse",
         year: "2024",
         title: "Lapse",
-        size: '101 pages, 8.5" &times; 5.5"',
+        size: '112 pages, 8.5" &times; 5.5"',
         medium:
           "Figma, Paper, Aluminum Sheet, Drill Press, Metal Stamps, Center Punch, Scribe, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
-        url: "",
+        url: '<a href="https://indd.adobe.com/view/89af6ce0-fc9a-4858-962e-7b6e41a97f59" target="_blank">FULL BOOK</a>',
         statement:
           "By sequencing images taken from ten YouTube videos focusing on timelapses of shadows cast by singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, I question the identify of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to.",
         media: [
@@ -114,7 +114,7 @@ export const pieces = atom<{
         size: "",
         medium:
           "Figma, Paper, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
-        url: '<a href="https://huang-tiffany.github.io/People-Watching/" target="_blank">LINK</a><br><a href="https://www.figma.com/proto/PxaIEts1KRnCJyBYbiUIqv/WS24-Project-1-People(-)Watching?page-id=0%3A1&org_id=1044697086155753926&node-id=1-106&scaling=scale-down&mode=design&t=QnIjmhPRcBz95t4j-1" target="_blank">PRESENTATION</a>',
+        url: '<a href="https://huang-tiffany.github.io/People-Watching/" target="_blank">LINK</a><br><a href="https://huang-tiffany.github.io/People-Watching/database" target="_blank">DATABASE</a><br><a href="https://www.figma.com/proto/PxaIEts1KRnCJyBYbiUIqv/WS24-Project-1-People(-)Watching?page-id=0%3A1&org_id=1044697086155753926&node-id=1-106&scaling=scale-down&mode=design&t=QnIjmhPRcBz95t4j-1" target="_blank">PRESENTATION</a>',
         statement:
           "Prompted with the theme of uncovering and analyzing personal data, I decided to focus on the theme of eye contact with strangers. Given that I'm always looking around and examining my surroundings, I tend to make eye contact with many people during my daily life; this project records my various experiences over five days in January. Each card represents an encounter I had with a complete stranger who I had never seen before, including my first impressions, assumptions, and notes. <br><br> In total, I encountered 341 people during the span of this project. The final deliverable, a single serving site (SSS), recreates the unexpected and serendipitous experience of making eye contact with those unfamiliar to us; at the time stamp listed on each card, the corresponding card will display for a random span of 20 seconds. Often, cards can appear simultaneously, and often, no cards may appear at all — and even when one appears, there may not be enough time to read the entire contents of an encounter, just as we may not get to know everything we wanted to know about someone we encountered so suddenly. The sides of the page track how many instances have already occurred in the day and the last time one encounter was made.",
         media: [
@@ -128,6 +128,29 @@ export const pieces = atom<{
         previewImage: "people(-)watching3.jpg",
         tags: ["web", "coding", "interactive", "data design"],
       },
+      emt: {
+        string: "emt",
+        year: "2024",
+        title: "Emerging Talent Webpage",
+        size: "",
+        medium: "Figma",
+        url: '<a href="https://ramp.com/emerging-talent" target="_blank">LINK</a>',
+        statement:
+          "<em>Displayed: my prototype (first) and the first version launched in January 2024 (second).</em> <br><br> During my summer at Ramp, one of the projects I had the chance to work on was a webpage for our Emerging Talent program focusing on recruiting the best up-and-coming talent from universities. Thinking primarily about introducing elements of delight in user interactions — given the inspiring recent website rebrand and the potential of interns to bring refreshing perspectives to company environments — I wanted to follow the traditional layout of a university program page like that of other creative companies like Converse and Apple, going through dozens of iterations to arrive at a distinctly 'Ramp' look and feel. Working closely with fellow Brandtern Thandi Roe, we were able to art-direct a photoshoot featuring our class of interns, which brought a spirit of camaraderie and personality into the webpage. <br><br> Although my role in the project wrapped up after the summer, the final design kept the general structure and modules from my original design when it launched in January of 2024. Since then, it has been used to recruit future interns and has acted as the online presence for Ramp's Emerging Talent department and program.",
+        media: [
+          "emt1.mp4",
+          "emt2.mp4",
+          "emt3.mp4",
+          "emt4.jpg",
+          "emt5.jpg",
+          "emt6.jpg",
+          "emt7.jpg",
+        ],
+        previewDescription:
+          "Inaugural webpage for Ramp's Emerging Talent program featuring interns and new grads.",
+        previewImage: "emt8.jpg",
+        tags: ["web", "interactive", "art direction"],
+      },
       amplify: {
         string: "amplify",
         year: "2023",
@@ -135,10 +158,18 @@ export const pieces = atom<{
         size: "",
         medium:
           "HTML, CSS, React.js, Express.js, Next.js, Vite, Typescript, Github, VSCode, Figma, Adobe Illustrator",
-        url: "",
+        url: '<a href="https://www.figma.com/proto/zJx5usW7UXk8lhYiDpjEBC/Amplify-%2F-CS0320-Final?page-id=27%3A2110&type=design&node-id=29-2990&viewport=-59%2C174%2C0.11&t=Tauf64ZklcqoPNI0-1&scaling=scale-down&starting-point-node-id=27%3A2230&show-proto-sidebar=1&mode=design" target="_blank">PROTOTYPE (APP IN DEPLOYMENT PROCESS)</a>',
         statement:
           "Working with Sean Yu (full-stack dev) and Elijah Whang (backend dev), I designed and prototyped the interface for a web-based app for playlist generation as a UI/UX designer and front-end dev. Although other Spotify playlist generators exist on the web, <em>Amplify</em> provides an experience in which users have more control over the content of the playlist, adding in key components from Spotify's API to sort through different song factors including energy, valence, popularity, and danceability. With a list of nine possible factors and three seeds (artist, genre, and tracks) to choose from, this app not only gives more power to the user to finetune the qualities of their playlists, but also allows them to be more informed about their listening preferences.",
-        media: ["amplify1.jpg", "amplify2.mp4"],
+        media: [
+          "amplify1.jpg",
+          "amplify2.mp4",
+          "amplify3.jpg",
+          "amplify4.jpg",
+          "amplify5.jpg",
+          "amplify6.jpg",
+          "amplify7.jpg",
+        ],
         previewDescription:
           "Web-based app for generating new Spotify playlists with more nuance and control.",
         previewImage: "amplify1.jpg",
