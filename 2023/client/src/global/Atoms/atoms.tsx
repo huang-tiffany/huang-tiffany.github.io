@@ -93,7 +93,7 @@ export const pieces = atom<{
           "Figma, Paper, Aluminum Sheet, Drill Press, Metal Stamps, Center Punch, Scribe, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
         url: '<a href="https://indd.adobe.com/view/89af6ce0-fc9a-4858-962e-7b6e41a97f59" target="_blank">FULL BOOK</a>',
         statement:
-          "By sequencing images taken from ten YouTube videos focusing on timelapses of shadows cast by singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, I question the identify of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to.",
+          "By sequencing images taken from ten YouTube videos focusing on timelapses of singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, the project questions the identity of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to.",
         media: [
           "lapse1.jpg",
           "lapse2.jpg",
