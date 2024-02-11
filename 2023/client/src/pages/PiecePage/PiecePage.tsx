@@ -93,7 +93,7 @@ export default function PiecePage() {
         return (
           <picture>
             <source media="(min-width: 768px)" srcSet={"/images/" + med} />
-            <source media="(min-width: 576px)" srcSet={"/images/" + med} />
+            <source media="(min-width: 576px)" srcSet={"/images/md/" + med} />
             <img alt={title + " Image"} src={"/images/" + med} />
           </picture>
         );

@@ -53,6 +53,10 @@
   font-size: 0.9em;
 }
 
+.piecePage em {
+  color: black;
+}
+
 .piecePage hr {
   border-top: white 1px solid;
   position: absolute;

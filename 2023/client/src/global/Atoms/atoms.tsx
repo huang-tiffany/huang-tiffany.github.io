@@ -21,6 +21,129 @@ export const pieces = atom<{
   default: {
     // 2D DESIGN
     "2D DESIGN": {
+      billboards: {
+        string: "billboards",
+        year: "Ongoing",
+        title: "Ramp Times Square Billboards",
+        size: "",
+        medium: "Figma",
+        url: "",
+        statement:
+          "During 2023 and 2024, Ramp launched an ongoing campaign to thank its customers for all of the world-changing accomplishments being performed at each company. Working closely with Growth and Marketing teams, I helped design and populate content for over 100 billboards every month starting in September based on existing templates designed by fellow Brand designer Shivani Soni.",
+        media: [
+          "billboards1.jpg",
+          "billboards2.jpg",
+          "billboards3.jpg",
+          "billboards4.jpg",
+          "billboards5.jpg",
+          "billboards6.jpg",
+          "billboards7.jpg",
+          "billboards8.jpg",
+          "billboards9.jpg",
+          "billboards10.jpg",
+          "billboards11.jpg",
+          "billboards12.jpg",
+        ],
+        previewDescription:
+          "Times Square billboards showcasing Ramp's gratitude for its clients.",
+        previewImage: "billboards3.jpg",
+        tags: ["branding", "campaign"],
+      },
+      theArchiveAsFriendship: {
+        string: "theArchiveAsFriendship",
+        year: "2024",
+        title: "The Archive as Friendship",
+        size: '18" &times; 24" (poster form), 9" &times; 6" (booklet form)',
+        medium:
+          "Figma, Plotter, Adobe InDesign, Adobe Photoshop, VSCode, Javascript, Facebook Messenger, Facebook, Meta Spark Studio, Instagram",
+        url: '<a href="https://www.figma.com/proto/fayJVALo0X9W273TpgPNUs/The-Archive-as-Friendship?page-id=0%3A1&node-id=1-36&scaling=scale-down&mode=design&t=lNJpY9WX7wwlSSCu-1" target="_blank">PRESENTATION</a>',
+        statement:
+          "By sequencing images taken from ten YouTube videos focusing on timelapses of shadows cast by singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, I question the identify of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to.",
+        media: [
+          "thearchiveasfriendship1.jpg",
+          "thearchiveasfriendship2.jpg",
+          "thearchiveasfriendship3.jpg",
+          "thearchiveasfriendship4.jpg",
+          "thearchiveasfriendship5.jpg",
+          "thearchiveasfriendship6.jpg",
+          "thearchiveasfriendship7.jpg",
+          "thearchiveasfriendship8.jpg",
+          "thearchiveasfriendship9.jpg",
+          "thearchiveasfriendship10.jpg",
+          "thearchiveasfriendship11.jpg",
+          "thearchiveasfriendship12.jpg",
+          "thearchiveasfriendship13.mp4",
+          "thearchiveasfriendship14.mp4",
+          "thearchiveasfriendship15.mp4",
+          "thearchiveasfriendship16.mp4",
+          "thearchiveasfriendship17.mp4",
+          "thearchiveasfriendship18.mp4",
+        ],
+        previewDescription:
+          "Poster booklet documenting six years of friendship as recorded on Facebook Messenger.",
+        previewImage: "thearchiveasfriendship11.jpg",
+        tags: ["poster", "AR", "book", "print", "data design"],
+      },
+      lapse: {
+        string: "lapse",
+        year: "2024",
+        title: "Lapse",
+        size: '101 pages, 8.5" &times; 5.5"',
+        medium:
+          "Figma, Paper, Aluminum Sheet, Drill Press, Metal Stamps, Center Punch, Scribe, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
+        url: "",
+        statement:
+          "By sequencing images taken from ten YouTube videos focusing on timelapses of shadows cast by singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, I question the identify of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to.",
+        media: [
+          "lapse1.jpg",
+          "lapse2.jpg",
+          "lapse3.jpg",
+          "lapse4.jpg",
+          "lapse5.jpg",
+          "lapse6.jpg",
+        ],
+        previewDescription:
+          "Book containing sequenced images of shadows and their interpretations.",
+        previewImage: "lapse4.jpg",
+        tags: ["book", "print", "data design"],
+      },
+      peopleWatching: {
+        string: "peopleWatching",
+        year: "2024",
+        title: "People(-)Watching",
+        size: "",
+        medium:
+          "Figma, Paper, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
+        url: '<a href="https://huang-tiffany.github.io/People-Watching/" target="_blank">LINK</a><br><a href="https://www.figma.com/proto/PxaIEts1KRnCJyBYbiUIqv/WS24-Project-1-People(-)Watching?page-id=0%3A1&org_id=1044697086155753926&node-id=1-106&scaling=scale-down&mode=design&t=QnIjmhPRcBz95t4j-1" target="_blank">PRESENTATION</a>',
+        statement:
+          "Prompted with the theme of uncovering and analyzing personal data, I decided to focus on the theme of eye contact with strangers. Given that I'm always looking around and examining my surroundings, I tend to make eye contact with many people during my daily life; this project records my various experiences over five days in January. Each card represents an encounter I had with a complete stranger who I had never seen before, including my first impressions, assumptions, and notes. <br><br> In total, I encountered 341 people during the span of this project. The final deliverable, a single serving site (SSS), recreates the unexpected and serendipitous experience of making eye contact with those unfamiliar to us; at the time stamp listed on each card, the corresponding card will display for a random span of 20 seconds. Often, cards can appear simultaneously, and often, no cards may appear at all — and even when one appears, there may not be enough time to read the entire contents of an encounter, just as we may not get to know everything we wanted to know about someone we encountered so suddenly. The sides of the page track how many instances have already occurred in the day and the last time one encounter was made.",
+        media: [
+          "people(-)watching1.gif",
+          "people(-)watching2.gif",
+          "people(-)watching3.jpg",
+          "people(-)watching4.mp4",
+        ],
+        previewDescription:
+          "Single serving site recreating the serendipity of eye contact with strangers.",
+        previewImage: "people(-)watching3.jpg",
+        tags: ["web", "coding", "interactive", "data design"],
+      },
+      amplify: {
+        string: "amplify",
+        year: "2023",
+        title: "Amplify",
+        size: "",
+        medium:
+          "HTML, CSS, React.js, Express.js, Next.js, Vite, Typescript, Github, VSCode, Figma, Adobe Illustrator",
+        url: "",
+        statement:
+          "Working with Sean Yu (full-stack dev) and Elijah Whang (backend dev), I designed and prototyped the interface for a web-based app for playlist generation as a UI/UX designer and front-end dev. Although other Spotify playlist generators exist on the web, <em>Amplify</em> provides an experience in which users have more control over the content of the playlist, adding in key components from Spotify's API to sort through different song factors including energy, valence, popularity, and danceability. With a list of nine possible factors and three seeds (artist, genre, and tracks) to choose from, this app not only gives more power to the user to finetune the qualities of their playlists, but also allows them to be more informed about their listening preferences.",
+        media: ["amplify1.jpg", "amplify2.mp4"],
+        previewDescription:
+          "Web-based app for generating new Spotify playlists with more nuance and control.",
+        previewImage: "amplify1.jpg",
+        tags: ["web", "coding", "front-end"],
+      },
       ramphacks: {
         string: "ramphacks",
         year: "2023",
@@ -164,7 +287,7 @@ export const pieces = atom<{
         previewDescription:
           "Yearbook design during a year of COVID: a reminder to appreciate the mundane.",
         previewImage: "talisman612.jpg",
-        tags: ["editorial", "print"],
+        tags: ["editorial", "print", "art direction"],
       },
 
       theDevelopmentOfTheHumanFigure: {

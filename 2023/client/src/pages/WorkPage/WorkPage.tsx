@@ -13,7 +13,11 @@ import { MarqueeWorkText } from "../../components/Marquee/MarqueeWorkText";
 export default function WorkPage() {
   const navigate = useNavigate();
   const piecesArr = useRecoilState(pieces);
-  const gifPieces = ["synergySeats", "pillJacket"];
+
+  // pieces that have a gif as the cover image
+  const gifPieces = ["synergySeats", "pillJacket", "peopleWatching"];
+
+  // pieces that have a video as the cover image
   const vidPieces = [
     "eyeTrails",
     "musicVisualizer",
@@ -21,6 +25,7 @@ export default function WorkPage() {
     "efflorescence",
     "losingContact",
     "belonging",
+    "amplify",
   ];
   const [mode, setMode] = useState<string>("all");
 
@@ -64,7 +69,7 @@ export default function WorkPage() {
 
       if (previewImg) {
         previewImg.style.display = "inherit";
-        previewImg.src = "/images/" + piecesArr[0][key][piece].previewImage;
+        previewImg.src = "/images/md/" + piecesArr[0][key][piece].previewImage;
       }
     }
   };
