@@ -108,12 +108,10 @@ export default function PiecePage() {
     if (media.length === 1) {
       if (mediaWrapper) {
         mediaWrapper.style.justifyContent = "center";
-        mediaWrapper.style.alignItems = "center";
       }
     } else {
       if (mediaWrapper) {
         mediaWrapper.style.justifyContent = "flex-start";
-        mediaWrapper.style.alignItems = "flex-start";
       }
     }
   });

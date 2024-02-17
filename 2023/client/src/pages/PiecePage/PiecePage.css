@@ -217,6 +217,7 @@
 
   .piecePage .media {
     flex-direction: column;
+    align-items: center;
   }
 
   .piecePage .media-wrapper .media :last-child {
