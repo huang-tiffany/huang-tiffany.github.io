@@ -109,7 +109,7 @@ export const pieces = atom<{
         ],
         previewDescription:
           "Book containing sequenced images of shadows and their interpretations.",
-        previewImage: "lapse4.jpg",
+        previewImage: "lapse6.jpg",
         tags: ["book", "print", "data design"],
       },
       peopleWatching: {
