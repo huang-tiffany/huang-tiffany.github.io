@@ -49,6 +49,32 @@ export const pieces = atom<{
         previewImage: "billboards3.jpg",
         tags: ["branding", "campaign"],
       },
+      rampSwag: {
+        string: "rampSwag",
+        year: "2024",
+        title: "Ramp Evergreen Collection",
+        size: "",
+        medium: "Figma",
+        url: "",
+        statement:
+          "Working with fellow Brand designer Shivani Soni, I helped develop a small apparel collection — the first one designed in-house — for Ramp employees. Compared to the last collection made by design agency Fuzzco, we decided to skew slightly more conservative and cater to all kinds of fashion styles worn by people at Ramp offices. I designed a hat, two tees, and a crewneck, with the pine Element Tee being the most corporate, the black Modern Crew representing a mix of simple and bold graphics, and the off-white Bottom Line Tee being the most 'streetwear' styled of the three. Photos courtesy of Fuzzco.",
+        media: [
+          "rampswag1.jpg",
+          "rampswag2.jpg",
+          "rampswag3.jpg",
+          "rampswag4.jpg",
+          "rampswag5.jpg",
+          "rampswag6.jpg",
+          "rampswag7.jpg",
+          "rampswag8.jpg",
+          "rampswag9.jpg",
+          "rampswag10.jpg",
+        ],
+        previewDescription:
+          "Ramp's first evergreen apparel collection, designed in-house, for employees of all styles.",
+        previewImage: "rampswag5.jpg",
+        tags: ["branding", "apparel"],
+      },
       theArchiveAsFriendship: {
         string: "theArchiveAsFriendship",
         year: "2024",
@@ -56,7 +82,7 @@ export const pieces = atom<{
         size: '18" &times; 24" (poster form), 9" &times; 6" (booklet form)',
         medium:
           "Figma, Plotter, Adobe InDesign, Adobe Photoshop, VSCode, Javascript, Facebook Messenger, Facebook, Meta Spark Studio, Instagram",
-        url: '<a href="https://www.figma.com/proto/fayJVALo0X9W273TpgPNUs/The-Archive-as-Friendship?page-id=0%3A1&node-id=1-36&scaling=scale-down&mode=design&t=lNJpY9WX7wwlSSCu-1" target="_blank">PRESENTATION</a>',
+        url: '<a href="https://www.figma.com/proto/mT9sUIMHNQBXX2wzMf9hKl/The-Archive-as-Friendship?page-id=0%3A1&node-id=1-24&viewport=494%2C385%2C0.06&t=jUfwFkGgsWxOYrTr-1&scaling=scale-down&content-scaling=fixed" target="_blank">PRESENTATION</a>',
         statement:
           "With most friendships taking both digital and physical forms, online chat logs can often be a way to trace the development of relationships. Containing both arguments and gratitude, both small talk and deep conversations, the online archive as we know it not only acts as a means of communication and connection, but as a pseudo record of an entire relationship. <br><br> With this thought in mind, I created a project that catalogued and analyzed data from six complete calendar years of friendship with a friend of mine from middle and high school. Although we attended school together before going to college, we communicated primarily through Gmail chats and, upon entering high school, Facebook Messenger (something that still holds true today). By downloading six years' worth of content and parsing it with a simple Javascript program to count the quantity of messages, along with reading every chat log manually to sort through the depth and topics of each conversation, I organized my data into three formats ranging from the most objective to the most subjective view of the data. The largest poster format acts as an overview, mapping interactions in a calendar view and sorting them by the depth of the conversation (light, medium, and deep talks). The medium-sized booklet format goes into more detail with the content, organizing it in a temporally nonlinear format through the alphabetical indexing of conversation topics, with red lines running throughout the pages to trace recurring threads of more interesting conversation topics. And lastly, the smallest AR format (accessed via mobile phone) encourages exploration of the text in a more intimate format, with the overlaying of actual transmitted images (ranging from cute GIFs and stupid memes to mundane homework snapshots and photos taken during in-person hangouts). <br><br> Using this mix of personal and objective data alongside a mix of analog and digital formats, I wanted to explore the nuance and subversion of conversation in the digital age: where phones can encourage vulnerability and connection, and where chat logs can act as a living, digital archive for friendship.",
         media: [
@@ -119,7 +145,7 @@ export const pieces = atom<{
         size: "",
         medium:
           "Figma, Paper, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
-        url: '<a href="https://huang-tiffany.github.io/People-Watching/" target="_blank">LINK</a><br><a href="https://huang-tiffany.github.io/People-Watching/database" target="_blank">DATABASE</a><br><a href="https://www.figma.com/proto/PxaIEts1KRnCJyBYbiUIqv/WS24-Project-1-People(-)Watching?page-id=0%3A1&org_id=1044697086155753926&node-id=1-106&scaling=scale-down&mode=design&t=QnIjmhPRcBz95t4j-1" target="_blank">PRESENTATION</a>',
+        url: '<a href="https://huang-tiffany.github.io/People-Watching/" target="_blank">LINK</a><br><a href="https://huang-tiffany.github.io/People-Watching/database" target="_blank">DATABASE</a><br><a href="https://www.figma.com/proto/oJQNcIkvmMtLpSFL23cU7E/People(-)Watching?page-id=0%3A1&node-id=1-9&viewport=490%2C382%2C0.07&t=MKJjKMqlnjGywHPp-1&scaling=contain&content-scaling=fixed" target="_blank">PRESENTATION</a>',
         statement:
           "Prompted with the theme of uncovering and analyzing personal data, I decided to focus on the theme of eye contact with strangers. Given that I'm always looking around and examining my surroundings, I tend to make eye contact with many people during my daily life; this project records my various experiences over five days in January. Each card represents an encounter I had with a complete stranger who I had never seen before, including my first impressions, assumptions, and notes. <br><br> In total, I encountered 341 people during the span of this project. The final deliverable, a single serving site (SSS), recreates the unexpected and serendipitous experience of making eye contact with those unfamiliar to us; at the time stamp listed on each card, the corresponding card will display for a random span of 20 seconds. Often, cards can appear simultaneously, and often, no cards may appear at all — and even when one appears, there may not be enough time to read the entire contents of an encounter, just as we may not get to know everything we wanted to know about someone we encountered so suddenly. The sides of the page track how many instances have already occurred in the day and the last time one encounter was made.",
         media: [
@@ -163,7 +189,7 @@ export const pieces = atom<{
         size: "",
         medium:
           "HTML, CSS, React.js, Express.js, Next.js, Vite, Typescript, Github, VSCode, Figma, Adobe Illustrator",
-        url: '<a href="https://www.figma.com/proto/zJx5usW7UXk8lhYiDpjEBC/Amplify-%2F-CS0320-Final?page-id=27%3A2110&type=design&node-id=29-2990&viewport=-59%2C174%2C0.11&t=Tauf64ZklcqoPNI0-1&scaling=scale-down&starting-point-node-id=27%3A2230&show-proto-sidebar=1&mode=design" target="_blank">PROTOTYPE (APP IN DEPLOYMENT PROCESS)</a>',
+        url: '<a href="https://www.figma.com/proto/zJx5usW7UXk8lhYiDpjEBC/Amplify-%2F-CS0320-Final?page-id=27%3A2110&node-id=27-2230&viewport=348%2C205%2C0.04&t=54Q6NxFad2f0mCOa-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=27%3A2230&show-proto-sidebar=1" target="_blank">PROTOTYPE (APP IN DEPLOYMENT PROCESS)</a>',
         statement:
           "Working with Sean Yu (full-stack dev) and Elijah Whang (backend dev), I designed and prototyped the interface for a web-based app for playlist generation as a UI/UX designer and front-end dev. Although other Spotify playlist generators exist on the web, <em>Amplify</em> provides an experience in which users have more control over the content of the playlist, adding in key components from Spotify's API to sort through different song factors including energy, valence, popularity, and danceability. With a list of nine possible factors and three seeds (artist, genre, and tracks) to choose from, this app not only gives more power to the user to finetune the qualities of their playlists, but also allows them to be more informed about their listening preferences.",
         media: [
@@ -178,7 +204,7 @@ export const pieces = atom<{
         previewDescription:
           "Web-based app for generating new Spotify playlists with more nuance and control.",
         previewImage: "amplify1.jpg",
-        tags: ["web", "coding", "front-end"],
+        tags: ["web", "coding", "front-end", "design engineering"],
       },
       ramphacks: {
         string: "ramphacks",
@@ -351,6 +377,59 @@ export const pieces = atom<{
 
     // 3D DESIGN
     "3D DESIGN": {
+      loveInAPuff: {
+        string: "loveInAPuff",
+        year: "2024",
+        title: "Love in a Puff",
+        size: '10" &times; 14" &times; 5"',
+        medium: "Arduino, Cherry, Jointer, Planar, Screws, Drill Press, Hand Drill, Vellum, Biscuit Jointer, Table Saw, Aluminum Stock, Sandblaster, South Bend Metal Lathe, Bridgeport Mill, Radius Cutter, Horizontal Bandsaw, Tape, Hot Glue, Wire Cutter, Aluminum Rod, Aluminum Tube, White Glue, Tap, Solidworks, Adobe InDesign, Adobe Illustrator",
+        url: '<a href="https://indd.adobe.com/view/700e05f6-3586-43a1-b008-01653bee494f" target="_blank">FULL PRESENTATION</a>',
+        statement:
+          "After doing initial research on the pain points and experiences of both people in long-distance relationships and those who get homesick, I designed a product that engages with the intense, yet often indescribable, emotions that come with yearning for places and people. <br /><br /> <em>Love in a Puff</em> is a set of two devices, one for each person in the relationship, which contain indicator lights that turn on when both people are in the same room as their devices to symbolize connection, parallel play, and presence. A simple blow on the pinwheel-like shade (designed to evoke nostalgia and playfulness) causes the pinwheel on the other person's device to spin in response, mimicking the sense of shared space by allowing the individuals to effect a force on each others' environments. <br /><br /> The devices act as metaphors for human breath (something that can only be experienced in moments of intimacy), bringing together feelings of lightness and ephemerality. The devices come in desktop and wall-mounted variants and take inspiration from MUJI's soft-spoken design language.",
+        media: [
+          "loveinapuff1.jpg",
+          "loveinapuff2.jpg",
+          "loveinapuff3.jpg",
+          "loveinapuff4.jpg",
+          "loveinapuff5.jpg",
+          "loveinapuff6.jpg",
+          "loveinapuff7.jpg",
+          "loveinapuff8.jpg",
+          "loveinapuff9.jpg",
+          "loveinapuff10.mp4",
+        ],
+        previewDescription:
+          "Bridging emotional distance between people with breath, light, and movement.",
+        previewImage: "loveinapuff.jpg",
+        tags: ["product", "prototyping", "arduino", "machining"],
+      },
+      homebodyTable: {
+        string: "homebodyTable",
+        year: "2024",
+        title: "Table for a Homebody",
+        size: '11.66" &times; 30" &times; 12"',
+        medium: "Cherry, Jointer, Planar, Router Table, Hand-Held Plunge Router, Table Saw, Wood Glue, Dowels, Canvas Fabric, Plywood, Bandsaw, Chisel, Mallet, Double-Sided Table, Thread, Tacky Glue, Orbital Sander, Drill Press, Biscuit Jointer",
+        url: '',
+        statement:
+          "Tasked with creating a 'mechanism' that aids in the user experience of an object, I created a lap table with tambour-inspired drawers to reveal and conceal cubby spaces for easy storage. <br /><br /> In spite of its simple form factor, <em>Table for a Homebody</em> introduces a subtle moment of delight in its sliding cubby covers, eliciting surprise from its user at the satisfaction of every interaction with the storage space. The cherry finish and warm-toned canvas covers boasting delicate loops for easy pulling reference cozy and domestic aesthetics, recalling both the table's purpose of being a bed-top object and its invitation to stay home and under the covers.",
+        media: [
+          "homebodytable1.mp4",
+          "homebodytable2.jpg",
+          "homebodytable3.jpg",
+          "homebodytable4.jpg",
+          "homebodytable5.jpg",
+          "homebodytable6.jpg",
+          "homebodytable7.jpg",
+          "homebodytable8.jpg",
+          "homebodytable9.jpg",
+          "homebodytable10.jpg",
+          "homebodytable11*.mp4",
+        ],
+        previewDescription:
+          "Lap table with tambour-inspired mechanisms, for people who love staying at home (and in bed).",
+        previewImage: "homebodytable6.jpg",
+        tags: ["woodworking", "furniture"],
+      },
       daychair: {
         string: "daychair",
         year: "2023",

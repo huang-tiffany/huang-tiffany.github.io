@@ -27,6 +27,8 @@ export default function WorkPage() {
     "belonging",
     "amplify",
     "emt",
+    "loveInAPuff",
+    "homebodyTable"
   ];
   const [mode, setMode] = useState<string>("all");
 
