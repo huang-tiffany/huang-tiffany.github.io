@@ -1,0 +1,249 @@
+.piecePage {
+  width: 100vw;
+  height: calc(100dvh - 1em);
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+
+.piecePage nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  height: max-content;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.piecePage nav .links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 1em;
+}
+
+.piecePage nav .links a:hover::before {
+  font-family: system-ui;
+  content: " ↖ ";
+}
+
+.piecePage nav img {
+  max-height: 4.5em;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.piecePage nav #logo:hover::before {
+  content: "";
+}
+
+.piecePage .media {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.piecePage .piece-info {
+  display: flex;
+  line-height: 1.2;
+  bottom: 0;
+  font-weight: 400;
+  width: calc(100vw / 4);
+  height: 100%;
+  overflow: scroll;
+  flex-direction: column;
+  position: sticky;
+  left: 0;
+  margin-left: 1em;
+}
+
+.piecePage .piece-description {
+  font-size: 0.9em;
+}
+
+.piecePage .piece-more {
+  font-weight: 600;
+  margin-left: 0.5em;
+  float: right;
+}
+
+.piecePage .piece-description-expand div {
+  display: inline;
+}
+
+.piecePage hr:not(.vert) {
+  border-top: white 1px solid;
+  position: absolute;
+  width: 100vw;
+  opacity: 1;
+  bottom: calc(100dvh - 6.5em);
+}
+
+.piecePage main hr.vert {
+  left: calc(100vw / 4 + 2em);
+  position: fixed;
+  top: 6.5em;
+}
+
+.piecePage main hr.vert.fadein {
+  animation-delay: 0.25s;
+}
+
+.piecePage nav hr.vert {
+  top: calc(-100dvh + 6.5em);
+  position: fixed;
+  right: calc(100vw / 12 * 1.5);
+}
+
+.piecePage .piece-data {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.piecePage .piece-data::before {
+  content: "";
+  height: calc(100% - 2em);
+  width: 100%;
+  background-color: black;
+  position: absolute;
+}
+
+.piecePage .piece-data::after {
+  content: "";
+  width: 100%;
+  background-color: transparent;
+  height: 2em;
+  background: -webkit-linear-gradient(top, 
+                    rgba(0,0,0,1) 0%,
+                    rgba(0,0,0,0) 100%);
+}
+
+.piecePage .piece-description {
+  height: fit-content;
+  width: 100%;
+  text-align: justify;
+}
+
+.piecePage .piece-year {
+  font-size: 0.75em;
+}
+
+.piecePage .piece-title {
+  font-size: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.piecePage .piece-size,
+.piecePage .piece-url,
+.piecePage .piece-medium {
+  margin-bottom: 0.5em;
+}
+
+.piecePage .piece-size,
+.piecePage .piece-url {
+  font-size: 0.85em;
+}
+
+.piecePage .piece-back {
+  width: calc(100% / 4 - 2em);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.piecePage .piece-medium {
+  font-style: oblique;
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.piecePage .piece-url a::after {
+  font-family: system-ui;
+  content: " ↘ ";
+  text-decoration-color: white;
+  display: inline-block;
+  margin-left: 0.25em;
+  transition-duration: 0.25s;
+}
+
+.piecePage .piece-url a,
+.piecePage .piece-url a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.piecePage .piece-url a:hover::after {
+  transform: rotate(-90deg);
+  transition-duration: 0.25s;
+}
+
+.piecePage main {
+  width: 100vw;
+  height: calc(100dvh - 8.5em);
+  display: flex;
+  overflow-y: scroll;
+}
+
+.piecePage main video,
+.piecePage main img,
+.piecePage main picture {
+  font-size: 1em;
+  height: calc(100dvh - 8.5em);
+  margin: 0;
+}
+
+.piecePage main .media-wrapper {
+  top: 0;
+  overflow: scroll;
+  padding: 0;
+  margin-left: 1em;
+  width: calc(100vw / 4 * 3 - 4em);
+  height: calc(100dvh - 8.5em);
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .piecePage hr.vert {
+    display: none;
+  }
+
+  .piecePage main {
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .piecePage main .media-wrapper {
+    width: calc(100vw - 2em);
+    height: max-content;
+    overflow: visible;
+  }
+
+  .piecePage main .media{
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .piecePage main video,
+  .piecePage main img,
+  .piecePage main picture {
+    font-size: 1em;
+    max-width: calc(100vw - 2em);
+    max-height: calc(100dvh - 7.5em);
+    height: auto;
+    margin: 0;
+  }
+
+  .piecePage .piece-info {
+    width: calc(100vw - 2em);
+    height: max-content;
+    padding-bottom: 2em;
+    overflow: visible;
+  }
+}

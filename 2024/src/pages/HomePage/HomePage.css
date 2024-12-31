@@ -1,0 +1,357 @@
+.homePage {
+  width: 100vw;
+  height: 100dvh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.homePage .fadein {
+  animation-duration: 2.25s;
+  animation-delay: 0.25s;
+}
+
+.homePage .fadeout {
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+.homePage nav a:hover::before,
+.homePage #ig:hover::before {
+  font-family: system-ui;
+  content: " ↖ ";
+}
+
+.homePage nav #work-link a:hover::after {
+  font-family: system-ui;
+  content: " ↗ ";
+}
+
+.homePage nav #work-link a:hover::before {
+  content: "";
+}
+
+.homePage #table {
+  display: flex;
+  width: 100vw;
+  height: 100dvh;
+  column-gap: 0;
+  row-gap: 0;
+  flex-wrap: wrap;
+}
+
+.homePage #cell0 {
+  width: max(calc(100vw / 12 * 1.5), 10em);
+  height: calc(100dvh / 12 * 2);
+  order: 0;
+}
+
+.homePage #cell0 hr {
+  bottom: 0;
+  left: 0;
+  animation-duration: 1s;
+}
+
+.homePage #cell0 hr.vert {
+  left: 100%;
+  top: 0;
+  animation-duration: 1s;
+}
+
+.homePage #cell1 {
+  width: calc(100vw - (100vw / 12 * 3) - max((100vw / 12 * 1.5), 10em));
+  height: calc(100dvh / 12 * 2);
+  order: 1;
+}
+
+.homePage #cell1 hr.vert {
+  left: 100%;
+  top: calc(100dvh / 12 * -4);
+}
+
+.homePage #cell2 {
+  width: calc(100vw / 12 * 3);
+  height: calc(100dvh / 12 * 2);
+  order: 2;
+}
+
+.homePage #cell3 {
+  width: max(calc(100vw / 12 * 1.5), 10em);
+  height: calc(100dvh / 12 * 6);
+  order: 3;
+}
+
+.homePage #cell4 {
+  width: calc(100vw - (100vw / 12 * 3) - max((100vw / 12 * 1.5), 10em));
+  height: calc(100dvh / 12 * 6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: 4;
+}
+
+.homePage #cell4 hr {
+  bottom: 0;
+  left: 0;
+}
+
+.homePage #cell4 hr.fadein {
+  animation-delay: 0.75s;
+}
+
+.homePage #cell5 {
+  width: calc(100vw / 12 * 3);
+  height: calc(100dvh / 12 * 6);
+  display: flex;
+  order: 5;
+  align-items: center;
+}
+
+.homePage #cell6 {
+  width: max(calc(100vw / 12 * 1.5), 10em);
+  height: calc(100dvh / 12 * 4);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5em;
+  order: 6;
+}
+
+.homePage #cell7 {
+  width: calc(100vw / 12 * 4.5);
+  height: calc(100dvh / 12 * 4);
+  order: 7;
+}
+
+.homePage #cell7 hr.vert {
+  left: 100%;
+  top: 0;
+}
+
+.homePage #cell7 hr.vert.fadein {
+  animation-delay: 0.75s;
+  animation-duration: 2.75s;
+}
+
+.homePage #cell8 {
+  width: calc(100vw - (100vw / 12 * 4.5) - max((100vw / 12 * 1.5), 10em));
+  height: calc(100dvh / 12 * 4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  order: 8;
+}
+
+.homePage .title {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0;
+}
+
+.homePage .title h1 {
+  font-size: clamp(4em, 10vw, 8em);
+  margin-bottom: -0.125em;
+}
+
+.homePage p.text-container {
+  width: 75%;
+}
+
+.homePage .text-container {
+  margin: 1.5em;
+}
+
+.homePage #logo, .homePage video {
+  max-width: calc(100% - 4em);
+  margin: 2em;
+  max-height: calc(100% - 4em);
+}
+
+.homePage #version {
+  display: flex;
+  flex-direction: column;
+}
+
+.homePage #additional-links {
+  display: flex;
+  padding: 1.5em;
+  flex-direction: row-reverse;
+  column-gap: 0;
+}
+
+.homePage #additional-links a {
+  padding-right: 1em;
+  font-size: 0.85em;
+}
+
+.homePage #version a,
+.homePage nav a,
+.homePage #additional-links a {
+  color: white;
+}
+
+.homePage a.ver, .homePage a.addlink {
+  opacity: 0.5;
+  visibility: visible;
+  transition: ease;
+  transition-duration: 0.25s;
+}
+
+.homePage a:hover, .homePage #cell7 a:hover {
+  opacity: 1;
+  transition: ease;
+  transition-duration: 0.25s;
+}
+
+.homePage a.ver.hidden, .homePage a.addlink.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: ease;
+  transition-duration: 0.25s;
+}
+
+.homePage .text-group {
+  display: flex;
+}
+
+.homePage #cell7 .text-group {
+  font-size: 0.85em;
+}
+
+.homePage #cell7 p {
+  color: rgba(255,255,255,0.75);
+}
+
+.homePage #cell7 a {
+  opacity: 0.75;
+  transition-duration: 0.25s;
+}
+
+.homePage #cell7 p.header {
+  min-width: 7.5vw;
+  font-style: italic;
+  color: white;
+}
+
+.homePage .nav-links {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.homePage .nav-links a {
+  height: 1.5em;
+}
+
+.homePage .nav-links a:hover::after, .homePage #version a:hover:last-of-type::after {
+  content: "";
+}
+
+.homePage .nav-links a:hover::before {
+  font-family: system-ui;
+  content: " ↖ ";
+  font-size: 0.9em;
+}
+
+.homePage #additional-links a:last-of-type::after {
+  content: " +";
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.homePage a:hover::after {
+  font-family: system-ui;
+  content: " ↗ ";
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+
+  .homePage #cell7, .homePage #cell8 {
+    width: calc(100vw - (100vw / 12 * 3));
+    height: fit-content;
+  }
+
+  .homePage #cell7 .text-container, .homePage #cell8 div {
+    margin: 1em;
+  }
+
+  .homePage #cell7 .text-group:last-of-type p:last-of-type {
+    margin: 0;
+  }
+
+  .homePage #cell7 p {
+    line-height: 1.325em;
+  }
+
+  .homePage .text-group {
+    flex-direction: column;
+  }
+
+  .homePage .header {
+    margin-bottom: 0;
+  }
+
+  .homePage #cell3 {
+    width: 0;
+    height: 0;
+  }
+
+  .homePage #cell4 {
+    width: 100vw;
+  }
+
+  .homePage #cell1 {
+    width: calc(100vw - (100vw / 12 * 4) - max((100vw / 12 * 1.5), 10em));
+  }
+
+  .homePage #cell2 {
+    width: calc(100vw / 12 * 4);
+  }
+
+  .homePage #cell6 {
+    width: calc(100vw / 12 * 3.5);
+    padding: 1em;
+    order: 5;
+  }
+
+  .homePage #cell5 {
+    width: calc(100vw / 12 * 8.5);
+    height: calc(100dvh / 12 * 4);
+    justify-content: center;
+    order: 6;
+  }
+  
+  .homePage #cell7 hr.vert {
+    left: 0;
+    top: 0;
+  }
+
+  .homePage #cell1 hr.vert {
+    top: calc(100dvh / 12 * -10);
+    animation-delay: 0s;
+    animation-duration: 1s;
+  }
+
+  .homePage #cell0 hr.vert {
+    top: calc(100dvh / 12 * 8);
+    left: calc(100vw / 12 * 3);
+    animation-delay: 1.25s;
+    animation-duration: 2.5s;
+    order: 0;
+  }
+
+  .homePage #cell1 hr.vert.fadeout, .homePage #cell0 hr.vert.fadeout {
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+  }
+
+  .homePage #cell4 hr.fadein {
+    animation-delay: 0.75s;
+    animation-duration: 1.25s;
+  }
+}
