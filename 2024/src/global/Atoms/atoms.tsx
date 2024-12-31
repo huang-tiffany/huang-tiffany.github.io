@@ -599,7 +599,7 @@ export const pieces = atom<{
         medium: "Rhino, Three.js, HTML, CSS, React.js, VS Code, Github",
         url: '<a href="https://huang-tiffany.github.io/ten-principles-of-good-design" target="_blank">LINK',
         statement:
-          "Inspired by Dieter Rams's 10 Principles of Good Design, I created a simple website displaying 11 of his and Braun's products, pairing each with one of his ten principles to set an interactive and immersive scene. As the user scrolls through the page, the camera pans through a predetermined path to give a tour of both Rams's design ethos and the objects.<br><br>Over the course of three days, I modeled and shaded each of the objects in Rhino based on the actual dimensions and proportions of each preexisting product, then dressed the scene in Three.js in addition to tweaking material finish and camera paths.",
+          "Inspired by Dieter Rams's <em>10 Principles of Good Design</em>, I created a simple website displaying 11 of his and Braun's products, pairing each with one of his ten principles to set an interactive and immersive scene. As the user scrolls through the page, the camera pans through a predetermined path to give a tour of both Rams's design ethos and the objects.<br><br>Over the course of three days, I modeled and shaded each of the objects in Rhino based on the actual dimensions and proportions of each preexisting product, then dressed the scene in Three.js in addition to tweaking material finish and camera paths.",
         media: [
           "tenprinciplesofgooddesign1.jpg",
           "tenprinciplesofgooddesign2.jpg",
@@ -715,12 +715,34 @@ export const pieces = atom<{
 
     // VIDEO
     VIDEO: {
+      bearNecessiteas: {
+        string: "bearNecessiteas",
+        year: "2024",
+        title: "Bear Necessiteas",
+        size: '03:37',
+        medium: "Maya, Adobe Premiere Pro",
+        url: "",
+        statement:
+          "Under advisement from Barb Meier, <em>Bear Necessiteas</em> narrates the story of a young bear cub who gets separated from his mother while foraging for berries. Stumbling upon a little girl having a tea party in her family gazebo, he learns about proper tea etiquette, patience, friendship, and the delicious nature of raspberry thumbprint cookies. <br><br> In the making of the film, I took care of set dressing and design and modeling for the tea set, furniture, and gazebo; art direction, storyboarding, lighting, editing, sound design, animation were done in collaboration with Becca Waterson, Jess Wan, Hannah Zhang, Vivian Li, and Amelie Grosserichter.",
+        media: [
+          "bearnecessiteas1*.mp4",
+          "bearnecessiteas2.jpg",
+          "bearnecessiteas3.jpg",
+          "bearnecessiteas4.jpg",
+          "bearnecessiteas5.jpg",
+        ],
+        previewDescription:
+          "A bear cub crashes a little girl's tea party, learning about table manners and friendship as a result.",
+        previewImage: "bearnecessiteas3.jpg",
+        tags: ["animation", "short film", "art direction", "set design"],
+      },
+
       efflorescence: {
         string: "efflorescence",
         year: "2022",
         title: "Efflorescence",
         size: '01:38, 18" &times; 24"',
-        medium: "Vine Charcoal, White Conte, Eraser, Premiere Pro",
+        medium: "Vine Charcoal, White Conte, Eraser, Adobe Premiere Pro",
         url: "",
         statement:
           "As a collaboration with Astrid Schoenly, <em>Efflorescence</em> narrates the drifting apart of two childhood friends, reflecting upon a near-universal college experience of meeting, befriending, and losing contact with companions as time progresses.",
@@ -733,12 +755,10 @@ export const pieces = atom<{
           "efflorescence6.jpg",
           "efflorescence7.jpg",
           "efflorescence8.jpg",
-          "efflorescence9.jpg",
-          "efflorescence10.jpg",
         ],
         previewDescription:
           "An animation short on growing up, moving away, and drifting apart from childhood friends.",
-        previewImage: "efflorescence9.jpg",
+        previewImage: "efflorescence7.jpg",
         tags: ["animation", "short film"],
       },
 
