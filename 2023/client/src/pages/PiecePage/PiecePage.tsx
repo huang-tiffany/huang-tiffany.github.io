@@ -3,7 +3,7 @@ import { useRecoilState } from "recoil";
 import { useNavigate } from "react-router-dom";
 import { pieces } from "../../global/Atoms/atoms";
 import { useParams } from "react-router-dom";
-import logo from "../../../../../2021/images/logo white.png";
+import logo from "/images/logo white.png";
 import { useEffect } from "react";
 import VerticalMarquee from "../../components/VerticalMarquee/VerticalMarquee";
 import { MarqueePieceText } from "../../components/VerticalMarquee/MarqueePieceText";
@@ -77,7 +77,7 @@ export default function PiecePage() {
               controlsList="nodownload"
             >
               <source
-                src={"/videos/" + med.replace("*", "")}
+                src={"/2023/videos/" + med.replace("*", "")}
                 type="video/mp4"
               />
             </video>
@@ -85,16 +85,16 @@ export default function PiecePage() {
         } else {
           return (
             <video playsInline webkit-playsinline="true" autoPlay muted loop>
-              <source src={"/videos/" + med} type="video/mp4" />
+              <source src={"/2023/videos/" + med} type="video/mp4" />
             </video>
           );
         }
       } else {
         return (
           <picture>
-            <source media="(min-width: 768px)" srcSet={"/images/" + med} />
-            <source media="(min-width: 576px)" srcSet={"/images/md/" + med} />
-            <img alt={title + " Image"} src={"/images/" + med} />
+            <source media="(min-width: 768px)" srcSet={"/2023/images/" + med} />
+            <source media="(min-width: 576px)" srcSet={"/2023/images/md/" + med} />
+            <img alt={title + " Image"} src={"/2023/images/" + med} />
           </picture>
         );
       }

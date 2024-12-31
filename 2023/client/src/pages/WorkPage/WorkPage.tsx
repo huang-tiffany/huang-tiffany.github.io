@@ -1,7 +1,7 @@
 import "../WorkPage/WorkPage.css";
 import "../../App.css";
 import { useNavigate } from "react-router-dom";
-import logo from "../../../../../2021/images/logo white.png";
+import logo from "/images/logo white.png";
 import "../WorkPage/WorkPage.css";
 import { pieces } from "../../global/Atoms/atoms";
 import { useRecoilState } from "recoil";
@@ -72,7 +72,7 @@ export default function WorkPage() {
 
       if (previewImg) {
         previewImg.style.display = "inherit";
-        previewImg.src = "/images/md/" + piecesArr[0][key][piece].previewImage;
+        previewImg.src = "/2023/images/md/" + piecesArr[0][key][piece].previewImage;
       }
     }
   };
@@ -101,7 +101,7 @@ export default function WorkPage() {
                       loop
                     >
                       <source
-                        src={"/coverimages/" + piece.toLowerCase() + ".mp4"}
+                        src={"/2023/coverimages/" + piece.toLowerCase() + ".mp4"}
                         type="video/mp4"
                       />
                     </video>
@@ -111,8 +111,8 @@ export default function WorkPage() {
                       onClick={() => relocate("/work/" + key + "/" + piece)}
                       src={
                         gifPieces.includes(piece)
-                          ? "/coverimages/" + piece.toLowerCase() + ".gif"
-                          : "/coverimages/" + piece.toLowerCase() + ".jpg"
+                          ? "/2023/coverimages/" + piece.toLowerCase() + ".gif"
+                          : "/2023/coverimages/" + piece.toLowerCase() + ".jpg"
                       }
                       alt={piecesArr[0][key][piece].title + " Cover Image"}
                     />

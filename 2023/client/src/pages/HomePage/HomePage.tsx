@@ -35,7 +35,7 @@ export default function HomePage() {
     <main className="homePage fadein">
       <div id="backgroundvid">
         <video id="background-video" autoPlay loop muted playsInline>
-          <source src="/videos/highlight reel 2023.mp4" type="video/mp4" />
+          <source src="/2023/videos/highlight reel 2023.mp4" type="video/mp4" />
         </video>
       </div>
       <div id="background-overlay"></div>
