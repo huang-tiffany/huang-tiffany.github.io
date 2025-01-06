@@ -129,7 +129,7 @@ export default function HomePage() {
             <div className="text-group">
               <p className="header">previously...</p>
               <p>
-              frontend swe (returning 2025) @ <a target="_blank" href="https://nvidia.com/">nvidia</a> <br></br>
+              frontend swe @ <a target="_blank" href="https://nvidia.com/">nvidia</a> <br></br>
               brand design @ <a target="_blank" href="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation">santa clara county parks and rec</a>
               </p>
             </div>
