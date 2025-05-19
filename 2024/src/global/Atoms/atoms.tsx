@@ -161,7 +161,7 @@ export const pieces = atom<{
         previewDescription:
           "Single serving site recreating the serendipity of eye contact with strangers.",
         previewImage: "people(-)watching3.jpg",
-        tags: ["web", "coding", "interactive", "data design"],
+        tags: ["web", "coding", "data design"],
       },
 
       emt: {
@@ -185,7 +185,7 @@ export const pieces = atom<{
         previewDescription:
           "Inaugural webpage for Ramp's Emerging Talent program featuring interns and new grads.",
         previewImage: "emt8.jpg",
-        tags: ["web", "interactive", "art direction"],
+        tags: ["web", "art direction"],
       },
 
       amplify: {
@@ -591,6 +591,26 @@ export const pieces = atom<{
 
     // MULTIMEDIA
     MULTIMEDIA: {
+      liveLaughLoaf: {
+        string: "liveLaughLoaf",
+        year: "2025",
+        title: "Procedural Bread Simulation",
+        size: "",
+        medium: "C++, Maya, Rhino, Blender",
+        url: '<a href="https://github.com/smallwhale1/cs2240-bread/tree/main" target="_blank">GITHUB',
+        statement:
+          "Working with team members Grace Marshburn, Lana Yang-Maccini, and Sophie Zhang, I reimplemented and augmented the <em>Procedural bread making</em> paper by Rodrigo Baravalle, Gustavo Ariel Patow, and Claudio Delrieux. <br/><br/> In addition to the original implementation, which generates bread geometry procedurally and simulates the entire proofing and baking process, we added parallelization, which allowed us to render animations of the bread pipeline in addition to the paper's still images, as well as integrated low-res bread meshes into industry-standard workflows using surface meshes and current software like Maya and Blender. Additionally, we also added more parameter tuning to represent a wider variety of bread types than the original paper. ",
+        media: ["livelaughloaf1.gif", 
+                "livelaughloaf2.gif", 
+                "livelaughloaf3.png",
+                "livelaughloaf4.png",
+                "livelaughloaf5.png"],
+        previewDescription:
+          "Building upon an existing research paper about procedural bread generation and simulation.",
+        previewImage: "livelaughloaf3.png",
+        tags: ["creative coding"],
+      },
+
       tenPrinciplesOfGoodDesign: {
         string: "tenPrinciplesOfGoodDesign",
         year: "2024",
@@ -615,7 +635,7 @@ export const pieces = atom<{
         previewDescription:
           "Interactive 3D scene with modeled objects after Dieter Rams's designs and ethos.",
         previewImage: "tenprinciplesofgooddesign3.jpg",
-        tags: ["CAD", "design engineering", "interactive", "web", "coding", "front-end"],
+        tags: ["CAD", "design engineering", "web", "coding", "front-end"],
       },
 
       sevenMinutesInHeaven: {
@@ -639,7 +659,7 @@ export const pieces = atom<{
         previewDescription:
           "Creating wonder in an everyday space through the cultivation of intimacy.",
         previewImage: "sevenminutesinheaven3.jpg",
-        tags: ["installation", "interactive"],
+        tags: ["installation"],
       },
 
       eyeTrails: {
@@ -655,7 +675,7 @@ export const pieces = atom<{
         previewDescription:
           "Generative art that documents and visualizes movement using eye tracking.",
         previewImage: "eyetrails3.jpg",
-        tags: ["creative coding", "interactive"],
+        tags: ["creative coding"],
       },
 
       musicVisualizer: {
@@ -709,12 +729,33 @@ export const pieces = atom<{
         previewDescription:
           "Installation that repairs one's relationship with themselves through letter-writing.",
         previewImage: "tomyself2.jpg",
-        tags: ["installation", "interactive"],
+        tags: ["installation"],
       },
     },
 
     // VIDEO
     VIDEO: {
+      rememo: {
+        string: "rememo",
+        year: "2025",
+        title: "Re:Memo",
+        size: '',
+        medium: "Maya, Adobe Illustrator, Adobe Premiere Pro",
+        url: "",
+        statement:
+          "Created as an exploration of anime cel-style toon-shading and animation movement quality, I animated a series of three short, cyclical vignettes inspired by old video game loading screens using a character I modeled, shaded, and rigged. In the Re:Memo game, the character would act as the player's digital avatar, which travels through a found hard drive attempting to uncover mysteries about its previous owner before all of the data becomes corrupted. <br/><br/> Each of the loading screens, complete with loading state UI, would introduce a new phase of the game, which explores concepts relating to digital archives and their effect on grieving processes in the age of modern technology.",
+        media: [
+          "rememo1*.mp4",
+          "rememo2.mp4",
+          "rememo3.mp4",
+          "rememo4.mp4",
+        ],
+        previewDescription:
+          "Toon-shaded loading screens for a video game about digital grief, memory, and rediscovery.",
+        previewImage: "rememo5.jpg",
+        tags: ["animation", "game", "art direction"],
+      },
+
       bearNecessiteas: {
         string: "bearNecessiteas",
         year: "2024",
