@@ -608,7 +608,7 @@ export const pieces = atom<{
         previewDescription:
           "Building upon an existing research paper about procedural bread generation and simulation.",
         previewImage: "livelaughloaf3.png",
-        tags: ["creative coding"],
+        tags: ["computer graphics", "animation"],
       },
 
       tenPrinciplesOfGoodDesign: {
