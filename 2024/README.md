@@ -31,3 +31,7 @@ export default {
 
 ## Deploying
 Run `npm run deploy` to deploy from the `dist` folder to Github. See here for documentation: https://github.com/gitname/react-gh-pages
+If there's an RPC failed/HTTP 400 curl 56 error, run:
+`git config --global http.postBuffer 15728640000`
+`git config --global http.maxRequestBuffer 104857600000`
+then `npm run deploy`, adding extra zeroes as needed.
