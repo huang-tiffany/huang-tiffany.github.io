@@ -124,11 +124,12 @@ export default function HomePage() {
               <p className="header">currently...</p>
               <p>
               industrial design, computer science, creative computation @ <a target="_blank" href="https://www.brown.edu/academics/brown-risd-dual-degree/home">the brown | risd dual degree program</a> <br></br>
-              brand design @ <a target="_blank" href="https://ramp.com/">ramp</a></p>
+              design engineering @ <a target="_blank" href="https://nvidia.com/">nvidia</a> </p>
             </div>
             <div className="text-group">
               <p className="header">previously...</p>
               <p>
+              brand design @ <a target="_blank" href="https://ramp.com/">ramp</a><br></br>
               frontend swe @ <a target="_blank" href="https://nvidia.com/">nvidia</a> <br></br>
               brand design @ <a target="_blank" href="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation">santa clara county parks and rec</a>
               </p>

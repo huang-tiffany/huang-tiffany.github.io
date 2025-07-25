@@ -23,7 +23,7 @@ export const pieces = atom<{
     "2D DESIGN": {
       billboards: {
         string: "billboards",
-        year: "Ongoing",
+        year: "2023 - 2024",
         title: "Ramp Times Square Billboards",
         size: "",
         medium: "Figma",
@@ -329,6 +329,72 @@ export const pieces = atom<{
 
     // 3D DESIGN
     "3D DESIGN": {
+      cruet: {
+        string: "cruet",
+        year: "2025",
+        title: "Estuary Cruet",
+        size: '5" &times; 3" &times; 2.25"',
+        medium: "Ceramic Slip, Cone 5-6 Glazes, Clay, Plaster, Oxidation Firing Electric Kiln",
+        url: "",
+        statement:
+          "Inspired by the forms liquid take, as well as the simple yet ritualistic act of pouring, the <em>Estuary Cruet</em> celebrates the humble soy sauce dispenser as an object for both storage and presentation. <br><br> Featuring a traditional single spout on one side and a unique double spout on the other, in which two streams join to form one while pouring, the cruet accommodates simple everyday use while drawing attention to the ritual of serving condiments. An organic pinch top lid allows for easy storage while completing the fluid form, accentuating the object's function when in use and alluding to it when not. <br><br> The design was created after multiple iterations of clay positives, of which the final was used to create a plaster mold for slip-casting. While abstract, the visual language draws reference from a variety of sources, from Eva Zeisel's collections to sparrow wings and flower petals.",
+        media: [
+          "cruet1.jpg",
+          "cruet2.jpg",
+          "cruet3.jpg",
+          "cruet4.jpg",
+          "cruet5.jpg",
+          "cruet6.jpg",
+          "cruet7.jpg",
+          "cruet8.jpg",
+          "cruet9.jpg",
+          "cruet10.jpg",
+          "cruet11.jpg",
+          "cruet12.jpg",
+          "cruet13.jpg",
+          "cruet14.jpg",
+          "cruet15.jpg",
+          "cruet16.jpg",
+          "cruet17.jpg",
+          "cruet18.jpg",
+          "cruet19.jpg",
+          "cruet20.jpg",
+        ],
+        previewDescription:
+          "Slip-casted soy sauce cruet with dual pour mechanism for both serving and storage.",
+        previewImage: "cruet1.jpg",
+        tags: ["ceramics", "production", "tableware", "product"],
+      },
+
+      rectGarment: {
+        string: "rectGarment",
+        year: "2025",
+        title: "Providence Modular Two-Piece Knit Set",
+        size: "Women's Size Small",
+        medium: "Single Bed Knitting Machine, Cotton, Wool, Tencel, Cashmere, Acrylic, Polyester",
+        url: "",
+        statement:
+          "Over the course of five weeks in winter, while learning techniques on the single bed knitting machine, I explored my personal connection to Providence after having lived in the city for the past four years. Along with acting as a culmination of my explorations with the machine, the resulting two-piece knitted set formalizes the hidden moments of delight that I have documented in my camera roll throughout my years of college, drawing from both the colors I tend to associate most with Providence and from the patterns abstracted from landscape and architecture discovered while walking through city streets, whether in the way the holes in the outer layer draw patterns on skin like sunlight filtering through tree leaves, or in the way the inner dress draws a hazy path from sky to nature to brutalist buildings and industrial plants. <br><br> The piece also explores the possibility of modularity in knitwear, employing buttons as low-tech connecting hardware to allow for the rearrangement of the different fabric pieces into an assortment of clothing. A skirt can become a top; the outer sweater can be reversed or its sleeve lengths altered; straps can be detached and reattached to change the drape of the fabric. ",
+        media: [
+          "rectgarment1.jpg",
+          "rectgarment2.jpg",
+          "rectgarment3.jpg",
+          "rectgarment4.jpg",
+          "rectgarment5.jpg",
+          "rectgarment6.jpg",
+          "rectgarment7.jpg",
+          "rectgarment8.jpg",
+          "rectgarment9.jpg",
+          "rectgarment10.jpg",
+          "rectgarment11.jpg",
+          "rectgarment12.jpg",
+        ],
+        previewDescription:
+          "Modular knitwear documenting four years of exploring the streets of a small city.",
+        previewImage: "rectgarment0.jpg",
+        tags: ["ceramics", "production", "tableware", "product"],
+      },
+
       clickingBoots: {
         string: "clickingBoots",
         year: "2024",
