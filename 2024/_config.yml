@@ -1,0 +1,15 @@
+title: tiffany huang (\^-^/)
+tagline: tiffany huang's 2024 portfolio site
+description: a home for tiffany huang's works at the intersection of 2d, 3d, and 4d.
+url: "https://huang-tiffany.github.io"
+
+social:
+  name: Tiffany Huang
+  links:
+    - https://www.linkedin.com/in/tiffanyhuang1258
+    - https://github.com/huang-tiffany
+    - http://instagram.com/relatiffity
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
