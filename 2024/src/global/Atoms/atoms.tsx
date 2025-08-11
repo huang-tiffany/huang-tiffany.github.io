@@ -334,7 +334,8 @@ export const pieces = atom<{
         year: "2025",
         title: "Estuary Cruet",
         size: '5" &times; 3" &times; 2.25"',
-        medium: "Ceramic Slip, Cone 5-6 Glazes, Clay, Plaster, Oxidation Firing Electric Kiln",
+        medium:
+          "Ceramic Slip, Cone 5-6 Glazes, Clay, Plaster, Oxidation Firing Electric Kiln",
         url: "",
         statement:
           "Inspired by the forms liquids take, as well as the simple yet ritualistic act of pouring, the <em>Estuary Cruet</em> celebrates the humble soy sauce dispenser as an object for both storage and presentation. <br><br> Featuring a traditional single spout on one side and a unique double spout on the other, in which two streams join to form one while pouring, the cruet accommodates simple everyday use while drawing attention to the ritual of serving condiments. An organic pinch top lid allows for easy storage while completing the fluid form, accentuating the object's function when in use and alluding to it when not. <br><br> The design was created after multiple iterations of clay positives, of which the final was used to create a plaster mold for slip-casting. While abstract, the visual language draws reference from a variety of sources, from Eva Zeisel's collections to sparrow wings and flower petals.",
@@ -371,7 +372,8 @@ export const pieces = atom<{
         year: "2025",
         title: "Providence Modular Two-Piece Knit Set",
         size: "Women's Size Small",
-        medium: "Silver Reed Single Bed Knitting Machine, Cotton, Wool, Tencel, Cashmere, Acrylic, Polyester",
+        medium:
+          "Silver Reed Single Bed Knitting Machine, Cotton, Wool, Tencel, Cashmere, Acrylic, Polyester",
         url: "",
         statement:
           "Over the course of five weeks in winter, while learning techniques on the single bed knitting machine, I explored my personal connection to Providence after having lived in the city for the past four years. Along with acting as a culmination of my explorations with the machine, the resulting two-piece knitted set formalizes the hidden moments of delight that I have documented in my camera roll throughout my years of college, drawing from both the colors I tend to associate most with Providence and from the patterns abstracted from landscape and architecture discovered while walking through city streets, whether in the way the holes in the outer layer draw patterns on skin like sunlight filtering through tree leaves, or in the way the inner dress draws a hazy path from sky to nature to brutalist buildings and industrial plants. <br><br> The piece also explores the possibility of modularity in knitwear, employing buttons as low-tech connecting hardware to allow for the rearrangement of the different fabric pieces into an assortment of clothing. A skirt can become a top; sweaters can be reversed or their sleeve lengths altered; straps can be detached and reattached to change the drape of the fabric. ",
@@ -392,7 +394,7 @@ export const pieces = atom<{
         previewDescription:
           "Modular knitwear documenting four years of exploring the streets of a small city.",
         previewImage: "rectgarment0.jpg",
-        tags: ["ceramics", "production", "tableware", "product"],
+        tags: ["wearable", "product", "soft goods"],
       },
 
       clickingBoots: {
@@ -400,7 +402,8 @@ export const pieces = atom<{
         year: "2024",
         title: "Clicking Boots",
         size: "Size 7.5M Women's Dr. Scholl Last",
-        medium: "Chrome Tan Leather, Pig Skin, Post Machine, Juki Sewing Machine, Veg Tan Leather, Crimp Boards, Aluminum Stock, Metal Lathe, Bridgeport Mill, Flycutter, Dividing Head, Steel Rod, Spring Steel Shanks, Drill Press, Tap, Machine Screws, Museum Wax, Rubber Cement, Contact Cement, Snaps, Snap Setter, Skiving Knife, 5-in-1 Machine, Hammer, Lasting Pincers, Lasting Stand, Heat Gun, Wood Glue, Wallpaper Adhesive, Shoe Last",
+        medium:
+          "Chrome Tan Leather, Pig Skin, Post Machine, Juki Sewing Machine, Veg Tan Leather, Crimp Boards, Aluminum Stock, Metal Lathe, Bridgeport Mill, Flycutter, Dividing Head, Steel Rod, Spring Steel Shanks, Drill Press, Tap, Machine Screws, Museum Wax, Rubber Cement, Contact Cement, Snaps, Snap Setter, Skiving Knife, 5-in-1 Machine, Hammer, Lasting Pincers, Lasting Stand, Heat Gun, Wood Glue, Wallpaper Adhesive, Shoe Last",
         url: "",
         statement:
           "The <em>Clicking Boots</em> explore various ways of combining complicated fabrication methods for both shoe uppers and heels with the treatment of functional elements as simple stylistic features. <br><br> Inspired by pleats as understated design elements with functional components, the wholecut uppers highlight two simple folds down the side of each shoe, with snaps nestled in each pleat to allow for both an easy slip-on user flow when open and zipper-less, tight-fitting silhouettes once closed. The machined aluminum heel adds a mechanism-inspired aspect to the bottom of the shoe, which creates the illusion of the wearer's heel always touching the ground by dropping out to compensate for the height difference when the foot is lifted. <br><br> The boots are named for the sounds they make when being donned and while walking, which resemble the clip-clop of horse hooves.",
@@ -431,7 +434,8 @@ export const pieces = atom<{
         year: "2024",
         title: "Tea for Three",
         size: '1.325" &times; 4" &times; 4"',
-        medium: "Wood Lathe, Sandpaper, Sculpey, Sterling Silver, Ash, Dowel, Jointer, Planar, Drill Press, Table Saw, Chisel, Oven, Scotch Brite, Bandsaw",
+        medium:
+          "Wood Lathe, Sandpaper, Sculpey, Sterling Silver, Ash, Dowel, Jointer, Planar, Drill Press, Table Saw, Chisel, Oven, Scotch Brite, Bandsaw",
         url: '<a href="https://indd.adobe.com/view/54de1e97-6300-49ef-ab09-778f4ab6228b" target="_blank">FULL PRESENTATION</a>',
         statement:
           "When asked to design a gift for individual stakeholders using participatory and inclusive design research methods, I chose to investigate the communal habits and rituals of my two suitemates and I at the time. Over the span of two weeks, I observed our shared activities together and used the insights to create a set of tea bag holders, which come from our quality time activities of drinking tea together. <br><br> Because it was our last year together at school (though our first year living together), I chose to prototype and develop a set of ritual objects that can be easily integrated into our daily lives, while also choosing materials that age well over time and show signs of use so that they may grow together with us, both at school and beyond. <br><br> The design language of the holders, inspired by our common love for MUJI as well as MUJI's design philosophy of longevity and seamlessness, also allow for customization, with charms created by each individual to add touches of customization. While simple in aesthetics, the tea bag holders allow for individuals to linger longer at the table while drinking tea, putting off the act of getting up to discard used tea bags in favor of mindfully cohabitating shared spaces together.",
@@ -460,7 +464,8 @@ export const pieces = atom<{
         year: "2024",
         title: "Love in a Puff",
         size: '10" &times; 14" &times; 5"',
-        medium: "Arduino, Cherry, Jointer, Planar, Screws, Drill Press, Hand Drill, Vellum, Biscuit Jointer, Table Saw, Aluminum Stock, Sandblaster, South Bend Metal Lathe, Bridgeport Mill, Radius Cutter, Horizontal Bandsaw, Tape, Hot Glue, Wire Cutter, Aluminum Rod, Aluminum Tube, White Glue, Tap, Solidworks, Adobe InDesign, Adobe Illustrator",
+        medium:
+          "Arduino, Cherry, Jointer, Planar, Screws, Drill Press, Hand Drill, Vellum, Biscuit Jointer, Table Saw, Aluminum Stock, Sandblaster, South Bend Metal Lathe, Bridgeport Mill, Radius Cutter, Horizontal Bandsaw, Tape, Hot Glue, Wire Cutter, Aluminum Rod, Aluminum Tube, White Glue, Tap, Solidworks, Adobe InDesign, Adobe Illustrator",
         url: '<a href="https://indd.adobe.com/view/700e05f6-3586-43a1-b008-01653bee494f" target="_blank">FULL PRESENTATION</a>',
         statement:
           "After doing initial research on the pain points and experiences of both people in long-distance relationships and those who get homesick, I designed a product that engages with the intense, yet often indescribable, emotions that come with yearning for places and people. <br /><br /> <em>Love in a Puff</em> is a set of two devices, one for each person in the relationship, which contain indicator lights that turn on when both people are in the same room as their devices to symbolize connection, parallel play, and presence. A simple blow on the pinwheel-like shade (designed to evoke nostalgia and playfulness) causes the pinwheel on the other person's device to spin in response, mimicking the sense of shared space by allowing the individuals to effect a force on each others' environments. <br /><br /> The devices act as metaphors for human breath (something that can only be experienced in moments of intimacy), bringing together feelings of lightness and ephemerality. The devices come in desktop and wall-mounted variants and take inspiration from MUJI's soft-spoken design language.",
@@ -487,8 +492,9 @@ export const pieces = atom<{
         year: "2024",
         title: "Table for a Homebody",
         size: '11.66" &times; 30" &times; 12"',
-        medium: "Cherry, Jointer, Planar, Router Table, Hand-Held Plunge Router, Table Saw, Wood Glue, Dowels, Canvas Fabric, Plywood, Bandsaw, Chisel, Mallet, Double-Sided Table, Thread, Tacky Glue, Orbital Sander, Drill Press, Biscuit Jointer",
-        url: '',
+        medium:
+          "Cherry, Jointer, Planar, Router Table, Hand-Held Plunge Router, Table Saw, Wood Glue, Dowels, Canvas Fabric, Plywood, Bandsaw, Chisel, Mallet, Double-Sided Table, Thread, Tacky Glue, Orbital Sander, Drill Press, Biscuit Jointer",
+        url: "",
         statement:
           "Tasked with creating a 'mechanism' that aids in the user experience of an object, I created a lap table with tambour-inspired drawers to reveal and conceal cubby spaces for easy storage. <br /><br /> In spite of its simple form factor, <em>Table for a Homebody</em> introduces a subtle moment of delight in its sliding cubby covers, eliciting surprise from its user at the satisfaction of every interaction with the storage space. The cherry finish and warm-toned canvas covers boasting delicate loops for easy pulling reference cozy and domestic aesthetics, recalling both the table's purpose of being a bed-top object and its invitation to stay home and under the covers.",
         media: [
@@ -666,11 +672,13 @@ export const pieces = atom<{
         url: '<a href="https://github.com/smallwhale1/cs2240-bread/tree/main" target="_blank">GITHUB',
         statement:
           "Working with team members Grace Marshburn, Lana Yang-Maccini, and Sophie Zhang, I reimplemented and augmented the <em>Procedural bread making</em> paper by Rodrigo Baravalle, Gustavo Ariel Patow, and Claudio Delrieux. <br/><br/> In addition to the original implementation, which generates bread geometry procedurally and simulates the entire proofing and baking process, we added parallelization, which allowed us to render animations of the bread pipeline in addition to the paper's still images, as well as integrated low-res bread meshes into industry-standard workflows using surface meshes and current software like Maya and Blender. Additionally, we also added more parameter tuning to represent a wider variety of bread types than the original paper. ",
-        media: ["livelaughloaf1.gif", 
-                "livelaughloaf2.gif", 
-                "livelaughloaf3.png",
-                "livelaughloaf4.png",
-                "livelaughloaf5.png"],
+        media: [
+          "livelaughloaf1.gif",
+          "livelaughloaf2.gif",
+          "livelaughloaf3.png",
+          "livelaughloaf4.png",
+          "livelaughloaf5.png",
+        ],
         previewDescription:
           "Building upon an existing research paper about procedural bread generation and simulation.",
         previewImage: "livelaughloaf3.png",
@@ -681,7 +689,7 @@ export const pieces = atom<{
         string: "tenPrinciplesOfGoodDesign",
         year: "2024",
         title: "10 Principles of Good Design",
-        size: '',
+        size: "",
         medium: "Rhino, Three.js, HTML, CSS, React.js, VS Code, Github",
         url: '<a href="https://huang-tiffany.github.io/ten-principles-of-good-design" target="_blank">LINK',
         statement:
@@ -805,17 +813,12 @@ export const pieces = atom<{
         string: "rememo",
         year: "2025",
         title: "Re:Memo",
-        size: '',
+        size: "",
         medium: "Maya, Adobe Illustrator, Adobe Premiere Pro",
         url: "",
         statement:
           "Created as an exploration of anime cel-style toon-shading and animation movement quality, I animated a series of three short, cyclical vignettes inspired by old video game loading screens using a character I modeled, shaded, and rigged. In the Re:Memo game, the character would act as the player's digital avatar, which travels through a found hard drive attempting to uncover mysteries about its previous owner before all of the data becomes corrupted. <br/><br/> Each of the loading screens, complete with loading state UI, would introduce a new phase of the game, which explores concepts relating to digital archives and their effect on grieving processes in the age of modern technology.",
-        media: [
-          "rememo1*.mp4",
-          "rememo2.mp4",
-          "rememo3.mp4",
-          "rememo4.mp4",
-        ],
+        media: ["rememo1*.mp4", "rememo2.mp4", "rememo3.mp4", "rememo4.mp4"],
         previewDescription:
           "Toon-shaded loading screens for a video game about digital grief, memory, and rediscovery.",
         previewImage: "rememo5.jpg",
@@ -826,7 +829,7 @@ export const pieces = atom<{
         string: "bearNecessiteas",
         year: "2024",
         title: "Bear Necessiteas",
-        size: '03:37',
+        size: "03:37",
         medium: "Maya, Adobe Premiere Pro",
         url: "",
         statement:
