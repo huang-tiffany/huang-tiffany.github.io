@@ -15,20 +15,17 @@ export default function WorkPage() {
   const piecesArr = useRecoilState(pieces);
 
   // pieces that have a gif as the cover image
-  const gifPieces = ["synergySeats", "peopleWatching", "liveLaughLoaf"];
+  const gifPieces = ["peopleWatching", "liveLaughLoaf"];
 
   // pieces that have a video as the cover image
   const vidPieces = [
-    "eyeTrails",
-    "musicVisualizer",
-    "toMyself",
+    "synergySeats",
     "efflorescence",
     "losingContact",
     "amplify",
     "emt",
     "loveInAPuff",
     "homebodyTable",
-    "sevenMinutesInHeaven",
     "rememo",
   ];
   const [mode, setMode] = useState<string | undefined>(undefined);
