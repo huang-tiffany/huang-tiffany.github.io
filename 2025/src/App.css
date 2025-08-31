@@ -29,14 +29,15 @@ body {
 
 .fadeout {
   animation-name: fadeout;
-  animation-duration: 1s;
-  animation-timing-function: ease;
+  animation-timing-function: ease-out;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
 }
 
 .fadein {
   animation-name: fadein;
-  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
 }
 
@@ -70,84 +71,3 @@ nav a:hover {
 *::-webkit-scrollbar {
   display: none;
 }
-
-hr {
-  animation-duration: 1.75s;
-  animation-delay: 0.25s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  width: 100vw;
-  height: 0;
-  z-index: 5;
-  position: absolute;
-  border-top: 1px solid white;
-  opacity: 1;
-  margin: 0;
-}
-
-@keyframes horiz-border {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100vw;
-  }
-}
-
-@keyframes vert-border {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100dvh;
-  }
-}
-
-@keyframes horiz-border-reverse {
-  0% {
-    margin-left: 0;
-    width: 100vw;
-  }
-  100% {
-    margin-left: 100vw;
-    width: 0;
-  }
-}
-
-@keyframes vert-border-reverse {
-  0% {
-    margin-top: 0;
-    height: 100dvh;
-  }
-  100% {
-    margin-top: 100dvh;
-    height: 0;
-  }
-}
-
-hr.vert {
-  border-top: 0;
-  width: 0;
-  height: 100dvh;
-  border-right: 1px solid white;
-}
-
-hr.fadein {
-  animation-name: horiz-border;
-}
-
-hr.vert.fadein {
-  animation-name: vert-border;
-}
-
-hr.fadeout {
-  animation-name: horiz-border-reverse;
-  animation-duration: 0.75s;
-  animation-delay: 0s;
-  animation-timing-function: ease;
-}
-
-hr.vert.fadeout {
-  animation-name: vert-border-reverse;
-}
-

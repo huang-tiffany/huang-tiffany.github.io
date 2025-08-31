@@ -18,15 +18,15 @@
 
 .homePage nav {
   padding-top: 1em;
-}
 
-.homePage .fadein {
-  animation-duration: 2.25s;
-  animation-delay: 0.25s;
+  a#logo,
+  img {
+    pointer-events: none;
+  }
 }
 
 .homePage .fadeout {
-  animation-duration: 1s;
+  animation-duration: 0.25s;
   animation-delay: 0s;
   animation-fill-mode: both;
 }
@@ -57,6 +57,7 @@
 .homePage p {
   margin: 0;
 }
+
 .homePage #version {
   display: flex;
   margin-right: 1em;
@@ -68,9 +69,9 @@
   flex-direction: column-reverse;
 }
 
-.homePage #version a,
-.homePage nav a,
-.homePage #additional-links a {
+#version a,
+nav a,
+#additional-links a {
   color: white;
 }
 
@@ -102,22 +103,22 @@ a.addlink.hidden {
   padding-right: 10%;
 }
 
-.homePage nav a:hover::before,
-.homePage #additional-links a:last-of-type:hover::before,
-.homePage #version a:hover:last-of-type::before {
+nav a:hover::before,
+#additional-links a:last-of-type:hover::before,
+#version a:hover:last-of-type::before,
+.text-container a:hover::before {
   content: "";
 }
 
-#contact::after,
-#contact::after {
-  content: " +";
-  font-family: inherit;
-  font-size: 1em;
-}
-
-.homePage a:hover::before {
+a:hover::before {
   font-family: system-ui;
   content: " ↖ ";
+  font-size: 0.9em;
+}
+
+.text-container a:hover::after {
+  font-family: system-ui;
+  content: " ↗ ";
   font-size: 0.9em;
 }
 
@@ -144,18 +145,53 @@ a.addlink.hidden {
   flex-shrink: 0;
 }
 
-/* @media (max-width: 768px) {
-
-  .homePage .text-group {
+@media (max-width: 576px) {
+  .homePage main {
     flex-direction: column;
   }
 
-  .homePage .header {
+  .homePage #reel {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .homePage .text-container {
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 4em;
+  }
+
+  a.addlink {
+    display: none;
+  }
+
+  nav a:hover::before {
+    font-family: system-ui;
+    content: " ↖ ";
+    font-size: 0.9em;
+  }
+
+  .homePage nav img {
     margin-bottom: 0;
   }
-} */
 
-.homePage #hi {
-  background-color: blue;
-  height: 1em;
+  .homePage #version {
+    display: flex;
+    width: 100%;
+    padding: 0 1em;
+    position: fixed;
+    bottom: 1em;
+    flex-direction: row-reverse;
+    z-index: 10;
+
+    a:hover::before {
+      content: "";
+    }
+
+    a:not(:last-of-type):hover::after {
+      content: " ↗ ";
+      font-family: system-ui;
+      font-size: 0.9em;
+    }
+  }
 }

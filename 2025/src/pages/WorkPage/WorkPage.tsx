@@ -2,7 +2,7 @@ import "../WorkPage/WorkPage.css";
 import "../../App.css";
 import { useNavigate } from "react-router-dom";
 import "../WorkPage/WorkPage.css";
-import { piece, pieces } from "../../global/Atoms/atoms";
+import { pieces } from "../../global/Atoms/atoms";
 import { useRecoilState } from "recoil";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -207,7 +207,7 @@ export default function WorkPage() {
     }
     setTimeout(() => {
       navigate(newLoc);
-    }, 1000);
+    }, 500);
   };
 
   return (

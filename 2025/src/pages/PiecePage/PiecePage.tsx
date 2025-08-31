@@ -1,6 +1,5 @@
 import "../PiecePage/PiecePage.css";
 import { useRecoilState } from "recoil";
-import { useNavigate } from "react-router-dom";
 import { pieces } from "../../global/Atoms/atoms";
 import { useParams } from "react-router-dom";
 
@@ -135,7 +134,6 @@ export default function PiecePage() {
     }
   }, [isDescriptionExpanded]);
 
-  // return <div>{piecesArr[0][key][piece].title}</div>;
   return (
     <div className="piecePage fadein">
       <NavBar />

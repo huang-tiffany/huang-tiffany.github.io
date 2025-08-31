@@ -22,7 +22,7 @@ nav .links {
   flex-direction: column;
 }
 
-nav img {
+nav :not(.piece-preview) img {
   max-width: 100%;
   max-height: 4.5em;
   cursor: pointer;
@@ -31,6 +31,12 @@ nav img {
 
 nav #logo:hover::before {
   content: "";
+}
+
+nav #desktop-contact::after {
+  content: " +";
+  font-family: inherit;
+  font-size: 1em;
 }
 
 .workPage main {
@@ -56,10 +62,6 @@ nav #logo:hover::before {
   background-color: black;
 }
 
-.workPage.fadeout .category h1::before {
-  animation: category-border-unload 0.75s ease;
-}
-
 .workPage .category-pieces {
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +73,7 @@ nav #logo:hover::before {
   width: calc((100% - 4em) / 3);
   display: flex;
   flex-direction: column;
-  transition: 0.5s ease;
+  transition: 0.25s ease;
 }
 
 .workPage .piece-data {
@@ -96,7 +98,7 @@ nav #logo:hover::before {
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: cover;
-  transition: 0.5s ease;
+  transition: 0.25s ease;
   margin-bottom: 0.5em;
   border-radius: 0.5em;
 }
@@ -210,11 +212,21 @@ nav #logo:hover::before {
 nav .links a:hover::after {
   font-family: system-ui;
   content: " ↗ ";
+  font-size: 0.9em;
 }
 
 .workPage .links p {
   margin: 0;
   text-decoration: line-through;
+}
+
+.workPage nav .links a:first-of-type {
+  text-decoration: line-through;
+  pointer-events: none;
+}
+
+nav #mobile-contact {
+  display: none;
 }
 
 @media (max-width: 992px) {
@@ -226,5 +238,38 @@ nav .links a:hover::after {
 @media (max-width: 576px) {
   .workPage .category-piece {
     width: 100%;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100vw - 2em);
+    height: fit-content;
+    text-align: end;
+  }
+
+  .workPage {
+    flex-direction: column;
+  }
+
+  .piece-preview {
+    display: none;
+  }
+
+  .workPage main {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  nav .links a:hover::after {
+    content: "";
+  }
+
+  nav #desktop-contact {
+    display: none;
+  }
+
+  nav #mobile-contact {
+    display: initial;
   }
 }

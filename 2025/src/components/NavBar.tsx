@@ -17,7 +17,7 @@ export default function NavBar() {
     }
     setTimeout(() => {
       navigate(newLoc);
-    }, 1000);
+    }, 500);
   };
 
   return (
@@ -31,7 +31,14 @@ export default function NavBar() {
           archive
         </a>
         <a
-          id="contact"
+          id="mobile-contact"
+          target="_blank"
+          href="mailto:tiffanyhuang1258@gmail.com"
+        >
+          contact
+        </a>
+        <a
+          id="desktop-contact"
           onMouseOver={() => hoverMenu("hover", "addlink")}
           onMouseOut={() => hoverMenu("out", "addlink")}
         >
