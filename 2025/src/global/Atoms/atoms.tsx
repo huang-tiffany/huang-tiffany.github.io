@@ -1,6 +1,7 @@
 import { atom } from "recoil";
 
 export interface piece {
+  category: string;
   string: string;
   year: string;
   title: string;
@@ -19,11 +20,12 @@ export const pieces = atom<{
 }>({
   key: "pieces",
   default: {
-    // 2D DESIGN
-    "2D DESIGN": {
+    // 2D
+    "2D": {
       billboards: {
+        category: "2D",
         string: "billboards",
-        year: "2023 - 2024",
+        year: "2024",
         title: "Ramp Times Square Billboards",
         size: "",
         medium: "Figma",
@@ -51,6 +53,7 @@ export const pieces = atom<{
       },
 
       rampSwag: {
+        category: "2D",
         string: "rampSwag",
         year: "2024",
         title: "Ramp Evergreen Collection",
@@ -78,6 +81,7 @@ export const pieces = atom<{
       },
 
       theArchiveAsFriendship: {
+        category: "2D",
         string: "theArchiveAsFriendship",
         year: "2024",
         title: "The Archive as Friendship",
@@ -117,6 +121,7 @@ export const pieces = atom<{
       },
 
       lapse: {
+        category: "2D",
         string: "lapse",
         year: "2024",
         title: "Lapse",
@@ -143,6 +148,7 @@ export const pieces = atom<{
       },
 
       peopleWatching: {
+        category: "2D",
         string: "peopleWatching",
         year: "2024",
         title: "People(-)Watching",
@@ -165,6 +171,7 @@ export const pieces = atom<{
       },
 
       emt: {
+        category: "2D",
         string: "emt",
         year: "2024",
         title: "Emerging Talent Webpage",
@@ -189,6 +196,7 @@ export const pieces = atom<{
       },
 
       amplify: {
+        category: "2D",
         string: "amplify",
         year: "2023",
         title: "Amplify",
@@ -214,6 +222,7 @@ export const pieces = atom<{
       },
 
       sccParks: {
+        category: "2D",
         string: "sccParks",
         year: "2022",
         title: "Santa Clara County Parks Interpretation Rebrand",
@@ -247,6 +256,7 @@ export const pieces = atom<{
       },
 
       rogueMagazine: {
+        category: "2D",
         string: "rogueMagazine",
         year: "2022",
         title: "Rogue Magazine",
@@ -272,6 +282,7 @@ export const pieces = atom<{
       },
 
       talisman61: {
+        category: "2D",
         string: "talisman61",
         year: "2021",
         title: "Talisman 61",
@@ -305,6 +316,7 @@ export const pieces = atom<{
       },
 
       theDevelopmentOfTheHumanFigure: {
+        category: "2D",
         string: "theDevelopmentOfTheHumanFigure",
         year: "2020",
         title: "The Development of the Human Figure",
@@ -327,9 +339,10 @@ export const pieces = atom<{
       },
     },
 
-    // 3D DESIGN
-    "3D DESIGN": {
+    // 3D
+    "3D": {
       cruet: {
+        category: "3D",
         string: "cruet",
         year: "2025",
         title: "Estuary Cruet",
@@ -368,6 +381,7 @@ export const pieces = atom<{
       },
 
       rectGarment: {
+        category: "3D",
         string: "rectGarment",
         year: "2025",
         title: "Providence Modular Two-Piece Knit Set",
@@ -398,6 +412,7 @@ export const pieces = atom<{
       },
 
       clickingBoots: {
+        category: "3D",
         string: "clickingBoots",
         year: "2024",
         title: "Clicking Boots",
@@ -430,6 +445,7 @@ export const pieces = atom<{
       },
 
       loveInAPuff: {
+        category: "3D",
         string: "loveInAPuff",
         year: "2024",
         title: "Love in a Puff",
@@ -458,6 +474,7 @@ export const pieces = atom<{
       },
 
       homebodyTable: {
+        category: "3D",
         string: "homebodyTable",
         year: "2024",
         title: "Table for a Homebody",
@@ -487,6 +504,7 @@ export const pieces = atom<{
       },
 
       daychair: {
+        category: "3D",
         string: "daychair",
         year: "2023",
         title: "天椅 (Day Chair)",
@@ -518,6 +536,7 @@ export const pieces = atom<{
       },
 
       makitaCultivator: {
+        category: "3D",
         string: "makitaCultivator",
         year: "2023",
         title: "Makita Cultivator",
@@ -548,6 +567,7 @@ export const pieces = atom<{
       },
 
       permutationJars: {
+        category: "3D",
         string: "permutationJars",
         year: "2023",
         title: "Permutation Jars",
@@ -580,6 +600,7 @@ export const pieces = atom<{
       },
 
       synergySeats: {
+        category: "3D",
         string: "synergySeats",
         year: "2022",
         title: "Synergy Seats",
@@ -607,8 +628,9 @@ export const pieces = atom<{
     },
 
     // VIDEO
-    VIDEO: {
+    "4D": {
       rememo: {
+        category: "4D",
         string: "rememo",
         year: "2025",
         title: "Re:Memo",
@@ -625,6 +647,7 @@ export const pieces = atom<{
       },
 
       liveLaughLoaf: {
+        category: "4D",
         string: "liveLaughLoaf",
         year: "2025",
         title: "Procedural Bread Simulation",
@@ -647,6 +670,7 @@ export const pieces = atom<{
       },
 
       efflorescence: {
+        category: "4D",
         string: "efflorescence",
         year: "2022",
         title: "Efflorescence",

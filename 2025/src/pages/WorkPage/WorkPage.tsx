@@ -31,7 +31,7 @@ export default function WorkPage() {
     "sevenMinutesInHeaven",
     "rememo",
   ];
-  const [mode, setMode] = useState<string>("all");
+  const [mode, setMode] = useState<string | undefined>(undefined);
 
   const setPreview = (key: string, piece: string) => {
     const previewYear = document.querySelector("div.piece-preview-year");
@@ -93,125 +93,105 @@ export default function WorkPage() {
     });
     console.log("arr2", arr2);
 
-    return Object.keys(arr2).map((pieces: any) => {
-      const piece = arr2[pieces];
-
-      return (
-        <div
-          key={piece}
-          className="category-piece"
-          // onMouseEnter={() => setPreview(key, piece)}
-          // onMouseLeave={() => setPreview("", "")}
-        >
-          {vidPieces.includes(piece.string) ? (
-            <video
-              // onClick={() => relocate("/work/" + key + "/" + piece)}
-              webkit-playsinline="true"
-              playsInline
-              autoPlay
-              muted
-              loop
-            >
-              <source
-                src={"/coverimages/" + piece.string.toLowerCase() + ".mp4"}
-                type="video/mp4"
-              />
-            </video>
-          ) : (
-            <img
-              loading="lazy"
-              // onClick={() => relocate("/work/" + key + "/" + piece)}
-              src={
-                gifPieces.includes(piece.string)
-                  ? "/coverimages/" + piece.string.toLowerCase() + ".gif"
-                  : "/coverimages/" + piece.string.toLowerCase() + ".jpg"
-              }
-              alt={piece.title + " Cover Image"}
-            />
-          )}
-
-          <div className="piece-data">
+    return (
+      <div className="category-pieces">
+        {Object.keys(arr2).map((pieces: any) => {
+          const piece = arr2[pieces];
+          const key = piece.category;
+          return (
             <div
-              className="piece-title"
-              // onClick={() => relocate("/work/" + key + "/" + piece)}
+              key={piece.string}
+              className={`category-piece category-${piece.category}`}
+              onMouseEnter={() => setPreview(key, piece.string)}
+              onMouseLeave={() => setPreview("", "")}
             >
-              {piece.title}
-            </div>
+              {vidPieces.includes(piece.string) ? (
+                <video
+                  onClick={() => relocate("/work/" + key + "/" + piece.string)}
+                  webkit-playsinline="true"
+                  playsInline
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source
+                    src={"/coverimages/" + piece.string.toLowerCase() + ".mp4"}
+                    type="video/mp4"
+                  />
+                </video>
+              ) : (
+                <img
+                  loading="lazy"
+                  onClick={() => relocate("/work/" + key + "/" + piece.string)}
+                  src={
+                    gifPieces.includes(piece.string)
+                      ? "/coverimages/" + piece.string.toLowerCase() + ".gif"
+                      : "/coverimages/" + piece.string.toLowerCase() + ".jpg"
+                  }
+                  alt={piece.title + " Cover Image"}
+                />
+              )}
 
-            <div className="piece-year">{piece.year}</div>
-          </div>
-          <div className="piece-tags">
-            <div className="piece-tag">
-              <p>(</p>
-            </div>
-            {/* {piecesArr[0][key][piece].tags.map((tag, index) => {
-            return (
-              <>
-                <div className="piece-tag">
-                  <p>{tag}</p>
+              <div className="piece-data">
+                <div
+                  className="piece-title"
+                  onClick={() => relocate("/work/" + key + "/" + piece.string)}
+                >
+                  {piece.title}
                 </div>
-                {index < piecesArr[0][key][piece].tags.length - 1 ? (
-                  <div className="piece-tag">
-                    <p>/</p>
-                  </div>
-                ) : (
-                  <></>
-                )}
-              </>
-            );
-          })} */}
-            <div className="piece-tag">
-              <p>)</p>
-            </div>
-          </div>
-        </div>
-      );
-    });
 
-    // </div>
+                <div className="piece-year">{piece.year}</div>
+              </div>
+              <div className="piece-tags">
+                <div className="piece-tag">
+                  <p>(</p>
+                </div>
+                {piece.tags.map((tag: string, index: number) => {
+                  return (
+                    <>
+                      <div className="piece-tag">
+                        <p>{tag}</p>
+                      </div>
+                      {index < piece.tags.length - 1 ? (
+                        <div className="piece-tag">
+                          <p>/</p>
+                        </div>
+                      ) : (
+                        <></>
+                      )}
+                    </>
+                  );
+                })}
+                <div className="piece-tag">
+                  <p>)</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
   };
 
   useEffect(() => {
-    const workCategories: string[] = ["2D DESIGN", "3D DESIGN"];
-    const playCategories: string[] = ["MULTIMEDIA", "VIDEO"];
-    const allCategories: string[] = [
-      "2D DESIGN",
-      "3D DESIGN",
-      "MULTIMEDIA",
-      "VIDEO",
-    ];
+    const allCategories: string[] = ["2D", "3D", "4D"];
 
     allCategories.forEach((cat: string) => {
-      const catElt: HTMLElement | null = document.querySelector(
-        `.category.category-${cat.replace(" ", "")}`
-      );
-      if (catElt) {
-        catElt.style.display = "initial";
-      }
+      const catElts = document.querySelectorAll(`.category-${cat}`);
+      catElts.forEach((elt) => {
+        (elt as HTMLElement).style.display = "initial";
+      });
     });
-    switch (mode) {
-      case "work":
-        playCategories.forEach((cat: string) => {
-          const catElt: HTMLElement | null = document.querySelector(
-            `.category.category-${cat.replace(" ", "")}`
-          );
-          if (catElt) {
-            catElt.style.display = "none";
-          }
-        });
-        break;
-      case "play":
-        workCategories.forEach((cat: string) => {
-          const catElt: HTMLElement | null = document.querySelector(
-            `.category.category-${cat.replace(" ", "")}`
-          );
-          if (catElt) {
-            catElt.style.display = "none";
-          }
-        });
-        break;
-      default:
-        break;
+
+    if (mode) {
+      allCategories.forEach((cat: string) => {
+        if (cat !== mode) {
+          const nonCatElts = document.querySelectorAll(`.category-${cat}`);
+          nonCatElts.forEach((elt) => {
+            (elt as HTMLElement).style.display = "none";
+          });
+        }
+      });
     }
   }, [mode]);
 
@@ -238,26 +218,34 @@ export default function WorkPage() {
           <div className="mode mode-all">
             <input
               type="radio"
-              checked={mode === "all"}
-              onClick={() => setMode("all")}
+              checked={!mode}
+              onClick={() => setMode(undefined)}
             ></input>
             <label>ALL</label>
           </div>
-          <div className="mode mode-work">
+          <div className="mode mode-2D">
             <input
               type="radio"
-              checked={mode === "work"}
-              onClick={() => setMode("work")}
+              checked={mode === "2D"}
+              onClick={() => setMode("2D")}
             ></input>
-            <label>WORK</label>
+            <label>2D</label>
           </div>
-          <div className="mode mode-play">
+          <div className="mode mode-3D">
             <input
               type="radio"
-              checked={mode === "play"}
-              onClick={() => setMode("play")}
+              checked={mode === "3D"}
+              onClick={() => setMode("3D")}
             ></input>
-            <label>PLAY</label>
+            <label>3D</label>
+          </div>
+          <div className="mode mode-4D">
+            <input
+              type="radio"
+              checked={mode === "4D"}
+              onClick={() => setMode("4D")}
+            ></input>
+            <label>4D</label>
           </div>
         </div>
         <div className="pieces">{loadPieces()}</div>
