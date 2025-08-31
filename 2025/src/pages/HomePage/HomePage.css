@@ -1,0 +1,161 @@
+.homePage {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  gap: 0;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.homePage main {
+  width: 100vw;
+  display: flex;
+  flex: 1 1 0%;
+  gap: 0;
+}
+
+.homePage nav {
+  padding-top: 1em;
+}
+
+.homePage .fadein {
+  animation-duration: 2.25s;
+  animation-delay: 0.25s;
+}
+
+.homePage .fadeout {
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+.homePage .title {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0;
+}
+
+.homePage .title h1 {
+  font-size: clamp(4em, 10vw, 8em);
+  margin-bottom: -0.125em;
+}
+
+.homePage .text-container {
+  font-size: 0.85em;
+  width: 100%;
+  display: flex;
+  flex-basis: 0%;
+  flex-shrink: 0;
+  margin: 0 1em 1em 1em;
+  height: fit-content;
+}
+
+.homePage p {
+  margin: 0;
+}
+.homePage #version {
+  display: flex;
+  margin-right: 1em;
+  flex-shrink: 0;
+  margin-top: 1em;
+  width: 10ch;
+  text-align: end;
+  justify-content: start;
+  flex-direction: column-reverse;
+}
+
+.homePage #version a,
+.homePage nav a,
+.homePage #additional-links a {
+  color: white;
+}
+
+a.ver,
+a.addlink {
+  opacity: 0.5;
+  visibility: visible;
+  transition: ease;
+  transition-duration: 0.25s;
+}
+
+a:hover {
+  opacity: 1;
+  transition: ease;
+  transition-duration: 0.25s;
+}
+
+a.ver.hidden,
+a.addlink.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: ease;
+  transition-duration: 0.25s;
+}
+
+.homePage .text-group {
+  display: flex;
+  flex: 1;
+  padding-right: 10%;
+}
+
+.homePage nav a:hover::before,
+.homePage #additional-links a:last-of-type:hover::before,
+.homePage #version a:hover:last-of-type::before {
+  content: "";
+}
+
+#contact::after,
+#contact::after {
+  content: " +";
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.homePage a:hover::before {
+  font-family: system-ui;
+  content: " ↖ ";
+  font-size: 0.9em;
+}
+
+.homePage #reel {
+  z-index: -10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw / 6 * 4 - 6em);
+  height: 100%;
+  flex: 1 1 100%;
+  pointer-events: none;
+
+  video {
+    border-radius: 1em;
+    overflow: hidden;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+}
+
+.homePage .header {
+  width: 10ch;
+  flex-shrink: 0;
+}
+
+/* @media (max-width: 768px) {
+
+  .homePage .text-group {
+    flex-direction: column;
+  }
+
+  .homePage .header {
+    margin-bottom: 0;
+  }
+} */
+
+.homePage #hi {
+  background-color: blue;
+  height: 1em;
+}
