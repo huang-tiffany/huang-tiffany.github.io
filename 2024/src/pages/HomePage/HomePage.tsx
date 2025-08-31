@@ -8,7 +8,8 @@ export default function HomePage() {
   const navigate = useNavigate();
 
   const relocate = (newLoc: string) => {
-    const elements: NodeListOf<Element> | null = document.querySelectorAll(".fadein");
+    const elements: NodeListOf<Element> | null =
+      document.querySelectorAll(".fadein");
     if (elements) {
       for (let i = 0; i < elements.length; i++) {
         const elt = elements[i];
@@ -35,13 +36,13 @@ export default function HomePage() {
       }
     }
   }
- 
+
   useEffect(() => {
     const vid: HTMLVideoElement | null = document.querySelector("video");
     setTimeout(() => {
       vid?.play();
     }, 1750);
-  }, [])
+  }, []);
 
   return (
     <main className="homePage fadein">
@@ -72,50 +73,54 @@ export default function HomePage() {
             <h1>HUANG</h1>
           </div>
           <p className="text-container fadein">
-            is an interdisciplinary designer and developer working at the intersection of 2D, 3D, and 4D.
+            is an interdisciplinary designer and developer working at the
+            intersection of 2D, 3D, and 4D.
           </p>
           <hr className="fadein"></hr>
         </div>
-          <div className="table-cell" id="cell5">
-            <video id="reel" className="fadein" loop muted playsInline>
-              <source src="/videos/highlight reel 2024.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div className="table-cell" id="cell6">
+        <div className="table-cell" id="cell5">
+          <video id="reel" className="fadein" loop muted playsInline>
+            <source
+              src="/2024/videos/highlight reel 2024.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div className="table-cell" id="cell6">
           <div id="version" className="fadein">
             <a
-                target="_blank"
-                href="https://huang-tiffany.github.io/2021"
-                className="hidden ver"
-                onMouseOver={() => hoverMenu("hover", "ver")}
-                onMouseOut={() => hoverMenu("out", "ver")}
-              >
-                v. 2021
-              </a>
-              <a
-                target="_blank"
-                href="https://huang-tiffany.github.io/2022"
-                className="hidden ver"
-                onMouseOver={() => hoverMenu("hover", "ver")}
-                onMouseOut={() => hoverMenu("out", "ver")}
-              >
-                v. 2022
-              </a>
-              <a
-                target="_blank"
-                href="https://huang-tiffany.github.io/2023"
-                className="hidden ver"
-                onMouseOver={() => hoverMenu("hover", "ver")}
-                onMouseOut={() => hoverMenu("out", "ver")}
-              >
-                v. 2023
-              </a>
-              <a
-                onMouseOver={() => hoverMenu("hover", "ver")}
-                onMouseOut={() => hoverMenu("out", "ver")}
-              >
-                v. 2024
-              </a>
+              target="_blank"
+              href="https://huang-tiffany.github.io/2021"
+              className="hidden ver"
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2021
+            </a>
+            <a
+              target="_blank"
+              href="https://huang-tiffany.github.io/2022"
+              className="hidden ver"
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2022
+            </a>
+            <a
+              target="_blank"
+              href="https://huang-tiffany.github.io/2023"
+              className="hidden ver"
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2023
+            </a>
+            <a
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2024
+            </a>
           </div>
         </div>
         <div className="table-cell" id="cell7">
@@ -123,15 +128,40 @@ export default function HomePage() {
             <div className="text-group">
               <p className="header">currently...</p>
               <p>
-              industrial design, computer science, creative computation @ <a target="_blank" href="https://www.brown.edu/academics/brown-risd-dual-degree/home">the brown | risd dual degree program</a> <br></br>
-              design engineering @ <a target="_blank" href="https://nvidia.com/">nvidia</a> </p>
+                industrial design, computer science, creative computation @{" "}
+                <a
+                  target="_blank"
+                  href="https://www.brown.edu/academics/brown-risd-dual-degree/home"
+                >
+                  the brown | risd dual degree program
+                </a>{" "}
+                <br></br>
+                design engineering @{" "}
+                <a target="_blank" href="https://nvidia.com/">
+                  nvidia
+                </a>{" "}
+              </p>
             </div>
             <div className="text-group">
               <p className="header">previously...</p>
               <p>
-              brand design @ <a target="_blank" href="https://ramp.com/">ramp</a><br></br>
-              frontend swe @ <a target="_blank" href="https://nvidia.com/">nvidia</a> <br></br>
-              brand design @ <a target="_blank" href="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation">santa clara county parks and rec</a>
+                brand design @{" "}
+                <a target="_blank" href="https://ramp.com/">
+                  ramp
+                </a>
+                <br></br>
+                frontend swe @{" "}
+                <a target="_blank" href="https://nvidia.com/">
+                  nvidia
+                </a>{" "}
+                <br></br>
+                brand design @{" "}
+                <a
+                  target="_blank"
+                  href="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation"
+                >
+                  santa clara county parks and rec
+                </a>
               </p>
             </div>
           </div>

@@ -29,7 +29,7 @@ export default function WorkPage() {
     "loveInAPuff",
     "homebodyTable",
     "sevenMinutesInHeaven",
-    "rememo"
+    "rememo",
   ];
   const [mode, setMode] = useState<string>("all");
 
@@ -73,7 +73,8 @@ export default function WorkPage() {
 
       if (previewImg) {
         previewImg.style.display = "inherit";
-        previewImg.src = "/images/md/" + piecesArr[0][key][piece].previewImage;
+        previewImg.src =
+          "/2024/images/md/" + piecesArr[0][key][piece].previewImage;
       }
     }
   };
@@ -102,7 +103,9 @@ export default function WorkPage() {
                       loop
                     >
                       <source
-                        src={"/coverimages/" + piece.toLowerCase() + ".mp4"}
+                        src={
+                          "/2024/coverimages/" + piece.toLowerCase() + ".mp4"
+                        }
                         type="video/mp4"
                       />
                     </video>
@@ -112,8 +115,8 @@ export default function WorkPage() {
                       onClick={() => relocate("/work/" + key + "/" + piece)}
                       src={
                         gifPieces.includes(piece)
-                          ? "/coverimages/" + piece.toLowerCase() + ".gif"
-                          : "/coverimages/" + piece.toLowerCase() + ".jpg"
+                          ? "/2024/coverimages/" + piece.toLowerCase() + ".gif"
+                          : "/2024/coverimages/" + piece.toLowerCase() + ".jpg"
                       }
                       alt={piecesArr[0][key][piece].title + " Cover Image"}
                     />
@@ -133,7 +136,7 @@ export default function WorkPage() {
                   </div>
                   <div className="piece-tags">
                     <div className="piece-tag">
-                          <p>(</p>
+                      <p>(</p>
                     </div>
                     {piecesArr[0][key][piece].tags.map((tag, index) => {
                       return (
@@ -141,10 +144,13 @@ export default function WorkPage() {
                           <div className="piece-tag">
                             <p>{tag}</p>
                           </div>
-                          {index < piecesArr[0][key][piece].tags.length - 1 ? 
-                          <div className="piece-tag">
-                            <p>/</p>
-                          </div> : <></>}
+                          {index < piecesArr[0][key][piece].tags.length - 1 ? (
+                            <div className="piece-tag">
+                              <p>/</p>
+                            </div>
+                          ) : (
+                            <></>
+                          )}
                         </>
                       );
                     })}
@@ -162,14 +168,15 @@ export default function WorkPage() {
   };
 
   useEffect(() => {
-    const modeWrapper: HTMLElement | null = document.querySelector(".mode-wrapper");
+    const modeWrapper: HTMLElement | null =
+      document.querySelector(".mode-wrapper");
     if (modeWrapper) {
       setTimeout(() => {
         modeWrapper.style.borderBottom = "1px solid white";
         modeWrapper.style.height = "6em";
       }, 3000);
     }
-  }, [mode])
+  }, [mode]);
 
   useEffect(() => {
     const workCategories: string[] = ["2D DESIGN", "3D DESIGN"];
@@ -216,7 +223,8 @@ export default function WorkPage() {
   }, [mode]);
 
   const relocate = (newLoc: string) => {
-    const elements: NodeListOf<Element> | null = document.querySelectorAll(".fadein");
+    const elements: NodeListOf<Element> | null =
+      document.querySelectorAll(".fadein");
     if (elements) {
       for (let i = 0; i < elements.length; i++) {
         const elt = elements[i];

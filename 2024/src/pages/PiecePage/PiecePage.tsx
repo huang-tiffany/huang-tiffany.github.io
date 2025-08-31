@@ -9,7 +9,8 @@ import { useEffect, useState } from "react";
 export default function PiecePage() {
   const { categoryInfo, pieceInfo } = useParams();
   const piecesArr = useRecoilState(pieces);
-  const [isDescriptionExpanded, setIsDescriptionExpanded] = useState<boolean>(false);
+  const [isDescriptionExpanded, setIsDescriptionExpanded] =
+    useState<boolean>(false);
   const navigate = useNavigate();
 
   let year: string;
@@ -27,7 +28,8 @@ export default function PiecePage() {
     medium = piecesArr[0][categoryInfo][pieceInfo].medium;
     size = piecesArr[0][categoryInfo][pieceInfo].size;
     url = piecesArr[0][categoryInfo][pieceInfo].url;
-    previewDescription = piecesArr[0][categoryInfo][pieceInfo].previewDescription;
+    previewDescription =
+      piecesArr[0][categoryInfo][pieceInfo].previewDescription;
     statement = piecesArr[0][categoryInfo][pieceInfo].statement;
     media = piecesArr[0][categoryInfo][pieceInfo].media;
   }
@@ -58,7 +60,9 @@ export default function PiecePage() {
       pieceUrl.innerHTML = url;
     }
 
-    const piecePreviewDescription = document.querySelector("div.piece-description-text");
+    const piecePreviewDescription = document.querySelector(
+      "div.piece-description-text"
+    );
     if (piecePreviewDescription) {
       piecePreviewDescription.innerHTML = previewDescription;
     }
@@ -78,7 +82,7 @@ export default function PiecePage() {
               controlsList="nodownload"
             >
               <source
-                src={"/videos/" + med.replace("*", "")}
+                src={"/2024/videos/" + med.replace("*", "")}
                 type="video/mp4"
               />
             </video>
@@ -86,16 +90,19 @@ export default function PiecePage() {
         } else {
           return (
             <video playsInline webkit-playsinline="true" autoPlay muted loop>
-              <source src={"/videos/" + med} type="video/mp4" />
+              <source src={"/2024/videos/" + med} type="video/mp4" />
             </video>
           );
         }
       } else {
         return (
           <picture>
-            <source media="(min-width: 768px)" srcSet={"/images/" + med} />
-            <source media="(min-width: 576px)" srcSet={"/images/md/" + med} />
-            <img alt={title + " Image"} src={"/images/" + med} />
+            <source media="(min-width: 768px)" srcSet={"/2024/images/" + med} />
+            <source
+              media="(min-width: 576px)"
+              srcSet={"/2024/images/md/" + med}
+            />
+            <img alt={title + " Image"} src={"/2024/images/" + med} />
           </picture>
         );
       }
@@ -118,7 +125,8 @@ export default function PiecePage() {
   });
 
   const relocate = (newLoc: string) => {
-    const elements: NodeListOf<Element> | null = document.querySelectorAll(".fadein");
+    const elements: NodeListOf<Element> | null =
+      document.querySelectorAll(".fadein");
     if (elements) {
       for (let i = 0; i < elements.length; i++) {
         const elt = elements[i];
@@ -132,18 +140,21 @@ export default function PiecePage() {
   };
 
   useEffect(() => {
-    const pieceStatement: HTMLElement | null = document.querySelector("div.piece-description-text");
-    const moreButton: HTMLElement | null = document.querySelector("a.piece-more");
+    const pieceStatement: HTMLElement | null = document.querySelector(
+      "div.piece-description-text"
+    );
+    const moreButton: HTMLElement | null =
+      document.querySelector("a.piece-more");
     if (pieceStatement && moreButton) {
       if (isDescriptionExpanded) {
         pieceStatement.innerHTML = statement;
-        moreButton.innerHTML = "( - less )"
+        moreButton.innerHTML = "( - less )";
       } else {
         pieceStatement.innerHTML = previewDescription;
-        moreButton.innerHTML = "( + more )"
+        moreButton.innerHTML = "( + more )";
       }
     }
-  }, [isDescriptionExpanded])
+  }, [isDescriptionExpanded]);
 
   // return <div>{piecesArr[0][key][piece].title}</div>;
   return (
@@ -176,7 +187,12 @@ export default function PiecePage() {
           <div className="piece-description">
             <div className="piece-description-expand">
               <div className="piece-description-text"></div>
-              <a className="piece-more" onClick={() => setIsDescriptionExpanded(!isDescriptionExpanded)}>( + more )</a>
+              <a
+                className="piece-more"
+                onClick={() => setIsDescriptionExpanded(!isDescriptionExpanded)}
+              >
+                ( + more )
+              </a>
             </div>
           </div>
         </div>
@@ -184,8 +200,6 @@ export default function PiecePage() {
         <div className="media-wrapper">
           <div className="media">{loadPhotos()}</div>
         </div>
-
-        
       </main>
     </div>
   );
