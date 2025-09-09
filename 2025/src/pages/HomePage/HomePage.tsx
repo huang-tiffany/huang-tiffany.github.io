@@ -81,6 +81,11 @@ export default function HomePage() {
         </div>
       </main>
       <div className="text-container fadein">
+        <div className="text-group" id="mobile-name">
+          <h2>
+            tiffany huang <br /> <p>( design engineer )</p>
+          </h2>
+        </div>
         <div className="text-group">
           <p className="header">currently...</p>
           <p>

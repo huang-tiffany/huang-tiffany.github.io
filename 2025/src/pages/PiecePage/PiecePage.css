@@ -154,6 +154,27 @@
   box-shadow: inset 1em black;
 }
 
+@media (max-width: 768px) {
+  .piecePage main {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1em;
+    flex: 1 1 100%;
+  }
+
+  .piecePage .piece-info {
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+    top: unset;
+  }
+
+  .piecePage .media {
+    height: fit-content;
+    background-color: black;
+  }
+}
+
 @media (max-width: 576px) {
   .piecePage {
     flex-direction: column;

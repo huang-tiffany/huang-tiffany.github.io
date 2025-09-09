@@ -22,9 +22,14 @@ export default function NavBar() {
 
   return (
     <nav>
-      <a id="logo" onClick={() => relocate("/")}>
-        <img src={logo} alt="Logo" />
-      </a>
+      <div id="logo-container">
+        <a id="logo" onClick={() => relocate("/")}>
+          <img src={logo} alt="Logo" />
+        </a>
+        <div id="desktop-name">
+          tiffany huang <br /> <p>( design engineer )</p>
+        </div>
+      </div>
       <div className="links">
         <a onClick={() => relocate("/work")}>work</a>
         <a target="_blank" href="https://th-archive.github.io/">
