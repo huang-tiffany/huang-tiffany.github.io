@@ -108,6 +108,7 @@ nav #desktop-contact::after {
 
 .workPage .piece-title {
   margin-right: 1em;
+  line-height: 1.25;
 }
 
 .workPage .piece-title:hover {
@@ -116,6 +117,7 @@ nav #desktop-contact::after {
 
 .workPage .piece-year {
   font-style: italic;
+  line-height: 1.25;
 }
 
 .workPage .category-piece img,
@@ -124,7 +126,7 @@ nav #desktop-contact::after {
   aspect-ratio: 3/2;
   object-fit: cover;
   transition: 0.25s ease;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
   border-radius: 0.5em;
 }
 
@@ -209,11 +211,12 @@ nav #desktop-contact::after {
 
 .workPage .piece-tags {
   column-gap: 0.25em;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.1;
   white-space: nowrap;
 }
 

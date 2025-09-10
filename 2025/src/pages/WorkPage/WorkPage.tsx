@@ -176,7 +176,7 @@ export default function WorkPage() {
     allCategories.forEach((cat: string) => {
       const catElts = document.querySelectorAll(`.category-${cat}`);
       catElts.forEach((elt) => {
-        (elt as HTMLElement).style.display = "initial";
+        (elt as HTMLElement).style.display = "flex";
       });
     });
 
