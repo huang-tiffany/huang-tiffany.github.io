@@ -5,7 +5,7 @@ export const MarqueeWorkText = (
     {/* break */}
     tiffany huang coded this website from scratch.&ensp; &#9888;&#xFE0E; &ensp;
     {/* break */}
-    tiffany huang has done ballet for 16 years.&ensp; &#9888;&#xFE0E; &ensp;
+    tiffany huang has done ballet for 18 years.&ensp; &#9888;&#xFE0E; &ensp;
     {/* break */}
     tiffany huang's mbti is intj.&ensp; &#9888;&#xFE0E; &ensp;
     {/* break */}
