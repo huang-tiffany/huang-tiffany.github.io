@@ -12,13 +12,13 @@ export const MarqueeWorkText = (
     tiffany huang is on a mission to become culturally literate.&ensp; (\^-^/)
     &ensp;
     {/* break */}
-    tiffany huang makes puns on the daily.&ensp; (\^-^/) &ensp;
-    {/* break */}
     tiffany huang speaks three languages.&ensp; (\^-^/) &ensp;
     {/* break */}
     tiffany huang enjoys eating noodles.&ensp; (\^-^/) &ensp;
     {/* break */}
     tiffany huang plays the piano.&ensp; (\^-^/) &ensp;
+    {/* break */}
+    tiffany huang is currently learning wheelthrowing.&ensp; (\^-^/) &ensp;
     {/* break */}
   </p>
 );

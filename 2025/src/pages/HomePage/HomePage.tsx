@@ -96,25 +96,20 @@ export default function HomePage() {
             >
               the brown | risd dual degree program
             </a>{" "}
-            <br />
-            design engineering @{" "}
-            <a target="_blank" href="https://nvidia.com/">
-              nvidia
-            </a>{" "}
           </p>
         </div>
         <div className="text-group">
           <p className="header">previously...</p>
           <p>
+            frontend swe, design engineering @{" "}
+            <a target="_blank" href="https://nvidia.com/">
+              nvidia
+            </a>{" "}
+            <br />
             brand design @{" "}
             <a target="_blank" href="https://ramp.com/">
               ramp
             </a>
-            <br />
-            frontend swe @{" "}
-            <a target="_blank" href="https://nvidia.com/">
-              nvidia
-            </a>{" "}
             <br />
             brand design @{" "}
             <a

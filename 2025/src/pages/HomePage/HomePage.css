@@ -116,10 +116,19 @@ a:hover::before {
   font-size: 0.9em;
 }
 
-.text-container a:hover::after {
+.text-container a::after {
   font-family: system-ui;
-  content: " ↗ ";
+  display: inline-block;
+  margin-left: 0.25em;
+  content: " ↘ ";
   font-size: 0.9em;
+  transform: rotate(0deg);
+  transition-duration: 0.25s;
+}
+
+.text-container a:hover::after {
+  transform: rotate(-90deg);
+  transition-duration: 0.25s;
 }
 
 .homePage #reel {
@@ -155,6 +164,12 @@ a:hover::before {
   }
 }
 
+@media (max-width: 992px) {
+  .homePage #reel video {
+    border-radius: 0.75em;
+  }
+}
+
 @media (max-width: 576px) {
   .homePage main {
     flex-direction: column;
@@ -162,7 +177,11 @@ a:hover::before {
 
   .homePage #reel {
     width: 100%;
-    padding: 0 1em;
+    padding: 1em;
+
+    video {
+      border-radius: 0.5em;
+    }
   }
 
   .homePage .text-container {
