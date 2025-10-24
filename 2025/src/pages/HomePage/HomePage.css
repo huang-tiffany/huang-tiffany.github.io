@@ -187,7 +187,7 @@ a:hover::before {
   .homePage .text-container {
     flex-direction: column;
     gap: 1em;
-    padding-bottom: 4em;
+    padding-bottom: 3em;
   }
 
   a.addlink {
@@ -206,6 +206,10 @@ a:hover::before {
 
   .homePage #mobile-name {
     display: unset;
+  }
+
+  .homePage h2 {
+    margin: 0;
   }
 
   .homePage #version {
