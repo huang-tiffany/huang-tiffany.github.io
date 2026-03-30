@@ -419,7 +419,7 @@ export const pieces = atom<{
         size: "Size 7.5M Women's Dr. Scholl Last",
         medium:
           "Chrome Tan Leather, Pig Skin, Post Machine, Juki Sewing Machine, Veg Tan Leather, Crimp Boards, Aluminum Stock, Metal Lathe, Bridgeport Mill, Flycutter, Dividing Head, Steel Rod, Spring Steel Shanks, Drill Press, Tap, Machine Screws, Museum Wax, Rubber Cement, Contact Cement, Snaps, Snap Setter, Skiving Knife, 5-in-1 Machine, Hammer, Lasting Pincers, Lasting Stand, Heat Gun, Wood Glue, Wallpaper Adhesive, Shoe Last",
-        url: "",
+        url: '<a href="https://www.figma.com/proto/gAcazav9wcGDz6xuCJ1C7U/Clicking-Boots?node-id=2001-300&viewport=284%2C345%2C0.02&t=01F3yPZzFotojUTP-1&scaling=contain&content-scaling=fixed&page-id=2001%3A35" target="_blank">FULL PRESENTATION</a>',
         statement:
           "The <em>Clicking Boots</em> explore various ways of combining complicated fabrication methods for both shoe uppers and heels with the treatment of functional elements as simple stylistic features. <br><br> Inspired by pleats as understated design elements with functional components, the wholecut uppers highlight two simple folds down the side of each shoe, with snaps nestled in each pleat to allow for both an easy slip-on user flow when open and zipper-less, tight-fitting silhouettes once closed. The machined aluminum heel adds a mechanism-inspired aspect to the bottom of the shoe, which creates the illusion of the wearer's heel always touching the ground by dropping out to compensate for the height difference when the foot is lifted. <br><br> The boots are named for the sounds they make when being donned and while walking, which resemble the clip-clop of horse hooves.",
         media: [

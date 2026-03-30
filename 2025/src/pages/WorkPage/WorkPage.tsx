@@ -1,6 +1,6 @@
 import "../WorkPage/WorkPage.css";
 import "../../App.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import "../WorkPage/WorkPage.css";
 import { pieces } from "../../global/Atoms/atoms";
 import { useRecoilState } from "recoil";
@@ -29,15 +29,23 @@ export default function WorkPage() {
     "rememo",
   ];
   const [mode, setMode] = useState<string | undefined>(undefined);
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  useEffect(() => {
+    const filter = searchParams.get("filter") || undefined;
+    setMode(filter);
+
+    console.log(filter);
+  }, [searchParams]);
 
   const setPreview = (key: string, piece: string) => {
     const previewYear = document.querySelector("div.piece-preview-year");
     const previewTitle = document.querySelector("div.piece-preview-title");
     const previewDescription = document.querySelector(
-      "div.piece-preview-description"
+      "div.piece-preview-description",
     );
     const previewImg: HTMLImageElement | null = document.querySelector(
-      "img.piece-preview-image"
+      "img.piece-preview-image",
     );
 
     if (key === "" && piece === "") {
@@ -88,7 +96,6 @@ export default function WorkPage() {
     const arr2 = arr.sort((a, b) => {
       return Number(b.year) - Number(a.year);
     });
-    console.log("arr2", arr2);
 
     return (
       <div className="category-pieces">
@@ -216,7 +223,12 @@ export default function WorkPage() {
             <input
               type="radio"
               checked={!mode}
-              onClick={() => setMode(undefined)}
+              onClick={() =>
+                setSearchParams((prevParams) => {
+                  prevParams.delete("filter");
+                  return prevParams;
+                })
+              }
             ></input>
             <label>ALL</label>
           </div>
@@ -224,7 +236,12 @@ export default function WorkPage() {
             <input
               type="radio"
               checked={mode === "2D"}
-              onClick={() => setMode("2D")}
+              onClick={() =>
+                setSearchParams((prevParams) => {
+                  prevParams.set("filter", "2D");
+                  return prevParams;
+                })
+              }
             ></input>
             <label>2D</label>
           </div>
@@ -232,7 +249,12 @@ export default function WorkPage() {
             <input
               type="radio"
               checked={mode === "3D"}
-              onClick={() => setMode("3D")}
+              onClick={() =>
+                setSearchParams((prevParams) => {
+                  prevParams.set("filter", "3D");
+                  return prevParams;
+                })
+              }
             ></input>
             <label>3D</label>
           </div>
@@ -240,7 +262,12 @@ export default function WorkPage() {
             <input
               type="radio"
               checked={mode === "4D"}
-              onClick={() => setMode("4D")}
+              onClick={() =>
+                setSearchParams((prevParams) => {
+                  prevParams.set("filter", "4D");
+                  return prevParams;
+                })
+              }
             ></input>
             <label>4D</label>
           </div>
