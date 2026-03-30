@@ -341,6 +341,36 @@ export const pieces = atom<{
 
     // 3D
     "3D": {
+      commandChaise: {
+        category: "3D",
+        string: "commandChaise",
+        year: "2026",
+        title: "Command Chaise",
+        size: '53" &times; 33" &times; 23"',
+        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        url: "",
+        statement:
+          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+        media: [
+          "commandchaise1.jpg",
+          "commandchaise2.jpg",
+          "commandchaise3.jpg",
+          "commandchaise4.jpg",
+          "commandchaise5.jpg",
+          "commandchaise6.jpg",
+          "commandchaise7.jpg",
+          "commandchaise8.jpg",
+          "commandchaise9.jpg",
+          "commandchaise10.jpg",
+          "commandchaise11.jpg",
+          "commandchaise12.jpg",
+        ],
+        previewDescription:
+          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+        previewImage: "commandchaise7.jpg",
+        tags: ["furniture", "metalworking", "soft goods"],
+      },
+
       cruet: {
         category: "3D",
         string: "cruet",
