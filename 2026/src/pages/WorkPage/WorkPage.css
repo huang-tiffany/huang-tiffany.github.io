@@ -9,8 +9,7 @@
   position: relative;
   width: 100vw;
   height: calc(100dvh - 1em);
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
   top: 0;
 
   display: grid;
@@ -76,6 +75,8 @@
     top: -0.25px;
     width: calc(100% + 0.5px);
     height: calc(100% + 0.5px);
+    display: flex;
+    align-items: center;
 
     &:hover {
       border-radius: 12px;
@@ -112,6 +113,9 @@
     right: 0.25px;
     width: calc(100% + 0.5px);
     bottom: 0.25px;
+    padding: 2em;
+    padding-bottom: 0;
+    overflow-y: scroll;
   }
 
   &:nth-child(9) {
@@ -224,16 +228,14 @@
 }
 
 .workPage .mode-wrapper {
-  right: 0;
   line-height: 1;
   z-index: 6;
   display: flex;
-  padding-bottom: 1em;
+  margin-left: 2em;
   align-items: center;
   position: sticky;
   top: 0;
   column-gap: 1.5em;
-  background-color: black;
 }
 
 .workPage .mode-wrapper input[type="radio"] {

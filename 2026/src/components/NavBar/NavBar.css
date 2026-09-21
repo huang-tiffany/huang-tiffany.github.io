@@ -68,7 +68,7 @@ nav #logo:hover::before {
 
 nav #logo {
   height: fit-content;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 nav #desktop-contact::after {

@@ -222,66 +222,69 @@ export default function WorkPage() {
         <div className="module"></div>
         <div className="module"></div>
         <div className="module"></div>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module"></div>
-        {/* <div className="mode-wrapper">
-          <div className="mode mode-all">
-            <input
-              type="radio"
-              checked={!mode}
-              onClick={() =>
-                setSearchParams((prevParams) => {
-                  prevParams.delete("filter");
-                  return prevParams;
-                })
-              }
-            ></input>
-            <label>ALL</label>
-          </div>
-          <div className="mode mode-2D">
-            <input
-              type="radio"
-              checked={mode === "2D"}
-              onClick={() =>
-                setSearchParams((prevParams) => {
-                  prevParams.set("filter", "2D");
-                  return prevParams;
-                })
-              }
-            ></input>
-            <label>2D</label>
-          </div>
-          <div className="mode mode-3D">
-            <input
-              type="radio"
-              checked={mode === "3D"}
-              onClick={() =>
-                setSearchParams((prevParams) => {
-                  prevParams.set("filter", "3D");
-                  return prevParams;
-                })
-              }
-            ></input>
-            <label>3D</label>
-          </div>
-          <div className="mode mode-4D">
-            <input
-              type="radio"
-              checked={mode === "4D"}
-              onClick={() =>
-                setSearchParams((prevParams) => {
-                  prevParams.set("filter", "4D");
-                  return prevParams;
-                })
-              }
-            ></input>
-            <label>4D</label>
+        <div className="module">
+          <div className="mode-wrapper">
+            <div className="mode mode-all">
+              <input
+                type="radio"
+                checked={!mode}
+                onClick={() =>
+                  setSearchParams((prevParams) => {
+                    prevParams.delete("filter");
+                    return prevParams;
+                  })
+                }
+              ></input>
+              <label>ALL</label>
+            </div>
+            <div className="mode mode-2D">
+              <input
+                type="radio"
+                checked={mode === "2D"}
+                onClick={() =>
+                  setSearchParams((prevParams) => {
+                    prevParams.set("filter", "2D");
+                    return prevParams;
+                  })
+                }
+              ></input>
+              <label>2D</label>
+            </div>
+            <div className="mode mode-3D">
+              <input
+                type="radio"
+                checked={mode === "3D"}
+                onClick={() =>
+                  setSearchParams((prevParams) => {
+                    prevParams.set("filter", "3D");
+                    return prevParams;
+                  })
+                }
+              ></input>
+              <label>3D</label>
+            </div>
+            <div className="mode mode-4D">
+              <input
+                type="radio"
+                checked={mode === "4D"}
+                onClick={() =>
+                  setSearchParams((prevParams) => {
+                    prevParams.set("filter", "4D");
+                    return prevParams;
+                  })
+                }
+              ></input>
+              <label>4D</label>
+            </div>
           </div>
         </div>
-        <div className="pieces">{loadPieces()}</div> */}
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module">
+          <div className="pieces">{loadPieces()}</div>
+        </div>
+        <div className="module"></div>
+
         <Marquee marqueeText={MarqueeWorkText}></Marquee>
       </main>
     </div>
