@@ -4,7 +4,7 @@ import { pieces } from "../../global/Atoms/atoms";
 import { useParams } from "react-router-dom";
 
 import { useEffect, useState } from "react";
-import NavBar from "../../components/NavBar";
+import NavBar from "../../components/NavBar/NavBar";
 
 export default function PiecePage() {
   const { categoryInfo, pieceInfo } = useParams();
@@ -60,7 +60,7 @@ export default function PiecePage() {
     }
 
     const piecePreviewDescription = document.querySelector(
-      "div.piece-description-text"
+      "div.piece-description-text",
     );
     if (piecePreviewDescription) {
       piecePreviewDescription.innerHTML = previewDescription;
@@ -104,7 +104,7 @@ export default function PiecePage() {
 
   useEffect(() => {
     const mediaWrapper: HTMLElement | null = document.querySelector(
-      ".piecePage main .media"
+      ".piecePage main .media",
     );
     if (media.length === 1) {
       if (mediaWrapper) {
@@ -119,7 +119,7 @@ export default function PiecePage() {
 
   useEffect(() => {
     const pieceStatement: HTMLElement | null = document.querySelector(
-      "div.piece-description-text"
+      "div.piece-description-text",
     );
     const moreButton: HTMLElement | null =
       document.querySelector("a.piece-more");

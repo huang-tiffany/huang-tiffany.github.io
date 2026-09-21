@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Marquee from "../../components/Marquee/Marquee";
 import { MarqueeWorkText } from "../../components/Marquee/MarqueeWorkText";
-import NavBar from "../../components/NavBar";
+import NavBar from "../../components/NavBar/NavBar";
 
 export default function WorkPage() {
   const navigate = useNavigate();
@@ -218,7 +218,16 @@ export default function WorkPage() {
     <div className="workPage fadein">
       <NavBar />
       <main>
-        <div className="mode-wrapper">
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        {/* <div className="mode-wrapper">
           <div className="mode mode-all">
             <input
               type="radio"
@@ -272,7 +281,7 @@ export default function WorkPage() {
             <label>4D</label>
           </div>
         </div>
-        <div className="pieces">{loadPieces()}</div>
+        <div className="pieces">{loadPieces()}</div> */}
         <Marquee marqueeText={MarqueeWorkText}></Marquee>
       </main>
     </div>

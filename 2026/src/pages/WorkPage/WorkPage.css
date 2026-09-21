@@ -1,20 +1,128 @@
 .workPage {
   width: 100vw;
-  height: calc(100dvh - 2em);
+  height: calc(100dvh - 1em);
   margin: 0;
-  margin-top: 1em;
   display: flex;
-  column-gap: 2em;
 }
 
 .workPage main {
   position: relative;
-  margin-right: 1em;
-  width: calc(100vw / 6 * 5 - 4em);
-  height: calc(100dvh - 2em);
+  width: 100vw;
+  height: calc(100dvh - 1em);
   overflow-y: scroll;
   overflow-x: hidden;
   top: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: calc(100dvh / 6) 3em 1fr;
+  gap: 0;
+}
+
+.workPage main div.module {
+  background-color: pink;
+
+  border: 0.5px solid transparent;
+  transition: 0.5s ease;
+
+  &:first-of-type {
+    left: 0.25px;
+    top: 0.25px;
+    border-end-end-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to bottom right, black 50%, white) border-box;
+    z-index: 1;
+  }
+
+  &:nth-child(2) {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to bottom, black 50%, white) border-box;
+    right: 0.25px;
+    top: 0.25px;
+    width: calc(100% + 0.5px);
+  }
+
+  &:nth-child(3) {
+    border-bottom-left-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to bottom left, black 50%, white) border-box;
+    right: 0.25px;
+    top: 0.25px;
+    z-index: 1;
+  }
+
+  &:nth-child(4) {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to right, black 50%, white) border-box;
+    left: 0.25px;
+    top: -0.25px;
+    height: calc(100% + 0.5px);
+  }
+
+  &:nth-child(5) {
+    border-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(white, white) border-box;
+    left: -0.25px;
+    top: -0.25px;
+    width: calc(100% + 0.5px);
+    height: calc(100% + 0.5px);
+
+    &:hover {
+      border-radius: 12px;
+    }
+  }
+
+  &:nth-child(6) {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to left, black 50%, white) border-box;
+    right: 0.25px;
+    top: -0.25px;
+    height: calc(100% + 0.5px);
+  }
+
+  &:nth-child(7) {
+    border-top-right-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to top right, black 50%, white) border-box;
+    left: 0.25px;
+    bottom: 0.25px;
+    z-index: 1;
+  }
+
+  &:nth-child(8) {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to top, black 50%, white) border-box;
+    right: 0.25px;
+    width: calc(100% + 0.5px);
+    bottom: 0.25px;
+  }
+
+  &:nth-child(9) {
+    border-top-left-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to top left, black 50%, white) border-box;
+    right: 0.25px;
+    bottom: 0.25px;
+    z-index: 1;
+  }
 }
 
 .workPage .category {
