@@ -180,12 +180,6 @@
   display: inline;
 }
 
-nav .links a:hover::after {
-  font-family: system-ui;
-  content: " ↗ ";
-  font-size: 0.9em;
-}
-
 .workPage .links p {
   margin: 0;
   text-decoration: line-through;

@@ -30,15 +30,15 @@ export function hoverDiamond(inout: string, number: number) {
   switch (number) {
     case 1:
       (quads[0] as HTMLElement).style.borderEndEndRadius = "32px";
-      (quads[1] as HTMLElement).style.borderBottomLeftRadius = "24px";
-      (quads[2] as HTMLElement).style.borderStartEndRadius = "20px";
+      (quads[1] as HTMLElement).style.borderBottomLeftRadius = "20px";
+      (quads[2] as HTMLElement).style.borderStartEndRadius = "16px";
       (quads[3] as HTMLElement).style.borderStartStartRadius = "12px";
       break;
     case 2:
       (quads[0] as HTMLElement).style.borderEndEndRadius = "16px";
       (quads[1] as HTMLElement).style.borderBottomLeftRadius = "36px";
       (quads[2] as HTMLElement).style.borderStartEndRadius = "12px";
-      (quads[3] as HTMLElement).style.borderStartStartRadius = "36px";
+      (quads[3] as HTMLElement).style.borderStartStartRadius = "28px";
       break;
     case 3:
       (quads[0] as HTMLElement).style.borderEndEndRadius = "20px";
@@ -67,99 +67,6 @@ export default function HomePage() {
 
   return (
     <div className="homePage fadein">
-      {/* <main>
-        <NavBar />
-        <div id="reel">
-          <video className="fadein" loop muted playsInline>
-            <source src="/videos/2025 demo reel.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div id="version" className="fadein">
-          <a
-            target="_blank"
-            href="https://huang-tiffany.github.io/2021"
-            className="hidden ver"
-            onMouseOver={() => hoverMenu("hover", "ver")}
-            onMouseOut={() => hoverMenu("out", "ver")}
-          >
-            v. 2021
-          </a>
-          <a
-            target="_blank"
-            href="https://huang-tiffany.github.io/2022"
-            className="hidden ver"
-            onMouseOver={() => hoverMenu("hover", "ver")}
-            onMouseOut={() => hoverMenu("out", "ver")}
-          >
-            v. 2022
-          </a>
-          <a
-            target="_blank"
-            href="https://huang-tiffany.github.io/2023"
-            className="hidden ver"
-            onMouseOver={() => hoverMenu("hover", "ver")}
-            onMouseOut={() => hoverMenu("out", "ver")}
-          >
-            v. 2023
-          </a>
-          <a
-            target="_blank"
-            href="https://huang-tiffany.github.io/2024"
-            className="hidden ver"
-            onMouseOver={() => hoverMenu("hover", "ver")}
-            onMouseOut={() => hoverMenu("out", "ver")}
-          >
-            v. 2024
-          </a>
-          <a
-            onMouseOver={() => hoverMenu("hover", "ver")}
-            onMouseOut={() => hoverMenu("out", "ver")}
-          >
-            v. 2025
-          </a>
-        </div>
-      </main>
-      <div className="text-container fadein">
-        <div className="text-group" id="mobile-name">
-          <h2>
-            tiffany huang <br /> <p>( design engineer )</p>
-          </h2>
-        </div>
-        <div className="text-group">
-          <p className="header">currently...</p>
-          <p>
-            industrial design, computer science, creative computation @{" "}
-            <a
-              target="_blank"
-              href="https://www.brown.edu/academics/brown-risd-dual-degree/home"
-            >
-              the brown | risd dual degree program
-            </a>{" "}
-          </p>
-        </div>
-        <div className="text-group">
-          <p className="header">previously...</p>
-          <p>
-            frontend swe, design engineering @{" "}
-            <a target="_blank" href="https://nvidia.com/">
-              nvidia
-            </a>{" "}
-            <br />
-            brand design @{" "}
-            <a target="_blank" href="https://ramp.com/">
-              ramp
-            </a>
-            <br />
-            brand design @{" "}
-            <a
-              target="_blank"
-              href="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation"
-            >
-              santa clara county parks and rec
-            </a>
-          </p>
-        </div>
-      </div> */}
       <NavBar />
       <main>
         <div
@@ -176,12 +83,153 @@ export default function HomePage() {
           className="quad"
           onMouseOver={() => hoverDiamond("hover", 3)}
           onMouseOut={() => hoverDiamond("out", 3)}
-        ></div>
+        >
+          <div id="version" className="fadein">
+            <a
+              target="_blank"
+              href="https://huang-tiffany.github.io/2021"
+              className="hidden ver"
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2021
+            </a>
+            <a
+              target="_blank"
+              href="https://huang-tiffany.github.io/2022"
+              className="hidden ver"
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2022
+            </a>
+            <a
+              target="_blank"
+              href="https://huang-tiffany.github.io/2023"
+              className="hidden ver"
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2023
+            </a>
+            <a
+              target="_blank"
+              href="https://huang-tiffany.github.io/2024"
+              className="hidden ver"
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2024
+            </a>
+            <a
+              target="_blank"
+              href="https://huang-tiffany.github.io/2025"
+              className="hidden ver"
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2025
+            </a>
+            <a
+              onMouseOver={() => hoverMenu("hover", "ver")}
+              onMouseOut={() => hoverMenu("out", "ver")}
+            >
+              v. 2026
+            </a>
+          </div>
+        </div>
         <div
           className="quad"
           onMouseOver={() => hoverDiamond("hover", 4)}
           onMouseOut={() => hoverDiamond("out", 4)}
-        ></div>
+        >
+          <div className="text-container">
+            <div className="text-group">
+              <p className="header">currently</p>
+              <p>
+                frontend swe @{" "}
+                <a target="_blank" href="https://nvidia.com/">
+                  nvidia
+                </a>{" "}
+                <br />
+              </p>
+            </div>
+            <div className="text-group">
+              <p className="header">previously</p>
+              <p>
+                brand design @{" "}
+                <a target="_blank" href="https://ramp.com/">
+                  ramp
+                </a>
+                <br />
+                brand design @{" "}
+                <a
+                  target="_blank"
+                  href="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation"
+                >
+                  santa clara county parks and rec
+                </a>
+              </p>
+            </div>
+            <div className="text-group">
+              <p className="header">education</p>
+              <p>
+                bachelor of fine arts, industrial design @{" "}
+                <a target="_blank" href="https://risd.edu/">
+                  the rhode island school of design
+                </a>
+                <br />
+                bachelor of science, computer science @{" "}
+                <a target="_blank" href="https://brown.edu/">
+                  brown university
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="text-container">
+            <div className="text-group">
+              <p className="header">press</p>
+              <p>
+                <a
+                  target="_blank"
+                  href="https://www.risd.edu/news/stories/brown-risd-dual-degree-students-present-capstone-projects-showcasing-personal-journeys"
+                >
+                  capstone presentations, risd news, june 2026
+                </a>
+                <br />
+                <a
+                  target="_blank"
+                  href="https://www.risd.edu/news/stories/risd-students-share-thought-provoking-work-final-fall-2025-critiques"
+                >
+                  furniture crit, risd news, december 2025
+                </a>
+                <br />
+                <a
+                  target="_blank"
+                  href="https://www.risd.edu/news/stories/risd-students-use-complex-data-to-create-interactive-research-projects"
+                >
+                  data design studio, risd news, february 2024
+                </a>
+              </p>
+            </div>
+            <div className="text-group">
+              <p className="header">talks</p>
+              <p>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=ii1wmqAtjXA"
+                >
+                  brown | risd dual degree capstone, 2026
+                </a>
+              </p>
+            </div>
+          </div>
+          <div id="reel">
+            <video className="fadein" loop muted playsInline>
+              <source src="/videos/2025 demo reel.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </main>
     </div>
   );
