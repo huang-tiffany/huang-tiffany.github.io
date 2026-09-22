@@ -1,6 +1,6 @@
 import "../HomePage/HomePage.css";
 import "../../App.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 
 export function hoverMenu(inout: string, menu: string) {
@@ -20,41 +20,42 @@ export function hoverMenu(inout: string, menu: string) {
 
 export function hoverDiamond(inout: string, number: number) {
   const quads = document.getElementsByClassName("quad");
-  if (inout === "out") {
-    (quads[0] as HTMLElement).style.borderEndEndRadius = "8px";
-    (quads[1] as HTMLElement).style.borderBottomLeftRadius = "8px";
-    (quads[2] as HTMLElement).style.borderStartEndRadius = "8px";
-    (quads[3] as HTMLElement).style.borderStartStartRadius = "8px";
-    return;
-  }
-  switch (number) {
-    case 1:
-      (quads[0] as HTMLElement).style.borderEndEndRadius = "32px";
-      (quads[1] as HTMLElement).style.borderBottomLeftRadius = "20px";
-      (quads[2] as HTMLElement).style.borderStartEndRadius = "16px";
-      (quads[3] as HTMLElement).style.borderStartStartRadius = "12px";
-      break;
-    case 2:
-      (quads[0] as HTMLElement).style.borderEndEndRadius = "16px";
-      (quads[1] as HTMLElement).style.borderBottomLeftRadius = "36px";
-      (quads[2] as HTMLElement).style.borderStartEndRadius = "12px";
-      (quads[3] as HTMLElement).style.borderStartStartRadius = "28px";
-      break;
-    case 3:
-      (quads[0] as HTMLElement).style.borderEndEndRadius = "20px";
-      (quads[1] as HTMLElement).style.borderBottomLeftRadius = "12px";
-      (quads[2] as HTMLElement).style.borderStartEndRadius = "44px";
-      (quads[3] as HTMLElement).style.borderStartStartRadius = "24px";
-      break;
-    case 4:
-      (quads[0] as HTMLElement).style.borderEndEndRadius = "12px";
-      (quads[1] as HTMLElement).style.borderBottomLeftRadius = "28px";
-      (quads[2] as HTMLElement).style.borderStartEndRadius = "20px";
-      (quads[3] as HTMLElement).style.borderStartStartRadius = "56px";
-      break;
-    default:
-      break;
-  }
+  // if (inout === "out") {
+  //   (quads[0] as HTMLElement).style.borderEndEndRadius = "8px";
+  //   (quads[1] as HTMLElement).style.borderBottomLeftRadius = "8px";
+  //   (quads[2] as HTMLElement).style.borderStartEndRadius = "8px";
+  //   (quads[3] as HTMLElement).style.borderStartStartRadius = "8px";
+  //   return;
+  // }
+
+  // switch (number) {
+  //   case 1:
+  //     (quads[0] as HTMLElement).style.borderEndEndRadius = "32px";
+  //     (quads[1] as HTMLElement).style.borderBottomLeftRadius = "20px";
+  //     (quads[2] as HTMLElement).style.borderStartEndRadius = "16px";
+  //     (quads[3] as HTMLElement).style.borderStartStartRadius = "12px";
+  //     break;
+  //   case 2:
+  //     (quads[0] as HTMLElement).style.borderEndEndRadius = "16px";
+  //     (quads[1] as HTMLElement).style.borderBottomLeftRadius = "36px";
+  //     (quads[2] as HTMLElement).style.borderStartEndRadius = "12px";
+  //     (quads[3] as HTMLElement).style.borderStartStartRadius = "28px";
+  //     break;
+  //   case 3:
+  //     (quads[0] as HTMLElement).style.borderEndEndRadius = "20px";
+  //     (quads[1] as HTMLElement).style.borderBottomLeftRadius = "12px";
+  //     (quads[2] as HTMLElement).style.borderStartEndRadius = "44px";
+  //     (quads[3] as HTMLElement).style.borderStartStartRadius = "24px";
+  //     break;
+  //   case 4:
+  //     (quads[0] as HTMLElement).style.borderEndEndRadius = "12px";
+  //     (quads[1] as HTMLElement).style.borderBottomLeftRadius = "28px";
+  //     (quads[2] as HTMLElement).style.borderStartEndRadius = "20px";
+  //     (quads[3] as HTMLElement).style.borderStartStartRadius = "56px";
+  //     break;
+  //   default:
+  //     break;
+  // }
 }
 
 export default function HomePage() {
@@ -63,6 +64,124 @@ export default function HomePage() {
     setTimeout(() => {
       vid?.play();
     }, 1750);
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      const quads = document.getElementsByClassName("quad");
+      const right = (quads[0] as HTMLElement).getBoundingClientRect().right;
+      const bottom = (quads[0] as HTMLElement).getBoundingClientRect().bottom;
+
+      const dist = Math.hypot(event.clientX - right, event.clientY - bottom);
+
+      if (dist > 200) {
+        (quads[0] as HTMLElement).style.borderEndEndRadius = "8px";
+        (quads[1] as HTMLElement).style.borderBottomLeftRadius = "8px";
+        (quads[2] as HTMLElement).style.borderStartEndRadius = "8px";
+        (quads[3] as HTMLElement).style.borderStartStartRadius = "8px";
+        return;
+      }
+
+      const percent = dist / 200;
+
+      if (event.clientX > right) {
+        if (event.clientY > bottom) {
+          console.log("lower right");
+          (quads[0] as HTMLElement).style.borderEndEndRadius = "12px";
+          (quads[1] as HTMLElement).style.borderBottomLeftRadius = "28px";
+          (quads[2] as HTMLElement).style.borderStartEndRadius = "20px";
+          (quads[3] as HTMLElement).style.borderStartStartRadius = "56px";
+        } else {
+          console.log("upper right");
+          (quads[0] as HTMLElement).style.borderEndEndRadius = "16px";
+          (quads[1] as HTMLElement).style.borderBottomLeftRadius = "36px";
+          (quads[2] as HTMLElement).style.borderStartEndRadius = "12px";
+          (quads[3] as HTMLElement).style.borderStartStartRadius = "28px";
+        }
+      } else {
+        if (event.clientY > bottom) {
+          console.log("lower left");
+          (quads[0] as HTMLElement).style.borderEndEndRadius = "20px";
+          (quads[1] as HTMLElement).style.borderBottomLeftRadius = "12px";
+          (quads[2] as HTMLElement).style.borderStartEndRadius = "44px";
+          (quads[3] as HTMLElement).style.borderStartStartRadius = "24px";
+        } else {
+          console.log("upper left");
+          (quads[0] as HTMLElement).style.borderEndEndRadius = "32px";
+          (quads[1] as HTMLElement).style.borderBottomLeftRadius = "20px";
+          (quads[2] as HTMLElement).style.borderStartEndRadius = "16px";
+          (quads[3] as HTMLElement).style.borderStartStartRadius = "12px";
+        }
+      }
+
+      // if (event.clientX > right) {
+      //   if (event.clientY > bottom) {
+      //     console.log("lower right");
+      //     (quads[0] as HTMLElement).style.borderEndEndRadius =
+      //       `${percent * 32 * 0.5}px`;
+      //     (quads[1] as HTMLElement).style.borderBottomLeftRadius =
+      //       `${percent * 36 * 0.25}px`;
+      //     (quads[2] as HTMLElement).style.borderStartEndRadius =
+      //       `${percent * 44 * 0.25}px`;
+      //     (quads[3] as HTMLElement).style.borderStartStartRadius =
+      //       `${percent * 56}px`;
+      //     // (quads[0] as HTMLElement).style.borderEndEndRadius = "12px";
+      //     // (quads[1] as HTMLElement).style.borderBottomLeftRadius = "28px";
+      //     // (quads[2] as HTMLElement).style.borderStartEndRadius = "20px";
+      //     // (quads[3] as HTMLElement).style.borderStartStartRadius = "56px";
+      //   } else {
+      //     console.log("upper right");
+      //     (quads[0] as HTMLElement).style.borderEndEndRadius =
+      //       `${percent * 32 * 0.5}px`;
+      //     (quads[1] as HTMLElement).style.borderBottomLeftRadius =
+      //       `${percent * 36}px`;
+      //     (quads[2] as HTMLElement).style.borderStartEndRadius =
+      //       `${percent * 44 * 0.25}px`;
+      //     (quads[3] as HTMLElement).style.borderStartStartRadius =
+      //       `${percent * 56 * 0.5}px`;
+      //     // (quads[0] as HTMLElement).style.borderEndEndRadius = "16px";
+      //     // (quads[1] as HTMLElement).style.borderBottomLeftRadius = "36px";
+      //     // (quads[2] as HTMLElement).style.borderStartEndRadius = "12px";
+      //     // (quads[3] as HTMLElement).style.borderStartStartRadius = "28px";
+      //   }
+      // } else {
+      //   if (event.clientY > bottom) {
+      //     console.log("lower left");
+      //     (quads[0] as HTMLElement).style.borderEndEndRadius =
+      //       `${percent * 32 * 0.5}px`;
+      //     (quads[1] as HTMLElement).style.borderBottomLeftRadius =
+      //       `${percent * 36 * 0.25}px`;
+      //     (quads[2] as HTMLElement).style.borderStartEndRadius =
+      //       `${percent * 44}px`;
+      //     (quads[3] as HTMLElement).style.borderStartStartRadius =
+      //       `${percent * 56 * 0.5}px`;
+      //     // (quads[0] as HTMLElement).style.borderEndEndRadius = "20px";
+      //     // (quads[1] as HTMLElement).style.borderBottomLeftRadius = "12px";
+      //     // (quads[2] as HTMLElement).style.borderStartEndRadius = "44px";
+      //     // (quads[3] as HTMLElement).style.borderStartStartRadius = "24px";
+      //   } else {
+      //     console.log("upper left");
+      //     (quads[0] as HTMLElement).style.borderEndEndRadius =
+      //       `${percent * 32}px`;
+      //     (quads[1] as HTMLElement).style.borderBottomLeftRadius =
+      //       `${percent * 36 * 0.5}px`;
+      //     (quads[2] as HTMLElement).style.borderStartEndRadius =
+      //       `${percent * 44 * 0.5}px`;
+      //     (quads[3] as HTMLElement).style.borderStartStartRadius =
+      //       `${percent * 56 * 0.25}px`;
+      //     // (quads[0] as HTMLElement).style.borderEndEndRadius = "32px";
+      //     // (quads[1] as HTMLElement).style.borderBottomLeftRadius = "20px";
+      //     // (quads[2] as HTMLElement).style.borderStartEndRadius = "16px";
+      //     // (quads[3] as HTMLElement).style.borderStartStartRadius = "12px";
+      //   }
+      // }
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
   }, []);
 
   return (
