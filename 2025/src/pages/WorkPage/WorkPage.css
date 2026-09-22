@@ -310,6 +310,7 @@ nav #mobile-contact {
   nav .links {
     display: flex;
     line-height: unset;
+    align-items: flex-end;
   }
 
   nav #desktop-name {

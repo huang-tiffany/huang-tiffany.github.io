@@ -369,9 +369,9 @@ export const pieces = atom<{
           "confessional15.jpg",
         ],
         previewDescription:
-          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+          "Catholic confession-inspired structure that mediates intimate conversation through written letters.",
         previewImage: "commandchaise7.jpg",
-        tags: ["furniture", "metalworking", "soft goods"],
+        tags: ["installation", "metalworking", "upholstery"],
       },
 
       inflatedGridLight: {
@@ -380,7 +380,8 @@ export const pieces = atom<{
         year: "2026",
         title: "Inflated Grid Light",
         size: '53" &times; 33" &times; 23"',
-        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        medium:
+          "Steel Sheet, Hydroformer, TIG Welder, Steel Tube, Steel Rod, Lighting Components",
         url: "",
         statement:
           "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
@@ -399,9 +400,9 @@ export const pieces = atom<{
           "gridlight12.jpg",
         ],
         previewDescription:
-          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+          "Hydroformed modular lighting element for industrial settings.",
         previewImage: "commandchaise7.jpg",
-        tags: ["furniture", "metalworking", "soft goods"],
+        tags: ["lighting", "metalworking"],
       },
 
       pinkyRings: {
@@ -425,9 +426,9 @@ export const pieces = atom<{
           "pinkyrings8.jpg",
         ],
         previewDescription:
-          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+          "Couple rings that keep lovers linked together through an alternative way of holding hands.",
         previewImage: "commandchaise7.jpg",
-        tags: ["furniture", "metalworking", "soft goods"],
+        tags: ["jewelry", "wearable"],
       },
 
       locket: {
@@ -454,9 +455,9 @@ export const pieces = atom<{
           "locket11.jpg",
         ],
         previewDescription:
-          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+          "Functional keepsakes and vessels for sentimentality that, like friends, repeatedly say hello and goodbye.",
         previewImage: "commandchaise7.jpg",
-        tags: ["furniture", "metalworking", "soft goods"],
+        tags: ["jewelry", "wearable"],
       },
 
       commandChaise: {
