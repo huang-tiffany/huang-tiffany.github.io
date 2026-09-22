@@ -224,7 +224,9 @@
 
   p {
     font-size: 1.25em;
+    line-height: 1.25;
     margin: 0;
+    margin-top: 0.25em;
     bottom: -0.5em;
     transition: 0.25s ease;
     transition-delay: 25ms;
@@ -234,7 +236,7 @@
 }
 
 .workPage .category-piece:hover {
-  transition: 0.5s ease;
+  transition: 0.25s ease;
   img,
   video {
     cursor: pointer;
@@ -396,13 +398,13 @@ nav #mobile-contact {
   display: none;
 }
 
-/* @media (max-width: 992px) {
+@media (max-width: 1200px) {
   .workPage .category-piece {
-    width: calc((100% - 2em) / 2);
+    width: calc((100% - 1em) / 2);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .workPage .category-piece {
     width: 100%;
   }
@@ -454,4 +456,4 @@ nav #mobile-contact {
   nav #desktop-name {
     display: none;
   }
-} */
+}
