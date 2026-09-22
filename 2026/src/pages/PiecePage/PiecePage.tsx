@@ -121,13 +121,18 @@ export default function PiecePage() {
     const pieceStatement: HTMLElement | null = document.querySelector(
       "div.piece-description-text",
     );
+    const pieceDescription: HTMLElement | null = document.querySelector(
+      "div.piece-description",
+    );
     const moreButton: HTMLElement | null =
       document.querySelector("a.piece-more");
-    if (pieceStatement && moreButton) {
+    if (pieceStatement && moreButton && pieceDescription) {
       if (isDescriptionExpanded) {
+        pieceDescription.style.columnCount = "2";
         pieceStatement.innerHTML = statement;
         moreButton.innerHTML = "( - less )";
       } else {
+        pieceDescription.style.columnCount = "1";
         pieceStatement.innerHTML = previewDescription;
         moreButton.innerHTML = "( + more )";
       }
@@ -138,27 +143,37 @@ export default function PiecePage() {
     <div className="piecePage fadein">
       <NavBar />
       <main>
-        <div className="piece-info">
-          <div className="piece-data">
-            <div className="piece-year"></div>
-            <div className="piece-title"></div>
-            <div className="piece-size"></div>
-            <div className="piece-medium"></div>
-            <div className="piece-url"></div>
-          </div>
-          <div className="piece-description">
-            <div className="piece-description-expand">
-              <div className="piece-description-text"></div>
-              <a
-                className="piece-more"
-                onClick={() => setIsDescriptionExpanded(!isDescriptionExpanded)}
-              >
-                ( + more )
-              </a>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module">
+          <div className="piece-info">
+            <div className="piece-data">
+              <div className="piece-year"></div>
+              <div className="piece-title"></div>
+              <div className="piece-size"></div>
+              <div className="piece-medium"></div>
+              <div className="piece-url"></div>
+            </div>
+            <div className="piece-description">
+              <div className="piece-description-expand">
+                <div className="piece-description-text"></div>
+                <a
+                  className="piece-more"
+                  onClick={() =>
+                    setIsDescriptionExpanded(!isDescriptionExpanded)
+                  }
+                >
+                  ( + more )
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="media">{loadPhotos()}</div>
+        <div className="module">
+          <div className="media">{loadPhotos()}</div>
+        </div>
+        <div className="module"></div>
       </main>
     </div>
   );

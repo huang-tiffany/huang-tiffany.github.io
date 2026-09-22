@@ -1,9 +1,100 @@
 .piecePage {
   width: 100vw;
-  height: calc(100dvh - 2em);
+  height: 100dvh;
   display: flex;
-  top: 1em;
-  gap: 2em;
+}
+
+.piecePage main {
+  display: grid;
+  height: 100dvh;
+  width: 100vw;
+  overflow: scroll;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: calc(100dvh / 6) 1fr;
+  gap: 0;
+}
+
+.piecePage main div.module {
+  border: 0.5px solid transparent;
+  transition: 0.5s ease;
+  padding: 2em;
+
+  &:first-of-type {
+    left: 0.25px;
+    top: 0.25px;
+    border-end-end-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to bottom right, black 50%, white) border-box;
+    z-index: 1;
+  }
+
+  &:nth-child(2) {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to bottom, black 50%, white) border-box;
+    right: 0.25px;
+    top: 0.25px;
+    width: calc(100% + 0.5px);
+  }
+
+  &:nth-child(3) {
+    border-bottom-left-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to bottom left, black 50%, white) border-box;
+    right: 0.25px;
+    top: 0.25px;
+    z-index: 1;
+  }
+
+  &:nth-child(4) {
+    border-top-right-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to top right, black 50%, white) border-box;
+    left: 0.25px;
+    bottom: 0.25px;
+    z-index: 1;
+  }
+
+  &:nth-child(5) {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to top, black 50%, white) border-box;
+    right: 0.25px;
+    width: calc(100% + 0.5px);
+    bottom: 0.25px;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+    /* &::before {
+      content: "";
+      box-shadow: 0 0 1em 2em inset black;
+      width: calc(100vw / 3 * 2 - 0.5px);
+      height: calc(100dvh / 6 * 5);
+      position: fixed;
+      z-index: 2;
+      margin-top: -2em;
+      margin-left: -2em;
+    } */
+  }
+
+  &:nth-child(6) {
+    border-top-left-radius: 8px;
+    background:
+      linear-gradient(black, black) padding-box,
+      linear-gradient(to top left, black 50%, white) border-box;
+    right: 0.25px;
+    bottom: 0.25px;
+    z-index: 1;
+  }
 }
 
 .piecePage .media {
@@ -11,15 +102,15 @@
   flex-direction: column;
   gap: 1em;
   height: 100%;
+  height: fit-content;
+  background-color: black;
 }
 
 .piecePage .piece-info {
   display: flex;
   line-height: 1.2;
   font-weight: 400;
-  width: calc(100vw / 4);
   flex-shrink: 0;
-  height: calc(100dvh - 2em);
   flex-direction: column;
   position: sticky;
   left: 0;
@@ -28,12 +119,16 @@
 
 .piecePage .piece-description {
   font-size: 0.9em;
+  /* column-count: 2; */
+  column-gap: 2em;
 }
 
 .piecePage .piece-more {
   font-weight: 600;
-  margin-left: 0.5em;
-  float: right;
+  /* margin-left: 0.5em; */
+  display: block;
+  margin-top: 1em;
+  /* float: right; */
 
   &:hover::before {
     content: "";
@@ -80,7 +175,7 @@
 .piecePage .piece-description {
   height: fit-content;
   width: 100%;
-  text-align: justify;
+  text-align: left;
 }
 
 .piecePage .piece-year {
@@ -134,15 +229,6 @@
 .piecePage .piece-url a:hover::after {
   transform: rotate(-90deg);
   transition-duration: 0.25s;
-}
-
-.piecePage main {
-  height: calc(100dvh - 2em);
-  display: flex;
-  width: calc(100vw / 6 * 5 - 4em);
-  overflow: scroll;
-  flex-shrink: 0;
-  gap: 2em;
 }
 
 .piecePage main video,
