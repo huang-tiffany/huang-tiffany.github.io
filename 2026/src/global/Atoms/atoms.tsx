@@ -341,6 +341,124 @@ export const pieces = atom<{
 
     // 3D
     "3D": {
+      confessional: {
+        category: "3D",
+        string: "confessional",
+        year: "2026",
+        title: "For All the Words I Can't Say Aloud",
+        size: '53" &times; 33" &times; 23"',
+        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        url: "",
+        statement:
+          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+        media: [
+          "confessional1.jpg",
+          "confessional2.jpg",
+          "confessional3.jpg",
+          "confessional4.jpg",
+          "confessional5.jpg",
+          "confessional6.jpg",
+          "confessional7.jpg",
+          "confessional8.jpg",
+          "confessional9.jpg",
+          "confessional10.jpg",
+          "confessional11.jpg",
+          "confessional12.jpg",
+          "confessional13.jpg",
+          "confessional14.jpg",
+          "confessional15.jpg",
+        ],
+        previewDescription:
+          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+        previewImage: "commandchaise7.jpg",
+        tags: ["furniture", "metalworking", "soft goods"],
+      },
+
+      inflatedGridLight: {
+        category: "3D",
+        string: "inflatedGridLight",
+        year: "2026",
+        title: "Inflated Grid Light",
+        size: '53" &times; 33" &times; 23"',
+        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        url: "",
+        statement:
+          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+        media: [
+          "gridlight1.jpg",
+          "gridlight2.jpg",
+          "gridlight3.jpg",
+          "gridlight4.jpg",
+          "gridlight5.jpg",
+          "gridlight6.jpg",
+          "gridlight7.jpg",
+          "gridlight8.jpg",
+          "gridlight9.jpg",
+          "gridlight10.jpg",
+          "gridlight11.jpg",
+          "gridlight12.jpg",
+        ],
+        previewDescription:
+          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+        previewImage: "commandchaise7.jpg",
+        tags: ["furniture", "metalworking", "soft goods"],
+      },
+
+      pinkyRings: {
+        category: "3D",
+        string: "pinkyRings",
+        year: "2026",
+        title: "Pinky Promise Rings",
+        size: '53" &times; 33" &times; 23"',
+        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        url: "",
+        statement:
+          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+        media: [
+          "pinkyrings1.jpg",
+          "pinkyrings2.jpg",
+          "pinkyrings3.jpg",
+          "pinkyrings4.jpg",
+          "pinkyrings5.jpg",
+          "pinkyrings6.jpg",
+          "pinkyrings7.jpg",
+          "pinkyrings8.jpg",
+        ],
+        previewDescription:
+          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+        previewImage: "commandchaise7.jpg",
+        tags: ["furniture", "metalworking", "soft goods"],
+      },
+
+      locket: {
+        category: "3D",
+        string: "locket",
+        year: "2026",
+        title: "Separation and Reunion Locket Jacket Clasps",
+        size: '53" &times; 33" &times; 23"',
+        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        url: "",
+        statement:
+          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+        media: [
+          "locket1.jpg",
+          "locket2.jpg",
+          "locket3.jpg",
+          "locket4.jpg",
+          "locket5.jpg",
+          "locket6.jpg",
+          "locket7.jpg",
+          "locket8.jpg",
+          "locket9.jpg",
+          "locket10.jpg",
+          "locket11.jpg",
+        ],
+        previewDescription:
+          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+        previewImage: "commandchaise7.jpg",
+        tags: ["furniture", "metalworking", "soft goods"],
+      },
+
       commandChaise: {
         category: "3D",
         string: "commandChaise",
