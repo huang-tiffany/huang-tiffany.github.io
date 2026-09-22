@@ -9,7 +9,7 @@
   height: 100dvh;
   width: 100vw;
   overflow: scroll;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: minmax(10em, 1fr) 4fr minmax(10em, 1fr);
   grid-template-rows: calc(100dvh / 6) 1fr;
   gap: 0;
 }
@@ -104,6 +104,7 @@
   height: 100%;
   height: fit-content;
   background-color: black;
+  box-shadow: 0 0 2em 1em black;
 }
 
 .piecePage .piece-info {
@@ -125,10 +126,9 @@
 
 .piecePage .piece-more {
   font-weight: 600;
-  /* margin-left: 0.5em; */
-  display: block;
-  margin-top: 1em;
-  /* float: right; */
+  margin-left: 0.5em;
+  display: inline;
+  white-space: nowrap;
 
   &:hover::before {
     content: "";
@@ -237,10 +237,9 @@
   font-size: 1em;
   width: 100%;
   border-radius: 0.5em;
-  box-shadow: inset 1em black;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .piecePage main {
     flex-direction: column;
     width: 100%;
@@ -285,4 +284,4 @@
     height: fit-content;
     background-color: black;
   }
-}
+} */

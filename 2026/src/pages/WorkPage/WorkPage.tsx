@@ -109,65 +109,86 @@ export default function WorkPage() {
               onMouseEnter={() => setPreview(key, piece.string)}
               onMouseLeave={() => setPreview("", "")}
             >
-              {vidPieces.includes(piece.string) ? (
-                <video
-                  onClick={() => relocate("/work/" + key + "/" + piece.string)}
-                  webkit-playsinline="true"
-                  playsInline
-                  autoPlay
-                  muted
-                  loop
-                >
-                  <source
-                    src={"/coverimages/" + piece.string.toLowerCase() + ".mp4"}
-                    type="video/mp4"
+              <div className="media-container">
+                {vidPieces.includes(piece.string) ? (
+                  <video
+                    onClick={() =>
+                      relocate("/work/" + key + "/" + piece.string)
+                    }
+                    webkit-playsinline="true"
+                    playsInline
+                    autoPlay
+                    muted
+                    loop
+                  >
+                    <source
+                      src={
+                        "/coverimages/" + piece.string.toLowerCase() + ".mp4"
+                      }
+                      type="video/mp4"
+                    />
+                  </video>
+                ) : (
+                  <img
+                    loading="lazy"
+                    onClick={() =>
+                      relocate("/work/" + key + "/" + piece.string)
+                    }
+                    src={
+                      gifPieces.includes(piece.string)
+                        ? "/coverimages/" + piece.string.toLowerCase() + ".gif"
+                        : "/coverimages/" + piece.string.toLowerCase() + ".jpg"
+                    }
+                    alt={piece.title + " Cover Image"}
                   />
-                </video>
-              ) : (
-                <img
-                  loading="lazy"
-                  onClick={() => relocate("/work/" + key + "/" + piece.string)}
-                  src={
-                    gifPieces.includes(piece.string)
-                      ? "/coverimages/" + piece.string.toLowerCase() + ".gif"
-                      : "/coverimages/" + piece.string.toLowerCase() + ".jpg"
-                  }
-                  alt={piece.title + " Cover Image"}
-                />
-              )}
+                )}
 
-              <div className="piece-data">
-                <div
-                  className="piece-title"
-                  onClick={() => relocate("/work/" + key + "/" + piece.string)}
-                >
-                  {piece.title}
+                <div className="hidden-piece-data">
+                  <div className="hidden-piece-year">
+                    <p>{piece.year}</p>
+                  </div>
+                  <div className="hidden-piece-title">
+                    <p>{piece.title}</p>
+                  </div>
                 </div>
-
-                <div className="piece-year">{piece.year}</div>
               </div>
-              <div className="piece-tags">
-                <div className="piece-tag">
-                  <p>(</p>
+              <div>
+                <div className="piece-data">
+                  <div
+                    className="piece-title"
+                    onClick={() =>
+                      relocate("/work/" + key + "/" + piece.string)
+                    }
+                  >
+                    {piece.title}
+                  </div>
                 </div>
-                {piece.tags.map((tag: string, index: number) => {
-                  return (
-                    <>
-                      <div className="piece-tag">
-                        <p>{tag}</p>
-                      </div>
-                      {index < piece.tags.length - 1 ? (
+                <div className="piece-tags">
+                  <div className="piece-tag">
+                    <p>(</p>
+                  </div>
+                  {piece.tags.map((tag: string, index: number) => {
+                    return (
+                      <>
                         <div className="piece-tag">
-                          <p>/</p>
+                          <p>{tag}</p>
                         </div>
-                      ) : (
-                        <></>
-                      )}
-                    </>
-                  );
-                })}
-                <div className="piece-tag">
-                  <p>)</p>
+                        {index < piece.tags.length - 1 ? (
+                          <div className="piece-tag">
+                            <p>/</p>
+                          </div>
+                        ) : (
+                          <></>
+                        )}
+                      </>
+                    );
+                  })}
+                  <div className="piece-tag">
+                    <p>)</p>
+                  </div>
+                </div>
+                <div className="hidden-piece-preview">
+                  <p>{piece.previewDescription}</p>
                 </div>
               </div>
             </div>

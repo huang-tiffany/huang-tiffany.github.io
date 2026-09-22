@@ -13,7 +13,7 @@
   top: 0;
 
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: minmax(10em, 1fr) 4fr minmax(10em, 1fr);
   grid-template-rows: calc(100dvh / 6) 3em 1fr;
   gap: 0;
 }
@@ -146,14 +146,18 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  column-gap: 2em;
+  margin-bottom: 2em;
+  column-gap: 1em;
+  row-gap: 2em;
 }
 
 .workPage .category-piece {
-  width: calc((100% - 4em) / 3);
+  width: calc((100% - 2em) / 3);
   display: flex;
   flex-direction: column;
   transition: 0.25s ease;
+  height: fit-content;
+  overflow: visible;
 }
 
 .workPage .piece-data {
@@ -164,15 +168,13 @@
 .workPage .piece-title {
   margin-right: 1em;
   line-height: 1.25;
+  transition: 0.5s ease;
+  transition-delay: 75ms;
+  top: 0;
 }
 
 .workPage .piece-title:hover {
   cursor: pointer;
-}
-
-.workPage .piece-year {
-  font-style: italic;
-  line-height: 1.25;
 }
 
 .workPage .category-piece img,
@@ -180,17 +182,135 @@
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: cover;
-  transition: 0.25s ease;
+  transition: 0.5s ease;
   margin-bottom: 0.75em;
   border-radius: 0.5em;
 }
 
-.workPage .category-piece img:hover,
-.workPage .category-piece video:hover {
-  cursor: pointer;
+.workPage .media-container {
+  display: flex;
 }
 
-.workPage .piece-preview {
+.workPage .hidden-piece-preview {
+  position: absolute;
+  padding-top: 0;
+  top: 0;
+
+  p {
+    bottom: -0.5em;
+    opacity: 0;
+    font-size: 0.9em;
+    filter: blur(8px);
+    line-height: 1.25;
+    transition: 0.25s ease;
+  }
+}
+
+.workPage .hidden-piece-data {
+  position: absolute;
+  bottom: 1.5em;
+  left: 0.75em;
+
+  .hidden-piece-title,
+  .hidden-piece-year {
+    overflow: hidden;
+  }
+
+  .hidden-piece-year p {
+    font-size: 0.7em;
+    font-style: italic;
+    transition-delay: 50ms;
+  }
+
+  p {
+    font-size: 1.25em;
+    margin: 0;
+    bottom: -0.5em;
+    transition: 0.25s ease;
+    transition-delay: 25ms;
+    filter: blur(8px);
+    opacity: 0;
+  }
+}
+
+.workPage .category-piece:hover {
+  transition: 0.5s ease;
+  img,
+  video {
+    cursor: pointer;
+    filter: blur(4px) brightness(0.75);
+    opacity: 0.25;
+  }
+
+  .piece-title,
+  .piece-tag {
+    transition: 0.25s ease;
+    transition-delay: 25ms;
+    top: -0.5em;
+    filter: blur(8px);
+    opacity: 0;
+  }
+
+  .piece-tag {
+    transition-delay: 50ms;
+  }
+
+  .hidden-piece-data p {
+    bottom: 0em;
+    transition: 0.25s ease;
+    filter: blur(0px);
+    opacity: 1;
+
+    .hidden-piece-title & {
+      transition-delay: 50ms;
+    }
+  }
+
+  .hidden-piece-preview p {
+    opacity: 1;
+    bottom: 0;
+    filter: blur(0px);
+    transition: 0.5s ease;
+    transition-delay: 50ms;
+  }
+}
+
+.workPage .piece-tags {
+  column-gap: 0.25em;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.workPage .piece-tag {
+  display: inline;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  transition-delay: 25ms;
+  top: 0;
+
+  &:not(:last-of-type) {
+    margin-right: 0.25em;
+  }
+}
+
+.workPage .piece-tag p {
+  font-size: 0.6em;
+  margin: 0;
+  min-width: 0;
+  text-wrap: nowrap;
+  display: inline;
+}
+
+.workPage .piece-text,
+.workPage .piece-tags {
+  overflow: hidden;
+}
+
+/* .workPage .piece-preview {
   position: absolute;
   bottom: 1em;
   row-gap: 0;
@@ -225,7 +345,7 @@
 .workPage .piece-preview-title {
   margin-bottom: 0.5em;
   line-height: 1.35em;
-}
+} */
 
 .workPage .mode-wrapper {
   line-height: 1;
@@ -262,34 +382,6 @@
   align-items: flex-end;
 }
 
-.workPage .piece-tags {
-  column-gap: 0.25em;
-  padding-bottom: 1.5em;
-  display: inline-block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.1;
-  white-space: nowrap;
-}
-
-.workPage .piece-tag {
-  display: inline;
-  text-transform: uppercase;
-
-  &:not(:last-of-type) {
-    margin-right: 0.25em;
-  }
-}
-
-.workPage .piece-tag p {
-  font-size: 0.6em;
-  margin: 0;
-  min-width: 0;
-  text-wrap: nowrap;
-  display: inline;
-}
-
 .workPage .links p {
   margin: 0;
   text-decoration: line-through;
@@ -304,7 +396,7 @@ nav #mobile-contact {
   display: none;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .workPage .category-piece {
     width: calc((100% - 2em) / 2);
   }
@@ -362,4 +454,4 @@ nav #mobile-contact {
   nav #desktop-name {
     display: none;
   }
-}
+} */

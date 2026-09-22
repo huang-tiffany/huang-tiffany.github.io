@@ -146,6 +146,7 @@ export default function PiecePage() {
         <div className="module"></div>
         <div className="module"></div>
         <div className="module"></div>
+        <div className="module"></div>
         <div className="module">
           <div className="piece-info">
             <div className="piece-data">
@@ -169,8 +170,6 @@ export default function PiecePage() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="module">
           <div className="media">{loadPhotos()}</div>
         </div>
         <div className="module"></div>

@@ -167,7 +167,7 @@ export const pieces = atom<{
         previewDescription:
           "Single serving site recreating the serendipity of eye contact with strangers.",
         previewImage: "people(-)watching3.jpg",
-        tags: ["web", "coding", "data design"],
+        tags: ["web", "front-end", "data design"],
       },
 
       emt: {
@@ -218,7 +218,7 @@ export const pieces = atom<{
         previewDescription:
           "Web-based app for generating new Spotify playlists with more nuance and control.",
         previewImage: "amplify1.jpg",
-        tags: ["web", "coding", "front-end", "design engineering"],
+        tags: ["web", "front-end", "design engineering"],
       },
 
       sccParks: {
@@ -407,7 +407,7 @@ export const pieces = atom<{
         previewDescription:
           "Slip-casted soy sauce cruet with dual pour mechanism for both serving and storage.",
         previewImage: "cruet1.jpg",
-        tags: ["ceramics", "production", "tableware", "product"],
+        tags: ["ceramics", "tableware"],
       },
 
       rectGarment: {
@@ -438,7 +438,7 @@ export const pieces = atom<{
         previewDescription:
           "Modular knitwear documenting four years of exploring the streets of a small city.",
         previewImage: "rectgarment0.jpg",
-        tags: ["wearable", "product", "soft goods"],
+        tags: ["wearable", "soft goods"],
       },
 
       clickingBoots: {
@@ -471,7 +471,7 @@ export const pieces = atom<{
         previewDescription:
           "Leather boots with single-piece pleated uppers, snap closures, and machined aluminum leveling heels.",
         previewImage: "clickingboots5.jpg",
-        tags: ["shoemaking", "machining", "prototyping", "product", "wearable"],
+        tags: ["shoemaking", "machining", "wearable"],
       },
 
       loveInAPuff: {
@@ -500,7 +500,7 @@ export const pieces = atom<{
         previewDescription:
           "Bridging emotional distance between people with breath, light, and movement.",
         previewImage: "loveinapuff2.jpg",
-        tags: ["product", "prototyping", "arduino", "machining"],
+        tags: ["arduino", "machining"],
       },
 
       homebodyTable: {
@@ -593,7 +593,7 @@ export const pieces = atom<{
         previewDescription:
           "Hand cultivator gardening tool designed to fit Makita's brand and product line.",
         previewImage: "makitacultivator6.jpg",
-        tags: ["product", "prototyping", "machining", "cad"],
+        tags: ["machining", "cad"],
       },
 
       permutationJars: {
@@ -694,7 +694,7 @@ export const pieces = atom<{
           "livelaughloaf5.png",
         ],
         previewDescription:
-          "Building upon an existing research paper about procedural bread generation and simulation.",
+          "Building upon an existing research paper about modeling baking processes.",
         previewImage: "livelaughloaf3.png",
         tags: ["computer graphics", "animation"],
       },
