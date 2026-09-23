@@ -17,7 +17,6 @@
 .piecePage main div.module {
   border: 0.5px solid transparent;
   transition: 0.5s ease;
-  padding: 2em;
 
   &:first-of-type {
     left: 0.25px;
@@ -73,6 +72,7 @@
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    padding: 2em;
 
     /* &::before {
       content: "";
@@ -137,6 +137,10 @@
 
 .piecePage .piece-description-expand div {
   display: inline;
+}
+
+.piecePage .piece-description-expand.expanded {
+  column-count: 2;
 }
 
 .piecePage .piece-data {
@@ -239,12 +243,15 @@
   border-radius: 0.5em;
 }
 
-/* @media (max-width: 768px) {
-  .piecePage main {
-    flex-direction: column;
-    width: 100%;
-    padding: 0 1em;
-    flex: 1 1 100%;
+@media (max-width: 768px) {
+  .piecePage .media {
+    height: fit-content;
+    background-color: black;
+  }
+
+  .piecePage .piece-description-expand.expanded {
+    column-count: 1;
+    z-index: -2;
   }
 
   .piecePage .piece-info {
@@ -252,36 +259,25 @@
     height: fit-content;
     bottom: 0;
     top: unset;
+
+    &::before {
+      content: "";
+      background-color: black;
+      position: fixed;
+      width: calc(100vw - 4em - 1.25px);
+      height: 2em;
+      left: calc(2em + 0.75px);
+      top: calc(6em + 0.25px);
+      border-radius: 12px;
+    }
   }
 
-  .piecePage .media {
-    height: fit-content;
-    background-color: black;
+  .piecePage main {
+    grid-template-columns: minmax(0, 2em) 4fr 2em;
+    grid-template-rows: 6em 1fr;
+  }
+
+  .piecePage main div.module:nth-child(5) {
+    padding: 1.5em;
   }
 }
-
-@media (max-width: 576px) {
-  .piecePage {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .piecePage main {
-    flex-direction: column;
-    width: 100%;
-    padding: 0 1em;
-    height: calc(100dvh - 8.5em);
-  }
-
-  .piecePage .piece-info {
-    width: 100%;
-    height: fit-content;
-    bottom: 0;
-    top: unset;
-  }
-
-  .piecePage .media {
-    height: fit-content;
-    background-color: black;
-  }
-} */

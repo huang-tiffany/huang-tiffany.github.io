@@ -1,4 +1,5 @@
 .workPage {
+  --desktop-radius: 8px;
   width: 100vw;
   height: calc(100dvh - 1em);
   margin: 0;
@@ -27,7 +28,7 @@
   &:first-of-type {
     left: 0.25px;
     top: 0.25px;
-    border-end-end-radius: 8px;
+    border-end-end-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom right, black 50%, white) border-box;
@@ -35,8 +36,8 @@
   }
 
   &:nth-child(2) {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: var(--desktop-radius);
+    border-bottom-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom, black 50%, white) border-box;
@@ -46,7 +47,7 @@
   }
 
   &:nth-child(3) {
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom left, black 50%, white) border-box;
@@ -56,8 +57,8 @@
   }
 
   &:nth-child(4) {
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
+    border-bottom-right-radius: var(--desktop-radius);
+    border-top-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to right, black 50%, white) border-box;
@@ -67,7 +68,7 @@
   }
 
   &:nth-child(5) {
-    border-radius: 8px;
+    border-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(white, white) border-box;
@@ -84,8 +85,8 @@
   }
 
   &:nth-child(6) {
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
+    border-bottom-left-radius: var(--desktop-radius);
+    border-top-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to left, black 50%, white) border-box;
@@ -95,7 +96,7 @@
   }
 
   &:nth-child(7) {
-    border-top-right-radius: 8px;
+    border-top-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top right, black 50%, white) border-box;
@@ -105,8 +106,8 @@
   }
 
   &:nth-child(8) {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: var(--desktop-radius);
+    border-top-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top, black 50%, white) border-box;
@@ -119,7 +120,7 @@
   }
 
   &:nth-child(9) {
-    border-top-left-radius: 8px;
+    border-top-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top left, black 50%, white) border-box;
@@ -210,10 +211,12 @@
   position: absolute;
   bottom: 1.5em;
   left: 0.75em;
+  pointer-events: none;
 
   .hidden-piece-title,
   .hidden-piece-year {
     overflow: hidden;
+    pointer-events: none;
   }
 
   .hidden-piece-year p {
@@ -232,6 +235,7 @@
     transition-delay: 25ms;
     filter: blur(8px);
     opacity: 0;
+    pointer-events: none;
   }
 }
 
@@ -251,6 +255,7 @@
     top: -0.5em;
     filter: blur(8px);
     opacity: 0;
+    pointer-events: none;
   }
 
   .piece-tag {
@@ -410,50 +415,27 @@ nav #mobile-contact {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .workPage .category-piece {
     width: 100%;
   }
 
-  .workPage {
-    flex-direction: column;
-  }
-
-  .piece-preview {
-    display: none;
-  }
-
   .workPage main {
-    width: 100%;
-    padding: 0 1em;
+    grid-template-columns: 2em 4fr 2em;
+    grid-template-rows: 6em 3em 1fr;
   }
 
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-    width: calc(100vw - 2em);
-    height: fit-content;
-    text-align: end;
+  .workPage .mode-wrapper {
+    margin-left: 1.5em;
   }
 
-  nav .links a:hover::after {
-    content: "";
+  .workPage main div.module {
+    &:nth-child(8) {
+      padding: 1.5em;
+    }
   }
 
-  nav #desktop-contact {
-    display: none;
-  }
-
-  nav #mobile-contact {
-    display: initial;
-  }
-
-  nav .links {
-    display: flex;
-    line-height: unset;
-  }
-
-  nav #desktop-name {
-    display: none;
+  .workPage .category-pieces {
+    gap: 1.5em;
   }
 }

@@ -348,10 +348,10 @@ export const pieces = atom<{
         title: "Inflated Grid Light",
         size: '53" &times; 33" &times; 23"',
         medium:
-          "Steel Sheet, Hydroformer, TIG Welder, Steel Tube, Steel Rod, Lighting Components",
+          "Steel Sheet, Hydrostatic Test Pump, TIG Welder, Steel Tube, Steel Rod, Lighting Components",
         url: "",
         statement:
-          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+          "After a winter-long exploration of different ways of manipulating sheet steel with both manual and industrial machines across 36 prototypes, the <em>Inflated Grid Light</em> developed from a combination of alterations to the material using the hydroforming technique of expanding metal with water pressure. <br><br> The form evolved from experimentation with constraining the convex forms using a variety of methods, such as bead-rolling to work-harden the metal or puncturing and reinforcing the gap between two sheets before inflating. The resulting lighting object focuses on the unique pillow-like nature of the form, combined with the intersecting tubes that allow for light to filter through. <br><br> Designed for utiliarian, metropolitan settings such as subways and bus stops, the piece adopts the ubiquitous tube light as its main lighting fixture, which opens up possibilities to create a modular system that can expand to different lengths and configurations.",
         media: [
           "gridlight1.jpg",
           "gridlight2.jpg",
@@ -378,10 +378,11 @@ export const pieces = atom<{
         year: "2026",
         title: "Separation and Reunion Locket Jacket Clasps",
         size: '53" &times; 33" &times; 23"',
-        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        medium:
+          "Sterling Silver, Personal Artifacts, Jeweler's Saw, Torch, Files",
         url: "",
         statement:
-          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+          "Stemming from an interest in hardware of all kinds, these two jacket clasps investigate the intersection of jewelry and hardware through objects that are both sentimental and functional. The locket is repurposed as something that can hold the two sides of a jacket together: when closed, the locket dangles freely on one side of the jacket and leaves the garment unbuttoned, keeping what’s inside close to the wearer’s heart; when open, the locket brings the two sides of the jacket together and bares its contents for external viewers. <br><br> The face of each locket features a saw-pierced cutout of two silhouettes in a window pane. Depending on the ordering of the two lockets, the set shows two figures either uniting or separating, inspired by the idea of friends that come together and part ways over the years. In the same way that lockets, as vessels for memory and artifacts for emotion, bring together their wearer with loved ones that are framed inside with use, so do these clasps bring together the two sides of the jacket that share hellos and goodbyes, as friends do. <br><br> Each clasp’s frame displays a piece of paper: one a fortune cookie slip that reads, “Family is the heart of a loving home,” and the other an image of friends taken by a Poetry Camera, the poem separated. The lockets and adjoining hardware are sewn into the jacket, complete with mechanisms that allow each locket to be fixed in an open or closed state. <br><br> Photos courtesy of Seunghye Kim.",
         media: [
           "locket1.jpg",
           "locket2.jpg",
@@ -406,11 +407,11 @@ export const pieces = atom<{
         string: "pinkyRings",
         year: "2026",
         title: "Pinky Promise Rings",
-        size: '53" &times; 33" &times; 23"',
+        size: "U.S. Ring Size 3.5",
         medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
         url: "",
         statement:
-          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+          "After having created furniture and large-scale objects as explorations into creating shared experiences between pairs of people, the Pinky Promise Rings extend this practice into the smaller scale of jewelry. A ball-and-socket-adjacent mechanism connects two rings together, allowing them to be worn only in configurations where the two wearers’ pinkies are joined together. <br><br> The project explores the idea of skinship and intimacy, choosing this specific position of a pinky promise being both a symbolic gesture and a more subtle way of holding hands while staying physically conjoined. In constraining two people to be in a specific position, the rings ask wearers to become more aware of another person’s movements by also allowing some movement to allow for minor adjustments of the hands. The rings feature sweat-soldered foxes running toward each other, taken from the symbolism of a fox as a spiritual and transformative guide, and of a pair of foxes as figures of loyalty and balance.",
         media: [
           "pinkyrings1.jpg",
           "pinkyrings2.jpg",
@@ -436,7 +437,7 @@ export const pieces = atom<{
         medium: "Steel, Upholstery Foam, Velvet, Plywood, Paper, Pens",
         url: "",
         statement:
-          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+          "<em>For All the Words I Can’t Say Aloud</em> reinterprets Catholic confession and kneeling benches into a structure meant for facilitating difficult conversations. Although not intended as a religious object, the structure invites participants to kneel and write letters to each other as a means of mediated, private conversation. By passing slips of paper back and forth through the mailbox, two people are able to converse in real-time, while feeling the weight of a physical presence across from them. <br><br> While Catholic confession requires verbal admissions of guilt from sinners to an anonymous, ordained listener, altering the format of the communication to a written one (inspired by love letters and pen pal friendships) allows participants to edit, reword, and process words that they might otherwise be unable to utter aloud. This mediated means of conversation reframes the act of exchanging dialogue as a ritual, encouraging intimacy, vulnerability, and more open communication. <br><br> The piece features welded tube, rod, and sheet metal, combined with machined feet and caps that evoke the ornamental motifs of Gothic architecture and combine the various ways of working with carbon steel.",
         media: [
           "confessional1.jpg",
           "confessional2.jpg",

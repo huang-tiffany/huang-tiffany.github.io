@@ -121,18 +121,26 @@ export default function PiecePage() {
     const pieceStatement: HTMLElement | null = document.querySelector(
       "div.piece-description-text",
     );
+    const pieceStatementExpand: HTMLElement | null = document.querySelector(
+      "div.piece-description-expand",
+    );
     const pieceDescription: HTMLElement | null = document.querySelector(
       "div.piece-description",
     );
     const moreButton: HTMLElement | null =
       document.querySelector("a.piece-more");
-    if (pieceStatement && moreButton && pieceDescription) {
+    if (
+      pieceStatement &&
+      moreButton &&
+      pieceDescription &&
+      pieceStatementExpand
+    ) {
       if (isDescriptionExpanded) {
-        pieceDescription.style.columnCount = "2";
+        pieceStatementExpand.classList.add("expanded");
         pieceStatement.innerHTML = statement;
         moreButton.innerHTML = "( - less )";
       } else {
-        pieceDescription.style.columnCount = "1";
+        pieceStatementExpand.classList.remove("expanded");
         pieceStatement.innerHTML = previewDescription;
         moreButton.innerHTML = "( + more )";
       }

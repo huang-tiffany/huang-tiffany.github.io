@@ -85,3 +85,35 @@ nav .links a:hover::before {
   content: " ↖ ";
   font-size: 0.9em;
 }
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 6em;
+    text-align: end;
+    padding: 0 2em;
+
+    #logo-container,
+    .links {
+      padding: 1.5em;
+    }
+  }
+
+  nav #desktop-contact {
+    display: none;
+  }
+
+  nav #mobile-contact {
+    display: initial;
+  }
+
+  nav .links {
+    display: flex;
+    line-height: unset;
+  }
+
+  nav #desktop-name {
+    display: none;
+  }
+}
