@@ -341,39 +341,6 @@ export const pieces = atom<{
 
     // 3D
     "3D": {
-      confessional: {
-        category: "3D",
-        string: "confessional",
-        year: "2026",
-        title: "For All the Words I Can't Say Aloud",
-        size: '53" &times; 33" &times; 23"',
-        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
-        url: "",
-        statement:
-          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
-        media: [
-          "confessional1.jpg",
-          "confessional2.jpg",
-          "confessional3.jpg",
-          "confessional4.jpg",
-          "confessional5.jpg",
-          "confessional6.jpg",
-          "confessional7.jpg",
-          "confessional8.jpg",
-          "confessional9.jpg",
-          "confessional10.jpg",
-          "confessional11.jpg",
-          "confessional12.jpg",
-          "confessional13.jpg",
-          "confessional14.jpg",
-          "confessional15.jpg",
-        ],
-        previewDescription:
-          "Catholic confession-inspired structure that mediates intimate conversation through written letters.",
-        previewImage: "commandchaise7.jpg",
-        tags: ["installation", "metalworking", "upholstery"],
-      },
-
       inflatedGridLight: {
         category: "3D",
         string: "inflatedGridLight",
@@ -405,32 +372,6 @@ export const pieces = atom<{
         tags: ["lighting", "metalworking"],
       },
 
-      pinkyRings: {
-        category: "3D",
-        string: "pinkyRings",
-        year: "2026",
-        title: "Pinky Promise Rings",
-        size: '53" &times; 33" &times; 23"',
-        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
-        url: "",
-        statement:
-          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
-        media: [
-          "pinkyrings1.jpg",
-          "pinkyrings2.jpg",
-          "pinkyrings3.jpg",
-          "pinkyrings4.jpg",
-          "pinkyrings5.jpg",
-          "pinkyrings6.jpg",
-          "pinkyrings7.jpg",
-          "pinkyrings8.jpg",
-        ],
-        previewDescription:
-          "Couple rings that keep lovers linked together through an alternative way of holding hands.",
-        previewImage: "commandchaise7.jpg",
-        tags: ["jewelry", "wearable"],
-      },
-
       locket: {
         category: "3D",
         string: "locket",
@@ -460,10 +401,69 @@ export const pieces = atom<{
         tags: ["jewelry", "wearable"],
       },
 
+      pinkyRings: {
+        category: "3D",
+        string: "pinkyRings",
+        year: "2026",
+        title: "Pinky Promise Rings",
+        size: '53" &times; 33" &times; 23"',
+        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        url: "",
+        statement:
+          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+        media: [
+          "pinkyrings1.jpg",
+          "pinkyrings2.jpg",
+          "pinkyrings3.jpg",
+          "pinkyrings4.jpg",
+          "pinkyrings5.jpg",
+          "pinkyrings6.jpg",
+          "pinkyrings7.jpg",
+          "pinkyrings8.jpg",
+        ],
+        previewDescription:
+          "Couple rings that keep lovers linked together through an alternative way of holding hands.",
+        previewImage: "commandchaise7.jpg",
+        tags: ["jewelry", "wearable"],
+      },
+
+      confessional: {
+        category: "3D",
+        string: "confessional",
+        year: "2025",
+        title: "For All the Words I Can't Say Aloud",
+        size: '23" &times; 44" &times; 45"',
+        medium: "Steel, Upholstery Foam, Velvet, Plywood, Paper, Pens",
+        url: "",
+        statement:
+          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+        media: [
+          "confessional1.jpg",
+          "confessional2.jpg",
+          "confessional3.jpg",
+          "confessional4.jpg",
+          "confessional5.jpg",
+          "confessional6.jpg",
+          "confessional7.jpg",
+          "confessional8.jpg",
+          "confessional9.jpg",
+          "confessional10.jpg",
+          "confessional11.jpg",
+          "confessional12.jpg",
+          "confessional13.jpg",
+          "confessional14.jpg",
+          "confessional15.jpg",
+        ],
+        previewDescription:
+          "Catholic confession-inspired structure that mediates intimate conversation through written letters.",
+        previewImage: "commandchaise7.jpg",
+        tags: ["installation", "metalworking", "upholstery"],
+      },
+
       commandChaise: {
         category: "3D",
         string: "commandChaise",
-        year: "2026",
+        year: "2025",
         title: "Command Chaise",
         size: '53" &times; 33" &times; 23"',
         medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",

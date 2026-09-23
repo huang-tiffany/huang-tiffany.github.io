@@ -66,6 +66,14 @@ export default function HomePage() {
     }, 1750);
   }, []);
 
+  const handleOutOfRange = () => {
+    const quads = document.getElementsByClassName("quad");
+    (quads[0] as HTMLElement).style.borderEndEndRadius = "8px";
+    (quads[1] as HTMLElement).style.borderBottomLeftRadius = "8px";
+    (quads[2] as HTMLElement).style.borderStartEndRadius = "8px";
+    (quads[3] as HTMLElement).style.borderStartStartRadius = "8px";
+  };
+
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
       const quads = document.getElementsByClassName("quad");
@@ -75,10 +83,7 @@ export default function HomePage() {
       const dist = Math.hypot(event.clientX - right, event.clientY - bottom);
 
       if (dist > 200) {
-        (quads[0] as HTMLElement).style.borderEndEndRadius = "8px";
-        (quads[1] as HTMLElement).style.borderBottomLeftRadius = "8px";
-        (quads[2] as HTMLElement).style.borderStartEndRadius = "8px";
-        (quads[3] as HTMLElement).style.borderStartStartRadius = "8px";
+        handleOutOfRange();
         return;
       }
 
@@ -185,7 +190,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="homePage fadein">
+    <div className="homePage fadein" onMouseOut={() => handleOutOfRange()}>
       <NavBar />
       <main>
         <div
