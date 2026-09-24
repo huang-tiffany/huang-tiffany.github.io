@@ -27,17 +27,26 @@
   display: none;
 }
 
+@property --gradient-percentage {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+
 .homePage main .quad {
   border: 0.5px solid transparent;
-  transition: 0.5s ease;
+  transition:
+    --gradient-percentage 1s ease,
+    all 0.5s ease;
 
   &:nth-child(1 of .quad) {
     left: 0.25px;
     top: 0.25px;
-    border-end-end-radius: 8px;
+    border-end-end-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom right, black 50%, white) border-box;
+      linear-gradient(to bottom right, black var(--gradient-percentage), white)
+        border-box;
 
     &:hover {
       border-end-end-radius: 24px;
@@ -45,10 +54,11 @@
   }
 
   &:nth-child(2 of .quad) {
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom left, black 50%, white) border-box;
+      linear-gradient(to bottom left, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     top: 0.25px;
 
@@ -58,10 +68,11 @@
   }
 
   &:nth-child(3 of .quad) {
-    border-start-end-radius: 8px;
+    border-start-end-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top right, black 50%, white) border-box;
+      linear-gradient(to top right, black var(--gradient-percentage), white)
+        border-box;
     bottom: 0.25px;
     left: 0.25px;
 
@@ -72,10 +83,11 @@
 
   &:nth-child(4 of .quad) {
     height: calc(100dvh - 6em);
-    border-top-left-radius: 8px;
+    border-top-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top left, black 50%, white) border-box;
+      linear-gradient(to top left, black var(--gradient-percentage), white)
+        border-box;
     bottom: 0.25px;
     right: 0.25px;
     padding: 2em;
@@ -202,7 +214,7 @@ a:hover::before {
   pointer-events: none;
 
   video {
-    border-radius: 1em;
+    border-radius: 0.5em;
     overflow: hidden;
     object-fit: cover;
     aspect-ratio: 16/9;

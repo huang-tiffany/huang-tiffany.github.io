@@ -147,6 +147,43 @@ export default function PiecePage() {
     }
   }, [isDescriptionExpanded]);
 
+  useEffect(() => {
+    const modules = document.getElementsByClassName("module");
+    (modules[0] as HTMLElement).style.borderEndEndRadius = "0px";
+    (modules[1] as HTMLElement).style.borderBottomLeftRadius = "0px";
+    (modules[1] as HTMLElement).style.borderBottomRightRadius = "0px";
+    (modules[2] as HTMLElement).style.borderBottomLeftRadius = "0px";
+    (modules[3] as HTMLElement).style.borderStartEndRadius = "0px";
+    (modules[4] as HTMLElement).style.borderTopLeftRadius = "0px";
+    (modules[4] as HTMLElement).style.borderTopRightRadius = "0px";
+    (modules[5] as HTMLElement).style.borderStartStartRadius = "0px";
+
+    const vid: HTMLVideoElement | null = document.querySelector("video");
+    setTimeout(() => {
+      vid?.play();
+    }, 1750);
+
+    setTimeout(() => {
+      for (let i = 0; i < modules.length; i++) {
+        (modules[i] as HTMLElement).style.setProperty(
+          "--gradient-percentage",
+          "50%",
+        );
+      }
+    }, 500);
+
+    setTimeout(() => {
+      (modules[0] as HTMLElement).style.borderEndEndRadius = "8px";
+      (modules[1] as HTMLElement).style.borderBottomLeftRadius = "8px";
+      (modules[1] as HTMLElement).style.borderBottomRightRadius = "8px";
+      (modules[2] as HTMLElement).style.borderBottomLeftRadius = "8px";
+      (modules[3] as HTMLElement).style.borderStartEndRadius = "8px";
+      (modules[4] as HTMLElement).style.borderTopLeftRadius = "8px";
+      (modules[4] as HTMLElement).style.borderTopRightRadius = "8px";
+      (modules[5] as HTMLElement).style.borderStartStartRadius = "8px";
+    }, 500);
+  }, []);
+
   return (
     <div className="piecePage fadein">
       <NavBar />

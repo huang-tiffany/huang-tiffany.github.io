@@ -14,9 +14,26 @@
   gap: 0;
 }
 
+@property --gradient-percentage {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+
+@keyframes border-fadein {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: calc(50% - var(--desktop-radius));
+  }
+}
+
 .piecePage main div.module {
   border: 0.5px solid transparent;
-  transition: 0.5s ease;
+  transition:
+    --gradient-percentage 1s ease,
+    all 0.5s ease;
 
   &:first-of-type {
     left: 0.25px;
@@ -24,7 +41,8 @@
     border-end-end-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom right, black 50%, white) border-box;
+      linear-gradient(to bottom right, black var(--gradient-percentage), white)
+        border-box;
     z-index: 1;
   }
 
@@ -33,17 +51,45 @@
     border-bottom-right-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom, black 50%, white) border-box;
+      linear-gradient(to bottom, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     top: 0.25px;
     width: calc(100% + 0.5px);
+
+    &::after,
+    &::before {
+      content: "";
+      width: 50%;
+      height: 1px;
+      border-bottom: white 0.25px solid;
+      position: absolute;
+      bottom: -0.5px;
+      z-index: 5;
+      animation-name: border-fadein;
+      animation-timing-function: ease-in;
+      animation-duration: 0.25s;
+      animation-fill-mode: both;
+      animation-delay: 250ms;
+    }
+
+    &::before {
+      border-bottom-left-radius: var(--desktop-radius);
+      right: 50%;
+    }
+
+    &::after {
+      left: 50%;
+      border-bottom-right-radius: var(--desktop-radius);
+    }
   }
 
   &:nth-child(3) {
     border-bottom-left-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom left, black 50%, white) border-box;
+      linear-gradient(to bottom left, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     top: 0.25px;
     z-index: 1;
@@ -53,7 +99,8 @@
     border-top-right-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top right, black 50%, white) border-box;
+      linear-gradient(to top right, black var(--gradient-percentage), white)
+        border-box;
     left: 0.25px;
     bottom: 0.25px;
     z-index: 1;
@@ -64,7 +111,8 @@
     border-top-right-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top, black 50%, white) border-box;
+      linear-gradient(to top, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     width: calc(100% + 0.5px);
     bottom: 0.25px;
@@ -90,7 +138,8 @@
     border-top-left-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top left, black 50%, white) border-box;
+      linear-gradient(to top left, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     bottom: 0.25px;
     z-index: 1;

@@ -17,47 +17,6 @@ export function hoverMenu(inout: string, menu: string) {
     }
   }
 }
-
-export function hoverDiamond(inout: string, number: number) {
-  const quads = document.getElementsByClassName("quad");
-  // if (inout === "out") {
-  //   (quads[0] as HTMLElement).style.borderEndEndRadius = "8px";
-  //   (quads[1] as HTMLElement).style.borderBottomLeftRadius = "8px";
-  //   (quads[2] as HTMLElement).style.borderStartEndRadius = "8px";
-  //   (quads[3] as HTMLElement).style.borderStartStartRadius = "8px";
-  //   return;
-  // }
-
-  // switch (number) {
-  //   case 1:
-  //     (quads[0] as HTMLElement).style.borderEndEndRadius = "32px";
-  //     (quads[1] as HTMLElement).style.borderBottomLeftRadius = "20px";
-  //     (quads[2] as HTMLElement).style.borderStartEndRadius = "16px";
-  //     (quads[3] as HTMLElement).style.borderStartStartRadius = "12px";
-  //     break;
-  //   case 2:
-  //     (quads[0] as HTMLElement).style.borderEndEndRadius = "16px";
-  //     (quads[1] as HTMLElement).style.borderBottomLeftRadius = "36px";
-  //     (quads[2] as HTMLElement).style.borderStartEndRadius = "12px";
-  //     (quads[3] as HTMLElement).style.borderStartStartRadius = "28px";
-  //     break;
-  //   case 3:
-  //     (quads[0] as HTMLElement).style.borderEndEndRadius = "20px";
-  //     (quads[1] as HTMLElement).style.borderBottomLeftRadius = "12px";
-  //     (quads[2] as HTMLElement).style.borderStartEndRadius = "44px";
-  //     (quads[3] as HTMLElement).style.borderStartStartRadius = "24px";
-  //     break;
-  //   case 4:
-  //     (quads[0] as HTMLElement).style.borderEndEndRadius = "12px";
-  //     (quads[1] as HTMLElement).style.borderBottomLeftRadius = "28px";
-  //     (quads[2] as HTMLElement).style.borderStartEndRadius = "20px";
-  //     (quads[3] as HTMLElement).style.borderStartStartRadius = "56px";
-  //     break;
-  //   default:
-  //     break;
-  // }
-}
-
 interface InlineTextLinkProps {
   url: string;
   text: string;
@@ -87,10 +46,32 @@ export function InlineTextLink({ url, text }: InlineTextLinkProps) {
 
 export default function HomePage() {
   useEffect(() => {
+    const quads = document.getElementsByClassName("quad");
+    (quads[0] as HTMLElement).style.borderEndEndRadius = "0px";
+    (quads[1] as HTMLElement).style.borderBottomLeftRadius = "0px";
+    (quads[2] as HTMLElement).style.borderStartEndRadius = "0px";
+    (quads[3] as HTMLElement).style.borderStartStartRadius = "0px";
+
     const vid: HTMLVideoElement | null = document.querySelector("video");
     setTimeout(() => {
       vid?.play();
     }, 1750);
+
+    setTimeout(() => {
+      for (let i = 0; i < quads.length; i++) {
+        (quads[i] as HTMLElement).style.setProperty(
+          "--gradient-percentage",
+          "50%",
+        );
+      }
+    }, 300);
+
+    setTimeout(() => {
+      (quads[0] as HTMLElement).style.borderEndEndRadius = "8px";
+      (quads[1] as HTMLElement).style.borderBottomLeftRadius = "8px";
+      (quads[2] as HTMLElement).style.borderStartEndRadius = "8px";
+      (quads[3] as HTMLElement).style.borderStartStartRadius = "8px";
+    }, 500);
   }, []);
 
   const handleOutOfRange = () => {
@@ -164,26 +145,10 @@ export default function HomePage() {
         <div className="module"></div>
         <div className="module"></div>
 
-        <div
-          className="quad"
-          onMouseOver={() => hoverDiamond("hover", 1)}
-          onMouseOut={() => hoverDiamond("out", 1)}
-        ></div>
-        <div
-          className="quad"
-          onMouseOver={() => hoverDiamond("hover", 2)}
-          onMouseOut={() => hoverDiamond("out", 2)}
-        ></div>
-        <div
-          className="quad"
-          onMouseOver={() => hoverDiamond("hover", 3)}
-          onMouseOut={() => hoverDiamond("out", 3)}
-        ></div>
-        <div
-          className="quad"
-          onMouseOver={() => hoverDiamond("hover", 4)}
-          onMouseOut={() => hoverDiamond("out", 4)}
-        >
+        <div className="quad"></div>
+        <div className="quad"></div>
+        <div className="quad"></div>
+        <div className="quad">
           <div className="text-container">
             <div id="mobile-name">
               tiffany huang
