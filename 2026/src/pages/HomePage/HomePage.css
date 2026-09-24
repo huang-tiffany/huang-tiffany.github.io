@@ -130,7 +130,7 @@ nav a,
 
 nav a:hover::before,
 #additional-links a:last-of-type:hover::before,
-#version a:hover:first-of-type::after,
+#version a:hover:nth-of-type(2)::after,
 #version a::before,
 .text-group a:hover::before {
   content: "";
@@ -139,7 +139,7 @@ nav a:hover::before,
 a:hover::before {
   font-family: system-ui;
   content: " ↖ ";
-  font-size: 0.9em;
+  font-size: 0.75em;
 }
 
 #version a:hover::after {
@@ -147,7 +147,7 @@ a:hover::before {
   display: inline-block;
   margin-left: 0.25em;
   content: " ↗ ";
-  font-size: 0.9em;
+  font-size: 0.75em;
 }
 
 .homePage .text-container {
@@ -159,19 +159,27 @@ a:hover::before {
   flex-direction: column;
   font-size: 0.9em;
   margin-bottom: 1em;
+
+  a {
+    border-bottom: 0.25px solid white;
+  }
 }
 
-.text-group a::after {
+.text-group a span {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.text-group a .link-arrow {
   font-family: system-ui;
   display: inline-block;
-  margin-left: 0.25em;
-  content: " ↘ ";
-  font-size: 0.9em;
+  font-size: 0.75em;
   transform: rotate(0deg);
   transition-duration: 0.25s;
+  cursor: pointer;
 }
 
-.text-group a:hover::after {
+.text-group a:hover .link-arrow {
   transform: rotate(-90deg);
   transition-duration: 0.25s;
 }
@@ -215,15 +223,15 @@ a:hover::before {
   }
 
   .homePage #version {
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-start;
+    column-gap: 1em;
+    align-content: flex-start;
+    align-items: flex-start;
     height: 6em;
     bottom: 0;
     flex-wrap: wrap;
     width: calc(100vw - 4em);
-    padding: 0 1.5em;
+    padding: 1.5em;
+    flex-direction: column;
   }
 
   .homePage #reel {

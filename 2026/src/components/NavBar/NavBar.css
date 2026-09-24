@@ -78,16 +78,10 @@ nav #logo {
   /* pointer-events: none; */
 }
 
-nav #desktop-contact::after {
-  content: " +";
-  font-family: inherit;
-  font-size: 1em;
-}
-
 nav .links a:hover::before {
   font-family: system-ui;
   content: " ↖ ";
-  font-size: 0.9em;
+  font-size: 0.75em;
 }
 
 @media (max-width: 768px) {
@@ -101,14 +95,6 @@ nav .links a:hover::before {
     .links {
       padding: 1.5em;
     }
-  }
-
-  nav:not(.homePage nav) #desktop-contact {
-    display: none;
-  }
-
-  nav:not(.homePage nav) #mobile-contact {
-    display: initial;
   }
 
   nav:not(.homePage nav) .links {
@@ -136,10 +122,6 @@ nav .links a:hover::before {
 
   nav #desktop-contact {
     display: none;
-  }
-
-  nav #mobile-contact {
-    display: initial;
   }
 
   nav .links {

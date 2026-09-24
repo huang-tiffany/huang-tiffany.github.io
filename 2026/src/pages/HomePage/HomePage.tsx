@@ -58,6 +58,33 @@ export function hoverDiamond(inout: string, number: number) {
   // }
 }
 
+interface InlineTextLinkProps {
+  url: string;
+  text: string;
+}
+export function InlineTextLink({ url, text }: InlineTextLinkProps) {
+  // split by spaces
+  // recombine all but the last word
+  // wrap last word with span + after element
+  const arr = text.split(" ");
+  let normalText = "";
+  for (let i = 0; i < arr.length - 1; i++) {
+    normalText += arr[i] + " ";
+  }
+
+  const lastWord = arr[arr.length - 1];
+
+  return (
+    <a target="_blank" href={url}>
+      {normalText}{" "}
+      <span>
+        {lastWord}&nbsp;
+        <div className="link-arrow"> ↘ </div>
+      </span>
+    </a>
+  );
+}
+
 export default function HomePage() {
   useEffect(() => {
     const vid: HTMLVideoElement | null = document.querySelector("video");
@@ -166,41 +193,36 @@ export default function HomePage() {
               <p className="header">currently</p>
               <p>
                 frontend swe @{" "}
-                <a target="_blank" href="https://nvidia.com/">
-                  nvidia
-                </a>{" "}
-                <br />
+                <InlineTextLink text="nvidia" url="https://nvidia.com/" />
               </p>
             </div>
             <div className="text-group" id="previously">
               <p className="header">previously</p>
               <p>
                 brand design @{" "}
-                <a target="_blank" href="https://ramp.com/">
-                  ramp
-                </a>
+                <InlineTextLink text="ramp" url="https://ramp.com/" />
                 <br />
                 design @{" "}
-                <a
-                  target="_blank"
-                  href="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation"
-                >
-                  santa clara county parks & rec
-                </a>
+                <InlineTextLink
+                  text="santa clara county parks & rec"
+                  url="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation"
+                />
               </p>
             </div>
             <div className="text-group" id="education">
               <p className="header">education</p>
               <p>
                 bachelor of fine arts, industrial design @{" "}
-                <a target="_blank" href="https://risd.edu/">
-                  the rhode island school of design
-                </a>
+                <InlineTextLink
+                  text="the rhode island school of design"
+                  url="https://risd.edu/"
+                />
                 <br />
                 bachelor of science, computer science @{" "}
-                <a target="_blank" href="https://brown.edu/">
-                  brown university
-                </a>
+                <InlineTextLink
+                  text="brown university"
+                  url="https://brown.edu/"
+                />
               </p>
             </div>
           </div>
@@ -208,37 +230,29 @@ export default function HomePage() {
             <div className="text-group" id="press">
               <p className="header">press</p>
               <p>
-                <a
-                  target="_blank"
-                  href="https://www.risd.edu/news/stories/brown-risd-dual-degree-students-present-capstone-projects-showcasing-personal-journeys"
-                >
-                  capstone presentations, risd news, june 2026
-                </a>
+                <InlineTextLink
+                  text="capstone presentations, risd news, june 2026"
+                  url="https://www.risd.edu/news/stories/brown-risd-dual-degree-students-present-capstone-projects-showcasing-personal-journeys"
+                />
                 <br />
-                <a
-                  target="_blank"
-                  href="https://www.risd.edu/news/stories/risd-students-share-thought-provoking-work-final-fall-2025-critiques"
-                >
-                  furniture crit, risd news, december 2025
-                </a>
+                <InlineTextLink
+                  text="furniture crit, risd news, december 2025"
+                  url="https://www.risd.edu/news/stories/risd-students-share-thought-provoking-work-final-fall-2025-critiques"
+                />
                 <br />
-                <a
-                  target="_blank"
-                  href="https://www.risd.edu/news/stories/risd-students-use-complex-data-to-create-interactive-research-projects"
-                >
-                  data design studio, risd news, february 2024
-                </a>
+                <InlineTextLink
+                  text="data design studio, risd news, february 2024"
+                  url="https://www.risd.edu/news/stories/risd-students-use-complex-data-to-create-interactive-research-projects"
+                />
               </p>
             </div>
             <div className="text-group" id="talks">
               <p className="header">talks</p>
               <p>
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/watch?v=ii1wmqAtjXA"
-                >
-                  brown | risd dual degree capstone, 2026
-                </a>
+                <InlineTextLink
+                  text=" brown | risd dual degree capstone, 2026"
+                  url="https://www.youtube.com/watch?v=ii1wmqAtjXA"
+                />
               </p>
             </div>
           </div>
@@ -254,6 +268,9 @@ export default function HomePage() {
         <div className="module"></div>
 
         <div id="version" className="fadein">
+          <a target="_blank" href="https://th-archive.github.io/">
+            archive
+          </a>
           <a
             onMouseOver={() => hoverMenu("hover", "ver")}
             onMouseOut={() => hoverMenu("out", "ver")}
