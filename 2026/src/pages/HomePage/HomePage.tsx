@@ -76,6 +76,9 @@ export default function HomePage() {
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
+      if (window.innerWidth <= 576) {
+        return;
+      }
       const quads = document.getElementsByClassName("quad");
       const right = (quads[0] as HTMLElement).getBoundingClientRect().right;
       const bottom = (quads[0] as HTMLElement).getBoundingClientRect().bottom;
@@ -86,8 +89,6 @@ export default function HomePage() {
         handleOutOfRange();
         return;
       }
-
-      const percent = dist / 200;
 
       if (event.clientX > right) {
         if (event.clientY > bottom) {
@@ -118,68 +119,6 @@ export default function HomePage() {
           (quads[3] as HTMLElement).style.borderStartStartRadius = "12px";
         }
       }
-
-      // if (event.clientX > right) {
-      //   if (event.clientY > bottom) {
-      //     console.log("lower right");
-      //     (quads[0] as HTMLElement).style.borderEndEndRadius =
-      //       `${percent * 32 * 0.5}px`;
-      //     (quads[1] as HTMLElement).style.borderBottomLeftRadius =
-      //       `${percent * 36 * 0.25}px`;
-      //     (quads[2] as HTMLElement).style.borderStartEndRadius =
-      //       `${percent * 44 * 0.25}px`;
-      //     (quads[3] as HTMLElement).style.borderStartStartRadius =
-      //       `${percent * 56}px`;
-      //     // (quads[0] as HTMLElement).style.borderEndEndRadius = "12px";
-      //     // (quads[1] as HTMLElement).style.borderBottomLeftRadius = "28px";
-      //     // (quads[2] as HTMLElement).style.borderStartEndRadius = "20px";
-      //     // (quads[3] as HTMLElement).style.borderStartStartRadius = "56px";
-      //   } else {
-      //     console.log("upper right");
-      //     (quads[0] as HTMLElement).style.borderEndEndRadius =
-      //       `${percent * 32 * 0.5}px`;
-      //     (quads[1] as HTMLElement).style.borderBottomLeftRadius =
-      //       `${percent * 36}px`;
-      //     (quads[2] as HTMLElement).style.borderStartEndRadius =
-      //       `${percent * 44 * 0.25}px`;
-      //     (quads[3] as HTMLElement).style.borderStartStartRadius =
-      //       `${percent * 56 * 0.5}px`;
-      //     // (quads[0] as HTMLElement).style.borderEndEndRadius = "16px";
-      //     // (quads[1] as HTMLElement).style.borderBottomLeftRadius = "36px";
-      //     // (quads[2] as HTMLElement).style.borderStartEndRadius = "12px";
-      //     // (quads[3] as HTMLElement).style.borderStartStartRadius = "28px";
-      //   }
-      // } else {
-      //   if (event.clientY > bottom) {
-      //     console.log("lower left");
-      //     (quads[0] as HTMLElement).style.borderEndEndRadius =
-      //       `${percent * 32 * 0.5}px`;
-      //     (quads[1] as HTMLElement).style.borderBottomLeftRadius =
-      //       `${percent * 36 * 0.25}px`;
-      //     (quads[2] as HTMLElement).style.borderStartEndRadius =
-      //       `${percent * 44}px`;
-      //     (quads[3] as HTMLElement).style.borderStartStartRadius =
-      //       `${percent * 56 * 0.5}px`;
-      //     // (quads[0] as HTMLElement).style.borderEndEndRadius = "20px";
-      //     // (quads[1] as HTMLElement).style.borderBottomLeftRadius = "12px";
-      //     // (quads[2] as HTMLElement).style.borderStartEndRadius = "44px";
-      //     // (quads[3] as HTMLElement).style.borderStartStartRadius = "24px";
-      //   } else {
-      //     console.log("upper left");
-      //     (quads[0] as HTMLElement).style.borderEndEndRadius =
-      //       `${percent * 32}px`;
-      //     (quads[1] as HTMLElement).style.borderBottomLeftRadius =
-      //       `${percent * 36 * 0.5}px`;
-      //     (quads[2] as HTMLElement).style.borderStartEndRadius =
-      //       `${percent * 44 * 0.5}px`;
-      //     (quads[3] as HTMLElement).style.borderStartStartRadius =
-      //       `${percent * 56 * 0.25}px`;
-      //     // (quads[0] as HTMLElement).style.borderEndEndRadius = "32px";
-      //     // (quads[1] as HTMLElement).style.borderBottomLeftRadius = "20px";
-      //     // (quads[2] as HTMLElement).style.borderStartEndRadius = "16px";
-      //     // (quads[3] as HTMLElement).style.borderStartStartRadius = "12px";
-      //   }
-      // }
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -193,6 +132,11 @@ export default function HomePage() {
     <div className="homePage fadein" onMouseOut={() => handleOutOfRange()}>
       <NavBar />
       <main>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+
         <div
           className="quad"
           onMouseOver={() => hoverDiamond("hover", 1)}
@@ -207,68 +151,18 @@ export default function HomePage() {
           className="quad"
           onMouseOver={() => hoverDiamond("hover", 3)}
           onMouseOut={() => hoverDiamond("out", 3)}
-        >
-          <div id="version" className="fadein">
-            <a
-              target="_blank"
-              href="https://huang-tiffany.github.io/2021"
-              className="hidden ver"
-              onMouseOver={() => hoverMenu("hover", "ver")}
-              onMouseOut={() => hoverMenu("out", "ver")}
-            >
-              v. 2021
-            </a>
-            <a
-              target="_blank"
-              href="https://huang-tiffany.github.io/2022"
-              className="hidden ver"
-              onMouseOver={() => hoverMenu("hover", "ver")}
-              onMouseOut={() => hoverMenu("out", "ver")}
-            >
-              v. 2022
-            </a>
-            <a
-              target="_blank"
-              href="https://huang-tiffany.github.io/2023"
-              className="hidden ver"
-              onMouseOver={() => hoverMenu("hover", "ver")}
-              onMouseOut={() => hoverMenu("out", "ver")}
-            >
-              v. 2023
-            </a>
-            <a
-              target="_blank"
-              href="https://huang-tiffany.github.io/2024"
-              className="hidden ver"
-              onMouseOver={() => hoverMenu("hover", "ver")}
-              onMouseOut={() => hoverMenu("out", "ver")}
-            >
-              v. 2024
-            </a>
-            <a
-              target="_blank"
-              href="https://huang-tiffany.github.io/2025"
-              className="hidden ver"
-              onMouseOver={() => hoverMenu("hover", "ver")}
-              onMouseOut={() => hoverMenu("out", "ver")}
-            >
-              v. 2025
-            </a>
-            <a
-              onMouseOver={() => hoverMenu("hover", "ver")}
-              onMouseOut={() => hoverMenu("out", "ver")}
-            >
-              v. 2026
-            </a>
-          </div>
-        </div>
+        ></div>
         <div
           className="quad"
           onMouseOver={() => hoverDiamond("hover", 4)}
           onMouseOut={() => hoverDiamond("out", 4)}
         >
           <div className="text-container">
-            <div className="text-group">
+            <div id="mobile-name">
+              tiffany huang
+              <br /> <p>( design engineer )</p>
+            </div>
+            <div className="text-group" id="currently">
               <p className="header">currently</p>
               <p>
                 frontend swe @{" "}
@@ -278,7 +172,7 @@ export default function HomePage() {
                 <br />
               </p>
             </div>
-            <div className="text-group">
+            <div className="text-group" id="previously">
               <p className="header">previously</p>
               <p>
                 brand design @{" "}
@@ -286,16 +180,16 @@ export default function HomePage() {
                   ramp
                 </a>
                 <br />
-                brand design @{" "}
+                design @{" "}
                 <a
                   target="_blank"
                   href="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation"
                 >
-                  santa clara county parks and rec
+                  santa clara county parks & rec
                 </a>
               </p>
             </div>
-            <div className="text-group">
+            <div className="text-group" id="education">
               <p className="header">education</p>
               <p>
                 bachelor of fine arts, industrial design @{" "}
@@ -311,7 +205,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="text-container">
-            <div className="text-group">
+            <div className="text-group" id="press">
               <p className="header">press</p>
               <p>
                 <a
@@ -336,7 +230,7 @@ export default function HomePage() {
                 </a>
               </p>
             </div>
-            <div className="text-group">
+            <div className="text-group" id="talks">
               <p className="header">talks</p>
               <p>
                 <a
@@ -353,6 +247,64 @@ export default function HomePage() {
               <source src="/videos/2025 demo reel.mp4" type="video/mp4" />
             </video>
           </div>
+        </div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+        <div className="module"></div>
+
+        <div id="version" className="fadein">
+          <a
+            onMouseOver={() => hoverMenu("hover", "ver")}
+            onMouseOut={() => hoverMenu("out", "ver")}
+          >
+            v. 2026
+          </a>
+          <a
+            target="_blank"
+            href="https://huang-tiffany.github.io/2025"
+            className="hidden ver"
+            onMouseOver={() => hoverMenu("hover", "ver")}
+            onMouseOut={() => hoverMenu("out", "ver")}
+          >
+            v. 2025
+          </a>
+          <a
+            target="_blank"
+            href="https://huang-tiffany.github.io/2024"
+            className="hidden ver"
+            onMouseOver={() => hoverMenu("hover", "ver")}
+            onMouseOut={() => hoverMenu("out", "ver")}
+          >
+            v. 2024
+          </a>
+          <a
+            target="_blank"
+            href="https://huang-tiffany.github.io/2023"
+            className="hidden ver"
+            onMouseOver={() => hoverMenu("hover", "ver")}
+            onMouseOut={() => hoverMenu("out", "ver")}
+          >
+            v. 2023
+          </a>
+          <a
+            target="_blank"
+            href="https://huang-tiffany.github.io/2022"
+            className="hidden ver"
+            onMouseOver={() => hoverMenu("hover", "ver")}
+            onMouseOut={() => hoverMenu("out", "ver")}
+          >
+            v. 2022
+          </a>
+          <a
+            target="_blank"
+            href="https://huang-tiffany.github.io/2021"
+            className="hidden ver"
+            onMouseOver={() => hoverMenu("hover", "ver")}
+            onMouseOut={() => hoverMenu("out", "ver")}
+          >
+            v. 2021
+          </a>
         </div>
       </main>
     </div>

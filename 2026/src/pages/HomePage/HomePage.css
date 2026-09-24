@@ -13,7 +13,7 @@
   width: 100vw;
   display: grid;
   grid-template-columns: minmax(10em, 1fr) 5fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 6em 5fr;
   gap: 0;
 }
 
@@ -23,11 +23,15 @@
   animation-fill-mode: both;
 }
 
+.homePage main .module {
+  display: none;
+}
+
 .homePage main .quad {
   border: 0.5px solid transparent;
   transition: 0.5s ease;
 
-  &:first-of-type {
+  &:nth-child(1 of .quad) {
     left: 0.25px;
     top: 0.25px;
     border-end-end-radius: 8px;
@@ -40,7 +44,7 @@
     }
   }
 
-  &:nth-child(2) {
+  &:nth-child(2 of .quad) {
     border-bottom-left-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
@@ -53,23 +57,21 @@
     }
   }
 
-  &:nth-child(3) {
+  &:nth-child(3 of .quad) {
     border-start-end-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top right, black 50%, white) border-box;
     bottom: 0.25px;
     left: 0.25px;
-    display: flex;
-    align-items: flex-end;
 
     &:hover {
       border-start-end-radius: 40px;
     }
   }
 
-  &:last-of-type {
-    height: calc(100dvh / 6 * 5);
+  &:nth-child(4 of .quad) {
+    height: calc(100dvh - 6em);
     border-top-left-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
@@ -110,13 +112,14 @@ a.addlink.hidden {
 
 .homePage #version {
   display: flex;
+  position: fixed;
+  bottom: 2em;
+  left: 2em;
   flex-shrink: 0;
-  margin-bottom: 2em;
-  margin-left: 2em;
   width: 10ch;
   text-align: start;
   justify-content: start;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 #version a,
@@ -127,7 +130,7 @@ nav a,
 
 nav a:hover::before,
 #additional-links a:last-of-type:hover::before,
-#version a:hover:last-of-type::after,
+#version a:hover:first-of-type::after,
 #version a::before,
 .text-group a:hover::before {
   content: "";
@@ -150,6 +153,7 @@ a:hover::before {
 .homePage .text-container {
   width: calc(100vw / 3 - 2em);
 }
+
 .homePage .text-group {
   display: flex;
   flex-direction: column;
@@ -194,6 +198,192 @@ a:hover::before {
     overflow: hidden;
     object-fit: cover;
     aspect-ratio: 16/9;
+  }
+}
+
+.homePage #mobile-name {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .homePage main {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2em 5fr 2em;
+    grid-template-rows: 6em 5fr 6em;
+    gap: 0;
+  }
+
+  .homePage #version {
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    height: 6em;
+    bottom: 0;
+    flex-wrap: wrap;
+    width: calc(100vw - 4em);
+    padding: 0 1.5em;
+  }
+
+  .homePage #reel {
+    position: absolute;
+    bottom: 1.5em;
+    right: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 3em);
+    pointer-events: none;
+
+    video {
+      border-radius: 0.5em;
+      overflow: hidden;
+      object-fit: cover;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  .homePage main .quad {
+    display: none;
+
+    &:nth-child(4 of .quad) {
+      border-radius: var(--desktop-radius);
+      background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(white, white) border-box;
+      left: -0.25px;
+      top: -0.25px;
+      width: calc(100% + 0.5px);
+      height: calc(100dvh - 12em + 0.5px);
+      flex-direction: column;
+      padding: 1.5em;
+      gap: 0;
+    }
+  }
+
+  .homePage .text-container {
+    width: 100%;
+  }
+
+  .homePage .text-group {
+    margin: 0;
+  }
+
+  .homePage .header {
+    margin: 0;
+  }
+
+  .homePage main .module {
+    display: unset;
+    border: 0.5px solid transparent;
+
+    &:nth-child(1 of .module) {
+      left: 0.25px;
+      top: 0.25px;
+      border-end-end-radius: var(--desktop-radius);
+      background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to bottom right, black 50%, white) border-box;
+      z-index: 1;
+    }
+
+    &:nth-child(2 of .module) {
+      border-bottom-left-radius: var(--desktop-radius);
+      border-bottom-right-radius: var(--desktop-radius);
+      background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to bottom, black 50%, white) border-box;
+      right: 0.25px;
+      top: 0.25px;
+      width: calc(100% + 0.5px);
+    }
+
+    &:nth-child(3 of .module) {
+      border-bottom-left-radius: var(--desktop-radius);
+      background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to bottom left, black 50%, white) border-box;
+      right: 0.25px;
+      top: 0.25px;
+      z-index: 1;
+    }
+
+    &:nth-child(4 of .module) {
+      border-bottom-right-radius: var(--desktop-radius);
+      border-top-right-radius: var(--desktop-radius);
+      background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to right, black 50%, white) border-box;
+      left: 0.25px;
+      top: -0.25px;
+      height: calc(100% + 0.5px);
+    }
+
+    &:nth-child(5 of .module) {
+      border-bottom-left-radius: var(--desktop-radius);
+      border-top-left-radius: var(--desktop-radius);
+      background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to left, black 50%, white) border-box;
+      right: 0.25px;
+      top: -0.25px;
+      height: calc(100% + 0.5px);
+    }
+
+    &:nth-child(6 of .module) {
+      border-top-right-radius: var(--desktop-radius);
+      background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to top right, black 50%, white) border-box;
+      left: 0.25px;
+      bottom: 0.5px;
+      z-index: 1;
+    }
+
+    &:nth-child(7 of .module) {
+      border-top-left-radius: var(--desktop-radius);
+      border-top-right-radius: var(--desktop-radius);
+      background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to top, black 50%, white) border-box;
+      right: 0.25px;
+      width: calc(100% + 0.5px);
+      height: 6em;
+      bottom: 0.5px;
+      padding-bottom: 0;
+      overflow-y: scroll;
+    }
+
+    &:nth-child(8 of .module) {
+      border-top-left-radius: var(--desktop-radius);
+      background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to top left, black 50%, white) border-box;
+      right: 0.25px;
+      bottom: 0.5px;
+      z-index: 1;
+    }
+  }
+
+  .homePage #mobile-name {
+    display: unset;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    line-height: 1.25;
+
+    p {
+      opacity: 0.7;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+
+  #education,
+  #press {
+    display: none;
   }
 }
 

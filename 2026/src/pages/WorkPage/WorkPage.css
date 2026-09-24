@@ -1,5 +1,4 @@
 .workPage {
-  --desktop-radius: 8px;
   width: 100vw;
   height: calc(100dvh - 1em);
   margin: 0;
@@ -15,7 +14,7 @@
 
   display: grid;
   grid-template-columns: minmax(10em, 1fr) 4fr minmax(10em, 1fr);
-  grid-template-rows: calc(100dvh / 6) 3em 1fr;
+  grid-template-rows: 6em 3em 1fr;
   gap: 0;
 }
 
@@ -78,6 +77,7 @@
     height: calc(100% + 0.5px);
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &:hover {
       border-radius: 12px;
@@ -211,6 +211,7 @@
   position: absolute;
   bottom: 1.5em;
   left: 0.75em;
+  width: calc(100% - 1.5em);
   pointer-events: none;
 
   .hidden-piece-title,
@@ -358,7 +359,6 @@
   line-height: 1;
   z-index: 6;
   display: flex;
-  margin-left: 2em;
   align-items: center;
   position: sticky;
   top: 0;
@@ -430,6 +430,9 @@ nav #mobile-contact {
   }
 
   .workPage main div.module {
+    &:nth-child(5) {
+      justify-content: start;
+    }
     &:nth-child(8) {
       padding: 1.5em;
     }

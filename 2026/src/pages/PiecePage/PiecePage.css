@@ -10,7 +10,7 @@
   width: 100vw;
   overflow: scroll;
   grid-template-columns: minmax(10em, 1fr) 4fr minmax(10em, 1fr);
-  grid-template-rows: calc(100dvh / 6) 1fr;
+  grid-template-rows: 6em 1fr;
   gap: 0;
 }
 
