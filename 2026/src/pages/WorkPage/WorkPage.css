@@ -33,7 +33,6 @@
   &:first-of-type {
     left: 0.25px;
     top: 0.25px;
-    border-end-end-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom right, black var(--gradient-percentage), white)
@@ -42,8 +41,6 @@
   }
 
   &:nth-child(2) {
-    border-bottom-left-radius: var(--desktop-radius);
-    border-bottom-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom, black var(--gradient-percentage), white)
@@ -54,7 +51,6 @@
   }
 
   &:nth-child(3) {
-    border-bottom-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom left, black var(--gradient-percentage), white)
@@ -65,8 +61,6 @@
   }
 
   &:nth-child(4) {
-    border-bottom-right-radius: var(--desktop-radius);
-    border-top-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to right, black var(--gradient-percentage), white)
@@ -77,7 +71,6 @@
   }
 
   &:nth-child(5) {
-    border-radius: var(--desktop-radius);
     left: -0.25px;
     top: -0.25px;
     width: calc(100% + 0.5px);
@@ -85,7 +78,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 5;
 
     &:hover {
       border-radius: 12px;
@@ -94,14 +87,13 @@
     &::after,
     &::before {
       content: "";
-      /* background-color: pink; */
       position: absolute;
       z-index: 5;
       border-radius: 0;
       top: calc(50% + 0.25px);
       left: calc(50% + 0.25px);
       transform: translate(calc(-50% - 0.25px), calc(-50% - 0.25px));
-      animation-timing-function: ease-in;
+      animation-timing-function: ease-out;
       animation-duration: 0.25s;
       animation-fill-mode: both;
       animation-delay: 250ms;
@@ -123,8 +115,6 @@
   }
 
   &:nth-child(6) {
-    border-bottom-left-radius: var(--desktop-radius);
-    border-top-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to left, black var(--gradient-percentage), white)
@@ -135,7 +125,6 @@
   }
 
   &:nth-child(7) {
-    border-top-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top right, black var(--gradient-percentage), white)
@@ -146,8 +135,6 @@
   }
 
   &:nth-child(8) {
-    border-top-left-radius: var(--desktop-radius);
-    border-top-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top, black var(--gradient-percentage), white)
@@ -161,7 +148,6 @@
   }
 
   &:nth-child(9) {
-    border-top-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top left, black var(--gradient-percentage), white)

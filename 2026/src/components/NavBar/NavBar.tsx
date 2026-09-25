@@ -2,8 +2,6 @@ import { useNavigate } from "react-router-dom";
 import "../../App.css";
 import logo from "/images/logo white.png";
 import "../NavBar/NavBar.css";
-import { hoverMenu } from "../../pages/HomePage/HomePage";
-// import { hoverMenu } from "../pages/HomePage/HomePage";
 
 export default function NavBar() {
   const navigate = useNavigate();

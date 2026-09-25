@@ -93,7 +93,10 @@ export default function PiecePage() {
       } else {
         return (
           <picture>
-            <source media="(min-width: 768px)" srcSet={"/images/" + med} />
+            <source
+              media="(min-width: 76var(--desktop-radius))"
+              srcSet={"/images/" + med}
+            />
             <source media="(min-width: 576px)" srcSet={"/images/md/" + med} />
             <img alt={title + " Image"} src={"/images/" + med} />
           </picture>
@@ -149,15 +152,6 @@ export default function PiecePage() {
 
   useEffect(() => {
     const modules = document.getElementsByClassName("module");
-    (modules[0] as HTMLElement).style.borderEndEndRadius = "0px";
-    (modules[1] as HTMLElement).style.borderBottomLeftRadius = "0px";
-    (modules[1] as HTMLElement).style.borderBottomRightRadius = "0px";
-    (modules[2] as HTMLElement).style.borderBottomLeftRadius = "0px";
-    (modules[3] as HTMLElement).style.borderStartEndRadius = "0px";
-    (modules[4] as HTMLElement).style.borderTopLeftRadius = "0px";
-    (modules[4] as HTMLElement).style.borderTopRightRadius = "0px";
-    (modules[5] as HTMLElement).style.borderStartStartRadius = "0px";
-
     const vid: HTMLVideoElement | null = document.querySelector("video");
     setTimeout(() => {
       vid?.play();
@@ -173,14 +167,22 @@ export default function PiecePage() {
     }, 500);
 
     setTimeout(() => {
-      (modules[0] as HTMLElement).style.borderEndEndRadius = "8px";
-      (modules[1] as HTMLElement).style.borderBottomLeftRadius = "8px";
-      (modules[1] as HTMLElement).style.borderBottomRightRadius = "8px";
-      (modules[2] as HTMLElement).style.borderBottomLeftRadius = "8px";
-      (modules[3] as HTMLElement).style.borderStartEndRadius = "8px";
-      (modules[4] as HTMLElement).style.borderTopLeftRadius = "8px";
-      (modules[4] as HTMLElement).style.borderTopRightRadius = "8px";
-      (modules[5] as HTMLElement).style.borderStartStartRadius = "8px";
+      (modules[0] as HTMLElement).style.borderEndEndRadius =
+        "var(--desktop-radius)";
+      (modules[1] as HTMLElement).style.borderBottomLeftRadius =
+        "var(--desktop-radius)";
+      (modules[1] as HTMLElement).style.borderBottomRightRadius =
+        "var(--desktop-radius)";
+      (modules[2] as HTMLElement).style.borderBottomLeftRadius =
+        "var(--desktop-radius)";
+      (modules[3] as HTMLElement).style.borderStartEndRadius =
+        "var(--desktop-radius)";
+      (modules[4] as HTMLElement).style.borderTopLeftRadius =
+        "var(--desktop-radius)";
+      (modules[4] as HTMLElement).style.borderTopRightRadius =
+        "var(--desktop-radius)";
+      (modules[5] as HTMLElement).style.borderStartStartRadius =
+        "var(--desktop-radius)";
     }, 500);
   }, []);
 

@@ -29,7 +29,6 @@
   &:first-of-type {
     left: 0.25px;
     top: 0.25px;
-    border-end-end-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom right, black var(--gradient-percentage), white)
@@ -38,8 +37,6 @@
   }
 
   &:nth-child(2) {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom, black var(--gradient-percentage), white)
@@ -49,14 +46,13 @@
     width: calc(100% + 0.5px);
     &::before {
       content: "";
-      /* background-color: pink; */
       position: absolute;
       z-index: 5;
       border-radius: 0;
       top: calc(50% + 0.25px);
       left: calc(50% + 0.25px);
       transform: translate(calc(-50% - 0.25px), calc(-50% - 0.25px));
-      animation-timing-function: ease-in;
+      animation-timing-function: ease-out;
       animation-duration: 0.25s;
       animation-fill-mode: both;
       animation-delay: 250ms;
@@ -71,7 +67,6 @@
   }
 
   &:nth-child(3) {
-    border-bottom-left-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom left, black var(--gradient-percentage), white)
@@ -82,7 +77,6 @@
   }
 
   &:nth-child(4) {
-    border-top-right-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top right, black var(--gradient-percentage), white)
@@ -93,8 +87,6 @@
   }
 
   &:nth-child(5) {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top, black var(--gradient-percentage), white)
@@ -121,7 +113,6 @@
   }
 
   &:nth-child(6) {
-    border-top-left-radius: 8px;
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top left, black var(--gradient-percentage), white)
