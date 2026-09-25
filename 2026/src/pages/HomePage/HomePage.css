@@ -17,20 +17,14 @@
   gap: 0;
 }
 
-.homePage .fadeout {
-  animation-duration: 0.25s;
-  animation-delay: 0s;
-  animation-fill-mode: both;
-}
-
-.homePage main .module {
-  display: none;
-}
-
 @property --gradient-percentage {
   syntax: "<percentage>";
   inherits: false;
   initial-value: 100%;
+}
+
+.homePage main .module {
+  display: none;
 }
 
 .homePage main .quad {

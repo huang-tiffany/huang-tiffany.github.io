@@ -230,6 +230,24 @@ export default function WorkPage() {
         elt.classList.add("fadeout");
       }
     }
+
+    const quads = document.getElementsByClassName("quad");
+    const modules = document.getElementsByClassName("module");
+
+    for (let i = 0; i < quads.length; i++) {
+      (quads[i] as HTMLElement).style.setProperty(
+        "--gradient-percentage",
+        "125%",
+      );
+    }
+
+    for (let i = 0; i < modules.length; i++) {
+      (modules[i] as HTMLElement).style.setProperty(
+        "--gradient-percentage",
+        "125%",
+      );
+    }
+
     setTimeout(() => {
       navigate(newLoc);
     }, 500);
