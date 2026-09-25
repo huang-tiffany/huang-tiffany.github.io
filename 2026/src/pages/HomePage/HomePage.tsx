@@ -63,16 +63,14 @@ export default function HomePage() {
     (quads[2] as HTMLElement).style.borderStartEndRadius = "0px";
     (quads[3] as HTMLElement).style.borderStartStartRadius = "0px";
 
-    if (window.innerWidth >= 576) {
-      setTimeout(() => {
-        for (let i = 0; i < quads.length; i++) {
-          (quads[i] as HTMLElement).style.setProperty(
-            "--gradient-percentage",
-            "50%",
-          );
-        }
-      }, 300);
-    }
+    setTimeout(() => {
+      for (let i = 0; i < quads.length; i++) {
+        (quads[i] as HTMLElement).style.setProperty(
+          "--gradient-percentage",
+          "50%",
+        );
+      }
+    }, 300);
 
     setTimeout(() => {
       (quads[0] as HTMLElement).style.borderEndEndRadius = "8px";
@@ -97,6 +95,10 @@ export default function HomePage() {
     (modules[6] as HTMLElement).style.borderTopRightRadius = "0px";
     (modules[7] as HTMLElement).style.borderStartStartRadius = "0px";
 
+    if (window.innerWidth <= 576) {
+      (quads[3] as HTMLElement).style.border = "solid 0.5px black";
+    }
+
     setTimeout(() => {
       for (let i = 0; i < modules.length; i++) {
         (modules[i] as HTMLElement).style.setProperty(
@@ -104,12 +106,7 @@ export default function HomePage() {
           "50%",
         );
       }
-      if (window.innerWidth <= 576) {
-        (quads[3] as HTMLElement).style.background =
-          "linear-gradient(black, black) padding-box, linear-gradient(white, white) border-box";
-      } else {
-        (quads[3] as HTMLElement).style.background = "";
-      }
+      (quads[3] as HTMLElement).style.border = "";
     }, 500);
 
     setTimeout(() => {
@@ -129,7 +126,7 @@ export default function HomePage() {
       (modules[6] as HTMLElement).style.borderTopRightRadius = "8px";
       (modules[7] as HTMLElement).style.borderStartStartRadius = "8px";
     }, 500);
-  }, [windowWidth]);
+  }, []);
 
   const handleOutOfRange = () => {
     const quads = document.getElementsByClassName("quad");

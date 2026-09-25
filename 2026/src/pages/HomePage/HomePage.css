@@ -36,8 +36,12 @@
 .homePage main .quad {
   border: 0.5px solid transparent;
   transition:
-    --gradient-percentage 1s ease,
-    all 0.5s ease;
+    all 0.5s ease,
+    --gradient-percentage 1s ease;
+
+  transition-property: all, --gradient-percentage, border;
+  transition-timing-function: ease, ease, step-end;
+  transition-duration: 0.5s, 1s, 0s;
 
   &:nth-child(1 of .quad) {
     left: 0.25px;
@@ -93,6 +97,37 @@
     padding: 2em;
     display: flex;
     gap: 4em;
+    border: solid 0.5px transparent;
+
+    &::after,
+    &::before {
+      content: "";
+      opacity: 0;
+      position: absolute;
+      border-radius: 0;
+      top: calc(50% + 0.25px);
+      left: calc(50% + 0.25px);
+      transform: translate(calc(-50% - 0.25px), calc(-50% - 0.25px));
+      animation-timing-function: ease-out;
+      animation-duration: 0.25s;
+      animation-fill-mode: both;
+      animation-delay: 250ms;
+      pointer-events: none;
+    }
+
+    &::before {
+      height: calc(100% + 1px);
+      border-bottom: white 0.5px solid;
+      border-top: white 0.5px solid;
+      animation-name: border-fadein-X;
+    }
+
+    &::after {
+      border-left: white 0.5px solid;
+      border-right: white 0.5px solid;
+      width: calc(100% + 1px);
+      animation-name: border-fadein-Y;
+    }
 
     &:hover {
       border-top-left-radius: 64px;
@@ -276,35 +311,11 @@ a:hover::before {
       z-index: 5;
       padding: 1.5em;
       gap: 0;
+      border: solid 0.5px white;
 
       &::after,
       &::before {
-        content: "";
-        position: absolute;
-        z-index: 5;
-        border-radius: 0;
-        top: calc(50% + 0.25px);
-        left: calc(50% + 0.25px);
-        transform: translate(calc(-50% - 0.25px), calc(-50% - 0.25px));
-        animation-timing-function: ease-out;
-        animation-duration: 0.25s;
-        animation-fill-mode: both;
-        animation-delay: 250ms;
-        pointer-events: none;
-      }
-
-      &::before {
-        height: calc(100% + 1px);
-        border-bottom: white 0.25px solid;
-        border-top: white 0.25px solid;
-        animation-name: border-fadein-X;
-      }
-
-      &::after {
-        border-left: white 0.25px solid;
-        border-right: white 0.25px solid;
-        width: calc(100% + 1px);
-        animation-name: border-fadein-Y;
+        opacity: 1;
       }
     }
   }
