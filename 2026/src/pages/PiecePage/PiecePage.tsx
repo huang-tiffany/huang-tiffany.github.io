@@ -5,12 +5,15 @@ import { useParams } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
+import { useIsMedium } from "../../utils/utils";
 
 export default function PiecePage() {
   const { categoryInfo, pieceInfo } = useParams();
   const piecesArr = useRecoilState(pieces);
   const [isDescriptionExpanded, setIsDescriptionExpanded] =
     useState<boolean>(false);
+  const pageSize = useIsMedium();
+  const [pieceMedia, setPieceMedia] = useState<JSX.Element[]>();
 
   let year: string;
   let title: string;
@@ -86,7 +89,7 @@ export default function PiecePage() {
       arr[index - 1].push(medArr[0]);
     });
 
-    if (window.innerWidth >= 992) {
+    if (!pageSize) {
       return arr.map((obj) => {
         return (
           <div className="media-group">
@@ -176,6 +179,10 @@ export default function PiecePage() {
       }
     });
   };
+
+  useEffect(() => {
+    setPieceMedia(loadPhotos());
+  }, [pageSize]);
 
   useEffect(() => {
     const mediaWrapper: HTMLElement | null = document.querySelector(
@@ -285,7 +292,7 @@ export default function PiecePage() {
               </div>
             </div>
           </div>
-          <div className="media">{loadPhotos()}</div>
+          <div className="media">{pieceMedia}</div>
         </div>
         <div className="module"></div>
       </main>
