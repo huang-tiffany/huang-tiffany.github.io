@@ -161,6 +161,7 @@ a.addlink.hidden {
   text-align: start;
   justify-content: start;
   flex-direction: column-reverse;
+  line-height: 1.25;
 }
 
 #version a,

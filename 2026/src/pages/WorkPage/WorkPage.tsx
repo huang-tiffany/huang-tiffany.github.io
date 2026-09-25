@@ -154,14 +154,7 @@ export default function WorkPage() {
               </div>
               <div>
                 <div className="piece-data">
-                  <div
-                    className="piece-title"
-                    onClick={() =>
-                      relocate("/work/" + key + "/" + piece.string)
-                    }
-                  >
-                    {piece.title}
-                  </div>
+                  <div className="piece-title">{piece.title}</div>
                 </div>
                 <div className="piece-tags">
                   <div className="piece-tag">
@@ -255,11 +248,6 @@ export default function WorkPage() {
 
   useEffect(() => {
     const modules = document.getElementsByClassName("module");
-
-    const vid: HTMLVideoElement | null = document.querySelector("video");
-    setTimeout(() => {
-      vid?.play();
-    }, 1750);
 
     setTimeout(() => {
       for (let i = 0; i < modules.length; i++) {

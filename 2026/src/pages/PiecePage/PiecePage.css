@@ -254,9 +254,36 @@
 .piecePage main video,
 .piecePage main img,
 .piecePage main picture {
-  font-size: 1em;
-  width: 100%;
   border-radius: 0.5em;
+}
+
+.piecePage .media-group {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+
+  video,
+  picture {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 0;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .piecePage main video,
+  .piecePage main img,
+  .piecePage main picture {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {

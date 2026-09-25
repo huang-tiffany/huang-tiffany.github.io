@@ -68,7 +68,82 @@ export default function PiecePage() {
   });
 
   const loadPhotos = () => {
-    return media.map((med) => {
+    // if screen size is at breakpt, split by "/"
+    // sort by number after "/" into arrays
+    // put arrays into flexboxes
+
+    const arr: string[][] = [];
+    media.forEach((med) => {
+      const medArr = med.split("/");
+      const index = Number(medArr[1]);
+      if (index == -1) {
+        return;
+      }
+
+      while (index > arr.length) {
+        arr.push([]);
+      }
+      arr[index - 1].push(medArr[0]);
+    });
+
+    if (window.innerWidth >= 992) {
+      return arr.map((obj) => {
+        return (
+          <div className="media-group">
+            {obj.map((med) => {
+              if (med.substring(med.indexOf(".")) === ".mp4") {
+                // any video filenames including "*" should not be autoplay but should
+                // include sound and controls
+                if (med.includes("*")) {
+                  return (
+                    <video
+                      playsInline
+                      webkit-playsinline="true"
+                      controls
+                      controlsList="nodownload"
+                    >
+                      <source
+                        src={"videos/" + med.replace("*", "")}
+                        type="video/mp4"
+                      />
+                    </video>
+                  );
+                } else {
+                  return (
+                    <video
+                      playsInline
+                      webkit-playsinline="true"
+                      autoPlay
+                      muted
+                      loop
+                    >
+                      <source src={"videos/" + med} type="video/mp4" />
+                    </video>
+                  );
+                }
+              } else {
+                return (
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcSet={"/images/" + med}
+                    />
+                    <source
+                      media="(min-width: 576px)"
+                      srcSet={"/images/md/" + med}
+                    />
+                    <img alt={title + " Image"} src={"/images/" + med} />
+                  </picture>
+                );
+              }
+            })}
+          </div>
+        );
+      });
+    }
+
+    return media.map((medStr) => {
+      const med = medStr.split("/")[0];
       if (med.substring(med.indexOf(".")) === ".mp4") {
         // any video filenames including "*" should not be autoplay but should
         // include sound and controls
@@ -93,10 +168,7 @@ export default function PiecePage() {
       } else {
         return (
           <picture>
-            <source
-              media="(min-width: 76var(--desktop-radius))"
-              srcSet={"/images/" + med}
-            />
+            <source media="(min-width: 768px)" srcSet={"/images/" + med} />
             <source media="(min-width: 576px)" srcSet={"/images/md/" + med} />
             <img alt={title + " Image"} src={"/images/" + med} />
           </picture>
@@ -152,10 +224,6 @@ export default function PiecePage() {
 
   useEffect(() => {
     const modules = document.getElementsByClassName("module");
-    const vid: HTMLVideoElement | null = document.querySelector("video");
-    setTimeout(() => {
-      vid?.play();
-    }, 1750);
 
     setTimeout(() => {
       for (let i = 0; i < modules.length; i++) {

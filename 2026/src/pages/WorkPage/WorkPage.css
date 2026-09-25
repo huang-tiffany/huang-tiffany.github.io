@@ -80,10 +80,6 @@
     justify-content: center;
     z-index: 5;
 
-    &:hover {
-      border-radius: 12px;
-    }
-
     &::after,
     &::before {
       content: "";
@@ -201,10 +197,6 @@
   transition: 0.5s ease;
   transition-delay: 75ms;
   top: 0;
-}
-
-.workPage .piece-title:hover {
-  cursor: pointer;
 }
 
 .workPage .category-piece img,
