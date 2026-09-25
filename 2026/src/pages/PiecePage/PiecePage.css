@@ -44,6 +44,7 @@
     right: 0.25px;
     top: 0.25px;
     width: calc(100% + 0.5px);
+
     &::before {
       content: "";
       position: absolute;
@@ -52,17 +53,17 @@
       top: calc(50% + 0.25px);
       left: calc(50% + 0.25px);
       transform: translate(calc(-50% - 0.25px), calc(-50% - 0.25px));
+      animation-name: border-fadein-X;
       animation-timing-function: ease-out;
       animation-duration: 0.25s;
       animation-fill-mode: both;
       animation-delay: 250ms;
-    }
 
-    &::before {
       height: calc(100% + 1px);
       border-bottom: white 0.25px solid;
       border-top: white 0.25px solid;
-      animation-name: border-fadein-X;
+
+      pointer-events: none;
     }
   }
 
@@ -99,17 +100,6 @@
     flex-direction: column;
     overflow-y: scroll;
     padding: 2em;
-
-    /* &::before {
-      content: "";
-      box-shadow: 0 0 1em 2em inset black;
-      width: calc(100vw / 3 * 2 - 0.5px);
-      height: calc(100dvh / 6 * 5);
-      position: fixed;
-      z-index: 2;
-      margin-top: -2em;
-      margin-left: -2em;
-    } */
   }
 
   &:nth-child(6) {
