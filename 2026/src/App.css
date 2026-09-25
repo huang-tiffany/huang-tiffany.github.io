@@ -42,6 +42,24 @@ body {
   animation-fill-mode: both;
 }
 
+@keyframes border-fadein-X {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: calc(100% - 2 * var(--desktop-radius));
+  }
+}
+
+@keyframes border-fadein-Y {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: calc(100% - 2 * var(--desktop-radius));
+  }
+}
+
 @keyframes fadein {
   0% {
     opacity: 0;

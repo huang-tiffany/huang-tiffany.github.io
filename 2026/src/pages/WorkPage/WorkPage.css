@@ -18,11 +18,17 @@
   gap: 0;
 }
 
-.workPage main div.module {
-  background-color: pink;
+@property --gradient-percentage {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
 
+.workPage main div.module {
   border: 0.5px solid transparent;
-  transition: 0.5s ease;
+  transition:
+    --gradient-percentage 1s ease,
+    all 0.5s ease;
 
   &:first-of-type {
     left: 0.25px;
@@ -30,7 +36,8 @@
     border-end-end-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom right, black 50%, white) border-box;
+      linear-gradient(to bottom right, black var(--gradient-percentage), white)
+        border-box;
     z-index: 1;
   }
 
@@ -39,7 +46,8 @@
     border-bottom-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom, black 50%, white) border-box;
+      linear-gradient(to bottom, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     top: 0.25px;
     width: calc(100% + 0.5px);
@@ -49,7 +57,8 @@
     border-bottom-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom left, black 50%, white) border-box;
+      linear-gradient(to bottom left, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     top: 0.25px;
     z-index: 1;
@@ -60,7 +69,8 @@
     border-top-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to right, black 50%, white) border-box;
+      linear-gradient(to right, black var(--gradient-percentage), white)
+        border-box;
     left: 0.25px;
     top: -0.25px;
     height: calc(100% + 0.5px);
@@ -68,9 +78,6 @@
 
   &:nth-child(5) {
     border-radius: var(--desktop-radius);
-    background:
-      linear-gradient(black, black) padding-box,
-      linear-gradient(white, white) border-box;
     left: -0.25px;
     top: -0.25px;
     width: calc(100% + 0.5px);
@@ -78,9 +85,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 
     &:hover {
       border-radius: 12px;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      /* background-color: pink; */
+      position: absolute;
+      z-index: 5;
+      border-radius: 0;
+      top: calc(50% + 0.25px);
+      left: calc(50% + 0.25px);
+      transform: translate(calc(-50% - 0.25px), calc(-50% - 0.25px));
+      animation-timing-function: ease-in;
+      animation-duration: 0.25s;
+      animation-fill-mode: both;
+      animation-delay: 250ms;
+    }
+
+    &::before {
+      height: calc(100% + 1px);
+      border-bottom: white 0.25px solid;
+      border-top: white 0.25px solid;
+      animation-name: border-fadein-X;
+    }
+
+    &::after {
+      border-left: white 0.25px solid;
+      border-right: white 0.25px solid;
+      width: calc(100% + 1px);
+      animation-name: border-fadein-Y;
     }
   }
 
@@ -89,7 +127,8 @@
     border-top-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to left, black 50%, white) border-box;
+      linear-gradient(to left, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     top: -0.25px;
     height: calc(100% + 0.5px);
@@ -99,7 +138,8 @@
     border-top-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top right, black 50%, white) border-box;
+      linear-gradient(to top right, black var(--gradient-percentage), white)
+        border-box;
     left: 0.25px;
     bottom: 0.25px;
     z-index: 1;
@@ -110,7 +150,8 @@
     border-top-right-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top, black 50%, white) border-box;
+      linear-gradient(to top, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     width: calc(100% + 0.5px);
     bottom: 0.25px;
@@ -123,7 +164,8 @@
     border-top-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top left, black 50%, white) border-box;
+      linear-gradient(to top left, black var(--gradient-percentage), white)
+        border-box;
     right: 0.25px;
     bottom: 0.25px;
     z-index: 1;
