@@ -3,7 +3,7 @@ import { useRecoilState } from "recoil";
 import { pieces } from "../../global/Atoms/atoms";
 import { useParams } from "react-router-dom";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import { useIsMedium } from "../../utils/utils";
 
@@ -14,7 +14,10 @@ export default function PiecePage() {
     useState<boolean>(false);
   const pageSize = useIsMedium();
   const [pieceMedia, setPieceMedia] = useState<JSX.Element[]>();
-  const [pieceDescription, setPieceDescription] = useState<JSX.Element>();
+
+  // for keeping more/less button from wrapping by itself
+  const [lastWord, setLastWord] = useState("");
+  const textDescriptionRef = useRef<HTMLDivElement>(null);
 
   let year: string;
   let title: string;
@@ -194,27 +197,24 @@ export default function PiecePage() {
   });
 
   useEffect(() => {
-    setPieceDescription(
-      <div
-        className={
-          "piece-description-expand " +
-          (isDescriptionExpanded ? "expanded" : "")
-        }
-      >
-        <div
-          className="piece-description-text"
-          dangerouslySetInnerHTML={{
-            __html: isDescriptionExpanded ? statement : previewDescription,
-          }}
-        />
-        <a
-          className="piece-more"
-          onClick={() => setIsDescriptionExpanded(!isDescriptionExpanded)}
-        >
-          {isDescriptionExpanded ? "( - less )" : "( + more )"}
-        </a>
-      </div>,
-    );
+    // split by spaces
+    // recombine all but the last word
+    // wrap last word with span + after element
+    const newStatement = isDescriptionExpanded ? statement : previewDescription;
+
+    const arr = newStatement.split(" ");
+    let normalText = "";
+    for (let i = 0; i < arr.length; i++) {
+      normalText += arr[i] + " ";
+    }
+    setLastWord(arr[arr.length - 1]);
+
+    if (textDescriptionRef.current) {
+      textDescriptionRef.current.innerHTML = normalText.substring(
+        0,
+        normalText.length - 1,
+      );
+    }
   }, [isDescriptionExpanded]);
 
   useEffect(() => {
@@ -266,7 +266,29 @@ export default function PiecePage() {
               <div className="piece-medium"></div>
               <div className="piece-url"></div>
             </div>
-            <div className="piece-description">{pieceDescription}</div>
+            <div className="piece-description">
+              <div
+                className={
+                  "piece-description-expand " +
+                  (isDescriptionExpanded ? "expanded" : "")
+                }
+              >
+                <div className="piece-description-text">
+                  <span ref={textDescriptionRef}></span>
+                  <span>
+                    .&nbsp;
+                    <a
+                      className="piece-more"
+                      onClick={() =>
+                        setIsDescriptionExpanded(!isDescriptionExpanded)
+                      }
+                    >
+                      {isDescriptionExpanded ? "( - less )" : "( + more )"}
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="media">{pieceMedia}</div>
         </div>

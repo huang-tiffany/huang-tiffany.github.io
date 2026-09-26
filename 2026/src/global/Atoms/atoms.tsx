@@ -31,7 +31,7 @@ export const pieces = atom<{
         medium: "Figma",
         url: "",
         statement:
-          "During 2023 and 2024, Ramp launched an ongoing campaign to thank its customers for all of the world-changing accomplishments being performed at each company. Working closely with Growth and Marketing teams, I helped design and populate content for over 100 billboards every month starting in September based on existing templates designed by fellow Brand designer Shivani Soni.",
+          "During 2023 and 2024, Ramp launched an ongoing campaign to thank its customers for all of the world-changing accomplishments being performed at each company. Working closely with Growth and Marketing teams, I helped design and populate content for over 100 billboards every month starting in September based on existing templates designed by fellow Brand designer Shivani Soni",
         media: [
           "billboards1.jpg/1",
           "billboards2.jpg/2",
@@ -47,7 +47,7 @@ export const pieces = atom<{
           "billboards12.jpg/12",
         ],
         previewDescription:
-          "Times Square billboards showcasing Ramp's gratitude for its clients.",
+          "Times Square billboards showcasing Ramp's gratitude for its clients",
         previewImage: "billboards3.jpg",
         tags: ["branding", "campaign"],
       },
@@ -75,7 +75,7 @@ export const pieces = atom<{
           "rampswag10.jpg/6",
         ],
         previewDescription:
-          "Ramp's first evergreen apparel collection, designed in-house, for employees of all styles.",
+          "Ramp's first evergreen apparel collection, designed in-house, for employees of all styles",
         previewImage: "rampswag5.jpg",
         tags: ["branding", "apparel"],
       },
@@ -90,7 +90,7 @@ export const pieces = atom<{
           "Figma, Plotter, Adobe InDesign, Adobe Photoshop, VSCode, Javascript, Facebook Messenger, Facebook, Meta Spark Studio, Instagram",
         url: '<a href="https://www.figma.com/proto/mT9sUIMHNQBXX2wzMf9hKl/The-Archive-as-Friendship?page-id=0%3A1&node-id=1-24&viewport=494%2C385%2C0.06&t=jUfwFkGgsWxOYrTr-1&scaling=scale-down&content-scaling=fixed" target="_blank">PRESENTATION</a>',
         statement:
-          "With most friendships taking both digital and physical forms, online chat logs can often be a way to trace the development of relationships. Containing both arguments and gratitude, both small talk and deep conversations, the online archive as we know it not only acts as a means of communication and connection, but as a pseudo record of an entire relationship. <br><br> With this thought in mind, I created a project that catalogued and analyzed data from six complete calendar years of friendship with a friend of mine from middle and high school. Although we attended school together before going to college, we communicated primarily through Gmail chats and, upon entering high school, Facebook Messenger (something that still holds true today). By downloading six years' worth of content and parsing it with a simple Javascript program to count the quantity of messages, along with reading every chat log manually to sort through the depth and topics of each conversation, I organized my data into three formats ranging from the most objective to the most subjective view of the data. The largest poster format acts as an overview, mapping interactions in a calendar view and sorting them by the depth of the conversation (light, medium, and deep talks). The medium-sized booklet format goes into more detail with the content, organizing it in a temporally nonlinear format through the alphabetical indexing of conversation topics, with red lines running throughout the pages to trace recurring threads of more interesting conversation topics. And lastly, the smallest AR format (accessed via mobile phone) encourages exploration of the text in a more intimate format, with the overlaying of actual transmitted images (ranging from cute GIFs and stupid memes to mundane homework snapshots and photos taken during in-person hangouts). <br><br> Using this mix of personal and objective data alongside a mix of analog and digital formats, I wanted to explore the nuance and subversion of conversation in the digital age: where phones can encourage vulnerability and connection, and where chat logs can act as a living, digital archive for friendship.",
+          "With most friendships taking both digital and physical forms, online chat logs can often be a way to trace the development of relationships. Containing both arguments and gratitude, both small talk and deep conversations, the online archive as we know it not only acts as a means of communication and connection, but as a pseudo record of an entire relationship. <br><br> With this thought in mind, I created a project that catalogued and analyzed data from six complete calendar years of friendship with a friend of mine from middle and high school. Although we attended school together before going to college, we communicated primarily through Gmail chats and, upon entering high school, Facebook Messenger (something that still holds true today). By downloading six years' worth of content and parsing it with a simple Javascript program to count the quantity of messages, along with reading every chat log manually to sort through the depth and topics of each conversation, I organized my data into three formats ranging from the most objective to the most subjective view of the data. The largest poster format acts as an overview, mapping interactions in a calendar view and sorting them by the depth of the conversation (light, medium, and deep talks). The medium-sized booklet format goes into more detail with the content, organizing it in a temporally nonlinear format through the alphabetical indexing of conversation topics, with red lines running throughout the pages to trace recurring threads of more interesting conversation topics. And lastly, the smallest AR format (accessed via mobile phone) encourages exploration of the text in a more intimate format, with the overlaying of actual transmitted images (ranging from cute GIFs and stupid memes to mundane homework snapshots and photos taken during in-person hangouts). <br><br> Using this mix of personal and objective data alongside a mix of analog and digital formats, I wanted to explore the nuance and subversion of conversation in the digital age: where phones can encourage vulnerability and connection, and where chat logs can act as a living, digital archive for friendship",
         media: [
           "thearchiveasfriendship1.jpg/1",
           "thearchiveasfriendship2.jpg/2",
@@ -115,7 +115,7 @@ export const pieces = atom<{
           "thearchiveasfriendship21.mp4/15",
         ],
         previewDescription:
-          "Poster booklet documenting six years of friendship as recorded on Facebook Messenger.",
+          "Poster booklet documenting six years of friendship as recorded on Facebook Messenger",
         previewImage: "thearchiveasfriendship17.jpg",
         tags: ["poster", "AR", "book", "print", "data design"],
       },
@@ -130,7 +130,7 @@ export const pieces = atom<{
           "Figma, Paper, Aluminum Sheet, Drill Press, Metal Stamps, Center Punch, Scribe, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
         url: '<a href="https://indd.adobe.com/view/cbf24062-a9b4-469e-8c04-05db8f58c377" target="_blank">FULL BOOK</a>',
         statement:
-          "By sequencing images taken from ten YouTube videos focusing on timelapses of singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, the project questions the identity of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to.",
+          "By sequencing images taken from ten YouTube videos focusing on timelapses of singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, the project questions the identity of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to",
         media: [
           "lapse1.jpg/1",
           "lapse2.jpg/2",
@@ -142,7 +142,7 @@ export const pieces = atom<{
           "lapse8.jpg/7",
         ],
         previewDescription:
-          "Book containing sequenced images of shadows and their interpretations.",
+          "Book containing sequenced images of shadows and their interpretations",
         previewImage: "lapse6.jpg",
         tags: ["book", "print", "data design"],
       },
@@ -157,7 +157,7 @@ export const pieces = atom<{
           "Figma, Paper, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
         url: '<a href="https://huang-tiffany.github.io/People-Watching/" target="_blank">LINK</a><br><a href="https://huang-tiffany.github.io/People-Watching/database" target="_blank">DATABASE</a><br><a href="https://www.figma.com/proto/oJQNcIkvmMtLpSFL23cU7E/People(-)Watching?page-id=0%3A1&node-id=1-9&viewport=490%2C382%2C0.07&t=MKJjKMqlnjGywHPp-1&scaling=contain&content-scaling=fixed" target="_blank">PRESENTATION</a>',
         statement:
-          "Prompted with the theme of uncovering and analyzing personal data, I decided to focus on the theme of eye contact with strangers. Given that I'm always looking around and examining my surroundings, I tend to make eye contact with many people during my daily life; this project records my various experiences over five days in January. Each card represents an encounter I had with a complete stranger who I had never seen before, including my first impressions, assumptions, and notes. <br><br> In total, I encountered 341 people during the span of this project. The final deliverable, a single serving site (SSS), recreates the unexpected and serendipitous experience of making eye contact with those unfamiliar to us; at the time stamp listed on each card, the corresponding card will display for a random span of 20 seconds. Often, cards can appear simultaneously, and often, no cards may appear at all — and even when one appears, there may not be enough time to read the entire contents of an encounter, just as we may not get to know everything we wanted to know about someone we encountered so suddenly. The sides of the page track how many instances have already occurred in the day and the last time one encounter was made.",
+          "Prompted with the theme of uncovering and analyzing personal data, I decided to focus on the theme of eye contact with strangers. Given that I'm always looking around and examining my surroundings, I tend to make eye contact with many people during my daily life; this project records my various experiences over five days in January. Each card represents an encounter I had with a complete stranger who I had never seen before, including my first impressions, assumptions, and notes. <br><br> In total, I encountered 341 people during the span of this project. The final deliverable, a single serving site (SSS), recreates the unexpected and serendipitous experience of making eye contact with those unfamiliar to us; at the time stamp listed on each card, the corresponding card will display for a random span of 20 seconds. Often, cards can appear simultaneously, and often, no cards may appear at all — and even when one appears, there may not be enough time to read the entire contents of an encounter, just as we may not get to know everything we wanted to know about someone we encountered so suddenly. The sides of the page track how many instances have already occurred in the day and the last time one encounter was made",
         media: [
           "people(-)watching1.gif/1",
           "people(-)watching2.gif/2",
@@ -165,7 +165,7 @@ export const pieces = atom<{
           "people(-)watching4.mp4/4",
         ],
         previewDescription:
-          "Single serving site recreating the serendipity of eye contact with strangers.",
+          "Single serving site recreating the serendipity of eye contact with strangers",
         previewImage: "people(-)watching3.jpg",
         tags: ["web", "front-end", "data design"],
       },
@@ -179,7 +179,7 @@ export const pieces = atom<{
         medium: "Figma",
         url: '<a href="https://ramp.com/emerging-talent" target="_blank">LINK</a>',
         statement:
-          "<em>Displayed: my prototype (first) and the first version launched in January 2024 (second).</em> <br><br> During my summer at Ramp, one of the projects I had the chance to work on was a webpage for our Emerging Talent program focusing on recruiting the best up-and-coming talent from universities. Thinking primarily about introducing elements of delight in user interactions — given the inspiring recent website rebrand and the potential of interns to bring refreshing perspectives to company environments — I wanted to follow the traditional layout of a university program page like that of other creative companies like Converse and Apple, going through dozens of iterations to arrive at a distinctly 'Ramp' look and feel. Working closely with fellow Brandtern Thandi Roe, we were able to art-direct a photoshoot featuring our class of interns, which brought a spirit of camaraderie and personality into the webpage. <br><br> Although my role in the project wrapped up after the summer, the final design kept the general structure and modules from my original design when it launched in January of 2024. Since then, it has been used to recruit future interns and has acted as the online presence for Ramp's Emerging Talent department and program.",
+          "<em>Displayed: my prototype (first) and the first version launched in January 2024 (second).</em> <br><br> During my summer at Ramp, one of the projects I had the chance to work on was a webpage for our Emerging Talent program focusing on recruiting the best up-and-coming talent from universities. Thinking primarily about introducing elements of delight in user interactions — given the inspiring recent website rebrand and the potential of interns to bring refreshing perspectives to company environments — I wanted to follow the traditional layout of a university program page like that of other creative companies like Converse and Apple, going through dozens of iterations to arrive at a distinctly 'Ramp' look and feel. Working closely with fellow Brandtern Thandi Roe, we were able to art-direct a photoshoot featuring our class of interns, which brought a spirit of camaraderie and personality into the webpage. <br><br> Although my role in the project wrapped up after the summer, the final design kept the general structure and modules from my original design when it launched in January of 2024. Since then, it has been used to recruit future interns and has acted as the online presence for Ramp's Emerging Talent department and program",
         media: [
           "emt1.mp4/1",
           "emt2.mp4/2",
@@ -189,7 +189,7 @@ export const pieces = atom<{
           "emt7.jpg/6",
         ],
         previewDescription:
-          "Inaugural webpage for Ramp's Emerging Talent program featuring interns and new grads.",
+          "Inaugural webpage for Ramp's Emerging Talent program featuring interns and new grads",
         previewImage: "emt8.jpg",
         tags: ["web", "art direction"],
       },
@@ -204,7 +204,7 @@ export const pieces = atom<{
           "HTML, CSS, React.js, Express.js, Next.js, Vite, Typescript, Github, VSCode, Figma, Adobe Illustrator",
         url: '<a href="https://www.figma.com/proto/zJx5usW7UXk8lhYiDpjEBC/Amplify-%2F-CS0320-Final?page-id=27%3A2110&node-id=27-2230&viewport=348%2C205%2C0.04&t=54Q6NxFad2f0mCOa-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=27%3A2230&show-proto-sidebar=1" target="_blank">PROTOTYPE (APP IN DEPLOYMENT PROCESS)</a>',
         statement:
-          "Working with Sean Yu (full-stack dev) and Elijah Whang (backend dev), I designed and prototyped the interface for a web-based app for playlist generation as a UI/UX designer and front-end dev. Although other Spotify playlist generators exist on the web, <em>Amplify</em> provides an experience in which users have more control over the content of the playlist, adding in key components from Spotify's API to sort through different song factors including energy, valence, popularity, and danceability. With a list of nine possible factors and three seeds (artist, genre, and tracks) to choose from, this app not only gives more power to the user to finetune the qualities of their playlists, but also allows them to be more informed about their listening preferences.",
+          "Working with Sean Yu (full-stack dev) and Elijah Whang (backend dev), I designed and prototyped the interface for a web-based app for playlist generation as a UI/UX designer and front-end dev. Although other Spotify playlist generators exist on the web, <em>Amplify</em> provides an experience in which users have more control over the content of the playlist, adding in key components from Spotify's API to sort through different song factors including energy, valence, popularity, and danceability. With a list of nine possible factors and three seeds (artist, genre, and tracks) to choose from, this app not only gives more power to the user to finetune the qualities of their playlists, but also allows them to be more informed about their listening preferences",
         media: [
           "amplify1.jpg/1",
           "amplify2.mp4/2",
@@ -215,7 +215,7 @@ export const pieces = atom<{
           "amplify7.jpg/7",
         ],
         previewDescription:
-          "Web-based app for generating new Spotify playlists with more nuance and control.",
+          "Web-based app for generating new Spotify playlists with more nuance and control",
         previewImage: "amplify1.jpg",
         tags: ["web", "front-end", "design engineering"],
       },
@@ -229,7 +229,7 @@ export const pieces = atom<{
         medium: "Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Canva",
         url: '<a href="https://indd.adobe.com/view/96b4a5b2-34c2-493b-afae-c11cf2f99e85" target="_blank">STYLE GUIDE</a>',
         statement:
-          "During my internship at Santa Clara County Parks, I was tasked with creating branding guidelines and templates for the Interpretation team's program flyers. Starting with seven different sets of templates for categories including one-time and multisession events, I completely redesigned the visual identity of the flyers to be more visually cohesive and ADA-compliant. Along with the designs themselves, I also carried out training in Canva to teach the Interpretation team not only how to use my system, but also how to navigate Canva itself for future design needs. The end result culminated in a 100+ page style guide detailing the templates, elements used in the templates, spacing, typography, Canva best practices, and FAQ's, among other details, as a way of documenting the entirety of the redesign and to provide details for future possible redesigns.",
+          "During my internship at Santa Clara County Parks, I was tasked with creating branding guidelines and templates for the Interpretation team's program flyers. Starting with seven different sets of templates for categories including one-time and multisession events, I completely redesigned the visual identity of the flyers to be more visually cohesive and ADA-compliant. Along with the designs themselves, I also carried out training in Canva to teach the Interpretation team not only how to use my system, but also how to navigate Canva itself for future design needs. The end result culminated in a 100+ page style guide detailing the templates, elements used in the templates, spacing, typography, Canva best practices, and FAQ's, among other details, as a way of documenting the entirety of the redesign and to provide details for future possible redesigns",
         media: [
           "sccparks17.jpg/1",
           "sccparks9.jpg/2",
@@ -238,7 +238,7 @@ export const pieces = atom<{
           "sccparks12.jpg/5",
         ],
         previewDescription:
-          "Design system rebrand for local Parks & Rec department print marketing.",
+          "Design system rebrand for local Parks & Rec department print marketing",
         previewImage: "sccparks12.jpg",
         tags: ["branding"],
       },
@@ -252,7 +252,7 @@ export const pieces = atom<{
         medium: "Adobe InDesign, Adobe Photoshop, Adobe Illustrator",
         url: '<a href="https://indd.adobe.com/view/3a1257f9-d1bc-4a55-8cc3-ac0b2bfee11d" target="_blank">FULL MAGAZINE</a>',
         statement:
-          "As the Creative Director for Brown's Rogue Fashion Magazine, I worked with other members of Rogue's executive board to gather content for the culminating publication of the year's activities and designed the magazine from scratch as the sole graphic designer. Collaborating with an editorial team to gather stories about up-and-coming student designers at RISD, I took charge of creating layouts and compositions to assemble a booklet, later printed as physical copies that the club distributed among staff members and the featured designers.",
+          "As the Creative Director for Brown's Rogue Fashion Magazine, I worked with other members of Rogue's executive board to gather content for the culminating publication of the year's activities and designed the magazine from scratch as the sole graphic designer. Collaborating with an editorial team to gather stories about up-and-coming student designers at RISD, I took charge of creating layouts and compositions to assemble a booklet, later printed as physical copies that the club distributed among staff members and the featured designers",
         media: [
           "roguemagazine1.jpg/1",
           "roguemagazine2.jpg/2",
@@ -264,7 +264,7 @@ export const pieces = atom<{
           "roguemagazine8.jpg/8",
         ],
         previewDescription:
-          "Creative direction and design spotlighting up-and-coming designers at RISD.",
+          "Creative direction and design spotlighting up-and-coming designers at RISD",
         previewImage: "roguemagazine6.jpg",
         tags: ["editorial", "print", "creative direction"],
       },
@@ -298,7 +298,7 @@ export const pieces = atom<{
           "talisman6116.jpg/16",
         ],
         previewDescription:
-          "Yearbook design during a year of COVID: a reminder to appreciate the mundane.",
+          "Yearbook design during a year of COVID: a reminder to appreciate the mundane",
         previewImage: "talisman612.jpg",
         tags: ["editorial", "print", "art direction"],
       },
@@ -312,7 +312,7 @@ export const pieces = atom<{
         medium: "Adobe InDesign",
         url: '<a href="https://indd.adobe.com/view/de846442-b494-41d3-a74e-c76d7a1e8fdc" target="_blank">FULL MAGAZINE</a>',
         statement:
-          "Combining my interest in the human form with the rich history associated with depictions of human figures throughout various artistic movements from prehistoric to Modern, I designed a magazine to synthesize my knowledge on one of the most important subjects in art history. Created in the span of about a week, I wrote essays, curated pieces, and designed layouts for the most iconic works I studied in AP Art History.",
+          "Combining my interest in the human form with the rich history associated with depictions of human figures throughout various artistic movements from prehistoric to Modern, I designed a magazine to synthesize my knowledge on one of the most important subjects in art history. Created in the span of about a week, I wrote essays, curated pieces, and designed layouts for the most iconic works I studied in AP Art History",
         media: [
           "thedevelopmentofthehumanfigure1.jpg/1",
           "thedevelopmentofthehumanfigure2.jpg/2",
@@ -321,7 +321,7 @@ export const pieces = atom<{
           "thedevelopmentofthehumanfigure5.jpg/5",
         ],
         previewDescription:
-          "A magazine focusing on how depiction of the human figure has evolved over the centuries.",
+          "A magazine focusing on how depiction of the human figure has evolved over the centuries",
         previewImage: "thedevelopmentofthehumanfigure3.jpg",
         tags: ["editorial", "print"],
       },
@@ -339,7 +339,7 @@ export const pieces = atom<{
           "Steel Sheet, Hydrostatic Test Pump, TIG Welder, Steel Tube, Steel Rod, Lighting Components",
         url: "",
         statement:
-          "After a winter-long exploration of different ways of manipulating sheet steel with both manual and industrial machines across 36 prototypes, the <em>Expanded Grid Light</em> developed from a combination of alterations to the material using the hydroforming technique of expanding metal with water pressure. <br><br> The form evolved from experimentation with constraining the convex forms using a variety of methods, such as bead-rolling to work-harden the metal or puncturing and reinforcing the gap between two sheets before inflating. The resulting lighting object focuses on the unique pillow-like nature of the form, combined with the intersecting tubes that allow for light to filter through. <br><br> Designed for utiliarian, metropolitan settings such as subways and bus stops, the piece adopts the ubiquitous tube light as its main lighting fixture, which opens up possibilities for creating a modular system that can expand to different lengths and configurations.",
+          "After a winter-long exploration of different ways of manipulating sheet steel with both manual and industrial machines across 36 prototypes, the <em>Expanded Grid Light</em> developed from a combination of alterations to the material using the hydroforming technique of expanding metal with water pressure. <br><br> The form evolved from experimentation with constraining the convex forms using a variety of methods, such as bead-rolling to work-harden the metal or puncturing and reinforcing the gap between two sheets before inflating. The resulting lighting object focuses on the unique pillow-like nature of the form, combined with the intersecting tubes that allow for light to filter through. <br><br> Designed for utiliarian, metropolitan settings such as subways and bus stops, the piece adopts the ubiquitous tube light as its main lighting fixture, which opens up possibilities for creating a modular system that can expand to different lengths and configurations",
         media: [
           "gridlight1.jpg/1",
           "gridlight2.jpg/2",
@@ -355,7 +355,7 @@ export const pieces = atom<{
           "gridlight12.jpg/7",
         ],
         previewDescription:
-          "Hydroformed modular lighting element for industrial settings.",
+          "Hydroformed modular lighting element for industrial settings",
         previewImage: "commandchaise7.jpg",
         tags: ["lighting", "metalworking"],
       },
@@ -370,7 +370,7 @@ export const pieces = atom<{
           "Sterling Silver, Personal Artifacts, Jeweler's Saw, Torch, Files",
         url: "",
         statement:
-          "Stemming from an interest in hardware of all kinds, these two jacket clasps investigate the intersection of jewelry and hardware through objects that are both sentimental and functional. The locket is repurposed as something that can hold the two sides of a jacket together: when closed, the locket dangles freely on one side of the jacket and leaves the garment unbuttoned, keeping what’s inside close to the wearer’s heart; when open, the locket brings the two sides of the jacket together and bares its contents for external viewers. <br><br> The face of each locket features a saw-pierced cutout of two silhouettes in a window pane. Depending on the ordering of the two lockets, the set shows two figures either uniting or separating, inspired by the idea of friends that come together and part ways over the years. In the same way that lockets, as vessels for memory and artifacts for emotion, bring together their wearer with loved ones that are framed inside with use, so do these clasps bring together the two sides of the jacket that share hellos and goodbyes, as friends do. <br><br> Each clasp’s frame displays a piece of paper: one a fortune cookie slip that reads, “Family is the heart of a loving home,” and the other an image of friends taken by a Poetry Camera, the poem separated. The lockets and adjoining hardware are sewn into the jacket, complete with mechanisms that allow each locket to be fixed in an open or closed state. <br><br> <em>Photos courtesy of Seunghye Kim.</em>",
+          "Stemming from an interest in hardware of all kinds, these two jacket clasps investigate the intersection of jewelry and hardware through objects that are both sentimental and functional. The locket is repurposed as something that can hold the two sides of a jacket together: when closed, the locket dangles freely on one side of the jacket and leaves the garment unbuttoned, keeping what’s inside close to the wearer’s heart; when open, the locket brings the two sides of the jacket together and bares its contents for external viewers. <br><br> The face of each locket features a saw-pierced cutout of two silhouettes in a window pane. Depending on the ordering of the two lockets, the set shows two figures either uniting or separating, inspired by the idea of friends that come together and part ways over the years. In the same way that lockets, as vessels for memory and artifacts for emotion, bring together their wearer with loved ones that are framed inside with use, so do these clasps bring together the two sides of the jacket that share hellos and goodbyes, as friends do. <br><br> Each clasp’s frame displays a piece of paper: one a fortune cookie slip that reads, “Family is the heart of a loving home,” and the other an image of friends taken by a Poetry Camera, the poem separated. The lockets and adjoining hardware are sewn into the jacket, complete with mechanisms that allow each locket to be fixed in an open or closed state. <br><br> <em>Photos courtesy of Seunghye Kim</em>",
         media: [
           "locket1.jpg/1",
           "locket2.jpg/1",
@@ -385,7 +385,7 @@ export const pieces = atom<{
           "locket11.jpg/7",
         ],
         previewDescription:
-          "Functional keepsakes and vessels for sentimentality that, like friends, repeatedly say hello and goodbye.",
+          "Functional keepsakes and vessels for sentimentality that, like friends, repeatedly say hello and goodbye",
         previewImage: "commandchaise7.jpg",
         tags: ["jewelry", "wearable"],
       },
@@ -399,7 +399,7 @@ export const pieces = atom<{
         medium: "Brass, Torch, Jeweler's Saw, Mandrel, Hammers",
         url: "",
         statement:
-          "After having created furniture and large-scale objects as explorations into creating shared experiences between pairs of people, the Pinky Promise Rings extend this practice into the smaller scale of jewelry. A ball-and-socket-adjacent mechanism connects two rings, allowing them to be worn only in configurations where the wearers’ pinkies are joined together. <br><br> The project explores the idea of skinship and intimacy, choosing this specific position of a pinky promise being both a symbolic gesture and a more subtle way of holding hands while staying physically conjoined. In constraining two people to be in a specific position, the rings ask wearers to become more aware of another person’s movements by also allowing some movement to allow for minor adjustments of the hands. The rings feature sweat-soldered foxes running toward each other, taken from the symbolism of a fox as a spiritual and transformative guide, and of a pair of foxes as figures of loyalty and balance.",
+          "After having created furniture and large-scale objects as explorations into creating shared experiences between pairs of people, the Pinky Promise Rings extend this practice into the smaller scale of jewelry. A ball-and-socket-adjacent mechanism connects two rings, allowing them to be worn only in configurations where the wearers’ pinkies are joined together. <br><br> The project explores the idea of skinship and intimacy, choosing this specific position of a pinky promise being both a symbolic gesture and a more subtle way of holding hands while staying physically conjoined. In constraining two people to be in a specific position, the rings ask wearers to become more aware of another person’s movements by also allowing some movement to allow for minor adjustments of the hands. The rings feature sweat-soldered foxes running toward each other, taken from the symbolism of a fox as a spiritual and transformative guide, and of a pair of foxes as figures of loyalty and balance",
         media: [
           "pinkyrings1.jpg/1",
           "pinkyrings2.jpg/1",
@@ -411,7 +411,7 @@ export const pieces = atom<{
           "pinkyrings8.jpg/5",
         ],
         previewDescription:
-          "Couple rings that keep lovers linked together through an alternative way of holding hands.",
+          "Couple rings that keep lovers linked together through an alternative way of holding hands",
         previewImage: "commandchaise7.jpg",
         tags: ["jewelry", "wearable"],
       },
@@ -425,7 +425,7 @@ export const pieces = atom<{
         medium: "Steel, Upholstery Foam, Velvet, Plywood, Paper, Pens",
         url: '<a href="https://indd.adobe.com/view/c66e6e59-61f6-45ff-93e0-5ec92bf4d80a" target="_blank">FULL PRESENTATION</a>',
         statement:
-          "<em>For All the Words I Can’t Say Aloud</em> reinterprets Catholic confession and kneeling benches into a structure meant for facilitating difficult conversations. Although not intended as a religious object, the structure invites participants to kneel and write letters to each other as a means of mediated, private conversation. By passing slips of paper back and forth through the mailbox, two people are able to converse in real-time, while feeling the weight of a physical presence across from them. <br><br> While Catholic confession requires verbal admissions of guilt from sinners to an anonymous, ordained listener, altering the format of the communication to a written one (inspired by love letters and pen pal friendships) allows participants to edit, reword, and process words that they might otherwise be unable to utter aloud. This mediated means of conversation reframes the act of exchanging dialogue as a ritual, encouraging intimacy, vulnerability, and more open communication. <br><br> The piece features welded tube, rod, and sheet metal, combined with machined feet and caps that evoke the ornamental motifs of Gothic architecture and combine the various ways of working with carbon steel.",
+          "<em>For All the Words I Can’t Say Aloud</em> reinterprets Catholic confession and kneeling benches into a structure meant for facilitating difficult conversations. Although not intended as a religious object, the structure invites participants to kneel and write letters to each other as a means of mediated, private conversation. By passing slips of paper back and forth through the mailbox, two people are able to converse in real-time, while feeling the weight of a physical presence across from them. <br><br> While Catholic confession requires verbal admissions of guilt from sinners to an anonymous, ordained listener, altering the format of the communication to a written one (inspired by love letters and pen pal friendships) allows participants to edit, reword, and process words that they might otherwise be unable to utter aloud. This mediated means of conversation reframes the act of exchanging dialogue as a ritual, encouraging intimacy, vulnerability, and more open communication. <br><br> The piece features welded tube, rod, and sheet metal, combined with machined feet and caps that evoke the ornamental motifs of Gothic architecture and combine the various ways of working with carbon steel",
         media: [
           "confessional1.jpg/1",
           "confessional2.jpg/2",
@@ -444,7 +444,7 @@ export const pieces = atom<{
           "confessional15.jpg/9",
         ],
         previewDescription:
-          "Catholic confession-inspired structure that mediates intimate conversation through written letters.",
+          "Catholic confession-inspired structure that mediates intimate conversation through written letters",
         previewImage: "commandchaise7.jpg",
         tags: ["installation", "metalworking", "upholstery"],
       },
@@ -458,7 +458,7 @@ export const pieces = atom<{
         medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
         url: "",
         statement:
-          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on.",
+          "Taking form inspiration from Marcel Breuer's tubular chairs and Apple's Command symbol (&#8984;), otherwise known as the Bowen knot, the <em>Command Chaise</em> reimagines the tablet-arm chair as a recliner, with a swiveling book stand and elevated armrests for propping up one's elbows when reading. <br><br> Designed for improved comfort during long stretches of reading, especially with larger books, the chaise features modified dimensions to support users in holding up books at a comfortable reading height and considers the integrated desk as an essential design feature, rather than an add-on",
         media: [
           "commandchaise1.jpg/1",
           "commandchaise2.jpg/2",
@@ -474,7 +474,7 @@ export const pieces = atom<{
           "commandchaise12.jpg/9",
         ],
         previewDescription:
-          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat.",
+          "Welded reading chaise reimagining the tablet-arm chair, with an integrated swiveling desk and sling seat",
         previewImage: "commandchaise7.jpg",
         tags: ["furniture", "metalworking", "soft goods"],
       },
@@ -489,7 +489,7 @@ export const pieces = atom<{
           "Ceramic Slip, Cone 5-6 Glazes, Clay, Plaster, Oxidation Firing Electric Kiln",
         url: "",
         statement:
-          "Inspired by the forms liquids take, as well as the simple yet ritualistic act of pouring, the <em>Estuary Cruet</em> celebrates the humble soy sauce dispenser as an object for both storage and presentation. <br><br> Featuring a traditional single spout on one side and a unique double spout on the other, in which two streams join to form one while pouring, the cruet accommodates simple everyday use while drawing attention to the ritual of serving condiments. An organic pinch top lid allows for easy storage while completing the fluid form, accentuating the object's function when in use and alluding to it when not. <br><br> The design was created after multiple iterations of clay positives, of which the final was used to create a plaster mold for slip-casting. While abstract, the visual language draws reference from a variety of sources, from Eva Zeisel's collections to sparrow wings and flower petals.",
+          "Inspired by the forms liquids take, as well as the simple yet ritualistic act of pouring, the <em>Estuary Cruet</em> celebrates the humble soy sauce dispenser as an object for both storage and presentation. <br><br> Featuring a traditional single spout on one side and a unique double spout on the other, in which two streams join to form one while pouring, the cruet accommodates simple everyday use while drawing attention to the ritual of serving condiments. An organic pinch top lid allows for easy storage while completing the fluid form, accentuating the object's function when in use and alluding to it when not. <br><br> The design was created after multiple iterations of clay positives, of which the final was used to create a plaster mold for slip-casting. While abstract, the visual language draws reference from a variety of sources, from Eva Zeisel's collections to sparrow wings and flower petals",
         media: [
           "cruet1.jpg/1",
           "cruet2.jpg/2",
@@ -513,7 +513,7 @@ export const pieces = atom<{
           "cruet20.jpg/14",
         ],
         previewDescription:
-          "Slip-casted soy sauce cruet with dual pour mechanism for both serving and storage.",
+          "Slip-casted soy sauce cruet with dual pour mechanism for both serving and storage",
         previewImage: "cruet1.jpg",
         tags: ["ceramics", "tableware"],
       },
@@ -544,7 +544,7 @@ export const pieces = atom<{
           "rectgarment12.jpg/8",
         ],
         previewDescription:
-          "Modular knitwear documenting four years of exploring the streets of a small city.",
+          "Modular knitwear documenting four years of exploring the streets of a small city",
         previewImage: "rectgarment0.jpg",
         tags: ["wearable", "soft goods"],
       },
@@ -559,7 +559,7 @@ export const pieces = atom<{
           "Chrome Tan Leather, Pig Skin, Post Machine, Juki Sewing Machine, Veg Tan Leather, Crimp Boards, Aluminum Stock, Metal Lathe, Bridgeport Mill, Flycutter, Dividing Head, Steel Rod, Spring Steel Shanks, Drill Press, Tap, Machine Screws, Museum Wax, Rubber Cement, Contact Cement, Snaps, Snap Setter, Skiving Knife, 5-in-1 Machine, Hammer, Lasting Pincers, Lasting Stand, Heat Gun, Wood Glue, Wallpaper Adhesive, Shoe Last",
         url: '<a href="https://www.figma.com/proto/gAcazav9wcGDz6xuCJ1C7U/Clicking-Boots?node-id=2001-300&viewport=284%2C345%2C0.02&t=01F3yPZzFotojUTP-1&scaling=contain&content-scaling=fixed&page-id=2001%3A35" target="_blank">FULL PRESENTATION</a>',
         statement:
-          "The <em>Clicking Boots</em> explore various ways of combining complicated fabrication methods for both shoe uppers and heels with the treatment of functional elements as simple stylistic features. <br><br> Inspired by pleats as understated design elements with functional components, the wholecut uppers highlight two simple folds down the side of each shoe, with snaps nestled in each pleat to allow for both an easy slip-on user flow when open and zipper-less, tight-fitting silhouettes once closed. The machined aluminum heel adds a mechanism-inspired aspect to the bottom of the shoe, which creates the illusion of the wearer's heel always touching the ground by dropping out to compensate for the height difference when the foot is lifted. <br><br> The boots are named for the sounds they make when being donned and while walking, which resemble the clip-clop of horse hooves.",
+          "The <em>Clicking Boots</em> explore various ways of combining complicated fabrication methods for both shoe uppers and heels with the treatment of functional elements as simple stylistic features. <br><br> Inspired by pleats as understated design elements with functional components, the wholecut uppers highlight two simple folds down the side of each shoe, with snaps nestled in each pleat to allow for both an easy slip-on user flow when open and zipper-less, tight-fitting silhouettes once closed. The machined aluminum heel adds a mechanism-inspired aspect to the bottom of the shoe, which creates the illusion of the wearer's heel always touching the ground by dropping out to compensate for the height difference when the foot is lifted. <br><br> The boots are named for the sounds they make when being donned and while walking, which resemble the clip-clop of horse hooves",
         media: [
           "clickingboots1.jpg/1",
           "clickingboots2.jpg/4",
@@ -577,7 +577,7 @@ export const pieces = atom<{
           "clickingboots14*.mp4/9",
         ],
         previewDescription:
-          "Leather boots with single-piece pleated uppers, snap closures, and machined aluminum leveling heels.",
+          "Leather boots with single-piece pleated uppers, snap closures, and machined aluminum leveling heels",
         previewImage: "clickingboots5.jpg",
         tags: ["shoemaking", "machining", "wearable"],
       },
@@ -592,7 +592,7 @@ export const pieces = atom<{
           "Arduino, Cherry, Jointer, Planar, Screws, Drill Press, Hand Drill, Vellum, Biscuit Jointer, Table Saw, Aluminum Stock, Sandblaster, South Bend Metal Lathe, Bridgeport Mill, Radius Cutter, Horizontal Bandsaw, Tape, Hot Glue, Wire Cutter, Aluminum Rod, Aluminum Tube, White Glue, Tap, Solidworks, Adobe InDesign, Adobe Illustrator",
         url: '<a href="https://indd.adobe.com/view/fe56a380-fe08-420f-9779-6cd81f4132ba" target="_blank">FULL PRESENTATION</a>',
         statement:
-          "After doing initial research on the pain points and experiences of both people in long-distance relationships and those who get homesick, I designed a product that engages with the intense, yet often indescribable, emotions that come with yearning for places and people. <br /><br /> <em>Love in a Puff</em> is a set of two devices, one for each person in the relationship, which contain indicator lights that turn on when both people are in the same room as their devices to symbolize connection, parallel play, and presence. A simple blow on the pinwheel-like shade (designed to evoke nostalgia and playfulness) causes the pinwheel on the other person's device to spin in response, mimicking the sense of shared space by allowing the individuals to effect a force on each others' environments. <br /><br /> The devices act as metaphors for human breath (something that can only be experienced in moments of intimacy), bringing together feelings of lightness and ephemerality. The devices come in desktop and wall-mounted variants and take inspiration from MUJI's soft-spoken design language.",
+          "After doing initial research on the pain points and experiences of both people in long-distance relationships and those who get homesick, I designed a product that engages with the intense, yet often indescribable, emotions that come with yearning for places and people. <br /><br /> <em>Love in a Puff</em> is a set of two devices, one for each person in the relationship, which contain indicator lights that turn on when both people are in the same room as their devices to symbolize connection, parallel play, and presence. A simple blow on the pinwheel-like shade (designed to evoke nostalgia and playfulness) causes the pinwheel on the other person's device to spin in response, mimicking the sense of shared space by allowing the individuals to effect a force on each others' environments. <br /><br /> The devices act as metaphors for human breath (something that can only be experienced in moments of intimacy), bringing together feelings of lightness and ephemerality. The devices come in desktop and wall-mounted variants and take inspiration from MUJI's soft-spoken design language",
         media: [
           "loveinapuff1.jpg/1",
           "loveinapuff2.jpg/3",
@@ -606,7 +606,7 @@ export const pieces = atom<{
           "loveinapuff10.mp4/7",
         ],
         previewDescription:
-          "Bridging emotional distance between people with breath, light, and movement.",
+          "Bridging emotional distance between people with breath, light, and movement",
         previewImage: "loveinapuff2.jpg",
         tags: ["arduino", "machining"],
       },
@@ -621,7 +621,7 @@ export const pieces = atom<{
           "Cherry, Jointer, Planar, Router Table, Hand-Held Plunge Router, Table Saw, Wood Glue, Dowels, Canvas Fabric, Plywood, Bandsaw, Chisel, Mallet, Double-Sided Table, Thread, Tacky Glue, Orbital Sander, Drill Press, Biscuit Jointer",
         url: "",
         statement:
-          "Tasked with creating a 'mechanism' that aids in the user experience of an object, I created a lap table with tambour-inspired drawers to reveal and conceal cubby spaces for easy storage. <br /><br /> In spite of its simple form factor, <em>Table for a Homebody</em> introduces a subtle moment of delight in its sliding cubby covers, eliciting surprise from its user at the satisfaction of every interaction with the storage space. The cherry finish and warm-toned canvas covers boasting delicate loops for easy pulling reference cozy and domestic aesthetics, recalling both the table's purpose of being a bed-top object and its invitation to stay home and under the covers.",
+          "Tasked with creating a 'mechanism' that aids in the user experience of an object, I created a lap table with tambour-inspired drawers to reveal and conceal cubby spaces for easy storage. <br /><br /> In spite of its simple form factor, <em>Table for a Homebody</em> introduces a subtle moment of delight in its sliding cubby covers, eliciting surprise from its user at the satisfaction of every interaction with the storage space. The cherry finish and warm-toned canvas covers boasting delicate loops for easy pulling reference cozy and domestic aesthetics, recalling both the table's purpose of being a bed-top object and its invitation to stay home and under the covers",
         media: [
           "homebodytable1.mp4/1",
           "homebodytable2.jpg/2",
@@ -636,7 +636,7 @@ export const pieces = atom<{
           "homebodytable11*.mp4/9",
         ],
         previewDescription:
-          "Lap table with tambour-inspired mechanisms, for people who love staying at home (and in bed).",
+          "Lap table with tambour-inspired mechanisms, for people who love staying at home (and in bed)",
         previewImage: "homebodytable6.jpg",
         tags: ["woodworking", "furniture"],
       },
@@ -668,7 +668,7 @@ export const pieces = atom<{
           "daychair13*.mp4/8",
         ],
         previewDescription:
-          "Chair for daily use, employing frame construction and steambending techniques.",
+          "Chair for daily use, employing frame construction and steambending techniques",
         previewImage: "daychair3.jpg",
         tags: ["woodworking", "furniture"],
       },
@@ -683,7 +683,7 @@ export const pieces = atom<{
           "Grey Foam, Steel Stock, South Bend Lathe, Plastidip, Acrylic Rod, Rock Hard Putty, Styrene, Spray Paint, JB Weld, Primer, Solidworks, Keyshot, Chipboard, Foamcore, Adobe InDesign, Adobe Illustrator",
         url: '<a href="https://indd.adobe.com/view/5eb6d8be-3ee2-4145-8935-5c1156ee0c13" target="_blank">FULL PRESENTATION</a>',
         statement:
-          "Given the assignment of designing a gardening tool for a brand, I was given the tool of a hand cultivator, to be designed for Makita, a power tool company. After researching the company’s branding, product lines, and values, I moved into sketching and prototyping to identify the most suitable end design based on Makita’s reputation as a legacy brand known for its ergonomics and simple, but honest design. Focusing primarily on Makita’s target audience, largely composed of professionals using Makita’s tools on a regular basis for their work, I also wanted to make sure to design something that would be industrial and robust enough to endure regular use on the job. <br><br> Over the course of three iterations, I narrowed down the most comfortable handles for the cultivator based on the pulling motions users would employ repeatedly during the tool’s use. The end product, which features a dual-wield grip including a claw grip for tension and a fist grip for force, allows users to easily maneuver through dirt.",
+          "Given the assignment of designing a gardening tool for a brand, I was given the tool of a hand cultivator, to be designed for Makita, a power tool company. After researching the company’s branding, product lines, and values, I moved into sketching and prototyping to identify the most suitable end design based on Makita’s reputation as a legacy brand known for its ergonomics and simple, but honest design. Focusing primarily on Makita’s target audience, largely composed of professionals using Makita’s tools on a regular basis for their work, I also wanted to make sure to design something that would be industrial and robust enough to endure regular use on the job. <br><br> Over the course of three iterations, I narrowed down the most comfortable handles for the cultivator based on the pulling motions users would employ repeatedly during the tool’s use. The end product, which features a dual-wield grip including a claw grip for tension and a fist grip for force, allows users to easily maneuver through dirt",
         media: [
           "makitacultivator6.jpg/4",
           "makitacultivator7.jpg/1",
@@ -699,7 +699,7 @@ export const pieces = atom<{
           "makitacultivator12.jpg/8",
         ],
         previewDescription:
-          "Hand cultivator gardening tool designed to fit Makita's brand and product line.",
+          "Hand cultivator gardening tool designed to fit Makita's brand and product line",
         previewImage: "makitacultivator6.jpg",
         tags: ["machining", "cad"],
       },
@@ -714,7 +714,7 @@ export const pieces = atom<{
           "Aluminum Stock, Aluminum Tube, Brass Stock, Steel Stock, South Bend Lathe, Bridgeport Mill, Solidworks",
         url: "",
         statement:
-          "Featuring lids and bottoms that can be screwed on and unscrewed, machined with an internal tap and external single point threading, the Permutation Jars offer a variety of nine different variations on a single design. With different kinds of shapes and silhouettes, augmented further by three different kinds of metals and colors, the jars evoke a sense of play and exploration to find different ways of mixing and matching each of the jars' parts to create a myriad of different iterations.",
+          "Featuring lids and bottoms that can be screwed on and unscrewed, machined with an internal tap and external single point threading, the Permutation Jars offer a variety of nine different variations on a single design. With different kinds of shapes and silhouettes, augmented further by three different kinds of metals and colors, the jars evoke a sense of play and exploration to find different ways of mixing and matching each of the jars' parts to create a myriad of different iterations",
         media: [
           "permutationjars1.jpg/1",
           "permutationjars2.jpg/2",
@@ -732,7 +732,7 @@ export const pieces = atom<{
           "permutationjars14.jpg/11",
         ],
         previewDescription:
-          "A system of interchangeable parts made of brass, steel, and aluminum.",
+          "A system of interchangeable parts made of brass, steel, and aluminum",
         previewImage: "permutationjars4.jpg",
         tags: ["cad", "machining", "metalworking"],
       },
@@ -747,7 +747,7 @@ export const pieces = atom<{
           "Poplar Plywood, Dowels, Wood Glue, Acrylic Plexiglass, Screws, Arduino, LED Light Strips, Portable Chargers, Light Sensors",
         url: "",
         statement:
-          "Comprised of two stools that fit together to form a bench, the Synergy Seats bridge physical and emotional distances within a shared space to create connections between two seated individuals. As one person sits down, the other seat lights up so that when two people are seated, the entire bench is illuminated to visualize a connection and foster interaction and cohabitation of a space.",
+          "Comprised of two stools that fit together to form a bench, the Synergy Seats bridge physical and emotional distances within a shared space to create connections between two seated individuals. As one person sits down, the other seat lights up so that when two people are seated, the entire bench is illuminated to visualize a connection and foster interaction and cohabitation of a space",
         media: [
           "synergyseats1.mp4/1",
           "synergyseats2*.mp4/2",
@@ -759,7 +759,7 @@ export const pieces = atom<{
           "synergyseats8.jpg/5",
         ],
         previewDescription:
-          "A pair of stools that bridges physical and emotional gaps to foster cohabitation of space.",
+          "A pair of stools that bridges physical and emotional gaps to foster cohabitation of space",
         previewImage: "synergyseats5.jpg",
         tags: ["arduino", "furniture", "woodworking"],
       },
@@ -776,7 +776,7 @@ export const pieces = atom<{
         medium: "Maya, Adobe Illustrator, Adobe Premiere Pro",
         url: "",
         statement:
-          "Created as an exploration of anime cel-style toon-shading and animation movement quality, I animated a series of three short, cyclical vignettes inspired by old video game loading screens using a character I modeled, shaded, and rigged. In the Re:Memo game, the character would act as the player's digital avatar, which travels through a found hard drive attempting to uncover mysteries about its previous owner before all of the data becomes corrupted. <br/><br/> Each of the loading screens, complete with loading state UI, would introduce a new phase of the game, which explores concepts relating to digital archives and their effect on grieving processes in the age of modern technology.",
+          "Created as an exploration of anime cel-style toon-shading and animation movement quality, I animated a series of three short, cyclical vignettes inspired by old video game loading screens using a character I modeled, shaded, and rigged. In the Re:Memo game, the character would act as the player's digital avatar, which travels through a found hard drive attempting to uncover mysteries about its previous owner before all of the data becomes corrupted. <br/><br/> Each of the loading screens, complete with loading state UI, would introduce a new phase of the game, which explores concepts relating to digital archives and their effect on grieving processes in the age of modern technology",
         media: [
           "rememo1*.mp4/1",
           "rememo2.mp4/2",
@@ -784,7 +784,7 @@ export const pieces = atom<{
           "rememo4.mp4/4",
         ],
         previewDescription:
-          "Toon-shaded loading screens for a video game about digital grief, memory, and rediscovery.",
+          "Toon-shaded loading screens for a video game about digital grief, memory, and rediscovery",
         previewImage: "rememo5.jpg",
         tags: ["animation", "game", "art direction"],
       },
@@ -807,7 +807,7 @@ export const pieces = atom<{
           "livelaughloaf5.png/5",
         ],
         previewDescription:
-          "Building upon an existing research paper about modeling baking processes.",
+          "Building upon an existing research paper about modeling baking processes",
         previewImage: "livelaughloaf3.png",
         tags: ["computer graphics", "animation"],
       },
@@ -821,7 +821,7 @@ export const pieces = atom<{
         medium: "Vine Charcoal, White Conte, Eraser, Adobe Premiere Pro",
         url: "",
         statement:
-          "As a collaboration with Astrid Schoenly, <em>Efflorescence</em> narrates the drifting apart of two childhood friends, reflecting upon a near-universal college experience of meeting, befriending, and losing contact with companions as time progresses.",
+          "As a collaboration with Astrid Schoenly, <em>Efflorescence</em> narrates the drifting apart of two childhood friends, reflecting upon a near-universal college experience of meeting, befriending, and losing contact with companions as time progresses",
         media: [
           "efflorescence1*.mp4/1",
           "efflorescence2.jpg/2",
@@ -833,7 +833,7 @@ export const pieces = atom<{
           "efflorescence8.jpg/8",
         ],
         previewDescription:
-          "An animation short on growing up, moving away, and drifting apart from childhood friends.",
+          "An animation short on growing up, moving away, and drifting apart from childhood friends",
         previewImage: "efflorescence7.jpg",
         tags: ["animation", "short film"],
       },

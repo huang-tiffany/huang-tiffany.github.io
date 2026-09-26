@@ -142,7 +142,6 @@
 
 .piecePage .piece-more {
   font-weight: 600;
-  margin-left: 0.5em;
   display: inline;
   white-space: nowrap;
 
@@ -284,18 +283,6 @@
   .piecePage main picture {
     width: 100%;
   }
-}
-
-@media (max-width: 768px) {
-  .piecePage .media {
-    height: fit-content;
-    background-color: black;
-  }
-
-  .piecePage .piece-description-expand.expanded {
-    column-count: 1;
-    z-index: -2;
-  }
 
   .piecePage .piece-info {
     width: 100%;
@@ -304,15 +291,35 @@
     top: unset;
 
     &::before {
+      z-index: 1;
       content: "";
       background-color: black;
       position: fixed;
-      width: calc(100vw - 4em - 1.25px);
+      width: calc(100vw / 6 * 4 - 1.25px - 3em);
       height: 2em;
-      left: calc(2em + 0.75px);
+      left: calc(100vw / 6 + 0.75px + 1.5em);
       top: calc(6em + 0.25px);
       border-radius: 12px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .piecePage .piece-info {
+    &::before {
+      left: calc(2em + 0.75px);
+      width: calc(100vw - 4em - 1.25px);
+    }
+  }
+
+  .piecePage .media {
+    height: fit-content;
+    background-color: black;
+  }
+
+  .piecePage .piece-description-expand.expanded {
+    column-count: 1;
+    z-index: -2;
   }
 
   .piecePage main {
