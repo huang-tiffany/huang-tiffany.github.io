@@ -61,7 +61,7 @@ export const pieces = atom<{
         medium: "Figma",
         url: "",
         statement:
-          "Working with fellow Brand designer Shivani Soni, I helped develop a small apparel collection — the first one designed in-house — for Ramp employees. Compared to the last collection made by design agency Fuzzco, we decided to skew slightly more conservative and cater to all kinds of fashion styles worn by people at Ramp offices. I designed a hat, two tees, and a crewneck, with the pine Element Tee being the most corporate, the black Modern Crew representing a mix of simple and bold graphics, and the off-white Bottom Line Tee being the most 'streetwear' styled of the three. Photos courtesy of Fuzzco.",
+          "Working with fellow Brand designer Shivani Soni, I helped develop a small apparel collection — the first one designed in-house — for Ramp employees. Compared to the last collection made by design agency Fuzzco, we decided to skew slightly more conservative and cater to all kinds of fashion styles worn by people at Ramp offices. I designed a hat, two tees, and a crewneck, with the pine Element Tee being the most corporate, the black Modern Crew representing a mix of simple and bold graphics, and the off-white Bottom Line Tee being the most 'streetwear' styled of the three. <br><br> <em>Photos courtesy of Fuzzco.</em>",
         media: [
           "rampswag1.jpg/1",
           "rampswag2.jpg/1",
@@ -128,7 +128,7 @@ export const pieces = atom<{
         size: '112 pages, 8.5" &times; 5.5"',
         medium:
           "Figma, Paper, Aluminum Sheet, Drill Press, Metal Stamps, Center Punch, Scribe, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
-        url: '<a href="https://indd.adobe.com/view/89af6ce0-fc9a-4858-962e-7b6e41a97f59" target="_blank">FULL BOOK</a>',
+        url: '<a href="https://indd.adobe.com/view/cbf24062-a9b4-469e-8c04-05db8f58c377" target="_blank">FULL BOOK</a>',
         statement:
           "By sequencing images taken from ten YouTube videos focusing on timelapses of singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, the project questions the identity of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to.",
         media: [
@@ -329,17 +329,17 @@ export const pieces = atom<{
 
     // 3D
     "3D": {
-      inflatedGridLight: {
+      expandedGridLight: {
         category: "3D",
-        string: "inflatedGridLight",
+        string: "expandedGridLight",
         year: "2026",
-        title: "Inflated Grid Light",
+        title: "Expanded Grid Light",
         size: '20" &times; 5" &times; 6"',
         medium:
           "Steel Sheet, Hydrostatic Test Pump, TIG Welder, Steel Tube, Steel Rod, Lighting Components",
         url: "",
         statement:
-          "After a winter-long exploration of different ways of manipulating sheet steel with both manual and industrial machines across 36 prototypes, the <em>Inflated Grid Light</em> developed from a combination of alterations to the material using the hydroforming technique of expanding metal with water pressure. <br><br> The form evolved from experimentation with constraining the convex forms using a variety of methods, such as bead-rolling to work-harden the metal or puncturing and reinforcing the gap between two sheets before inflating. The resulting lighting object focuses on the unique pillow-like nature of the form, combined with the intersecting tubes that allow for light to filter through. <br><br> Designed for utiliarian, metropolitan settings such as subways and bus stops, the piece adopts the ubiquitous tube light as its main lighting fixture, which opens up possibilities to create a modular system that can expand to different lengths and configurations.",
+          "After a winter-long exploration of different ways of manipulating sheet steel with both manual and industrial machines across 36 prototypes, the <em>Expanded Grid Light</em> developed from a combination of alterations to the material using the hydroforming technique of expanding metal with water pressure. <br><br> The form evolved from experimentation with constraining the convex forms using a variety of methods, such as bead-rolling to work-harden the metal or puncturing and reinforcing the gap between two sheets before inflating. The resulting lighting object focuses on the unique pillow-like nature of the form, combined with the intersecting tubes that allow for light to filter through. <br><br> Designed for utiliarian, metropolitan settings such as subways and bus stops, the piece adopts the ubiquitous tube light as its main lighting fixture, which opens up possibilities for creating a modular system that can expand to different lengths and configurations.",
         media: [
           "gridlight1.jpg/1",
           "gridlight2.jpg/2",
@@ -370,7 +370,7 @@ export const pieces = atom<{
           "Sterling Silver, Personal Artifacts, Jeweler's Saw, Torch, Files",
         url: "",
         statement:
-          "Stemming from an interest in hardware of all kinds, these two jacket clasps investigate the intersection of jewelry and hardware through objects that are both sentimental and functional. The locket is repurposed as something that can hold the two sides of a jacket together: when closed, the locket dangles freely on one side of the jacket and leaves the garment unbuttoned, keeping what’s inside close to the wearer’s heart; when open, the locket brings the two sides of the jacket together and bares its contents for external viewers. <br><br> The face of each locket features a saw-pierced cutout of two silhouettes in a window pane. Depending on the ordering of the two lockets, the set shows two figures either uniting or separating, inspired by the idea of friends that come together and part ways over the years. In the same way that lockets, as vessels for memory and artifacts for emotion, bring together their wearer with loved ones that are framed inside with use, so do these clasps bring together the two sides of the jacket that share hellos and goodbyes, as friends do. <br><br> Each clasp’s frame displays a piece of paper: one a fortune cookie slip that reads, “Family is the heart of a loving home,” and the other an image of friends taken by a Poetry Camera, the poem separated. The lockets and adjoining hardware are sewn into the jacket, complete with mechanisms that allow each locket to be fixed in an open or closed state. <br><br> Photos courtesy of Seunghye Kim.",
+          "Stemming from an interest in hardware of all kinds, these two jacket clasps investigate the intersection of jewelry and hardware through objects that are both sentimental and functional. The locket is repurposed as something that can hold the two sides of a jacket together: when closed, the locket dangles freely on one side of the jacket and leaves the garment unbuttoned, keeping what’s inside close to the wearer’s heart; when open, the locket brings the two sides of the jacket together and bares its contents for external viewers. <br><br> The face of each locket features a saw-pierced cutout of two silhouettes in a window pane. Depending on the ordering of the two lockets, the set shows two figures either uniting or separating, inspired by the idea of friends that come together and part ways over the years. In the same way that lockets, as vessels for memory and artifacts for emotion, bring together their wearer with loved ones that are framed inside with use, so do these clasps bring together the two sides of the jacket that share hellos and goodbyes, as friends do. <br><br> Each clasp’s frame displays a piece of paper: one a fortune cookie slip that reads, “Family is the heart of a loving home,” and the other an image of friends taken by a Poetry Camera, the poem separated. The lockets and adjoining hardware are sewn into the jacket, complete with mechanisms that allow each locket to be fixed in an open or closed state. <br><br> <em>Photos courtesy of Seunghye Kim.</em>",
         media: [
           "locket1.jpg/1",
           "locket2.jpg/1",
@@ -396,10 +396,10 @@ export const pieces = atom<{
         year: "2026",
         title: "Pinky Promise Rings",
         size: "U.S. Ring Size 3.5",
-        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        medium: "Brass, Torch, Jeweler's Saw, Mandrel, Hammers",
         url: "",
         statement:
-          "After having created furniture and large-scale objects as explorations into creating shared experiences between pairs of people, the Pinky Promise Rings extend this practice into the smaller scale of jewelry. A ball-and-socket-adjacent mechanism connects two rings together, allowing them to be worn only in configurations where the two wearers’ pinkies are joined together. <br><br> The project explores the idea of skinship and intimacy, choosing this specific position of a pinky promise being both a symbolic gesture and a more subtle way of holding hands while staying physically conjoined. In constraining two people to be in a specific position, the rings ask wearers to become more aware of another person’s movements by also allowing some movement to allow for minor adjustments of the hands. The rings feature sweat-soldered foxes running toward each other, taken from the symbolism of a fox as a spiritual and transformative guide, and of a pair of foxes as figures of loyalty and balance.",
+          "After having created furniture and large-scale objects as explorations into creating shared experiences between pairs of people, the Pinky Promise Rings extend this practice into the smaller scale of jewelry. A ball-and-socket-adjacent mechanism connects two rings, allowing them to be worn only in configurations where the wearers’ pinkies are joined together. <br><br> The project explores the idea of skinship and intimacy, choosing this specific position of a pinky promise being both a symbolic gesture and a more subtle way of holding hands while staying physically conjoined. In constraining two people to be in a specific position, the rings ask wearers to become more aware of another person’s movements by also allowing some movement to allow for minor adjustments of the hands. The rings feature sweat-soldered foxes running toward each other, taken from the symbolism of a fox as a spiritual and transformative guide, and of a pair of foxes as figures of loyalty and balance.",
         media: [
           "pinkyrings1.jpg/1",
           "pinkyrings2.jpg/1",
@@ -423,7 +423,7 @@ export const pieces = atom<{
         title: "For All the Words I Can't Say Aloud",
         size: '23" &times; 44" &times; 45"',
         medium: "Steel, Upholstery Foam, Velvet, Plywood, Paper, Pens",
-        url: "",
+        url: '<a href="https://indd.adobe.com/view/c66e6e59-61f6-45ff-93e0-5ec92bf4d80a" target="_blank">FULL PRESENTATION</a>',
         statement:
           "<em>For All the Words I Can’t Say Aloud</em> reinterprets Catholic confession and kneeling benches into a structure meant for facilitating difficult conversations. Although not intended as a religious object, the structure invites participants to kneel and write letters to each other as a means of mediated, private conversation. By passing slips of paper back and forth through the mailbox, two people are able to converse in real-time, while feeling the weight of a physical presence across from them. <br><br> While Catholic confession requires verbal admissions of guilt from sinners to an anonymous, ordained listener, altering the format of the communication to a written one (inspired by love letters and pen pal friendships) allows participants to edit, reword, and process words that they might otherwise be unable to utter aloud. This mediated means of conversation reframes the act of exchanging dialogue as a ritual, encouraging intimacy, vulnerability, and more open communication. <br><br> The piece features welded tube, rod, and sheet metal, combined with machined feet and caps that evoke the ornamental motifs of Gothic architecture and combine the various ways of working with carbon steel.",
         media: [
@@ -590,7 +590,7 @@ export const pieces = atom<{
         size: '10" &times; 14" &times; 5"',
         medium:
           "Arduino, Cherry, Jointer, Planar, Screws, Drill Press, Hand Drill, Vellum, Biscuit Jointer, Table Saw, Aluminum Stock, Sandblaster, South Bend Metal Lathe, Bridgeport Mill, Radius Cutter, Horizontal Bandsaw, Tape, Hot Glue, Wire Cutter, Aluminum Rod, Aluminum Tube, White Glue, Tap, Solidworks, Adobe InDesign, Adobe Illustrator",
-        url: '<a href="https://indd.adobe.com/view/700e05f6-3586-43a1-b008-01653bee494f" target="_blank">FULL PRESENTATION</a>',
+        url: '<a href="https://indd.adobe.com/view/fe56a380-fe08-420f-9779-6cd81f4132ba" target="_blank">FULL PRESENTATION</a>',
         statement:
           "After doing initial research on the pain points and experiences of both people in long-distance relationships and those who get homesick, I designed a product that engages with the intense, yet often indescribable, emotions that come with yearning for places and people. <br /><br /> <em>Love in a Puff</em> is a set of two devices, one for each person in the relationship, which contain indicator lights that turn on when both people are in the same room as their devices to symbolize connection, parallel play, and presence. A simple blow on the pinwheel-like shade (designed to evoke nostalgia and playfulness) causes the pinwheel on the other person's device to spin in response, mimicking the sense of shared space by allowing the individuals to effect a force on each others' environments. <br /><br /> The devices act as metaphors for human breath (something that can only be experienced in moments of intimacy), bringing together feelings of lightness and ephemerality. The devices come in desktop and wall-mounted variants and take inspiration from MUJI's soft-spoken design language.",
         media: [
@@ -681,7 +681,7 @@ export const pieces = atom<{
         size: '4.82" &times; 4" &times; 11.89"',
         medium:
           "Grey Foam, Steel Stock, South Bend Lathe, Plastidip, Acrylic Rod, Rock Hard Putty, Styrene, Spray Paint, JB Weld, Primer, Solidworks, Keyshot, Chipboard, Foamcore, Adobe InDesign, Adobe Illustrator",
-        url: '<a href="https://indd.adobe.com/view/9ac268f9-3ee4-478c-9a0d-fdd3cc162fa3" target="_blank">FULL PRESENTATION</a>',
+        url: '<a href="https://indd.adobe.com/view/5eb6d8be-3ee2-4145-8935-5c1156ee0c13" target="_blank">FULL PRESENTATION</a>',
         statement:
           "Given the assignment of designing a gardening tool for a brand, I was given the tool of a hand cultivator, to be designed for Makita, a power tool company. After researching the company’s branding, product lines, and values, I moved into sketching and prototyping to identify the most suitable end design based on Makita’s reputation as a legacy brand known for its ergonomics and simple, but honest design. Focusing primarily on Makita’s target audience, largely composed of professionals using Makita’s tools on a regular basis for their work, I also wanted to make sure to design something that would be industrial and robust enough to endure regular use on the job. <br><br> Over the course of three iterations, I narrowed down the most comfortable handles for the cultivator based on the pulling motions users would employ repeatedly during the tool’s use. The end product, which features a dual-wield grip including a claw grip for tension and a fist grip for force, allows users to easily maneuver through dirt.",
         media: [
