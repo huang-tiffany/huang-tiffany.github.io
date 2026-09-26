@@ -312,14 +312,14 @@
       z-index: -2;
       content: "";
       position: fixed;
-      width: calc(100vw / 6 * 4 - 1.25px - 3em);
+      width: calc(100vw - 2 * max(10em, 100vw / 6) - 1.5px);
       height: 4em;
       background: -webkit-linear-gradient(
         top,
         rgba(0, 0, 0, 1) 50%,
         rgba(0, 0, 0, 0) 100%
       );
-      left: calc(100vw / 6 + 0.75px + 1.5em);
+      left: calc(max(10em, 100vw / 6) + 0.75px);
       top: calc(6em + 0.25px);
       border-radius: 12px;
     }

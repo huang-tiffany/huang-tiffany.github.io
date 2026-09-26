@@ -33,9 +33,9 @@
     all 0.5s ease,
     --gradient-percentage 1s ease;
 
-  transition-property: all, --gradient-percentage, border;
-  transition-timing-function: ease, ease, step-end;
-  transition-duration: 0.5s, 1s, 0s;
+  transition-property: all, --gradient-percentage, border, height;
+  transition-timing-function: ease, ease, step-end, step-end;
+  transition-duration: 0.5s, 1s, 0s, 0s;
 
   &:nth-child(1 of .quad) {
     left: 0.25px;
