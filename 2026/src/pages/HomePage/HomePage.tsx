@@ -45,8 +45,6 @@ export function InlineTextLink({ url, text }: InlineTextLinkProps) {
 }
 
 export default function HomePage() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
   useEffect(() => {
     const vid: HTMLVideoElement | null = document.querySelector("video");
     setTimeout(() => {
@@ -187,18 +185,6 @@ export default function HomePage() {
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
     };
   }, []);
 

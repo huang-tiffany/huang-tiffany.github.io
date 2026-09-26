@@ -14,6 +14,7 @@ export default function PiecePage() {
     useState<boolean>(false);
   const pageSize = useIsMedium();
   const [pieceMedia, setPieceMedia] = useState<JSX.Element[]>();
+  const [pieceDescription, setPieceDescription] = useState<JSX.Element>();
 
   let year: string;
   let title: string;
@@ -61,14 +62,7 @@ export default function PiecePage() {
     if (pieceUrl) {
       pieceUrl.innerHTML = url;
     }
-
-    const piecePreviewDescription = document.querySelector(
-      "div.piece-description-text",
-    );
-    if (piecePreviewDescription) {
-      piecePreviewDescription.innerHTML = previewDescription;
-    }
-  });
+  }, []);
 
   const loadPhotos = () => {
     // if screen size is at breakpt, split by "/"
@@ -200,33 +194,27 @@ export default function PiecePage() {
   });
 
   useEffect(() => {
-    const pieceStatement: HTMLElement | null = document.querySelector(
-      "div.piece-description-text",
+    setPieceDescription(
+      <div
+        className={
+          "piece-description-expand " +
+          (isDescriptionExpanded ? "expanded" : "")
+        }
+      >
+        <div
+          className="piece-description-text"
+          dangerouslySetInnerHTML={{
+            __html: isDescriptionExpanded ? statement : previewDescription,
+          }}
+        />
+        <a
+          className="piece-more"
+          onClick={() => setIsDescriptionExpanded(!isDescriptionExpanded)}
+        >
+          {isDescriptionExpanded ? "( - less )" : "( + more )"}
+        </a>
+      </div>,
     );
-    const pieceStatementExpand: HTMLElement | null = document.querySelector(
-      "div.piece-description-expand",
-    );
-    const pieceDescription: HTMLElement | null = document.querySelector(
-      "div.piece-description",
-    );
-    const moreButton: HTMLElement | null =
-      document.querySelector("a.piece-more");
-    if (
-      pieceStatement &&
-      moreButton &&
-      pieceDescription &&
-      pieceStatementExpand
-    ) {
-      if (isDescriptionExpanded) {
-        pieceStatementExpand.classList.add("expanded");
-        pieceStatement.innerHTML = statement;
-        moreButton.innerHTML = "( - less )";
-      } else {
-        pieceStatementExpand.classList.remove("expanded");
-        pieceStatement.innerHTML = previewDescription;
-        moreButton.innerHTML = "( + more )";
-      }
-    }
   }, [isDescriptionExpanded]);
 
   useEffect(() => {
@@ -278,19 +266,7 @@ export default function PiecePage() {
               <div className="piece-medium"></div>
               <div className="piece-url"></div>
             </div>
-            <div className="piece-description">
-              <div className="piece-description-expand">
-                <div className="piece-description-text"></div>
-                <a
-                  className="piece-more"
-                  onClick={() =>
-                    setIsDescriptionExpanded(!isDescriptionExpanded)
-                  }
-                >
-                  ( + more )
-                </a>
-              </div>
-            </div>
+            <div className="piece-description">{pieceDescription}</div>
           </div>
           <div className="media">{pieceMedia}</div>
         </div>
