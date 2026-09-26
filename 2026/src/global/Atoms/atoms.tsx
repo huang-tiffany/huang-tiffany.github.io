@@ -203,7 +203,7 @@ export const pieces = atom<{
         medium:
           "HTML, CSS, React.js, Express.js, Next.js, Vite, Typescript, Github, VSCode, Figma, Adobe Illustrator",
         url: '<a href="https://www.figma.com/proto/zJx5usW7UXk8lhYiDpjEBC/Amplify-%2F-CS0320-Final?page-id=27%3A2110&node-id=27-2230&viewport=348%2C205%2C0.04&t=54Q6NxFad2f0mCOa-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=27%3A2230&show-proto-sidebar=1" target="_blank">PROTOTYPE</a>',
-        role: "",
+        role: "by Tiffany Huang (front-end, design), Sean Yu (full-stack), and Elijah Whang (back-end)",
         statement:
           "Working with Sean Yu (full-stack dev) and Elijah Whang (backend dev), I designed and prototyped the interface for a web-based app for playlist generation as a UI/UX designer and front-end dev. Although other Spotify playlist generators exist on the web, <em>Amplify</em> provides an experience in which users have more control over the content of the playlist, adding in key components from Spotify's API to sort through different song factors including energy, valence, popularity, and danceability. With a list of nine possible factors and three seeds (artist, genre, and tracks) to choose from, this app not only gives more power to the user to finetune the qualities of their playlists, but also allows them to be more informed about their listening preferences",
         media: [

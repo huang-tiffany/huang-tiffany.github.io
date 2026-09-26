@@ -75,11 +75,6 @@ export default function WorkPage() {
         previewDescription.innerHTML =
           piecesArr[0][key][piece].previewDescription;
       }
-
-      if (previewImg) {
-        previewImg.style.display = "inherit";
-        previewImg.src = "/images/md/" + piecesArr[0][key][piece].previewImage;
-      }
     }
   };
 

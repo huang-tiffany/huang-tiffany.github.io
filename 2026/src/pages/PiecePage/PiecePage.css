@@ -210,12 +210,14 @@
 
 .piecePage .piece-size,
 .piecePage .piece-url,
-.piecePage .piece-medium {
+.piecePage .piece-medium,
+.piecePage .piece-role {
   margin-bottom: 0.5em;
 }
 
 .piecePage .piece-size,
-.piecePage .piece-url {
+.piecePage .piece-url,
+.piecePage .piece-role {
   font-size: 0.85em;
 }
 

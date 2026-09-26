@@ -24,6 +24,7 @@ export default function PiecePage() {
   let medium: string;
   let size: string;
   let url: string;
+  let role: string;
   let previewDescription: string;
   let statement: string;
   let media: string[];
@@ -34,6 +35,7 @@ export default function PiecePage() {
     medium = piecesArr[0][categoryInfo][pieceInfo].medium;
     size = piecesArr[0][categoryInfo][pieceInfo].size;
     url = piecesArr[0][categoryInfo][pieceInfo].url;
+    role = piecesArr[0][categoryInfo][pieceInfo].role;
     previewDescription =
       piecesArr[0][categoryInfo][pieceInfo].previewDescription;
     statement = piecesArr[0][categoryInfo][pieceInfo].statement;
@@ -64,6 +66,11 @@ export default function PiecePage() {
     const pieceUrl = document.querySelector("div.piece-url");
     if (pieceUrl) {
       pieceUrl.innerHTML = url;
+    }
+
+    const pieceRole = document.querySelector("div.piece-role");
+    if (pieceRole) {
+      pieceRole.innerHTML = role;
     }
   }, []);
 
@@ -202,18 +209,8 @@ export default function PiecePage() {
     // wrap last word with span + after element
     const newStatement = isDescriptionExpanded ? statement : previewDescription;
 
-    const arr = newStatement.split(" ");
-    let normalText = "";
-    for (let i = 0; i < arr.length; i++) {
-      normalText += arr[i] + " ";
-    }
-    setLastWord(arr[arr.length - 1]);
-
     if (textDescriptionRef.current) {
-      textDescriptionRef.current.innerHTML = normalText.substring(
-        0,
-        normalText.length - 1,
-      );
+      textDescriptionRef.current.innerHTML = newStatement;
     }
   }, [isDescriptionExpanded]);
 
@@ -265,6 +262,7 @@ export default function PiecePage() {
               <div className="piece-size"></div>
               <div className="piece-medium"></div>
               <div className="piece-url"></div>
+              <div className="piece-role"></div>
             </div>
             <div className="piece-description">
               <div
