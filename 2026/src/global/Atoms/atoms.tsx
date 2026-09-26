@@ -30,7 +30,7 @@ export const pieces = atom<{
         size: "",
         medium: "Figma",
         url: "",
-        role: "Design: Shivani Soni, Michael DiCristina, Tiffany Huang <br> Growth: Emily Her, William Yen",
+        role: "<em>Design:</em> <br> Shivani Soni, Tiffany Huang, Michael DiCristina <br><br> <em>Growth:</em> <br> Emily Her, William Yen",
         statement:
           "During 2023 and 2024, Ramp launched an ongoing campaign to thank its customers for all of the world-changing accomplishments being performed at each company. Working closely with Growth and Marketing teams, I helped design and populate content for over 100 billboards every month starting in September based on existing templates designed by fellow Brand designer Shivani Soni",
         media: [
@@ -60,7 +60,7 @@ export const pieces = atom<{
         size: "",
         medium: "Figma",
         url: "",
-        role: "Design: Michael DiCristina, Shivani Soni, Tiffany Huang <br> Production: Alexandra Hudson",
+        role: "<em>Design:</em> <br> Tiffany Huang, Shivani Soni, Michael DiCristina  <br><br> <em>Production:</em> <br> Alexandra Hudson",
         statement:
           "Working with fellow Brand designer Shivani Soni, I helped develop a small apparel collection — the first one designed in-house — for Ramp employees. Compared to the last collection made by design agency Fuzzco, we decided to skew slightly more conservative and cater to all kinds of fashion styles worn by people at Ramp offices. I designed a hat, two tees, and a crewneck, with the pine Element Tee being the most corporate, the black Modern Crew representing a mix of simple and bold graphics, and the off-white Bottom Line Tee being the most 'streetwear' styled of the three. <br><br> <em>Photos courtesy of Fuzzco</em>",
         media: [
@@ -155,7 +155,7 @@ export const pieces = atom<{
         size: "",
         medium:
           "Figma, Paper, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
-        url: '<a href="https://huang-tiffany.github.io/People-Watching/" target="_blank">LINK</a><br><a href="https://huang-tiffany.github.io/People-Watching/database" target="_blank">DATABASE</a><br><a href="https://www.figma.com/proto/oJQNcIkvmMtLpSFL23cU7E/People(-)Watching?page-id=0%3A1&node-id=1-9&viewport=490%2C382%2C0.07&t=MKJjKMqlnjGywHPp-1&scaling=contain&content-scaling=fixed" target="_blank">PRESENTATION</a>',
+        url: '<a href="https://huang-tiffany.github.io/People-Watching/" target="_blank">LIVE LINK</a><br><a href="https://huang-tiffany.github.io/People-Watching/database" target="_blank">DATABASE</a><br><a href="https://www.figma.com/proto/oJQNcIkvmMtLpSFL23cU7E/People(-)Watching?page-id=0%3A1&node-id=1-9&viewport=490%2C382%2C0.07&t=MKJjKMqlnjGywHPp-1&scaling=contain&content-scaling=fixed" target="_blank">PRESENTATION</a>',
         role: "",
         statement:
           "Prompted with the theme of uncovering and analyzing personal data, I decided to focus on the theme of eye contact with strangers. Given that I'm always looking around and examining my surroundings, I tend to make eye contact with many people during my daily life; this project records my various experiences over five days in January. Each card represents an encounter I had with a complete stranger who I had never seen before, including my first impressions, assumptions, and notes. <br><br> In total, I encountered 341 people during the span of this project. The final deliverable, a single serving site (SSS), recreates the unexpected and serendipitous experience of making eye contact with those unfamiliar to us; at the time stamp listed on each card, the corresponding card will display for a random span of 20 seconds. Often, cards can appear simultaneously, and often, no cards may appear at all — and even when one appears, there may not be enough time to read the entire contents of an encounter, just as we may not get to know everything we wanted to know about someone we encountered so suddenly. The sides of the page track how many instances have already occurred in the day and the last time one encounter was made",
@@ -178,7 +178,7 @@ export const pieces = atom<{
         size: "",
         medium: "Figma",
         url: '<a href="https://ramp.com/emerging-talent" target="_blank">LIVE LINK</a>',
-        role: "Art Direction: Thandi Roe, Tiffany Huang <br> Design: Tiffany Huang <br> Photography: Thandi Roe <br> Interviews: Thandi Roe, Tiffany Huang <br> Copywriting: Tiffany Huang",
+        role: "<em>Art Direction:</em> <br> Thandi Roe, Tiffany Huang <br><br> <em>Design:</em> <br> Tiffany Huang <br><br> <em>Photography:</em> <br> Thandi Roe <br><br> <em>Interviews:</em> <br> Thandi Roe, Tiffany Huang <br><br> <em>Copywriting:</em> <br> Tiffany Huang",
         statement:
           "<em>Displayed: my prototype (first) and the first version launched in January 2024 (second).</em> <br><br> During my summer at Ramp, one of the projects I had the chance to work on was a webpage for our Emerging Talent program focusing on recruiting the best up-and-coming talent from universities. Thinking primarily about introducing elements of delight in user interactions — given the inspiring recent website rebrand and the potential of interns to bring refreshing perspectives to company environments — I wanted to follow the traditional layout of a university program page like that of other creative companies like Converse and Apple, going through dozens of iterations to arrive at a distinctly 'Ramp' look and feel. Working closely with fellow Brandtern Thandi Roe, we were able to art-direct a photoshoot featuring our class of interns, which brought a spirit of camaraderie and personality into the webpage. <br><br> Although my role in the project wrapped up after the summer, the final design kept the general structure and modules from my original design when it launched in January of 2024. Since then, it has been used to recruit future interns and has acted as the online presence for Ramp's Emerging Talent department and program",
         media: [
@@ -203,9 +203,9 @@ export const pieces = atom<{
         medium:
           "HTML, CSS, React.js, Express.js, Next.js, Vite, Typescript, Github, VSCode, Figma, Adobe Illustrator",
         url: '<a href="https://www.figma.com/proto/zJx5usW7UXk8lhYiDpjEBC/Amplify-%2F-CS0320-Final?page-id=27%3A2110&node-id=27-2230&viewport=348%2C205%2C0.04&t=54Q6NxFad2f0mCOa-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=27%3A2230&show-proto-sidebar=1" target="_blank">PROTOTYPE</a>',
-        role: "Design, front-end: Tiffany Huang <br> Full-stack: Sean Yu <br> Back-end: Elijah Whang",
+        role: "<em>Design:</em> <br> Tiffany Huang <br><br> <em>Front-End Implementation:</em> <br> Tiffany Huang <br><br> <em>Full-Stack Implementation:</em> <br> Sean Yu <br><br> <em>Back-End Implementation:</em> <br> Elijah Whang",
         statement:
-          "Working with Sean Yu (full-stack dev) and Elijah Whang (backend dev), I designed and prototyped the interface for a web-based app for playlist generation as a UI/UX designer and front-end dev. Although other Spotify playlist generators exist on the web, <em>Amplify</em> provides an experience in which users have more control over the content of the playlist, adding in key components from Spotify's API to sort through different song factors including energy, valence, popularity, and danceability. With a list of nine possible factors and three seeds (artist, genre, and tracks) to choose from, this app not only gives more power to the user to finetune the qualities of their playlists, but also allows them to be more informed about their listening preferences",
+          "Although other Spotify playlist generators exist on the web, <em>Amplify</em> provides an experience in which users have more control over the content of the playlist, adding in key components from Spotify's API to sort through different song factors including energy, valence, popularity, and danceability. With a list of nine possible factors and three seeds (artist, genre, and tracks) to choose from, the app not only gives more power to the user to finetune the qualities of their playlists, but also allows them to be more informed about their listening preferences",
         media: [
           "amplify1.jpg/1",
           "amplify2.mp4/2",
@@ -251,7 +251,7 @@ export const pieces = atom<{
         size: '74 pages, 8.5" &times; 11"',
         medium: "Adobe InDesign, Adobe Photoshop, Adobe Illustrator",
         url: '<a href="https://indd.adobe.com/view/3a1257f9-d1bc-4a55-8cc3-ac0b2bfee11d" target="_blank">FULL MAGAZINE</a>',
-        role: "Creative Direction: Tiffany Huang <br> Editors-in-Chief: Reeno Hashimoto, Adelaide Jenkins <br> Photography: Tiffany Huang, Minah (Erin) Kim <br> Writers: Nicolas Benitez Pino, Zachary Braner, Kira Kelly Clarke, Magdalena Del Valle, Adelaide Jenkins, Maria Trifonova, Karim Zohdy",
+        role: "<em>Creative Direction:</em> <br> Tiffany Huang <br><br> <em>Editors-in-Chief:</em> <br> Reeno Hashimoto, Adelaide Jenkins <br><br> <em>Photography:</em> <br> Tiffany Huang, Minah (Erin) Kim <br><br> <em>Writers:</em> <br> Nicolas Benitez Pino, Zachary Braner, Kira Kelly Clarke, Magdalena Del Valle, Adelaide Jenkins, Maria Trifonova, Karim Zohdy",
         statement:
           "As the Creative Director for Brown's Rogue Fashion Magazine, I worked with other members of Rogue's executive board to gather content for the culminating publication of the year's activities and designed the magazine from scratch as the sole graphic designer. Collaborating with an editorial team to gather stories about up-and-coming student designers at RISD, I took charge of creating layouts and compositions to assemble a booklet, later printed as physical copies that the club distributed among staff members and the featured designers",
         media: [
@@ -277,9 +277,9 @@ export const pieces = atom<{
         size: '281 pages, 9" &times; 12"',
         medium: "Adobe InDesign, Adobe Illustrator, Adobe Photoshop",
         url: "",
-        role: "Editors-in-Chief: Tiffany Huang, Wilson Fung, Jason Chin, Amy Zhang <br> Section Editors: Emma Foley, Jasmin Reddy, Isabel Lee, Savannah Lin, Michelle Lim, Alissa Doemling, Miwa Okumura, Grace Wang <br> Reporting: Hermione Bossolina, Ritisha Byri, Kiana Compeau, Haley Marks, Isabella Marty, Kavya Narayan, Audrey Nowatzyk, Ainsley Sheen <br> Photography: Wilson Fung, Gloria Pan, Isabel Lee, Kavya Narayan, Juan Vintimilla",
+        role: "<em>Editors-in-Chief:</em> <br> Tiffany Huang, Wilson Fung, Jason Chin, Amy Zhang <br><br> <em>Section Editors:</em> <br>Emma Foley, Jasmin Reddy, Isabel Lee, Savannah Lin, Michelle Lim, Alissa Doemling, Miwa Okumura, Grace Wang <br><br> <em>Reporters:</em> <br> Hermione Bossolina, Ritisha Byri, Kiana Compeau, Haley Marks, Isabella Marty, Kavya Narayan, Audrey Nowatzyk, Ainsley Sheen <br><br> <em>Photography:</em> <br>Wilson Fung, Gloria Pan, Isabel Lee, Kavya Narayan, Juan Vintimilla",
         statement:
-          "Over the 2021-2022 school year, I acted as the Editor-in-Chief for the Saratoga High School yearbook, overseeing a staff of 22, creating style guides and templates, designing, and editing layouts. Our theme for the year, Still Life, speaks to the experiences we underwent as high school students in a year of COVID: whether through appreciating everyday objects more as if we were still life artists, realizing that life has frozen and become still, or discovering that no matter what happens it's 'still life.'",
+          "Over the 2021-2022 school year, I acted as the Editor-in-Chief for the Saratoga High School yearbook, overseeing a staff of 22, creating style guides and templates, designing, and editing layouts. Our theme for the year, Still Life, speaks to the experiences we underwent as high school students in a year of COVID: whether through appreciating everyday objects more as if we were still life artists, realizing that life has frozen and become still, or discovering that no matter what happens it's 'still life.' <br><br> <em>Advised by Michael Tyler</em>",
         media: [
           "talisman611.jpg/1",
           "talisman612.jpg/2",
@@ -340,7 +340,7 @@ export const pieces = atom<{
         url: "",
         role: "",
         statement:
-          "After a winter-long exploration of different ways of manipulating sheet steel with both manual and industrial machines across 36 prototypes, the <em>Expanded Grid Light</em> developed from a combination of alterations to the material using the hydroforming technique of expanding metal with water pressure. <br><br> The form evolved from experimentation with constraining the convex forms using a variety of methods, such as bead-rolling to work-harden the metal or puncturing and reinforcing the gap between two sheets before inflating. The resulting lighting object focuses on the unique pillow-like nature of the form, combined with the intersecting tubes that allow for light to filter through. <br><br> Designed for utiliarian, metropolitan settings such as subways and bus stops, the piece adopts the ubiquitous tube light as its main lighting fixture, which opens up possibilities for creating a modular system that can expand to different lengths and configurations",
+          "After a winter-long exploration of different ways of manipulating sheet steel with both manual and industrial machines across 36 prototypes, the <em>Expanded Grid Light</em> developed from a combination of alterations to the material using the hydroforming technique of expanding metal with water pressure. <br><br> The form evolved from experimentation with constraining the convex forms using a variety of methods, such as bead-rolling to work-harden the metal or puncturing and reinforcing the gap between two sheets before inflating. The resulting lighting object focuses on the unique pillow-like nature of the form, combined with the intersecting tubes that allow for light to filter through. <br><br> Designed for utiliarian, metropolitan settings such as subways and bus stops, the piece adopts the ubiquitous tube light as its main lighting fixture, which opens up possibilities for creating a modular system that can expand to different lengths and configurations. <br><br> <em>Advised by Colin Bliss</em>",
         media: [
           "gridlight1.jpg/1",
           "gridlight2.jpg/2",
@@ -400,7 +400,7 @@ export const pieces = atom<{
         url: "",
         role: "",
         statement:
-          "After having created furniture and large-scale objects as explorations into creating shared experiences between pairs of people, the Pinky Promise Rings extend this practice into the smaller scale of jewelry. A ball-and-socket-adjacent mechanism connects two rings, allowing them to be worn only in configurations where the wearers’ pinkies are joined together. <br><br> The project explores the idea of skinship and intimacy, choosing this specific position of a pinky promise being both a symbolic gesture and a more subtle way of holding hands while staying physically conjoined. In constraining two people to be in a specific position, the rings ask wearers to become more aware of another person’s movements by also allowing some movement to allow for minor adjustments of the hands. The rings feature sweat-soldered foxes running toward each other, taken from the symbolism of a fox as a spiritual and transformative guide, and of a pair of foxes as figures of loyalty and balance",
+          "After having created furniture and large-scale objects as explorations into creating shared experiences between pairs of people, the <em>Pinky Promise Rings</em> extend this practice into the smaller scale of jewelry. A ball-and-socket-adjacent mechanism connects two rings, allowing them to be worn only in configurations where the wearers’ pinkies are joined together. <br><br> The project explores the idea of skinship and intimacy, choosing this specific position of a pinky promise being both a symbolic gesture and a more subtle way of holding hands while staying physically conjoined. In constraining two people to be in a specific position, the rings ask wearers to become more aware of another person’s movements by also allowing some movement to allow for minor adjustments of the hands. <br><br> The rings feature sweat-soldered foxes running toward each other, taken from the symbolism of a fox as a spiritual and transformative guide, and of a pair of foxes as figures of loyalty and balance",
         media: [
           "pinkyrings1.jpg/1",
           "pinkyrings2.jpg/1",
@@ -435,14 +435,14 @@ export const pieces = atom<{
           "confessional5.jpg/3",
           "confessional6.jpg/4",
           "confessional7.jpg/4",
-          "confessional8.jpg/5",
-          "confessional9.jpg/6",
-          "confessional10.jpg/7",
-          "confessional11.jpg/7",
-          "confessional12.jpg/8",
-          "confessional13.jpg/5",
-          "confessional14.jpg/9",
-          "confessional15.jpg/9",
+          "confessional8.jpg/6",
+          "confessional9.jpg/7",
+          "confessional10.jpg/-1",
+          "confessional11.jpg/8",
+          "confessional12.jpg/9",
+          "confessional13.jpg/6",
+          "confessional14.jpg/8",
+          "confessional15.jpg/5",
         ],
         previewDescription:
           "Catholic confession-inspired structure that mediates intimate conversation through written letters",
@@ -797,7 +797,7 @@ export const pieces = atom<{
         size: "",
         medium: "C++, Maya, Rhino, Blender",
         url: '<a href="https://github.com/smallwhale1/cs2240-bread/tree/main" target="_blank">GITHUB',
-        role: "Implementation: Grace Marshburn, Lana Yang-Maccini, Sophie Zhang, Tiffany Huang <br> Rendering: Sophie Zhang, Tiffany Huang",
+        role: "<em>Implementation:</em> <br> Grace Marshburn, Lana Yang-Maccini, Sophie Zhang, Tiffany Huang <br><br> <em>Rendering:</em> <br> Sophie Zhang, Tiffany Huang",
         statement:
           "Working with team members Grace Marshburn, Lana Yang-Maccini, and Sophie Zhang, I reimplemented and augmented the <em>Procedural bread making</em> paper by Rodrigo Baravalle, Gustavo Ariel Patow, and Claudio Delrieux. <br/><br/> In addition to the original implementation, which generates bread geometry procedurally and simulates the entire proofing and baking process, we added parallelization, which allowed us to render animations of the bread pipeline in addition to the paper's still images, as well as integrated low-res bread meshes into industry-standard workflows using surface meshes and current software like Maya and Blender. Additionally, we also added more parameter tuning to represent a wider variety of bread types than the original paper",
         media: [
@@ -817,10 +817,10 @@ export const pieces = atom<{
         string: "efflorescence",
         year: "2022",
         title: "Efflorescence",
-        size: '01:38, 18" &times; 24"',
+        size: '1:38, 18" &times; 24"',
         medium: "Vine Charcoal, White Conte, Eraser, Adobe Premiere Pro",
         url: "",
-        role: "Animation: Astrid Schoenly, Tiffany Huang <br> Editing: Tiffany Huang",
+        role: "<em>Animation:</em> <br> Astrid Schoenly, Tiffany Huang <br><br> <em>Editing:</em> <br> Tiffany Huang",
         statement:
           "As a collaboration with Astrid Schoenly, <em>Efflorescence</em> narrates the drifting apart of two childhood friends, reflecting upon a near-universal college experience of meeting, befriending, and losing contact with companions as time progresses",
         media: [

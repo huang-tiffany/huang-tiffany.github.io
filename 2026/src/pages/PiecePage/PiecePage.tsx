@@ -16,7 +16,6 @@ export default function PiecePage() {
   const [pieceMedia, setPieceMedia] = useState<JSX.Element[]>();
 
   // for keeping more/less button from wrapping by itself
-  const [lastWord, setLastWord] = useState("");
   const textDescriptionRef = useRef<HTMLDivElement>(null);
 
   let year: string;
@@ -60,17 +59,35 @@ export default function PiecePage() {
 
     const pieceSize = document.querySelector("div.piece-size");
     if (pieceSize) {
-      pieceSize.innerHTML = size;
+      if (size.length === 0) {
+        pieceSize.remove();
+      } else {
+        pieceSize.innerHTML = size;
+      }
     }
 
     const pieceUrl = document.querySelector("div.piece-url");
     if (pieceUrl) {
-      pieceUrl.innerHTML = url;
+      if (url.length === 0) {
+        pieceUrl.remove();
+      } else {
+        pieceUrl.innerHTML = url;
+      }
     }
 
     const pieceRole = document.querySelector("div.piece-role");
     if (pieceRole) {
-      pieceRole.innerHTML = role;
+      if (role.length === 0) {
+        pieceRole.remove();
+      } else {
+        const roleArr = role.split("<br><br>");
+        let newRoleText = "";
+
+        roleArr.forEach((obj) => {
+          newRoleText += "<p>" + obj + "</p>";
+        });
+        pieceRole.innerHTML = newRoleText;
+      }
     }
   }, []);
 

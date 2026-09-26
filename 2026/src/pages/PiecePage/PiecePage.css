@@ -50,9 +50,9 @@
       position: absolute;
       z-index: 5;
       border-radius: 0;
-      top: calc(50% + 0.25px);
+      top: calc(50% + 0.5px);
       left: calc(50% + 0.25px);
-      transform: translate(calc(-50% - 0.25px), calc(-50% - 0.25px));
+      transform: translate(calc(-50% - 0.25px), calc(-50% - 0.5px));
       animation-name: border-fadein-X;
       animation-timing-function: ease-out;
       animation-duration: 0.25s;
@@ -61,7 +61,6 @@
 
       height: calc(100% + 1px);
       border-bottom: white 0.25px solid;
-      border-top: white 0.25px solid;
 
       pointer-events: none;
     }
@@ -136,7 +135,6 @@
 
 .piecePage .piece-description {
   font-size: 0.9em;
-  column-gap: 2em;
   z-index: -3;
   margin-bottom: 1em;
 }
@@ -231,6 +229,17 @@
 .piecePage .piece-role {
   margin-top: 1em;
   line-height: normal;
+  column-count: 2;
+
+  p {
+    display: block;
+    margin-bottom: 0;
+    text-wrap: pretty;
+
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+  }
 }
 
 .piecePage .piece-medium {
