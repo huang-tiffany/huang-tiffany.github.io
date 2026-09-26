@@ -1,6 +1,6 @@
 import "../HomePage/HomePage.css";
 import "../../App.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 
 export function hoverMenu(inout: string, menu: string) {
