@@ -181,7 +181,7 @@ export default function WorkPage() {
                   </div>
                 </div>
                 <div className="hidden-piece-preview">
-                  <p>{piece.previewDescription}</p>
+                  <p>{piece.previewDescription + "."}</p>
                 </div>
               </div>
             </div>

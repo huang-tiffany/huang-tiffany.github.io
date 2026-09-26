@@ -283,7 +283,7 @@ export default function PiecePage() {
                         setIsDescriptionExpanded(!isDescriptionExpanded)
                       }
                     >
-                      {isDescriptionExpanded ? "( - less )" : "( + more )"}
+                      {isDescriptionExpanded ? " ( - less )" : " ( + more )"}
                     </a>
                   </span>
                 </div>
