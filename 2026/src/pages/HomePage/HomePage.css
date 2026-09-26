@@ -226,7 +226,7 @@ a:hover::before {
   transition-duration: 0.25s;
 }
 
-.homePage .header {
+.header {
   text-transform: uppercase;
   font-size: smaller;
   opacity: 0.7;

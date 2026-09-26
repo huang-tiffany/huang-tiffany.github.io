@@ -228,6 +228,11 @@
   align-items: flex-end;
 }
 
+.piecePage .piece-role {
+  margin-top: 1em;
+  line-height: normal;
+}
+
 .piecePage .piece-medium {
   font-style: oblique;
   font-size: 0.9em;
