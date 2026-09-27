@@ -307,7 +307,7 @@
 .piecePage .piece-url a,
 .piecePage .piece-url a:hover {
   color: white;
-  text-decoration: underline;
+  border-bottom: 0.5px solid white;
 }
 
 .piecePage .piece-url a:hover::after {
