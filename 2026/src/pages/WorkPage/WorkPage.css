@@ -297,6 +297,7 @@
   .hidden-piece-year {
     overflow: hidden;
     pointer-events: none;
+    text-wrap: balance;
   }
 
   .hidden-piece-year p {

@@ -224,7 +224,7 @@ export const pieces = atom<{
         category: "2D",
         string: "sccParks",
         year: "2022",
-        title: "Santa Clara County Parks Interpretation Rebrand",
+        title: "Santa Clara County Parks Rebrand",
         size: '101 pages, 11" &times; 8.5"',
         medium: "Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Canva",
         url: '<a href="https://indd.adobe.com/view/96b4a5b2-34c2-493b-afae-c11cf2f99e85" target="_blank">STYLE GUIDE</a>',

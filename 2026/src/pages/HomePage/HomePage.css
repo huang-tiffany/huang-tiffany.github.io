@@ -210,6 +210,7 @@ a:hover::before {
   flex-direction: column;
   font-size: 0.9em;
   margin-bottom: 1em;
+  text-wrap: pretty;
 
   a {
     border-bottom: 0.5px solid white;
