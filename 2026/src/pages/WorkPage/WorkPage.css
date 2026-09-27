@@ -181,6 +181,21 @@
         rgba(0, 0, 0, 0) 100%
       );
     }
+
+    &::before {
+      content: "";
+      position: fixed;
+      top: 9em;
+      z-index: 2;
+      margin-left: -1em;
+      width: calc(100vw - 2 * max(10em, 100vw / 6) - 2em - 2px);
+      height: 2em;
+      background: -webkit-linear-gradient(
+        top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
   }
 
   &:nth-child(9) {
@@ -460,8 +475,20 @@ nav #mobile-contact {
     &:nth-child(5) {
       justify-content: start;
     }
+
     &:nth-child(8) {
       padding: 1.5em;
+
+      &::before {
+        margin-left: -1em;
+        width: calc(100vw - 5em - 2px);
+        height: 1.5em;
+        background: -webkit-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
 
       &::after {
         margin-left: -1em;
