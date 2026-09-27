@@ -17,30 +17,23 @@
   gap: 0;
 }
 
-@property --gradient-percentage {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-
 .homePage main .module {
   display: none;
 }
 
 .homePage main .quad {
   border: 0.5px solid transparent;
-  transition:
+  /* transition:
     all 0.5s ease,
-    --gradient-percentage 1s ease;
+    --gradient-percentage 1s ease; */
 
-  transition-property: all, --gradient-percentage, border, height;
+  transition-property: border-radius, --gradient-percentage, border, height;
   transition-timing-function: ease, ease, step-end, step-end;
   transition-duration: 0.5s, 1s, 0s, 0s;
 
   &:nth-child(1 of .quad) {
     left: 0.25px;
     top: 0.25px;
-    border-end-end-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom right, black var(--gradient-percentage), white)
@@ -52,7 +45,6 @@
   }
 
   &:nth-child(2 of .quad) {
-    border-bottom-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom left, black var(--gradient-percentage), white)
@@ -66,7 +58,6 @@
   }
 
   &:nth-child(3 of .quad) {
-    border-start-end-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top right, black var(--gradient-percentage), white)
@@ -81,7 +72,6 @@
 
   &:nth-child(4 of .quad) {
     height: calc(100dvh - 6em);
-    border-top-left-radius: var(--desktop-radius);
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to top left, black var(--gradient-percentage), white)
@@ -332,7 +322,7 @@ a:hover::before {
     border: 0.5px solid transparent;
     transition:
       --gradient-percentage 1s ease,
-      all 0.5s ease;
+      border-radius 0.5s ease;
 
     &:nth-child(1 of .module) {
       left: 0.25px;

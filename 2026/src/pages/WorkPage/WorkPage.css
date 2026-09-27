@@ -18,17 +18,11 @@
   gap: 0;
 }
 
-@property --gradient-percentage {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-
 .workPage main div.module {
   border: 0.5px solid transparent;
   transition:
     --gradient-percentage 1s ease,
-    all 0.5s ease;
+    border-radius 0.5s ease;
 
   &:first-of-type {
     left: 0.25px;
@@ -338,43 +332,6 @@
 .workPage .piece-tags {
   overflow: hidden;
 }
-
-/* .workPage .piece-preview {
-  position: absolute;
-  bottom: 1em;
-  row-gap: 0;
-}
-
-.workPage .piece-preview img {
-  height: auto;
-  aspect-ratio: 4/3;
-  width: 100%;
-  object-fit: cover;
-  cursor: crosshair;
-  margin-bottom: 0.5em;
-  border-radius: 0.25em;
-  pointer-events: none;
-  display: none;
-  animation: none;
-  flex-shrink: 0;
-  margin-top: 0;
-}
-
-.workPage .piece-preview-year {
-  font-size: 0.8em;
-  line-height: 1.2;
-  font-style: oblique;
-}
-
-.workPage .piece-preview-description {
-  font-size: 0.9em;
-  line-height: 1.25;
-}
-
-.workPage .piece-preview-title {
-  margin-bottom: 0.5em;
-  line-height: 1.35em;
-} */
 
 .workPage .mode-wrapper {
   line-height: 1;

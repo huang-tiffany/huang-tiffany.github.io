@@ -14,17 +14,11 @@
   gap: 0;
 }
 
-@property --gradient-percentage {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-
 .piecePage main div.module {
   border: 0.5px solid transparent;
   transition:
     --gradient-percentage 1s ease,
-    all 0.5s ease;
+    border-radius 0.5s ease;
 
   &:first-of-type {
     left: 0.25px;
