@@ -25,7 +25,11 @@
     top: 1px;
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom right, black var(--gradient-percentage), white)
+      linear-gradient(
+          to bottom right,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     z-index: 1;
   }
@@ -33,7 +37,11 @@
   &:nth-child(2) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom, black var(--gradient-percentage), white)
+      linear-gradient(
+          to bottom,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     right: 0px;
     top: 1px;
@@ -54,7 +62,7 @@
       animation-delay: 250ms;
 
       height: calc(100% + 2px);
-      border-bottom: white 1px solid;
+      border-bottom: var(--border-color) 1px solid;
 
       pointer-events: none;
     }
@@ -63,7 +71,11 @@
   &:nth-child(3) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom left, black var(--gradient-percentage), white)
+      linear-gradient(
+          to bottom left,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     right: 1px;
     top: 1px;
@@ -73,7 +85,11 @@
   &:nth-child(4) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top right, black var(--gradient-percentage), white)
+      linear-gradient(
+          to top right,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     left: 1px;
     bottom: 0px;
@@ -83,7 +99,11 @@
   &:nth-child(5) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top, black var(--gradient-percentage), white)
+      linear-gradient(
+          to top,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     right: 0px;
     width: calc(100%);
@@ -98,7 +118,11 @@
   &:nth-child(6) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top left, black var(--gradient-percentage), white)
+      linear-gradient(
+          to top left,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     right: 1px;
     bottom: 0px;
@@ -306,14 +330,14 @@
       z-index: -2;
       content: "";
       position: fixed;
-      width: calc(100vw - 2 * max(10em, 100vw / 6) - 1.5px);
+      width: calc(100vw - 2 * max(10em, 100vw / 6) - 2px);
       height: 4em;
       background: -webkit-linear-gradient(
         top,
         rgba(0, 0, 0, 1) 50%,
         rgba(0, 0, 0, 0) 100%
       );
-      left: calc(max(10em, 100vw / 6) + 0.75px);
+      left: calc(max(10em, 100vw / 6) + 1px);
       top: calc(6em + 1px);
       border-radius: 12px;
     }
@@ -323,8 +347,8 @@
 @media (max-width: 768px) {
   .piecePage .piece-info {
     &::before {
-      left: calc(2em + 0.75px);
-      width: calc(100vw - 4em - 1.25px);
+      left: calc(2em + 1px);
+      width: calc(100vw - 4em - 2px);
     }
   }
 

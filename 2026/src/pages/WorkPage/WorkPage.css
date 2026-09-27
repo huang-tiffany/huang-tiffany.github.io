@@ -29,7 +29,11 @@
     top: 1px;
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom right, black var(--gradient-percentage), white)
+      linear-gradient(
+          to bottom right,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     z-index: 1;
   }
@@ -37,7 +41,11 @@
   &:nth-child(2) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom, black var(--gradient-percentage), white)
+      linear-gradient(
+          to bottom,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     right: 0px;
     top: 1px;
@@ -47,7 +55,11 @@
   &:nth-child(3) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to bottom left, black var(--gradient-percentage), white)
+      linear-gradient(
+          to bottom left,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     right: 1px;
     top: 1px;
@@ -57,7 +69,11 @@
   &:nth-child(4) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to right, black var(--gradient-percentage), white)
+      linear-gradient(
+          to right,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     left: 1px;
     top: 0px;
@@ -92,14 +108,14 @@
 
     &::before {
       height: calc(100% + 2px);
-      border-bottom: white 1px solid;
-      border-top: white 1px solid;
+      border-bottom: var(--border-color) 1px solid;
+      border-top: var(--border-color) 1px solid;
       animation-name: border-fadein-X;
     }
 
     &::after {
-      border-left: white 1px solid;
-      border-right: white 1px solid;
+      border-left: var(--border-color) 1px solid;
+      border-right: var(--border-color) 1px solid;
       width: calc(100% + 2px);
       animation-name: border-fadein-Y;
     }
@@ -108,7 +124,11 @@
   &:nth-child(6) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to left, black var(--gradient-percentage), white)
+      linear-gradient(
+          to left,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     right: 1px;
     top: 0px;
@@ -118,7 +138,11 @@
   &:nth-child(7) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top right, black var(--gradient-percentage), white)
+      linear-gradient(
+          to top right,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     left: 1px;
     bottom: 0px;
@@ -128,7 +152,11 @@
   &:nth-child(8) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top, black var(--gradient-percentage), white)
+      linear-gradient(
+          to top,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     right: 0px;
     width: calc(100%);
@@ -141,7 +169,11 @@
   &:nth-child(9) {
     background:
       linear-gradient(black, black) padding-box,
-      linear-gradient(to top left, black var(--gradient-percentage), white)
+      linear-gradient(
+          to top left,
+          black var(--gradient-percentage),
+          var(--border-color)
+        )
         border-box;
     right: 1px;
     bottom: 0px;

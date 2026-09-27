@@ -6,6 +6,12 @@
   initial-value: 100%;
 }
 
+@property --border-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: rgba(178.5, 178.5, 178.5, 1);
+}
+
 * {
   font-family: barlow, roboto, sans-serif;
   position: relative;

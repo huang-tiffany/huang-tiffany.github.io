@@ -252,7 +252,7 @@ export default function WorkPage() {
         );
       }
       (modules[4] as HTMLElement).style.background =
-        "linear-gradient(black, black) padding-box, linear-gradient(white, white) border-box";
+        "linear-gradient(black, black) padding-box, linear-gradient(var(--border-color), var(--border-color)) border-box";
     }, 500);
 
     setTimeout(() => {
