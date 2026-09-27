@@ -22,7 +22,7 @@
 }
 
 .homePage main .quad {
-  border: 0.5px solid transparent;
+  border: 1px solid transparent;
   /* transition:
     all 0.5s ease,
     --gradient-percentage 1s ease; */
@@ -32,8 +32,8 @@
   transition-duration: 0.5s, 1s, 0s, 0s;
 
   &:nth-child(1 of .quad) {
-    left: 0.25px;
-    top: 0.25px;
+    left: 1px;
+    top: 1px;
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom right, black var(--gradient-percentage), white)
@@ -49,8 +49,8 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom left, black var(--gradient-percentage), white)
         border-box;
-    right: 0.25px;
-    top: 0.25px;
+    right: 0px;
+    top: 1px;
 
     &:hover {
       border-bottom-left-radius: 32px;
@@ -62,8 +62,8 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to top right, black var(--gradient-percentage), white)
         border-box;
-    bottom: 0.25px;
-    left: 0.25px;
+    bottom: 0px;
+    left: 1px;
 
     &:hover {
       border-start-end-radius: 40px;
@@ -76,12 +76,12 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to top left, black var(--gradient-percentage), white)
         border-box;
-    bottom: 0.25px;
-    right: 0.25px;
+    bottom: 0px;
+    right: 0px;
     padding: 2em;
     display: flex;
     gap: 4em;
-    border: solid 0.5px transparent;
+    border: solid 1px transparent;
 
     &::after,
     &::before {
@@ -89,9 +89,9 @@
       opacity: 0;
       position: absolute;
       border-radius: 0;
-      top: calc(50% + 0.25px);
-      left: calc(50% + 0.25px);
-      transform: translate(calc(-50% - 0.25px), calc(-50% - 0.25px));
+      top: calc(50% + 0px);
+      left: calc(50% + 0px);
+      transform: translate(calc(-50% - 0px), calc(-50% - 0px));
       animation-timing-function: ease-out;
       animation-duration: 0.25s;
       animation-fill-mode: both;
@@ -100,16 +100,16 @@
     }
 
     &::before {
-      height: calc(100% + 1px);
-      border-bottom: white 0.5px solid;
-      border-top: white 0.5px solid;
+      height: calc(100% + 2px);
+      border-bottom: white 1px solid;
+      border-top: white 1px solid;
       animation-name: border-fadein-X;
     }
 
     &::after {
-      border-left: white 0.5px solid;
-      border-right: white 0.5px solid;
-      width: calc(100% + 1px);
+      border-left: white 1px solid;
+      border-right: white 1px solid;
+      width: calc(100% + 2px);
       animation-name: border-fadein-Y;
     }
 
@@ -193,7 +193,7 @@ a:hover::before {
   margin-bottom: 1em;
 
   a {
-    border-bottom: 0.25px solid white;
+    border-bottom: 0px solid white;
   }
 }
 
@@ -288,15 +288,15 @@ a:hover::before {
     display: none;
 
     &:nth-child(4 of .quad) {
-      left: -0.25px;
-      top: -0.25px;
-      width: calc(100% + 0.5px);
-      height: calc(100dvh - 12em + 0.5px);
+      left: 0px;
+      top: 0px;
+      width: calc(100%);
+      height: calc(100dvh - 12em + 1px);
       flex-direction: column;
       z-index: 5;
       padding: 1.5em;
       gap: 0;
-      border: solid 0.5px white;
+      border: solid 1px white;
 
       &::after,
       &::before {
@@ -319,14 +319,14 @@ a:hover::before {
 
   .homePage main .module {
     display: unset;
-    border: 0.5px solid transparent;
+    border: 1px solid transparent;
     transition:
       --gradient-percentage 1s ease,
       border-radius 0.5s ease;
 
     &:nth-child(1 of .module) {
-      left: 0.25px;
-      top: 0.25px;
+      left: 1px;
+      top: 1px;
       background:
         linear-gradient(black, black) padding-box,
         linear-gradient(
@@ -343,9 +343,9 @@ a:hover::before {
         linear-gradient(black, black) padding-box,
         linear-gradient(to bottom, black var(--gradient-percentage), white)
           border-box;
-      right: 0.25px;
-      top: 0.25px;
-      width: calc(100% + 0.5px);
+      right: 0px;
+      top: 1px;
+      width: calc(100%);
     }
 
     &:nth-child(3 of .module) {
@@ -353,8 +353,8 @@ a:hover::before {
         linear-gradient(black, black) padding-box,
         linear-gradient(to bottom left, black var(--gradient-percentage), white)
           border-box;
-      right: 0.25px;
-      top: 0.25px;
+      right: 1px;
+      top: 1px;
       z-index: 1;
     }
 
@@ -363,9 +363,9 @@ a:hover::before {
         linear-gradient(black, black) padding-box,
         linear-gradient(to right, black var(--gradient-percentage), white)
           border-box;
-      left: 0.25px;
-      top: -0.25px;
-      height: calc(100% + 0.5px);
+      left: 1px;
+      top: 0px;
+      height: calc(100%);
     }
 
     &:nth-child(5 of .module) {
@@ -373,9 +373,9 @@ a:hover::before {
         linear-gradient(black, black) padding-box,
         linear-gradient(to left, black var(--gradient-percentage), white)
           border-box;
-      right: 0.25px;
-      top: -0.25px;
-      height: calc(100% + 0.5px);
+      right: 1px;
+      top: 0px;
+      height: calc(100%);
     }
 
     &:nth-child(6 of .module) {
@@ -383,8 +383,8 @@ a:hover::before {
         linear-gradient(black, black) padding-box,
         linear-gradient(to top right, black var(--gradient-percentage), white)
           border-box;
-      left: 0.25px;
-      bottom: 0.5px;
+      left: 1px;
+      bottom: 1px;
       z-index: 1;
     }
 
@@ -393,10 +393,10 @@ a:hover::before {
         linear-gradient(black, black) padding-box,
         linear-gradient(to top, black var(--gradient-percentage), white)
           border-box;
-      right: 0.25px;
-      width: calc(100% + 0.5px);
+      right: 0px;
+      width: calc(100%);
       height: 6em;
-      bottom: 0.5px;
+      bottom: 1px;
       padding-bottom: 0;
       overflow-y: scroll;
     }
@@ -406,8 +406,8 @@ a:hover::before {
         linear-gradient(black, black) padding-box,
         linear-gradient(to top left, black var(--gradient-percentage), white)
           border-box;
-      right: 0.25px;
-      bottom: 0.5px;
+      right: 1px;
+      bottom: 1px;
       z-index: 1;
     }
   }

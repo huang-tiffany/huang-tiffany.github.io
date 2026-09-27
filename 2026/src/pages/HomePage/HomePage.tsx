@@ -94,7 +94,7 @@ export default function HomePage() {
     (modules[7] as HTMLElement).style.borderStartStartRadius = "0px";
 
     if (window.innerWidth <= 576) {
-      (quads[3] as HTMLElement).style.border = "solid 0.5px black";
+      (quads[3] as HTMLElement).style.border = "solid 1px black";
     }
 
     setTimeout(() => {

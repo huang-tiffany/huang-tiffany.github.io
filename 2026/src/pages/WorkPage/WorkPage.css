@@ -19,14 +19,14 @@
 }
 
 .workPage main div.module {
-  border: 0.5px solid transparent;
+  border: 1px solid transparent;
   transition:
     --gradient-percentage 1s ease,
     border-radius 0.5s ease;
 
   &:first-of-type {
-    left: 0.25px;
-    top: 0.25px;
+    left: 0px;
+    top: 0px;
     background:
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom right, black var(--gradient-percentage), white)
@@ -39,9 +39,9 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom, black var(--gradient-percentage), white)
         border-box;
-    right: 0.25px;
-    top: 0.25px;
-    width: calc(100% + 0.5px);
+    right: 0px;
+    top: 0px;
+    width: calc(100% + 1px);
   }
 
   &:nth-child(3) {
@@ -49,8 +49,8 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to bottom left, black var(--gradient-percentage), white)
         border-box;
-    right: 0.25px;
-    top: 0.25px;
+    right: 0px;
+    top: 0px;
     z-index: 1;
   }
 
@@ -59,16 +59,16 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to right, black var(--gradient-percentage), white)
         border-box;
-    left: 0.25px;
-    top: -0.25px;
-    height: calc(100% + 0.5px);
+    left: 0px;
+    top: -0px;
+    height: calc(100% + 1px);
   }
 
   &:nth-child(5) {
-    left: -0.25px;
-    top: -0.25px;
-    width: calc(100% + 0.5px);
-    height: calc(100% + 0.5px);
+    left: -0px;
+    top: -0px;
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,9 +80,9 @@
       position: absolute;
       z-index: 5;
       border-radius: 0;
-      top: calc(50% + 0.25px);
-      left: calc(50% + 0.25px);
-      transform: translate(calc(-50% - 0.25px), calc(-50% - 0.25px));
+      top: calc(50% + 0px);
+      left: calc(50% + 0px);
+      transform: translate(calc(-50% - 0px), calc(-50% - 0px));
       animation-timing-function: ease-out;
       animation-duration: 0.25s;
       animation-fill-mode: both;
@@ -92,14 +92,14 @@
 
     &::before {
       height: calc(100% + 1px);
-      border-bottom: white 0.25px solid;
-      border-top: white 0.25px solid;
+      border-bottom: white 0px solid;
+      border-top: white 0px solid;
       animation-name: border-fadein-X;
     }
 
     &::after {
-      border-left: white 0.25px solid;
-      border-right: white 0.25px solid;
+      border-left: white 0px solid;
+      border-right: white 0px solid;
       width: calc(100% + 1px);
       animation-name: border-fadein-Y;
     }
@@ -110,9 +110,9 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to left, black var(--gradient-percentage), white)
         border-box;
-    right: 0.25px;
-    top: -0.25px;
-    height: calc(100% + 0.5px);
+    right: 0px;
+    top: -0px;
+    height: calc(100% + 1px);
   }
 
   &:nth-child(7) {
@@ -120,8 +120,8 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to top right, black var(--gradient-percentage), white)
         border-box;
-    left: 0.25px;
-    bottom: 0.25px;
+    left: 0px;
+    bottom: 0px;
     z-index: 1;
   }
 
@@ -130,9 +130,9 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to top, black var(--gradient-percentage), white)
         border-box;
-    right: 0.25px;
-    width: calc(100% + 0.5px);
-    bottom: 0.25px;
+    right: 0px;
+    width: calc(100% + 1px);
+    bottom: 0px;
     padding: 2em;
     padding-bottom: 0;
     overflow-y: scroll;
@@ -143,8 +143,8 @@
       linear-gradient(black, black) padding-box,
       linear-gradient(to top left, black var(--gradient-percentage), white)
         border-box;
-    right: 0.25px;
-    bottom: 0.25px;
+    right: 0px;
+    bottom: 0px;
     z-index: 1;
   }
 }
