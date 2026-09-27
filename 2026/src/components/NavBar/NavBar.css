@@ -75,7 +75,10 @@ nav #logo:hover::before {
 nav #logo {
   height: fit-content;
   flex-shrink: 0;
-  /* pointer-events: none; */
+
+  .homePage & {
+    pointer-events: none;
+  }
 }
 
 nav .links a:hover::before {
