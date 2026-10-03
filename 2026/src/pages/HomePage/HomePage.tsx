@@ -202,11 +202,11 @@ export default function HomePage() {
         <div className="quad"></div>
         <div className="quad">
           <div className="texts-container">
+            <div id="mobile-name">
+              tiffany huang
+              <br /> <p>( design engineer )</p>
+            </div>
             <div className="text-container">
-              <div id="mobile-name">
-                tiffany huang
-                <br /> <p>( design engineer )</p>
-              </div>
               <div className="text-group" id="currently">
                 <p className="header">currently</p>
                 <p>
