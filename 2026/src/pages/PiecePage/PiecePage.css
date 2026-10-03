@@ -162,7 +162,6 @@
       top: 6em;
       z-index: 2;
       margin: calc(-2em - 1px);
-      margin-bottom: 0;
       border-bottom: 0px;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
@@ -429,6 +428,11 @@
   .piecePage .module-container {
     grid-template-columns: minmax(0, 2em) 4fr 2em;
     grid-template-rows: 6em 1fr;
+  }
+
+  .piecePage .piece-info,
+  .piecePage .piece-data {
+    top: 7.5em;
   }
 
   .piecePage main div.module {
