@@ -251,8 +251,10 @@ export default function WorkPage() {
           "50%",
         );
       }
-      (modules[7] as HTMLElement).style.border =
-        "1px solid var(--border-color)";
+      (modules[7] as HTMLElement).style.setProperty(
+        "--animated-border-color",
+        "var(--border-color)",
+      );
       (modules[4] as HTMLElement).style.background =
         "linear-gradient(black, black) padding-box, linear-gradient(var(--border-color), var(--border-color)) border-box";
     }, 500);

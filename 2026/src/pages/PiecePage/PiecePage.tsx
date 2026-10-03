@@ -241,6 +241,10 @@ export default function PiecePage() {
           "50%",
         );
       }
+      (modules[4] as HTMLElement).style.setProperty(
+        "--animated-border-color",
+        "var(--border-color)",
+      );
     }, 500);
 
     setTimeout(() => {
@@ -267,47 +271,49 @@ export default function PiecePage() {
     <div className="piecePage fadein">
       <NavBar />
       <main>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module">
-          <div className="piece-info">
-            <div className="piece-data">
-              <div className="piece-year"></div>
-              <div className="piece-title"></div>
-              <div className="piece-size"></div>
-              <div className="piece-medium"></div>
-              <div className="piece-url"></div>
-              <div className="piece-role"></div>
-            </div>
-            <div className="piece-description">
-              <div
-                className={
-                  "piece-description-expand " +
-                  (isDescriptionExpanded ? "expanded" : "")
-                }
-              >
-                <div className="piece-description-text">
-                  <span ref={textDescriptionRef}></span>
-                  <span>
-                    .&nbsp;
-                    <a
-                      className="piece-more"
-                      onClick={() =>
-                        setIsDescriptionExpanded(!isDescriptionExpanded)
-                      }
-                    >
-                      {isDescriptionExpanded ? " ( - less )" : " ( + more )"}
-                    </a>
-                  </span>
+        <div className="module-container">
+          <div className="module"></div>
+          <div className="module"></div>
+          <div className="module"></div>
+          <div className="module"></div>
+          <div className="module">
+            <div className="piece-info">
+              <div className="piece-data">
+                <div className="piece-year"></div>
+                <div className="piece-title"></div>
+                <div className="piece-size"></div>
+                <div className="piece-medium"></div>
+                <div className="piece-url"></div>
+                <div className="piece-role"></div>
+              </div>
+              <div className="piece-description">
+                <div
+                  className={
+                    "piece-description-expand " +
+                    (isDescriptionExpanded ? "expanded" : "")
+                  }
+                >
+                  <div className="piece-description-text">
+                    <span ref={textDescriptionRef}></span>
+                    <span>
+                      .&nbsp;
+                      <a
+                        className="piece-more"
+                        onClick={() =>
+                          setIsDescriptionExpanded(!isDescriptionExpanded)
+                        }
+                      >
+                        {isDescriptionExpanded ? " ( - less )" : " ( + more )"}
+                      </a>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
+            <div className="media">{pieceMedia}</div>
           </div>
-          <div className="media">{pieceMedia}</div>
+          <div className="module"></div>
         </div>
-        <div className="module"></div>
       </main>
     </div>
   );
