@@ -290,8 +290,7 @@
 
 .piecePage .piece-size,
 .piecePage .piece-url,
-.piecePage .piece-medium,
-.piecePage .piece-role {
+.piecePage .piece-medium {
   margin-bottom: 0.5em;
 }
 
@@ -312,15 +311,14 @@
   margin-top: 1em;
   line-height: normal;
   column-count: 2;
+  /* margin-bottom: calc(0.5em - 1rem); */
+  margin-bottom: 0.5em;
 
   p {
     display: block;
     margin-bottom: 0;
     text-wrap: pretty;
-
-    &:not(:first-of-type) {
-      margin-top: 1rem;
-    }
+    margin-bottom: 1rem;
   }
 }
 

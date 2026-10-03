@@ -201,82 +201,85 @@ export default function HomePage() {
         <div className="quad"></div>
         <div className="quad"></div>
         <div className="quad">
-          <div className="text-container">
-            <div id="mobile-name">
-              tiffany huang
-              <br /> <p>( design engineer )</p>
+          <div className="texts-container">
+            <div className="text-container">
+              <div id="mobile-name">
+                tiffany huang
+                <br /> <p>( design engineer )</p>
+              </div>
+              <div className="text-group" id="currently">
+                <p className="header">currently</p>
+                <p>
+                  frontend swe @{" "}
+                  <InlineTextLink text="nvidia" url="https://nvidia.com/" />
+                </p>
+              </div>
+              <div className="text-group" id="previously">
+                <p className="header">previously</p>
+                <p>
+                  brand design @{" "}
+                  <InlineTextLink text="ramp" url="https://ramp.com/" />
+                  <br />
+                  design @{" "}
+                  <InlineTextLink
+                    text="santa clara county parks & rec"
+                    url="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation"
+                  />
+                </p>
+              </div>
+              <div className="text-group" id="education">
+                <p className="header">education</p>
+                <p>
+                  bachelor of fine arts, industrial design @{" "}
+                  <InlineTextLink
+                    text="the rhode island school of design"
+                    url="https://risd.edu/"
+                  />
+                  <br />
+                  bachelor of science, computer science @{" "}
+                  <InlineTextLink
+                    text="brown university"
+                    url="https://brown.edu/"
+                  />
+                </p>
+              </div>
             </div>
-            <div className="text-group" id="currently">
-              <p className="header">currently</p>
-              <p>
-                frontend swe @{" "}
-                <InlineTextLink text="nvidia" url="https://nvidia.com/" />
-              </p>
+            <div className="text-container">
+              <div className="text-group" id="press">
+                <p className="header">press</p>
+                <p>
+                  <InlineTextLink
+                    text="capstone presentations, risd news, june 2026"
+                    url="https://www.risd.edu/news/stories/brown-risd-dual-degree-students-present-capstone-projects-showcasing-personal-journeys"
+                  />
+                  <br />
+                  <InlineTextLink
+                    text="furniture crit, risd news, december 2025"
+                    url="https://www.risd.edu/news/stories/risd-students-share-thought-provoking-work-final-fall-2025-critiques"
+                  />
+                  <br />
+                  <InlineTextLink
+                    text="data design studio, risd news, february 2024"
+                    url="https://www.risd.edu/news/stories/risd-students-use-complex-data-to-create-interactive-research-projects"
+                  />
+                </p>
+              </div>
+              <div className="text-group" id="talks">
+                <p className="header">talks</p>
+                <p>
+                  <InlineTextLink
+                    text=" brown | risd dual degree capstone, 2026"
+                    url="https://www.youtube.com/watch?v=ii1wmqAtjXA"
+                  />
+                </p>
+              </div>
             </div>
-            <div className="text-group" id="previously">
-              <p className="header">previously</p>
-              <p>
-                brand design @{" "}
-                <InlineTextLink text="ramp" url="https://ramp.com/" />
-                <br />
-                design @{" "}
-                <InlineTextLink
-                  text="santa clara county parks & rec"
-                  url="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation"
-                />
-              </p>
+
+            <div id="reel">
+              <video className="fadein" loop muted playsInline>
+                <source src="/videos/2025 demo reel.mp4" type="video/mp4" />
+              </video>
             </div>
-            <div className="text-group" id="education">
-              <p className="header">education</p>
-              <p>
-                bachelor of fine arts, industrial design @{" "}
-                <InlineTextLink
-                  text="the rhode island school of design"
-                  url="https://risd.edu/"
-                />
-                <br />
-                bachelor of science, computer science @{" "}
-                <InlineTextLink
-                  text="brown university"
-                  url="https://brown.edu/"
-                />
-              </p>
-            </div>
-          </div>
-          <div className="text-container">
-            <div className="text-group" id="press">
-              <p className="header">press</p>
-              <p>
-                <InlineTextLink
-                  text="capstone presentations, risd news, june 2026"
-                  url="https://www.risd.edu/news/stories/brown-risd-dual-degree-students-present-capstone-projects-showcasing-personal-journeys"
-                />
-                <br />
-                <InlineTextLink
-                  text="furniture crit, risd news, december 2025"
-                  url="https://www.risd.edu/news/stories/risd-students-share-thought-provoking-work-final-fall-2025-critiques"
-                />
-                <br />
-                <InlineTextLink
-                  text="data design studio, risd news, february 2024"
-                  url="https://www.risd.edu/news/stories/risd-students-use-complex-data-to-create-interactive-research-projects"
-                />
-              </p>
-            </div>
-            <div className="text-group" id="talks">
-              <p className="header">talks</p>
-              <p>
-                <InlineTextLink
-                  text=" brown | risd dual degree capstone, 2026"
-                  url="https://www.youtube.com/watch?v=ii1wmqAtjXA"
-                />
-              </p>
-            </div>
-          </div>
-          <div id="reel">
-            <video className="fadein" loop muted playsInline>
-              <source src="/videos/2025 demo reel.mp4" type="video/mp4" />
-            </video>
           </div>
         </div>
         <div className="module"></div>
@@ -292,7 +295,7 @@ export default function HomePage() {
             onMouseOver={() => hoverMenu("hover", "ver")}
             onMouseOut={() => hoverMenu("out", "ver")}
           >
-            v. 2026
+            v. 2026 +
           </a>
           <a
             target="_blank"
