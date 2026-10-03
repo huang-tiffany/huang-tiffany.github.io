@@ -462,3 +462,9 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .piecePage .piece-role {
+    column-count: 1;
+  }
+}
