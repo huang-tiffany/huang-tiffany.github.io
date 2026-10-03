@@ -139,6 +139,7 @@
 .homePage .texts-container {
   display: flex;
   padding: 2em;
+  width: 100%;
   gap: 4em;
 }
 
@@ -523,7 +524,6 @@
   .homePage .texts-container {
     flex-direction: column;
     gap: 1em;
-
     padding: 1.5em;
     padding-top: 0;
     overflow-y: scroll;
