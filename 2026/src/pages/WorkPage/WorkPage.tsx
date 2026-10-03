@@ -251,6 +251,8 @@ export default function WorkPage() {
           "50%",
         );
       }
+      (modules[7] as HTMLElement).style.border =
+        "1px solid var(--border-color)";
       (modules[4] as HTMLElement).style.background =
         "linear-gradient(black, black) padding-box, linear-gradient(var(--border-color), var(--border-color)) border-box";
     }, 500);
@@ -290,73 +292,74 @@ export default function WorkPage() {
     <div className="workPage fadein">
       <NavBar />
       <main>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module">
-          <div className="mode-wrapper">
-            <div className="mode mode-all">
-              <input
-                type="radio"
-                checked={!mode}
-                onClick={() =>
-                  setSearchParams((prevParams) => {
-                    prevParams.delete("filter");
-                    return prevParams;
-                  })
-                }
-              ></input>
-              <label>ALL</label>
-            </div>
-            <div className="mode mode-2D">
-              <input
-                type="radio"
-                checked={mode === "2D"}
-                onClick={() =>
-                  setSearchParams((prevParams) => {
-                    prevParams.set("filter", "2D");
-                    return prevParams;
-                  })
-                }
-              ></input>
-              <label>2D</label>
-            </div>
-            <div className="mode mode-3D">
-              <input
-                type="radio"
-                checked={mode === "3D"}
-                onClick={() =>
-                  setSearchParams((prevParams) => {
-                    prevParams.set("filter", "3D");
-                    return prevParams;
-                  })
-                }
-              ></input>
-              <label>3D</label>
-            </div>
-            <div className="mode mode-4D">
-              <input
-                type="radio"
-                checked={mode === "4D"}
-                onClick={() =>
-                  setSearchParams((prevParams) => {
-                    prevParams.set("filter", "4D");
-                    return prevParams;
-                  })
-                }
-              ></input>
-              <label>4D</label>
+        <div className="module-container">
+          <div className="module"></div>
+          <div className="module"></div>
+          <div className="module"></div>
+          <div className="module"></div>
+          <div className="module">
+            <div className="mode-wrapper">
+              <div className="mode mode-all">
+                <input
+                  type="radio"
+                  checked={!mode}
+                  onClick={() =>
+                    setSearchParams((prevParams) => {
+                      prevParams.delete("filter");
+                      return prevParams;
+                    })
+                  }
+                ></input>
+                <label>ALL</label>
+              </div>
+              <div className="mode mode-2D">
+                <input
+                  type="radio"
+                  checked={mode === "2D"}
+                  onClick={() =>
+                    setSearchParams((prevParams) => {
+                      prevParams.set("filter", "2D");
+                      return prevParams;
+                    })
+                  }
+                ></input>
+                <label>2D</label>
+              </div>
+              <div className="mode mode-3D">
+                <input
+                  type="radio"
+                  checked={mode === "3D"}
+                  onClick={() =>
+                    setSearchParams((prevParams) => {
+                      prevParams.set("filter", "3D");
+                      return prevParams;
+                    })
+                  }
+                ></input>
+                <label>3D</label>
+              </div>
+              <div className="mode mode-4D">
+                <input
+                  type="radio"
+                  checked={mode === "4D"}
+                  onClick={() =>
+                    setSearchParams((prevParams) => {
+                      prevParams.set("filter", "4D");
+                      return prevParams;
+                    })
+                  }
+                ></input>
+                <label>4D</label>
+              </div>
             </div>
           </div>
+          <div className="module"></div>
+          <div className="module"></div>
+          <div className="module">
+            <div className="pieces">{loadPieces()}</div>
+          </div>
+          <div className="module"></div>
         </div>
-        <div className="module"></div>
-        <div className="module"></div>
-        <div className="module">
-          <div className="pieces">{loadPieces()}</div>
-        </div>
-        <div className="module"></div>
-
         <Marquee marqueeText={MarqueeWorkText}></Marquee>
       </main>
     </div>
