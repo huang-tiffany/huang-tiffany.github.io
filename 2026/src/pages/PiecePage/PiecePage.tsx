@@ -286,8 +286,8 @@ export default function PiecePage() {
                 <div className="piece-size"></div>
                 <div className="piece-medium"></div>
                 <div className="piece-url"></div>
-                <div className="piece-role"></div>
               </div>
+              <div className="piece-role"></div>
               <div className="piece-description">
                 <div
                   className={

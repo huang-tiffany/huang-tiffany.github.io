@@ -309,11 +309,12 @@
 }
 
 .piecePage .piece-role {
-  margin-top: 1em;
+  /* margin-top: 1em; */
   line-height: normal;
   column-count: 2;
   /* margin-bottom: calc(0.5em - 1rem); */
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
+  z-index: -3;
 
   p {
     display: block;
@@ -429,7 +430,6 @@
     grid-template-rows: 6em 1fr;
   }
 
-  .piecePage .piece-info,
   .piecePage .piece-data {
     top: 7.5em;
   }
