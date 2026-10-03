@@ -26,6 +26,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   --desktop-radius: 8px;
+  overscroll-behavior-y: none;
 }
 
 html,

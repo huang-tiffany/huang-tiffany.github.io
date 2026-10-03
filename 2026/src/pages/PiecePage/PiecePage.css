@@ -23,6 +23,7 @@
 }
 
 .piecePage main div.module {
+  background-color: black;
   position: sticky;
   border: 1px solid transparent;
   transition:

@@ -29,6 +29,7 @@
 .workPage main div.module {
   position: sticky;
   border: 1px solid transparent;
+  background-color: black;
   transition:
     --gradient-percentage 1s ease,
     border-radius 0.5s ease;
@@ -173,7 +174,6 @@
         )
         border-box;
     left: 1px;
-    /* bottom: 0px; */
     z-index: 1;
     top: 9em;
     grid-column: 1;

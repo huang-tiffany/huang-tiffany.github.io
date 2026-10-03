@@ -266,6 +266,7 @@
   justify-content: center;
   width: 50%;
   pointer-events: none;
+  background-color: pink;
 
   video {
     border-radius: 0.5em;
@@ -302,15 +303,20 @@
 
   .homePage #reel {
     position: sticky;
-    bottom: 0;
-    right: 0em;
+    bottom: -1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
     /* width: calc(100% - 3em); */
-    width: calc(100vw - 7em);
+    width: calc(100vw - 4em - 2px);
+    padding: 1.5em;
+    padding-top: 0;
+    margin-left: -1.5em;
+    margin-bottom: -1.5em;
     pointer-events: none;
     background-color: black;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 
     &::before {
       content: "";
