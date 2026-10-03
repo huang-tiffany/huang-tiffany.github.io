@@ -47,18 +47,19 @@
   }
 
   &:nth-child(2) {
-    background:
+    /* background:
       linear-gradient(black, black) padding-box,
       linear-gradient(
           to bottom,
           black var(--gradient-percentage),
           var(--border-color)
         )
-        border-box;
+        border-box; */
+    border-top-color: black;
     right: 0px;
-    top: 1px;
+    top: 0;
     width: calc(100%);
-    height: 6em;
+    height: calc(6em + 1px);
     grid-row: 1;
     grid-column: 2;
     z-index: 1;

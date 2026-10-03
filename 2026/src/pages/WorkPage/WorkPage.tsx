@@ -11,7 +11,6 @@ import { MarqueeWorkText } from "../../components/Marquee/MarqueeWorkText";
 import NavBar, { TransitionLink } from "../../components/NavBar/NavBar";
 
 export default function WorkPage() {
-  const navigate = useNavigate();
   const piecesArr = useRecoilState(pieces);
 
   // pieces that have a gif as the cover image

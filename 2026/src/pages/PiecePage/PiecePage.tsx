@@ -245,6 +245,8 @@ export default function PiecePage() {
         "--animated-border-color",
         "var(--border-color)",
       );
+      (modules[1] as HTMLElement).style.background =
+        "linear-gradient(black, black) padding-box, linear-gradient(to bottom, var(--border-color) var(--gradient-percentage), var(--border-color)) border-box";
     }, 500);
 
     setTimeout(() => {
