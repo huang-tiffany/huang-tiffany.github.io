@@ -1,6 +1,6 @@
 import "../WorkPage/WorkPage.css";
 import "../../App.css";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import "../WorkPage/WorkPage.css";
 import { pieces } from "../../global/Atoms/atoms";
 import { useRecoilState } from "recoil";
