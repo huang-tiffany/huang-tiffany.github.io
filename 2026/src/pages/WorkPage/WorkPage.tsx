@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Marquee from "../../components/Marquee/Marquee";
 import { MarqueeWorkText } from "../../components/Marquee/MarqueeWorkText";
-import NavBar from "../../components/NavBar/NavBar";
+import NavBar, { TransitionLink } from "../../components/NavBar/NavBar";
 
 export default function WorkPage() {
   const navigate = useNavigate();
@@ -106,36 +106,38 @@ export default function WorkPage() {
             >
               <div className="media-container">
                 {vidPieces.includes(piece.string) ? (
-                  <video
-                    onClick={() =>
-                      relocate("/work/" + key + "/" + piece.string)
-                    }
-                    webkit-playsinline="true"
-                    playsInline
-                    autoPlay
-                    muted
-                    loop
-                  >
-                    <source
-                      src={
-                        "/coverimages/" + piece.string.toLowerCase() + ".mp4"
-                      }
-                      type="video/mp4"
-                    />
-                  </video>
+                  <TransitionLink to={"/work/" + key + "/" + piece.string}>
+                    <video
+                      webkit-playsinline="true"
+                      playsInline
+                      autoPlay
+                      muted
+                      loop
+                    >
+                      <source
+                        src={
+                          "/coverimages/" + piece.string.toLowerCase() + ".mp4"
+                        }
+                        type="video/mp4"
+                      />
+                    </video>
+                  </TransitionLink>
                 ) : (
-                  <img
-                    loading="lazy"
-                    onClick={() =>
-                      relocate("/work/" + key + "/" + piece.string)
-                    }
-                    src={
-                      gifPieces.includes(piece.string)
-                        ? "/coverimages/" + piece.string.toLowerCase() + ".gif"
-                        : "/coverimages/" + piece.string.toLowerCase() + ".jpg"
-                    }
-                    alt={piece.title + " Cover Image"}
-                  />
+                  <TransitionLink to={"/work/" + key + "/" + piece.string}>
+                    <img
+                      loading="lazy"
+                      src={
+                        gifPieces.includes(piece.string)
+                          ? "/coverimages/" +
+                            piece.string.toLowerCase() +
+                            ".gif"
+                          : "/coverimages/" +
+                            piece.string.toLowerCase() +
+                            ".jpg"
+                      }
+                      alt={piece.title + " Cover Image"}
+                    />
+                  </TransitionLink>
                 )}
 
                 <div className="hidden-piece-data">
@@ -207,39 +209,6 @@ export default function WorkPage() {
       });
     }
   }, [mode]);
-
-  const relocate = (newLoc: string) => {
-    const elements: NodeListOf<Element> | null =
-      document.querySelectorAll(".fadein");
-    if (elements) {
-      for (let i = 0; i < elements.length; i++) {
-        const elt = elements[i];
-        elt.classList.remove("fadein");
-        elt.classList.add("fadeout");
-      }
-    }
-
-    const quads = document.getElementsByClassName("quad");
-    const modules = document.getElementsByClassName("module");
-
-    for (let i = 0; i < quads.length; i++) {
-      (quads[i] as HTMLElement).style.setProperty(
-        "--gradient-percentage",
-        "125%",
-      );
-    }
-
-    for (let i = 0; i < modules.length; i++) {
-      (modules[i] as HTMLElement).style.setProperty(
-        "--gradient-percentage",
-        "125%",
-      );
-    }
-
-    setTimeout(() => {
-      navigate(newLoc);
-    }, 500);
-  };
 
   useEffect(() => {
     const modules = document.getElementsByClassName("module");

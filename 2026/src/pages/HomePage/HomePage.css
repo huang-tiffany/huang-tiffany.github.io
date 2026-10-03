@@ -136,28 +136,26 @@
   }
 }
 
-.texts-container {
+.homePage .texts-container {
   display: flex;
   padding: 2em;
   gap: 4em;
 }
 
-a.ver,
-a.addlink {
+.homePage a.ver {
   opacity: 0.5;
   visibility: visible;
   transition: ease;
   transition-duration: 0.25s;
 }
 
-a:hover {
+.homePage a:hover {
   opacity: 1;
   transition: ease;
   transition-duration: 0.25s;
 }
 
-a.ver.hidden,
-a.addlink.hidden {
+.homePage a.ver.hidden {
   opacity: 0;
   visibility: hidden;
   transition: ease;
@@ -176,25 +174,23 @@ a.addlink.hidden {
   line-height: 1.4;
 }
 
-#version a {
+.homePage #version a {
   color: white;
 }
 
-nav a:hover::before,
-#additional-links a:last-of-type:hover::before,
-#version a:nth-of-type(2):hover::after,
-#version a::before,
-.text-group a:hover::before {
+.homePage #version a:nth-of-type(2):hover::after,
+.homePage #version a::before,
+.homePage .text-group a:hover::before {
   content: "";
 }
 
-a:hover::before {
+.homePage a:hover::before {
   font-family: system-ui;
   content: " ↖ ";
   font-size: 0.75em;
 }
 
-#version a:hover:after {
+.homePage #version a:hover:after {
   font-family: system-ui;
   display: inline-block;
   margin-left: 0.25em;
@@ -202,7 +198,7 @@ a:hover::before {
   font-size: 0.75em;
 }
 
-#version a:first-of-type:after {
+.homePage #version a:first-of-type:after {
   font-family: system-ui;
   display: inline-block;
   margin-left: 0.25em;
@@ -213,7 +209,7 @@ a:hover::before {
   cursor: pointer;
 }
 
-#version a:first-of-type:hover::after {
+.homePage #version a:first-of-type:hover::after {
   transform: rotate(-90deg);
   transition-duration: 0.25s;
 }
@@ -234,12 +230,12 @@ a:hover::before {
   }
 }
 
-.text-group a span {
+.homePage .text-group a span {
   white-space: nowrap;
   cursor: pointer;
 }
 
-.text-group a .link-arrow {
+.homePage .text-group a .link-arrow {
   font-family: system-ui;
   display: inline-block;
   font-size: 0.75em;
@@ -248,12 +244,12 @@ a:hover::before {
   cursor: pointer;
 }
 
-.text-group a:hover .link-arrow {
+.homePage .text-group a:hover .link-arrow {
   transform: rotate(-90deg);
   transition-duration: 0.25s;
 }
 
-.header {
+.homePage .header {
   text-transform: uppercase;
   font-size: smaller;
   opacity: 0.7;
@@ -524,7 +520,7 @@ a:hover::before {
     }
   }
 
-  .texts-container {
+  .homePage .texts-container {
     flex-direction: column;
     gap: 1em;
 
@@ -533,9 +529,4 @@ a:hover::before {
     overflow-y: scroll;
     overflow-x: hidden;
   }
-
-  /* #education,
-  #press {
-    display: none;
-  } */
 }

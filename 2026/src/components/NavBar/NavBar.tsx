@@ -1,11 +1,27 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link, LinkProps } from "react-router-dom";
 import "../../App.css";
 import logo from "/images/logo white.png";
 import "../NavBar/NavBar.css";
 
-export default function NavBar() {
+interface TransitionLinkProps extends LinkProps {
+  to: string;
+  children: React.ReactNode;
+}
+
+export function TransitionLink({
+  to,
+  children,
+  ...props
+}: TransitionLinkProps) {
   const navigate = useNavigate();
-  const relocate = (newLoc: string) => {
+
+  const relocate = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) {
+      return;
+    }
+
+    e.preventDefault();
+
     const elements: NodeListOf<Element> | null =
       document.querySelectorAll(".fadein");
     if (elements) {
@@ -34,22 +50,30 @@ export default function NavBar() {
     }
 
     setTimeout(() => {
-      navigate(newLoc);
+      navigate(to);
     }, 500);
   };
 
   return (
+    <Link to={to} className="transition-link" onClick={relocate} {...props}>
+      {children}
+    </Link>
+  );
+}
+
+export default function NavBar() {
+  return (
     <nav>
       <div id="logo-container">
-        <a id="logo" onClick={() => relocate("/")}>
+        <TransitionLink id="logo" to="/">
           <img src={logo} alt="Logo" />
-        </a>
+        </TransitionLink>
       </div>
       <div id="desktop-name">
         tiffany huang <br /> <p>( design engineer )</p>
       </div>
       <div className="links">
-        <a onClick={() => relocate("/work")}>work</a>
+        <TransitionLink to="/work">work</TransitionLink>
         <a
           id="contact"
           target="_blank"
