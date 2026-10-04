@@ -291,6 +291,8 @@
 .workPage .category-piece img,
 .workPage .category-piece video {
   width: 100%;
+  height: auto;
+  display: block;
   aspect-ratio: 3/2;
   object-fit: cover;
   transition: 0.5s ease;
@@ -299,7 +301,7 @@
 }
 
 .workPage .media-container {
-  display: flex;
+  display: block;
 }
 
 .workPage .hidden-piece-preview {
