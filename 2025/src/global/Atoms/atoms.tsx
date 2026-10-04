@@ -344,7 +344,7 @@ export const pieces = atom<{
       commandChaise: {
         category: "3D",
         string: "commandChaise",
-        year: "2026",
+        year: "2025",
         title: "Command Chaise",
         size: '53" &times; 33" &times; 23"',
         medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",

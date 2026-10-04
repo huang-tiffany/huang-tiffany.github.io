@@ -27,6 +27,10 @@
   scrollbar-width: none;
   --desktop-radius: 8px;
   overscroll-behavior-y: none;
+  ::selection {
+    background-color: white;
+    color: black;
+  }
 }
 
 html,

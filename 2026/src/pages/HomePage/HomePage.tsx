@@ -230,6 +230,11 @@ export default function HomePage() {
               <div className="text-group" id="education">
                 <p className="header">education</p>
                 <p>
+                  <InlineTextLink
+                    text="brown | risd dual degree program"
+                    url="https://risd.brown.edu/"
+                  />
+                  <br />
                   bachelor of fine arts, industrial design @{" "}
                   <InlineTextLink
                     text="the rhode island school of design"

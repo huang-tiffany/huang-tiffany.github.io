@@ -91,7 +91,7 @@ export const pieces = atom<{
         url: '<a href="https://www.figma.com/proto/mT9sUIMHNQBXX2wzMf9hKl/The-Archive-as-Friendship?page-id=0%3A1&node-id=1-24&viewport=494%2C385%2C0.06&t=jUfwFkGgsWxOYrTr-1&scaling=scale-down&content-scaling=fixed" target="_blank">PRESENTATION</a>',
         role: "",
         statement:
-          "With most friendships taking both digital and physical forms, online chat logs can often be a way to trace the development of relationships. Containing both arguments and gratitude, both small talk and deep conversations, the online archive as we know it not only acts as a means of communication and connection, but as a pseudo record of an entire relationship. <br><br> With this thought in mind, I created a project that catalogued and analyzed data from six complete calendar years of friendship with a friend of mine from middle and high school. Although we attended school together before going to college, we communicated primarily through Gmail chats and, upon entering high school, Facebook Messenger (something that still holds true today). By downloading six years' worth of content and parsing it with a simple Javascript program to count the quantity of messages, along with reading every chat log manually to sort through the depth and topics of each conversation, I organized my data into three formats ranging from the most objective to the most subjective view of the data. The largest poster format acts as an overview, mapping interactions in a calendar view and sorting them by the depth of the conversation (light, medium, and deep talks). The medium-sized booklet format goes into more detail with the content, organizing it in a temporally nonlinear format through the alphabetical indexing of conversation topics, with red lines running throughout the pages to trace recurring threads of more interesting conversation topics. And lastly, the smallest AR format (accessed via mobile phone) encourages exploration of the text in a more intimate format, with the overlaying of actual transmitted images (ranging from cute GIFs and stupid memes to mundane homework snapshots and photos taken during in-person hangouts). <br><br> Using this mix of personal and objective data alongside a mix of analog and digital formats, I wanted to explore the nuance and subversion of conversation in the digital age: where phones can encourage vulnerability and connection, and where chat logs can act as a living, digital archive for friendship",
+          "Given most friendships take both digital and physical forms as a result of social media, online chat logs offer a different way to trace the development of relationships. Containing both arguments and gratitude, both small talk and deep conversations, the online archive as we know it not only acts as a means of communication and connection, but as a pseudo record of an entire relationship. <br><br> With this in mind, I created a project that catalogued and analyzed six years' worth of data with a friend I have communicated with primarily through Facebook Messenger. By downloading our entire history of chat logs and parsing it with a simple Javascript program to gather quantitative data, along with reading every conversation to sort through the depth and topics of each exchange, I organized my data into three formats ranging from the most objective to the most subjective interpretation of the data. <br><br> The largest poster format acts as an overview, mapping interactions in a calendar view and sorting them by the depth of the conversation (light, medium, and deep talks). The medium-sized booklet format goes into more detail through the alphabetical indexing of conversation topics, with red lines running throughout the pages to trace the threads of recurring topics. The smallest AR format (accessed via mobile phone) encourages intimate exploration of the text by overlaying actual transmitted images (ranging from cute GIFs and stupid memes to mundane homework snapshots and photos taken during in-person hangouts). <br><br> The mix of personal and objective data alongside a mix of analog and digital formats explores the nuance and subversion of conversation in the digital age: where phones can encourage vulnerability and connection, and where chat logs can act as a living, digital archive for friendship",
         media: [
           "thearchiveasfriendship1.jpg/1",
           "thearchiveasfriendship2.jpg/2",
@@ -126,12 +126,11 @@ export const pieces = atom<{
         year: "2024",
         title: "Lapse",
         size: '112 pages, 8.5" &times; 5.5"',
-        medium:
-          "Figma, Paper, Aluminum Sheet, Drill Press, Metal Stamps, Center Punch, Scribe, Blue Ballpoint Pen, HTML, CSS, Javascript, VSCode",
+        medium: "Figma, Paper, Aluminum Sheet",
         url: '<a href="https://indd.adobe.com/view/cbf24062-a9b4-469e-8c04-05db8f58c377" target="_blank">FULL BOOK</a>',
         role: "",
         statement:
-          "By sequencing images taken from ten YouTube videos focusing on timelapses of singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. By overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, the project questions the identity of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to",
+          "By sequencing images taken from ten YouTube videos focusing on timelapses of singular objects, I created a book about shadows, inspired by the idea of shadows being alternative 'images' of a subject. In overlaying bitmap filters of decreasing strength on each image and asking five sources (one AI alt text generator and four humans of varying backgrounds) to identify the source of the shadow, the project questions the identity of images and the point at which an image crosses over from an objective depiction of a subject to a medium one assigns meaning to",
         media: [
           "lapse1.jpg/1",
           "lapse2.jpg/2",
@@ -178,7 +177,7 @@ export const pieces = atom<{
         size: "",
         medium: "Figma",
         url: '<a href="https://ramp.com/emerging-talent" target="_blank">LIVE LINK</a>',
-        role: "<em>Art Direction:</em> <br> Thandi Roe, Tiffany Huang <br><br> <em>Design:</em> <br> Tiffany Huang <br><br> <em>Photography:</em> <br> Thandi Roe <br><br> <em>Interviews:</em> <br> Thandi Roe, Tiffany Huang <br><br> <em>Copywriting:</em> <br> Tiffany Huang",
+        role: "<em>Art Direction:</em> <br> Thandi Roe, Tiffany Huang <br><br> <em>Design:</em> <br> Tiffany Huang <br><br> <em>Photography:</em> <br> Thandi Roe <br><br> <em>Interviews:</em> <br> Tiffany Huang, Thandi Roe <br><br> <em>Copywriting:</em> <br> Tiffany Huang <br><br> <em>Production:</em> <br> Jaclyn Alberts <br><br> <em>Implementation:</em> <br> Yash Godiwala, Dan Yang",
         statement:
           "<em>Displayed: my prototype (first) and the first version launched in January 2024 (second).</em> <br><br> During my summer at Ramp, one of the projects I had the chance to work on was a webpage for our Emerging Talent program focusing on recruiting the best up-and-coming talent from universities. Thinking primarily about introducing elements of delight in user interactions — given the inspiring recent website rebrand and the potential of interns to bring refreshing perspectives to company environments — I wanted to follow the traditional layout of a university program page like that of other creative companies like Converse and Apple, going through dozens of iterations to arrive at a distinctly 'Ramp' look and feel. Working closely with fellow Brandtern Thandi Roe, we were able to art-direct a photoshoot featuring our class of interns, which brought a spirit of camaraderie and personality into the webpage. <br><br> Although my role in the project wrapped up after the summer, the final design kept the general structure and modules from my original design when it launched in January of 2024. Since then, it has been used to recruit future interns and has acted as the online presence for Ramp's Emerging Talent department and program",
         media: [
@@ -275,7 +274,7 @@ export const pieces = atom<{
         year: "2021",
         title: "Talisman 61",
         size: '281 pages, 9" &times; 12"',
-        medium: "Adobe InDesign, Adobe Illustrator, Adobe Photoshop",
+        medium: "Adobe InDesign, Adobe Photoshop, Adobe Illustrator",
         url: "",
         role: "<em>Editors-in-Chief:</em> <br> Tiffany Huang, Wilson Fung, Jason Chin, Amy Zhang <br><br> <em>Section Editors:</em> <br>Emma Foley, Jasmin Reddy, Isabel Lee, Savannah Lin, Michelle Lim, Alissa Doemling, Miwa Okumura, Grace Wang <br><br> <em>Reporters:</em> <br> Hermione Bossolina, Ritisha Byri, Kiana Compeau, Haley Marks, Isabella Marty, Kavya Narayan, Audrey Nowatzyk, Ainsley Sheen <br><br> <em>Photography:</em> <br>Wilson Fung, Gloria Pan, Isabel Lee, Kavya Narayan, Juan Vintimilla",
         statement:
@@ -335,8 +334,7 @@ export const pieces = atom<{
         year: "2026",
         title: "Expanded Grid Light",
         size: '20" &times; 5" &times; 6"',
-        medium:
-          "Steel Sheet, Hydrostatic Test Pump, TIG Welder, Steel Tube, Steel Rod, Lighting Components",
+        medium: "Steel, Lighting Components",
         url: "",
         role: "",
         statement:
@@ -366,8 +364,7 @@ export const pieces = atom<{
         year: "2026",
         title: "Separation and Reunion Locket Jacket Clasps",
         size: '1.125" &times; 0.75" &times; 0.25" per locket',
-        medium:
-          "Sterling Silver, Personal Artifacts, Jeweler's Saw, Torch, Files",
+        medium: "Sterling Silver, Silver Solder, Personal Artifacts",
         url: "",
         role: "",
         statement:
@@ -396,7 +393,7 @@ export const pieces = atom<{
         year: "2026",
         title: "Pinky Promise Rings",
         size: "U.S. Ring Size 3.5",
-        medium: "Brass, Torch, Jeweler's Saw, Mandrel, Hammers",
+        medium: "Brass, Silver Solder",
         url: "",
         role: "",
         statement:
@@ -426,7 +423,7 @@ export const pieces = atom<{
         url: '<a href="https://indd.adobe.com/view/c66e6e59-61f6-45ff-93e0-5ec92bf4d80a" target="_blank">FULL PRESENTATION</a>',
         role: "",
         statement:
-          "<em>For All the Words I Can’t Say Aloud</em> reinterprets Catholic confession and kneeling benches into a structure meant for facilitating difficult conversations. Although not intended as a religious object, the structure invites participants to kneel and write letters to each other as a means of mediated, private conversation. By passing slips of paper back and forth through the mailbox, two people are able to converse in real-time, while feeling the weight of a physical presence across from them. <br><br> While Catholic confession requires verbal admissions of guilt from sinners to an anonymous, ordained listener, altering the format of the communication to a written one (inspired by love letters and pen pal friendships) allows participants to edit, reword, and process words that they might otherwise be unable to utter aloud. This mediated means of conversation reframes the act of exchanging dialogue as a ritual, encouraging intimacy, vulnerability, and more open communication. <br><br> The piece features welded tube, rod, and sheet metal, combined with machined feet and caps that evoke the ornamental motifs of Gothic architecture and combine the various ways of working with carbon steel",
+          "<em>For All the Words I Can’t Say Aloud</em> reinterprets Catholic confession and kneeling benches into a structure meant for facilitating difficult conversations. Although not intended as a religious object, the structure invites participants to kneel and write letters to each other as a means of mediated, private conversation. By passing slips of paper back and forth through the mailbox, two people are able to converse in real-time, while feeling the weight of a physical presence across from them. <br><br> While Catholic confession requires verbal admissions of guilt from sinners to an anonymous, ordained listener, altering the format of the communication to a written one (inspired by love letters and pen pal friendships) allows participants to edit, reword, and process words that they might otherwise be unable to utter aloud. This mediated means of conversation reframes the act of exchanging dialogue as a ritual, encouraging intimacy, vulnerability, and more open communication. <br><br> The piece features welded tube, rod, and sheet metal, combined with machined feet and caps that evoke the ornamental motifs of Gothic architecture and combine the various ways of working with steel",
         media: [
           "confessional1.jpg/1",
           "confessional2.jpg/2",
@@ -455,7 +452,7 @@ export const pieces = atom<{
         year: "2025",
         title: "Command Chaise",
         size: '53" &times; 33" &times; 23"',
-        medium: "Pleather, Steel Tube, Steel Rod, Brass Screws",
+        medium: "Pleather, Steel, Brass Hardware",
         url: "",
         role: "",
         statement:
@@ -485,8 +482,7 @@ export const pieces = atom<{
         year: "2025",
         title: "Estuary Cruet",
         size: '5" &times; 3" &times; 2.25"',
-        medium:
-          "Ceramic Slip, Cone 5-6 Glazes, Clay, Plaster, Oxidation Firing Electric Kiln",
+        medium: "Ceramic Stoneware Slip, Cone 5-6 Glazes",
         url: "",
         role: "",
         statement:
@@ -524,12 +520,11 @@ export const pieces = atom<{
         year: "2025",
         title: "Providence Modular Two-Piece Knit Set",
         size: "Women's Size Small",
-        medium:
-          "Silver Reed Single Bed Knitting Machine, Cotton, Wool, Tencel, Cashmere, Acrylic, Polyester",
+        medium: "Cotton, Wool, Tencel, Cashmere, Acrylic, Polyester",
         url: "",
         role: "",
         statement:
-          "Over the course of five weeks in winter, while learning techniques on the single bed knitting machine, I explored my personal connection to Providence after having lived in the city for the past four years. Along with acting as a culmination of my explorations with the machine, the resulting two-piece knitted set formalizes the hidden moments of delight that I have documented in my camera roll throughout my years of college, drawing from both the colors I tend to associate most with Providence and from the patterns abstracted from landscape and architecture discovered while walking through city streets, whether in the way the holes in the outer layer draw patterns on skin like sunlight filtering through tree leaves, or in the way the inner dress draws a hazy path from sky to nature to brutalist buildings and industrial plants. <br><br> The piece also explores the possibility of modularity in knitwear, employing buttons as low-tech connecting hardware to allow for the rearrangement of the different fabric pieces into an assortment of clothing. A skirt can become a top; sweaters can be reversed or their sleeve lengths altered; straps can be detached and reattached to change the drape of the fabric.",
+          "Over the course of five weeks in winter, while learning techniques on the Silver Reed single bed knitting machine, I explored my personal connection to Providence after having lived in the city for the past four years. Along with acting as a culmination of my explorations with the machine, the resulting two-piece knitted set formalizes the hidden moments of delight that I have documented in my camera roll throughout my years of college. <br><br> It draws from both the colors I tend to associate most with Providence and abstracts patterns from landscapes and architecture discovered while walking through city streets, whether in the way the holes in the outer layer draw patterns on skin like sunlight filtering through tree leaves, or in the way the inner dress draws a hazy path from sky to nature to brutalist buildings and industrial plants. <br><br> The piece also explores the possibility of modularity in knitwear, employing buttons as low-tech connecting hardware to allow for the rearrangement of the different fabric pieces into an assortment of clothing. A skirt can become a top; sweaters can be reversed or their sleeve lengths altered; straps can be detached and reattached to change the drape of the fabric",
         media: [
           "rectgarment1.jpg/1",
           "rectgarment2.jpg/2",
@@ -556,7 +551,7 @@ export const pieces = atom<{
         title: "Clicking Boots",
         size: "Size 7.5M Women's Dr. Scholl Last",
         medium:
-          "Chrome Tan Leather, Pig Skin, Post Machine, Juki Sewing Machine, Veg Tan Leather, Crimp Boards, Aluminum Stock, Metal Lathe, Bridgeport Mill, Flycutter, Dividing Head, Steel Rod, Spring Steel Shanks, Drill Press, Tap, Machine Screws, Museum Wax, Rubber Cement, Contact Cement, Snaps, Snap Setter, Skiving Knife, 5-in-1 Machine, Hammer, Lasting Pincers, Lasting Stand, Heat Gun, Wood Glue, Wallpaper Adhesive, Shoe Last",
+          "Chrome Tan Leather, Pig Skin, Veg Tan Leather, Aluminum, Steel, Spring Steel Shanks, Snaps",
         url: '<a href="https://www.figma.com/proto/gAcazav9wcGDz6xuCJ1C7U/Clicking-Boots?node-id=2001-300&viewport=284%2C345%2C0.02&t=01F3yPZzFotojUTP-1&scaling=contain&content-scaling=fixed&page-id=2001%3A35" target="_blank">FULL PRESENTATION</a>',
         role: "",
         statement:
@@ -589,7 +584,7 @@ export const pieces = atom<{
         title: "Love in a Puff",
         size: '10" &times; 14" &times; 5"',
         medium:
-          "Arduino, Cherry, Jointer, Planar, Screws, Drill Press, Hand Drill, Vellum, Biscuit Jointer, Table Saw, Aluminum Stock, Sandblaster, South Bend Metal Lathe, Bridgeport Mill, Radius Cutter, Horizontal Bandsaw, Tape, Hot Glue, Wire Cutter, Aluminum Rod, Aluminum Tube, White Glue, Tap, Solidworks, Adobe InDesign, Adobe Illustrator",
+          "Arduino Components, Cherry, Steel Hardware, Vellum, Aluminum, Solidworks, Adobe InDesign, Adobe Illustrator",
         url: '<a href="https://indd.adobe.com/view/fe56a380-fe08-420f-9779-6cd81f4132ba" target="_blank">FULL PRESENTATION</a>',
         role: "",
         statement:
@@ -617,8 +612,7 @@ export const pieces = atom<{
         year: "2024",
         title: "Table for a Homebody",
         size: '11.66" &times; 30" &times; 12"',
-        medium:
-          "Cherry, Jointer, Planar, Router Table, Hand-Held Plunge Router, Table Saw, Wood Glue, Dowels, Canvas Fabric, Plywood, Bandsaw, Chisel, Mallet, Double-Sided Table, Thread, Tacky Glue, Orbital Sander, Drill Press, Biscuit Jointer",
+        medium: "Cherry, Dowels, Duck Canvas",
         url: "",
         role: "",
         statement:
@@ -647,12 +641,11 @@ export const pieces = atom<{
         year: "2023",
         title: "天椅 (Day Chair)",
         size: '27.23" &times; 20" &times; 20.92"',
-        medium:
-          "Poplar, Ash, Solidworks, Table Saw, Jointer, Planar, Horizontal Boring Machine, Orbital Disk Sander, Biscuit Joiner, Pin Router, OBS, Nail Gun, Screws, Drill Press, Bandsaw",
+        medium: "Poplar, Ash, Solidworks, Stainless Steel Hardware",
         url: "",
         role: "",
         statement:
-          '天椅, translated directly as "Sky Chair" or "Day Chair," is a woodworking project I undertook as my first venture into real, everyday furniture. Aptly named due to its side profile, which resembles the Chinese character 天, the semi-cantilevered chair employs frame construction to lay out its sharp, angular components while inlaying steambent ash pieces, filleted with a pin router, to provide both support and an organic counterpoint. With 60 degree angles softened by curved radii as a motif throughout the chair, steambending provides a structural support to allow for more extreme angles of joinery. <br><br> The side profile 天, which turns into the character 人 once the chair is occupied, promotes the idea of the chair being both for everyday use ("天天" meaning "daily"), and of the chair being made for people ("人" meaning "person"). What\'s more, the phrase "天人合一" also resonates with the idea of the chair fitting well with people, just as humans ("人") should live in nature ("天")  together ("合一") in peace. Just as chairs are a unique subsection of furniture that must take careful account of the human body, the 天椅 focuses on the main purpose of chairs as beautiful objects made by people, for people.',
+          '天椅, translated directly as "Sky Chair" or "Day Chair," is a woodworking project I undertook as my first venture into real, everyday furniture. Aptly named due to its side profile, which resembles the Chinese character 天, the semi-cantilevered chair employs frame construction to lay out its sharp, angular components while inlaying steambent ash pieces, filleted with a pin router, to provide both support and an organic counterpoint. With 60 degree angles softened by curved radii as a motif throughout the chair, steambending provides a structural support to allow for more extreme angles of joinery. <br><br> The side profile 天, which turns into the character 人 once the chair is occupied, promotes the idea of the chair being both for everyday use ("天天" meaning "daily"), and of the chair being made for people ("人" meaning "person"). What\'s more, the phrase "天人合一" also resonates with the idea of the chair fitting well with people, just as humans ("人") should live in nature ("天")  together ("合一") in peace. Just as chairs are a unique subsection of furniture that must take careful account of the human body, the 天椅 focuses on the main purpose of chairs as beautiful objects made by people, for people',
         media: [
           "daychair1.jpg/1",
           "daychair2.jpg/1",
@@ -680,7 +673,7 @@ export const pieces = atom<{
         title: "Makita Cultivator",
         size: '4.82" &times; 4" &times; 11.89"',
         medium:
-          "Grey Foam, Steel Stock, South Bend Lathe, Plastidip, Acrylic Rod, Rock Hard Putty, Styrene, Spray Paint, JB Weld, Primer, Solidworks, Keyshot, Chipboard, Foamcore, Adobe InDesign, Adobe Illustrator",
+          "Grey Foam, Steel, Plastidip, Acrylic, Spray Paint, JB Weld, Primer, Solidworks, Keyshot, Adobe InDesign, Adobe Illustrator",
         url: '<a href="https://indd.adobe.com/view/5eb6d8be-3ee2-4145-8935-5c1156ee0c13" target="_blank">FULL PRESENTATION</a>',
         role: "",
         statement:
@@ -710,8 +703,7 @@ export const pieces = atom<{
         year: "2023",
         title: "Permutation Jars",
         size: '2.75" &times; 1.25" &times; 1.25" each',
-        medium:
-          "Aluminum Stock, Aluminum Tube, Brass Stock, Steel Stock, South Bend Lathe, Bridgeport Mill, Solidworks",
+        medium: "Aluminum, Brass, Steel, Solidworks",
         url: "",
         role: "",
         statement:
@@ -744,7 +736,7 @@ export const pieces = atom<{
         title: "Synergy Seats",
         size: '30.25" &times; 48" &times; 22.5"',
         medium:
-          "Poplar Plywood, Dowels, Wood Glue, Acrylic Plexiglass, Screws, Arduino, LED Light Strips, Portable Chargers, Light Sensors",
+          "Poplar Plywood, Dowels, Acrylic Plexiglass, Stainless Steel Hardware, Arduino Components, LED Light Strips",
         url: "",
         role: "",
         statement:
@@ -773,7 +765,7 @@ export const pieces = atom<{
         year: "2025",
         title: "Re:Memo",
         size: "",
-        medium: "Maya, Adobe Illustrator, Adobe Premiere Pro",
+        medium: "Autodesk Maya, Adobe Premiere Pro, Procreate",
         url: "",
         role: "",
         statement:
@@ -795,7 +787,7 @@ export const pieces = atom<{
         year: "2025",
         title: "Procedural Bread Simulation",
         size: "",
-        medium: "C++, Maya, Rhino, Blender",
+        medium: "C++, Autodesk Maya, Rhino, Blender",
         url: '<a href="https://github.com/smallwhale1/cs2240-bread/tree/main" target="_blank">GITHUB',
         role: "<em>Implementation:</em> <br> Grace Marshburn, Lana Yang-Maccini, Sophie Zhang, Tiffany Huang <br><br> <em>Rendering:</em> <br> Sophie Zhang, Tiffany Huang",
         statement:
@@ -818,11 +810,11 @@ export const pieces = atom<{
         year: "2022",
         title: "Efflorescence",
         size: '1:38, 18" &times; 24"',
-        medium: "Vine Charcoal, White Conte, Eraser, Adobe Premiere Pro",
+        medium: "Vine Charcoal, White Conte, Adobe Premiere Pro",
         url: "",
         role: "<em>Animation:</em> <br> Astrid Schoenly, Tiffany Huang <br><br> <em>Editing:</em> <br> Tiffany Huang",
         statement:
-          "As a collaboration with Astrid Schoenly, <em>Efflorescence</em> narrates the drifting apart of two childhood friends, reflecting upon a near-universal college experience of meeting, befriending, and losing contact with companions as time progresses",
+          "<em>Efflorescence</em> narrates the drifting apart of two childhood friends, reflecting upon a near-universal college experience of meeting, befriending, and losing contact with companions as time progresses",
         media: [
           "efflorescence1*.mp4/1",
           "efflorescence2.jpg/2",
